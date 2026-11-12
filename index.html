@@ -1,33 +1,348 @@
 <!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Isofol Medical – Milstolpar</title>
 <style>
-:root{--bg:#141414;--text:#e9e9e9;--muted:#888;--line:#2a2a2a;--arfo:#16b99c;--japan:#45a2e7;--company:#a99ad9}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:13px/1.4 system-ui,-apple-system,Segoe UI,Arial,sans-serif}a{color:#63a9ef;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1480px;margin:auto;padding:14px 48px 70px}header h1{font-size:25px;margin:0 0 3px;font-weight:650;letter-spacing:-.025em}header p{color:#929292;margin:0;font-size:13px}.summary{display:inline-block;color:#13b58e;margin-top:12px;font-size:12px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:34px 0 27px;flex-wrap:wrap}.group{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.hint{color:#666;font-size:11px;margin-right:4px}.toolbar button{border:1px solid #353535;border-radius:30px;background:transparent;color:#969696;padding:7px 17px;cursor:pointer;font-size:12px}.toolbar button.active.period{background:#e6e6e6;border-color:#e6e6e6;color:#111}.toolbar button.track{color:#101010;border:0;font-weight:700}.toolbar button.track[data-track="arfo"]{background:var(--arfo)}.toolbar button.track[data-track="japan"]{background:var(--japan)}.toolbar button.track[data-track="company"]{background:var(--company)}.toolbar button.track:not(.active){opacity:.43}.toolbar button[data-track="all"].active{color:white;border-color:#999}.lang{border:1px solid #353535;border-radius:30px;padding:5px 11px;color:#aaa;margin-right:14px}
-.timeline-scroll{overflow-x:auto;padding-bottom:10px}.timeline{min-width:1050px;display:grid;grid-template-columns:80px repeat(12,minmax(106px,1fr));position:relative}.axis{grid-column:2/-1;display:grid;grid-template-columns:repeat(12,1fr);height:33px;border-bottom:2px solid #353535}.axis span{border-left:1px solid #303030;text-align:center;color:#666;padding:8px 2px;font-size:12px}.trackrow{display:contents}.track-label{display:flex;align-items:center;font-weight:800;font-size:14px;padding:10px 8px;border-bottom:1px solid #292929}.track-label.arfo{color:var(--arfo)}.track-label.japan{color:var(--japan)}.track-label.company{color:var(--company)}.cell{min-height:182px;border-left:1px solid #242424;border-bottom:1px solid #292929;padding:7px 5px;display:flex;flex-direction:column;gap:7px;align-items:stretch}.milestone{border-radius:8px;padding:9px 10px;background:#ececec;color:#111;text-align:left;border:1px solid #ddd;cursor:pointer;font:inherit;min-width:0;line-height:1.25}.milestone{transition:transform .17s ease,box-shadow .17s ease,filter .17s ease;position:relative}.milestone:hover,.milestone:focus-visible{transform:translateY(-5px);box-shadow:0 8px 18px #0008;filter:brightness(1.05);z-index:2}.milestone.future{background:#161616;color:#ddd;border:1px dashed #888}.milestone strong{font-size:11px;display:block;line-height:1.2}.milestone small{font-size:10px;display:block;margin-top:3px;color:#6b6b6b}.milestone.future small{color:#999}.milestone[hidden],.trackrow[hidden]{display:none!important}.trackrow.is-hidden .track-label,.trackrow.is-hidden .cell{display:none}.trackrow.is-hidden{display:none}.cell:empty:after{content:"";min-height:15px}.section{margin:42px 0 13px;font-size:20px}.intro{color:#929292;margin:-5px 0 18px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.news{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.news-card{background:#202020;border:1px solid #343434;border-radius:9px;padding:14px;min-width:0}.news-card small{color:#999}.news-card h3{font-size:13px;line-height:1.4}.news-card a{font-size:12px}.status{color:#aaa}.modal{position:fixed;inset:0;display:none;pointer-events:none;z-index:20}.modal.open{display:block}.modal .dialog{pointer-events:auto;position:fixed;max-height:min(76vh,650px);overflow-y:auto;box-shadow:0 18px 45px #000b}.dialog{position:relative;background:#252525;color:#eee;max-width:510px;width:100%;padding:24px;border:1px solid #3b3b3b;border-radius:9px;box-shadow:0 20px 50px #0009}.dialog h2{margin:0 25px 8px 0;font-size:18px}.dialog .date{color:#aaa}.dialog p{line-height:1.6;color:#bcbcbc}.dialog button{position:absolute;right:12px;top:9px;background:transparent;border:0;color:#ccc;font-size:25px;cursor:pointer}.dialog a{display:block;margin-top:9px}footer{margin-top:45px;color:#777;border-top:1px solid #303030;padding-top:15px;font-size:12px}
-@media(max-width:700px){.wrap{padding:18px 13px 45px}.toolbar{margin-top:23px}.cards,.news{grid-template-columns:1fr}.timeline{min-width:1080px}.section{margin-top:30px}}
-.valuation{margin-top:20px;border-top:1px solid #343434;padding-top:18px}.valuation h2{font-size:15px;color:#a3a3a3;font-weight:650;margin:0 0 8px}.valuation svg{display:block;width:100%;height:auto;max-height:none;overflow:visible}.valuation .legend{display:flex;gap:18px;align-items:center;color:#aaa;font-size:12px;margin:10px 0 0;flex-wrap:wrap}.valuation .legend i{display:inline-block;width:24px;border-top:3px dashed #f0b82f;vertical-align:middle;margin-right:6px}.valuation .note{font-size:12px;color:#8d8d8d;margin-top:9px}.stock-overview{margin:22px 0 10px}.stock-overview h2{font-size:16px;color:#bbb;margin:0 0 11px}.stock-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.stock-tile{background:#202020;border:1px solid #343434;border-radius:9px;padding:13px;min-width:0}.stock-tile small{display:block;color:#9a9a9a;font-size:11px}.stock-tile strong{display:block;font-size:20px;margin:4px 0;font-weight:650}.stock-tile a{font-size:11px}.stock-footnote{color:#929292;font-size:11px;margin:10px 0 0}@media(max-width:900px){.stock-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:420px){.stock-grid{grid-template-columns:1fr 1fr}.stock-tile strong{font-size:16px}}.milestone-key{display:flex;align-items:center;gap:25px;flex-wrap:wrap;margin:10px 0 22px;color:#999;font-size:12px}.milestone-key span{display:inline-flex;align-items:center;gap:8px}.milestone-key i{display:inline-block;width:40px;height:20px;border-radius:5px;background:#ececec;border:1px solid #ddd}.milestone-key i.upcoming{background:#161616;border:1px dashed #aaa}
-/* Subtle contrasting surfaces distinguish the dashboard sections. */
-.wrap>section{border:1px solid #303030;border-radius:14px;padding:22px 24px;margin:22px 0 0}
-.wrap>.stock-overview{background:#1c2025;border-color:#303943}
-.wrap>section[aria-labelledby="news-heading"]{background:#1c2422;border-color:#304039}
-.wrap>section[aria-labelledby="milestones-heading"]{background:#202026;border-color:#37333e}
-.wrap>.valuation{background:#1c2029;border-color:#303a4b;margin-top:22px;padding-top:22px}
-.wrap>section .section{margin:0 0 13px}
-.wrap>.stock-overview h2{margin-top:0}
-.wrap>section[aria-labelledby="milestones-heading"] .toolbar{margin-top:24px}
-.wrap>section .milestone-key{margin-bottom:0}
-@media(max-width:700px){.wrap>section{padding:17px 13px;border-radius:11px;margin-top:16px}.wrap>section[aria-labelledby="milestones-heading"] .toolbar{margin-top:18px}}
+:root{
+  color-scheme:dark;
+  --bg:#0b1119;--surface:#141e29;--surface-raised:#1b2935;
+  --text:#ecf3f8;--muted:#9aabba;--subtle:#728596;--line:#2a3b48;
+  --mint:#51d7b3;--arfo:#33c7a5;--japan:#65baff;--company:#b5a2ee;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--text);
+  font:14px/1.58 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(ellipse 800px 500px at 84% -135px,rgba(47,142,152,.15),transparent 70%),
+    radial-gradient(ellipse 580px 600px at -210px 650px,rgba(72,87,160,.07),transparent 72%),
+    var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:#81c7ff;text-decoration:none;text-underline-offset:3px;transition:color .2s ease}
+a:hover{color:#b4e0ff;text-decoration:underline}
+button{font-family:inherit}
+button:focus-visible,a:focus-visible{outline:2px solid #7ce7c5;outline-offset:4px}
+.wrap{width:min(100%,1560px);margin:0 auto;padding:35px clamp(18px,4.3vw,72px) 75px}
+.hero{
+  isolation:isolate;position:relative;overflow:hidden;
+  min-height:235px;display:flex;align-items:center;
+  padding:32px clamp(27px,4.5vw,66px);
+  border:1px solid #2b474c;border-radius:24px;
+  background:linear-gradient(110deg,#162c33 0%,#12232f 49%,#131d2b 100%);
+  box-shadow:0 16px 50px #020a1260,0 1px 0 #ffffff0c inset;
+}
+.hero:after{
+  content:"";position:absolute;z-index:-1;
+  width:450px;height:450px;right:-60px;top:-120px;border-radius:50%;
+  border:1px solid #78ddc01a;
+  box-shadow:0 0 0 68px #78ddc009,0 0 0 136px #78ddc006,inset 0 0 85px #4bd4b512;
+  background:radial-gradient(circle at 48% 52%,#51d7b310,transparent 67%);
+}
+.hero:before{
+  content:"";position:absolute;left:0;top:0;width:42%;height:2px;
+  background:linear-gradient(90deg,#68e2c6,transparent);
+}
+.hero-content{position:relative;z-index:1;max-width:850px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  color:#a9dbd0;font-size:10px;line-height:1.3;font-weight:750;
+  letter-spacing:.18em;text-transform:uppercase;
+}
+.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:#5bdfb7;box-shadow:0 0 12px #5bdfb775}
+.hero h1{
+  margin:16px 0 8px;font-size:clamp(30px,3.5vw,51px);
+  line-height:1.1;font-weight:760;letter-spacing:-.048em;
+}
+.hero h1 span{color:#83e6cb}
+.hero p{max-width:680px;margin:0;color:#b5c7cf;font-size:clamp(13px,1.15vw,16px);line-height:1.6}
+.summary{
+  display:inline-flex;align-items:center;justify-content:center;gap:15px;
+  min-height:40px;padding:9px 15px;margin-top:20px;
+  color:#c5fff0!important;font-size:12px;font-weight:720;
+  border:1px solid #3f7970;border-radius:10px;
+  background:#1c4b482a;box-shadow:0 1px 0 #ffffff09 inset;
+}
+.summary:hover{background:#2c71604a;border-color:#6bbaa4;text-decoration:none}
+.summary .arrow{font-size:16px;line-height:1;color:#8de6ca}
+
+.wrap>section{
+  position:relative;overflow:hidden;
+  border:1px solid #2a3d49;border-radius:19px;
+  padding:clamp(20px,2.5vw,32px);
+  margin:22px 0 0;
+  box-shadow:0 1px 0 #ffffff06 inset,0 10px 35px #0000001a;
+}
+.wrap>section:before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--section-accent),transparent 72%);opacity:.85;
+}
+.wrap>.stock-overview{
+  --section-accent:#7bbdff;
+  background:linear-gradient(125deg,#17232f,#17212b 67%,#141e29);
+  border-color:#2a3c4d;
+}
+.wrap>section[aria-labelledby="news-heading"]{
+  --section-accent:#59dfb7;
+  background:linear-gradient(125deg,#162923,#15231f 66%,#162420);
+  border-color:#2c453e;
+}
+.wrap>section[aria-labelledby="milestones-heading"]{
+  --section-accent:#b8a0f2;
+  background:linear-gradient(125deg,#211f2f,#1b1d2a 63%,#1a1e2a);
+  border-color:#3a354e;
+}
+.wrap>.valuation{
+  --section-accent:#78bafa;
+  background:linear-gradient(125deg,#182736,#172331 70%,#17202c);
+  border-color:#2d4356;padding-top:clamp(20px,2.5vw,32px);margin-top:22px;
+}
+.section-kicker{
+  display:flex;align-items:center;gap:9px;
+  margin:0 0 6px;color:var(--section-accent);
+  font-size:10px;line-height:1.4;font-weight:740;letter-spacing:.17em;text-transform:uppercase;
+}
+.section-number{font-variant-numeric:tabular-nums;opacity:.65}
+.section-kicker:after{content:"";width:38px;height:1px;background:currentColor;opacity:.3}
+.wrap>section h2,.section{
+  margin:0;font-size:clamp(19px,1.6vw,24px);
+  line-height:1.28;letter-spacing:-.025em;font-weight:730;color:var(--text);
+}
+.intro{color:#a5b5c3;margin:8px 0 21px;font-size:13px;line-height:1.6}
+.status{margin:0 0 16px;color:#a5c6b9;font-size:12px}
+.stock-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:19px}
+.stock-tile{
+  position:relative;display:flex;flex-direction:column;align-items:flex-start;
+  min-width:0;min-height:128px;padding:18px 17px 15px;
+  border:1px solid #354555;border-radius:13px;
+  background:linear-gradient(155deg,#24323e,#1e2b36 80%);
+  box-shadow:0 1px 0 #ffffff0c inset;
+  transition:border-color .2s ease,transform .2s ease;
+}
+.stock-tile:hover{border-color:#627b8c;transform:translateY(-2px)}
+.stock-tile:before{
+  content:"";position:absolute;top:0;left:19px;right:19px;height:2px;
+  background:linear-gradient(90deg,#71bbf777,transparent);
+}
+.stock-tile:nth-child(3):before,.stock-tile:nth-child(4):before{background:linear-gradient(90deg,#68d9bb80,transparent)}
+.stock-tile:nth-child(5):before{background:linear-gradient(90deg,#c2a1ed8c,transparent)}
+.stock-tile small{font-size:11px;color:#b3c0ca;line-height:1.45}
+.stock-tile strong{
+  display:block;margin:9px 0 8px;color:#f5f9fc;
+  font-size:clamp(20px,1.6vw,25px);line-height:1.12;
+  font-variant-numeric:tabular-nums;letter-spacing:-.035em;font-weight:740;
+}
+.stock-tile a{margin-top:auto;font-size:11px;font-weight:600;line-height:1.4}
+.stock-footnote{
+  max-width:1200px;color:#94a6b6;font-size:11px;line-height:1.75;
+  margin:15px 0 0;
+}
+.news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.news-card{
+  display:flex;flex-direction:column;align-items:flex-start;
+  min-width:0;min-height:165px;position:relative;overflow:hidden;
+  padding:20px 20px 17px;
+  background:linear-gradient(155deg,#21342f,#1c2d2a 85%);
+  border:1px solid #335046;border-radius:13px;
+  box-shadow:0 1px 0 #ffffff08 inset;
+  transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+.news-card:hover{transform:translateY(-3px);border-color:#588875;box-shadow:0 12px 28px #07170f3a}
+.news-card:before{
+  content:"";position:absolute;top:0;left:0;width:45px;height:2px;
+  background:linear-gradient(90deg,#52d5ab,transparent);
+}
+.news-card small{display:block;color:#86c1ab;font-size:10px;font-weight:700;letter-spacing:.05em;line-height:1.5}
+.news-card h3{
+  margin:12px 0 18px;color:#eaf5ef;
+  font-size:14px;line-height:1.5;font-weight:640;letter-spacing:-.009em;
+}
+.news-card a{
+  display:inline-flex;align-items:center;margin-top:auto;
+  font-size:12px;font-weight:700;color:#8deac6;
+}
+.news-card a:hover{color:#c8ffe8}
+.toolbar{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:15px;margin:24px 0 23px;
+}
+.group{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.hint{
+  color:#a6a1bc;font-size:10px;font-weight:700;
+  letter-spacing:.14em;margin-right:8px;
+}
+.toolbar button{
+  min-height:34px;padding:7px 14px;border-radius:9px;
+  border:1px solid #4c465e;background:#201f2c;
+  color:#b9b8cb;font-size:12px;line-height:1.2;font-weight:610;
+  cursor:pointer;transition:background .18s,border-color .18s,transform .18s,opacity .18s;
+}
+.toolbar button:hover{background:#303043;border-color:#7b718e;transform:translateY(-1px)}
+.toolbar button.active.period{
+  color:#1b2030;background:#eef1f7;border-color:#eef1f7;box-shadow:0 2px 9px #0002;
+}
+.toolbar button.track{font-weight:740;color:#0a1723;border-color:transparent}
+.toolbar button.track[data-track="arfo"]{background:var(--arfo)}
+.toolbar button.track[data-track="japan"]{background:var(--japan)}
+.toolbar button.track[data-track="company"]{background:var(--company)}
+.toolbar button.track:not(.active){opacity:.42;filter:saturate(.65)}
+.toolbar button[data-track="all"].active{color:#eff4ff;background:#332c48;border-color:#9990bb}
+.timeline-scroll{
+  overflow-x:auto;overflow-y:visible;border:1px solid #38354b;
+  border-radius:13px;background:#1014205c;padding:12px 12px 14px;
+  scrollbar-color:#675d80 #171624;scrollbar-width:thin;
+}
+.timeline{
+  min-width:1050px;display:grid;
+  grid-template-columns:80px repeat(12,minmax(106px,1fr));position:relative;
+}
+.axis{
+  grid-column:2/-1;display:grid;grid-template-columns:repeat(12,1fr);
+  min-height:41px;border-bottom:1px solid #5b506b;
+}
+.axis span{
+  border-left:1px solid #383447;
+  text-align:center;color:#a7a1bc;padding:10px 2px;
+  font-size:11px;font-weight:680;letter-spacing:.01em;
+}
+.trackrow{display:contents}
+.track-label{
+  position:sticky;left:0;z-index:3;
+  display:flex;align-items:center;padding:12px 7px;
+  background:#181925;border-bottom:1px solid #393447;
+  box-shadow:7px 0 13px #11131c80;
+  font-size:12px;line-height:1.25;font-weight:800;overflow-wrap:anywhere;
+}
+.track-label.arfo{color:var(--arfo)}
+.track-label.japan{color:var(--japan)}
+.track-label.company{color:var(--company)}
+.cell{
+  display:flex;flex-direction:column;align-items:stretch;gap:8px;
+  min-height:178px;padding:9px 6px;border-left:1px solid #353146;
+  border-bottom:1px solid #393447;
+}
+.milestone{
+  position:relative;min-width:0;cursor:pointer;text-align:left;
+  border:1px solid #d4dfe8;border-left:3px solid #b4c4d0;
+  padding:10px 10px 10px 11px;border-radius:9px;
+  background:linear-gradient(150deg,#f3f6f9,#e3eaf1);
+  color:#142231;font:inherit;line-height:1.3;
+  box-shadow:0 2px 10px #08081116;
+  transition:transform .17s,box-shadow .17s,filter .17s;
+}
+.milestone.arfo{border-left-color:var(--arfo)}
+.milestone.japan{border-left-color:var(--japan)}
+.milestone.company{border-left-color:var(--company)}
+.milestone:hover,.milestone:focus-visible{
+  transform:translateY(-4px);box-shadow:0 9px 22px #05050b80;filter:brightness(1.04);z-index:2;
+}
+.milestone.future{
+  background:linear-gradient(135deg,#232536,#1b202d);
+  color:#e7e4f0;border:1px dashed #827d97;border-left:3px solid #89839f;
+  box-shadow:none;
+}
+.milestone.future.arfo{border-left-color:var(--arfo)}
+.milestone.future.japan{border-left-color:var(--japan)}
+.milestone.future.company{border-left-color:var(--company)}
+.milestone strong{display:block;font-size:11px;line-height:1.32;font-weight:760}
+.milestone small{display:block;margin-top:5px;color:#526373;font-size:10px;line-height:1.4}
+.milestone.future small{color:#b0adbf}
+.milestone[hidden],.trackrow[hidden]{display:none!important}
+.trackrow.is-hidden .track-label,.trackrow.is-hidden .cell{display:none}
+.trackrow.is-hidden{display:none}
+.cell:empty:after{content:"";min-height:15px}
+.milestone-key{
+  display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  margin:16px 0 0;color:#bbb6cb;font-size:11px;
+}
+.milestone-key span{display:inline-flex;align-items:center;gap:8px}
+.milestone-key i{
+  display:inline-block;width:34px;height:18px;
+  border:1px solid #e5ebf0;border-radius:5px;background:#e6edf3;
+}
+.milestone-key i.upcoming{border:1px dashed #9991b2;background:#222335}
+.valuation h2{font-size:clamp(19px,1.6vw,24px);color:var(--text);font-weight:730}
+.valuation svg{
+  display:block;width:100%;height:auto;max-height:none;overflow:visible;
+  margin-top:13px;
+}
+.valuation .note{
+  border-top:1px solid #304356;padding-top:15px;
+  margin-top:5px;color:#9babba;font-size:11px;line-height:1.75;
+}
+.modal{position:fixed;inset:0;display:none;pointer-events:none;z-index:20}
+.modal.open{display:block}
+.modal .dialog{
+  pointer-events:auto;position:fixed;overflow-y:auto;
+  max-height:min(76vh,650px);box-shadow:0 22px 60px #000c;
+}
+.dialog{
+  position:relative;max-width:510px;width:100%;
+  padding:25px;color:#ecf3f8;background:linear-gradient(140deg,#223344,#182633);
+  border:1px solid #547081;border-radius:15px;
+}
+.dialog h2{margin:9px 28px 12px 0;font-size:20px;line-height:1.35}
+.dialog .date{color:#80d7bc;font-size:12px;font-weight:690}
+.dialog p{color:#cad7df;line-height:1.75}
+.dialog button{
+  position:absolute;right:13px;top:10px;cursor:pointer;
+  background:#ffffff0b;border:1px solid #506371;border-radius:7px;
+  width:32px;height:32px;color:#e6edf3;font-size:24px;line-height:1;
+}
+.dialog a{display:block;margin-top:11px;font-size:12px;font-weight:650}
+footer{
+  margin:31px 0 0;padding:20px 4px 0;
+  color:#8596a4;border-top:1px solid #273947;font-size:11px;line-height:1.8;
+}
+@media(max-width:1200px){
+ .stock-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .news{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:850px){
+ .wrap{padding-top:19px}
+ .hero{min-height:210px}
+ .stock-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .toolbar{justify-content:flex-start}
+}
+@media(max-width:600px){
+ .wrap{padding:13px 12px 45px}
+ .hero{border-radius:16px;padding:27px 23px;min-height:220px}
+ .hero:after{right:-250px;opacity:.6}
+ .hero h1{font-size:34px}
+ .wrap>section{margin-top:14px;border-radius:14px;padding:20px 17px}
+ .section-kicker{font-size:9px}
+ .stock-grid{gap:9px}
+ .stock-tile{padding:13px 12px;min-height:115px}
+ .stock-tile strong{font-size:19px;overflow-wrap:anywhere}
+ .news{grid-template-columns:1fr}
+ .news-card{min-height:140px;padding:18px}
+ .toolbar{margin:19px 0;gap:17px}
+ .group{gap:6px}
+ .toolbar button{padding:7px 11px;font-size:11px}
+ .timeline-scroll{padding:9px 7px 11px}
+ .timeline{min-width:1080px}
+ .valuation svg{min-width:0}
+ .valuation .note{font-size:11px}
+}
+@media(max-width:350px){
+ .stock-grid{grid-template-columns:1fr}
+ .stock-tile{min-height:100px}
+ .hero h1{font-size:30px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
 </style></head><body><div class="wrap">
-<header><h1>Isofol Medical</h1><p>Investeraröversikt · aktien, nyheter och milstolpar</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">▤ Isofol sammanfattning ↗</a></header><section class="stock-overview" aria-labelledby="stock-heading"><h2 id="stock-heading">Aktien · ISOFOL</h2><div class="stock-grid">
+<header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading"><p class="section-kicker"><span class="section-number">01</span> Aktieöversikt</p><h2 id="stock-heading">Aktien · ISOFOL</h2><div class="stock-grid">
 <div class="stock-tile"><small>Senaste verifierade stängningskurs</small><strong>1,384 kr</strong><a href="https://stockanalysis.com/quote/sto/ISOFOL/statistics/" target="_blank" rel="noopener noreferrer">11 nov 2026 · kurskälla ↗</a></div>
 <div class="stock-tile"><small>Antal aktier</small><strong>320 491 623</strong><a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet / FactSet ↗</a></div>
 <div class="stock-tile"><small>Ägare på Avanza</small><strong>9 277</strong><a href="https://www.borskollen.se/aktie/isofol-medical" target="_blank" rel="noopener noreferrer">Börskollen · avläst 12 nov ↗</a></div>
 <div class="stock-tile"><small>Ägare på Nordnet</small><strong>1 067</strong><a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet · avläst 12 nov ↗</a></div>
 <div class="stock-tile"><small>Anmäld blankning totalt</small><strong>0,10 %</strong><a href="https://www.fi.se/sv/vara-register/blankningsregistret/Positionsinnehavare/" target="_blank" rel="noopener noreferrer">FI · positionsdatum 4 nov ↗</a></div>
-</div><p class="stock-footnote">Senast kontrollerat 12 november 2026. Uppgifterna är ögonblicksbilder, inte realtidskurser. Ägarantal avser respektive plattform och kan förändras. Blankning avser FI:s rapporterade korta nettopositioner, inte separata siffror för Avanza och Nordnet. <a href="https://www.avanza.se/aktier/om-aktien.html/716442/isofol-medical" target="_blank" rel="noopener noreferrer">Avanza ↗</a> · <a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet ↗</a></p></section><section aria-labelledby="news-heading"><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"></div></section>
-<section aria-labelledby="milestones-heading"><h2 class="section" id="milestones-heading">Milstolpar</h2><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
+</div><p class="stock-footnote">Senast kontrollerat 12 november 2026. Uppgifterna är ögonblicksbilder, inte realtidskurser. Ägarantal avser respektive plattform och kan förändras. Blankning avser FI:s rapporterade korta nettopositioner, inte separata siffror för Avanza och Nordnet. <a href="https://www.avanza.se/aktier/om-aktien.html/716442/isofol-medical" target="_blank" rel="noopener noreferrer">Avanza ↗</a> · <a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet ↗</a></p></section><section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">02</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"></div></section>
+<section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">03</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
 </div></div><div class="milestone-key" aria-label="Förklaring till milstolparnas utseende"><span><i aria-hidden="true"></i>Levererad</span><span><i class="upcoming" aria-hidden="true"></i>Kommande</span></div></section>
-<section class="valuation" aria-labelledby="valuation-heading"><h2 id="valuation-heading">Analytiker-riktkurser / motiverade värden</h2><p class="intro">Verifierade publiceringar · kronor per aktie · Base Case (uppdragsanalyser)</p><svg id="valuation-chart" viewBox="0 0 1100 410" role="img" aria-label="Redeyes Base Case 1,70 kronor vid två tillfällen och ABG:s basscenario från 1,60 till 1,80 kronor"></svg><p class="note">Grafen visar fyra verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section><footer>Privat, inofficiell investeraröversikt. Datum och kliniska uppgifter måste kontrolleras mot Isofols originalkällor. Planerade milstolpar är inte bekräftade utfall. Nyhetsflödet uppdateras automatiskt; tidslinjen kräver källkontrollerad uppdatering.</footer></div>
+<section class="valuation" aria-labelledby="valuation-heading"><p class="section-kicker"><span class="section-number">04</span> Analys &amp; värdering</p><h2 id="valuation-heading">Analytiker-riktkurser / motiverade värden</h2><p class="intro">Verifierade publiceringar · kronor per aktie · Base Case (uppdragsanalyser)</p><svg id="valuation-chart" viewBox="0 0 1100 410" role="img" aria-label="Redeyes Base Case 1,70 kronor vid två tillfällen och ABG:s basscenario från 1,60 till 1,80 kronor"></svg><p class="note">Grafen visar fyra verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section><footer>Privat, inofficiell investeraröversikt. Datum och kliniska uppgifter måste kontrolleras mot Isofols originalkällor. Planerade milstolpar är inte bekräftade utfall. Nyhetsflödet uppdateras automatiskt; tidslinjen kräver källkontrollerad uppdatering.</footer></div>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="dialog"><button id="close" aria-label="Stäng">×</button><div class="date" id="modal-date"></div><h2 id="modal-title"></h2><p id="modal-body"></p><div id="modal-links"></div></div></div>
 <script>
 const source='https://isofolmedical.com/news-press/';
@@ -786,7 +1101,7 @@ function renderTimeline(){
   for(const col of cols){
    const cell=document.createElement('div');cell.className='cell';
    for(const m of matches.filter(x=>x.track===track&&x.col===col)){
-    const btn=document.createElement('button');btn.className='milestone '+m.status;
+    const btn=document.createElement('button');btn.className='milestone '+m.status+' '+m.track;
     const title=document.createElement('strong');title.textContent=m.title;
     const subtitle=document.createElement('small');subtitle.textContent=m.subtitle;
     btn.append(title,subtitle);
