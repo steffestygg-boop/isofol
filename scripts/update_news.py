@@ -21,7 +21,7 @@ for item in root.findall('./channel/item'):
     link = (item.findtext('link') or '').strip()
     published = (item.findtext('pubDate') or '').strip()
     source = (item.findtext('source') or '').strip()
-    if not title or not link or link in seen:
+    if not title or not link or link in seen or 'isofol' not in title.casefold():
         continue
     seen.add(link)
     try:
