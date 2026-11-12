@@ -341,12 +341,20 @@ footer{
 @media(max-width:1200px){.stock-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:850px){.stock-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:350px){.stock-grid{grid-template-columns:1fr}.stock-price-tile{grid-column:span 1}}
+
+/* TradingView sometimes renders the single-quote iframe with a white theme despite dark settings.
+   Force readable dark contrast at the iframe boundary (cross-origin contents cannot be styled). */
+.stock-price-tile .tradingview-widget-container iframe{
+  filter:invert(1) hue-rotate(180deg);
+  background:#fff;
+  border-radius:5px;
+}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading"><p class="section-kicker"><span class="section-number">01</span> Aktieöversikt</p><h2 id="stock-heading">Aktien · ISOFOL</h2><div class="stock-grid">
 <div class="stock-tile stock-price-tile"><small>Aktiekurs · ISOFOL</small><div class="tv-quote" aria-label="Aktuell fördröjd kurs för Isofol Medical från TradingView">
 <div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div>
 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-{"symbol":"OMXSTO:ISOFOL","width":"100%","isTransparent":true,"colorTheme":"dark","locale":"sv"}
+{"symbol":"OMXSTO:ISOFOL","width":"100%","isTransparent":false,"colorTheme":"dark","locale":"sv"}
 </script></div></div><a href="https://www.tradingview.com/symbols/OMXSTO-ISOFOL/" target="_blank" rel="noopener noreferrer">TradingView · fördröjd börskurs ↗</a></div>
 <div class="stock-tile"><small>Antal aktier</small><strong>320 491 623</strong><a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet / FactSet ↗</a></div>
 <div class="stock-tile"><small>Ägare på Avanza</small><strong>9 277</strong><a href="https://www.borskollen.se/aktie/isofol-medical" target="_blank" rel="noopener noreferrer">Börskollen · avläst 12 nov ↗</a></div>
