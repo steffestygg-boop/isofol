@@ -1,161 +1,38 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Isofol Investor Tracker</title>
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isofol Medical – Milstolpar</title>
 <style>
-:root{--bg:#0b1220;--panel:#121d30;--panel2:#17243a;--line:#263750;--text:#edf3fb;--muted:#9eb0c8;--teal:#51d6c2;--blue:#77aaff;--amber:#f3c56b;--red:#ff8585;--green:#7cdaa0}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#0b1220,#101b2e 55%,#0b1423);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-.wrap{max-width:1180px;margin:auto;padding:32px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:26px}.brand{display:flex;align-items:center;gap:13px}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#45d5bf,#5e8ef8);display:grid;place-items:center;color:#071522;font-weight:900;font-size:21px}.eyebrow{color:var(--teal);font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:800}.top h1{font-size:27px;line-height:1.1;margin:3px 0}.sub{color:var(--muted);font-size:13px}.asof{border:1px solid var(--line);padding:8px 12px;border-radius:10px;color:var(--muted);font-size:12px}
-.hero{background:linear-gradient(120deg,rgba(34,83,104,.5),rgba(34,50,85,.45)),var(--panel);border:1px solid #31516a;border-radius:18px;padding:24px;margin-bottom:18px;display:grid;grid-template-columns:1.4fr .8fr;gap:24px}.hero h2{font-size:21px;margin:5px 0 9px}.hero p{color:#c2d0e1;margin:0;max-width:720px}.pill{display:inline-flex;padding:4px 9px;border-radius:99px;font-size:11px;font-weight:800;letter-spacing:.03em;background:#173b43;color:var(--teal);border:1px solid #28605e}.hero-stat{border-left:1px solid #416075;padding-left:22px;display:flex;flex-direction:column;justify-content:center}.big{font-size:34px;font-weight:850;letter-spacing:-.04em}.small{color:var(--muted);font-size:12px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.metric,.card{background:rgba(18,29,48,.92);border:1px solid var(--line);border-radius:15px;padding:17px}.metric .label{color:var(--muted);font-size:12px}.metric .value{font-size:23px;font-weight:800;margin:5px 0}.metric .note{font-size:11px;color:var(--muted)}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:30px 0 12px}.section-head h2{margin:0;font-size:19px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:12px}
-.grid{display:grid;grid-template-columns:1.25fr .75fr;gap:15px}.timeline{position:relative;padding-left:21px}.timeline:before{content:"";position:absolute;left:6px;top:8px;bottom:12px;width:2px;background:#2c405b}.event{position:relative;padding:0 0 19px 14px}.event:before{content:"";position:absolute;left:-20px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px #1a2b43}.event.done:before{background:var(--green)}.event.future:before{background:var(--amber)}.event .date{font-size:11px;color:var(--muted);font-weight:750;letter-spacing:.06em;text-transform:uppercase}.event h3{font-size:14px;margin:3px 0}.event p{font-size:12px;color:#b3c2d5;margin:0}.tag{display:inline-block;margin-top:7px;padding:2px 7px;border-radius:6px;background:#1d2d45;color:#b9c9de;font-size:10px}
-.filters{display:flex;gap:7px;flex-wrap:wrap}.filters button,.tabs button{border:1px solid var(--line);background:#111d30;color:#c6d4e6;border-radius:8px;padding:7px 11px;font-size:12px;cursor:pointer}.filters button.active,.tabs button.active{background:#1b4650;color:var(--teal);border-color:#32736e}
-.stack{display:grid;gap:12px}.card h3{margin:0 0 8px;font-size:15px}.card p{margin:0;color:#b5c4d7;font-size:12px}.progress{height:7px;border-radius:10px;background:#25364f;margin:12px 0 6px;overflow:hidden}.progress span{display:block;height:100%;background:linear-gradient(90deg,#43cdb9,#6a9cf7);width:76%}
-.kv{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:9px 0;font-size:12px}.kv:first-of-type{margin-top:9px}.kv span:first-child{color:var(--muted)}.kv strong{text-align:right}
-.callout{border-left:3px solid var(--amber);padding:10px 12px;background:#29291f;border-radius:0 9px 9px 0;color:#e8d9b4;font-size:12px;margin-top:12px}
-.news{display:grid;grid-template-columns:1fr 1fr;gap:12px}.news a{color:var(--teal);text-decoration:none;font-size:12px}.news a:hover{text-decoration:underline}.news .date{font-size:10px;color:var(--muted);margin-bottom:5px}
-.tabs{display:flex;gap:7px;margin:10px 0 14px}.scenario{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.scenario .metric{padding:14px}.scenario .value{font-size:19px}
-footer{margin-top:28px;padding-top:17px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
-a{color:var(--teal)}.muted{color:var(--muted)}.hide{display:none}
-@media(max-width:800px){.hero,.grid{grid-template-columns:1fr}.hero-stat{border-left:0;border-top:1px solid #416075;padding:15px 0 0}.metrics{grid-template-columns:repeat(2,1fr)}.news{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.scenario{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header class="top">
- <div class="brand"><div class="logo">I</div><div><div class="eyebrow">Investor tracker</div><h1>Isofol Medical</h1><div class="sub">Arfolitixorin · Klinisk utveckling · Kapital & värdering</div></div></div>
- <div class="asof">Senast uppdaterad: 12 november 2026</div>
-</header>
-
-<section class="hero">
- <div><span class="pill">FAS Ib/II · mCRC</span><h2>Arfolitixorin går mot avslutad doseskalering</h2>
- <p>Bolaget uppger att man befinner sig i slutfasen av fas Ib och förbereder fas II. I uppdateringen den 10 november rapporterades sjukdomskontroll hos samtliga utvärderade patienter, tumörminskning hos en klar majoritet och att fem av tio behandlade patienter bedömts kunna bli kandidater för tumörkirurgi.</p></div>
- <div class="hero-stat"><div class="small">Patienter som bedömts som operationskandidater</div><div class="big">5 av 10</div><div class="small">Bolagets preliminära, öppna studieuppgifter · inte bevisad behandlingseffekt</div></div>
-</section>
-
-<section class="metrics">
- <div class="metric"><div class="label">Högsta dosnivå</div><div class="value">500 mg/m²</div><div class="note">Fas Ib, doseskalering</div></div>
- <div class="metric"><div class="label">Behandlade patienter</div><div class="value">10</div><div class="note">Samtliga dosnivåer</div></div>
- <div class="metric"><div class="label">Dosbegränsande toxicitet</div><div class="value">0 rapporterade</div><div class="note">Hittills i studien</div></div>
- <div class="metric"><div class="label">TO2 teckningsperiod</div><div class="value">16–30 nov</div><div class="note">2026</div></div>
-</section>
-
-<div class="section-head"><div><h2>Utvecklingsöversikt</h2><p>Separera vad som har hänt från vad som ännu är planerat.</p></div></div>
-<div class="grid">
- <section class="card">
-  <h3>Klinisk tidslinje</h3>
-  <div class="filters" role="group" aria-label="Filtrera tidslinje">
-   <button class="active" data-filter="all">Alla</button><button data-filter="done">Genomfört</button><button data-filter="ongoing">Pågående</button><button data-filter="future">Kommande</button>
-  </div>
-  <div class="timeline" id="timeline" style="margin-top:18px">
-   <div class="event done" data-status="done"><div class="date">2026 · 15 april</div><h3>Optimerad studiedesign godkänd</h3><p>Bolaget meddelade att fas Ib/II-designen optimerats efter nytt regulatoriskt godkännande.</p><span class="tag">Studiedesign</span></div>
-   <div class="event done" data-status="done"><div class="date">2026 · 8 juli</div><h3>Sista planerade doskohorten initierad</h3><p>Bolaget gick vidare till den högsta planerade dosnivån 500 mg/m².</p><span class="tag">Fas Ib</span></div>
-   <div class="event done" data-status="done"><div class="date">2026 · 10 november</div><h3>Uppdatering: 10 patienter behandlade</h3><p>Sjukdomskontroll hos samtliga utvärderade; tumörminskning hos en klar majoritet. Fem bedömdes kunna bli kandidater för tumörresektion. En patient fick senare progress efter initial respons och stabil sjukdom.</p><span class="tag">Kliniska data</span></div>
-   <div class="event ongoing" data-status="ongoing"><div class="date">November 2026</div><h3>Slutföra högsta dosnivån</h3><p>Tre patienter hade inkluderats på 500 mg/m² och ytterligare tre återstod enligt uppdateringen 10 november.</p><span class="tag">Fas Ib · 500 mg/m²</span></div>
-   <div class="event future" data-status="future"><div class="date">Nästa kliniska steg · datum ej fastställt</div><h3>Säkerhetskommitténs rekommendation och dosval</h3><p>Efter säkerhetsutvärderingen kan kommittén rekommendera dosnivåer för fas II.</p><span class="tag">Beslutspunkt</span></div>
-   <div class="event future" data-status="future"><div class="date">Planerat</div><h3>Utökad fas II-rekrytering</h3><p>Planerad expansion till 15–20 kliniker i Tyskland, Spanien, Österrike och Grekland.</p><span class="tag">Fas II · Europa</span></div>
-   <div class="event future" data-status="future"><div class="date">Parallellt · planerat</div><h3>Japansk bryggstudie via Solasia</h3><p>Solasia ska rekrytera patienter i Japan i en parallell bryggstudie enligt bolagets kommunikation.</p><span class="tag">Japan · Solasia</span></div>
-  </div>
- </section>
-
- <aside class="stack">
-  <div class="card"><h3>Fas Ib – nuläge</h3><p>Dosoptimering i patienter med RAS-muterad metastaserad kolorektalcancer.</p><div class="progress"><span></span></div><div class="kv"><span>Högsta dos</span><strong>500 mg/m²</strong></div><div class="kv"><span>Inkluderade på högsta dosen</span><strong>3 av 6</strong></div><div class="kv"><span>Dosbegränsande toxicitet</span><strong>Ingen rapporterad</strong></div><div class="callout">Fas Ib är inte färdig förrän säkerhetsutvärdering och dosrekommendation är klara.</div></div>
-  <div class="card"><h3>Fas II – planerad struktur</h3><p>Bolaget har kommunicerat expansion till fler kliniker och länder. Exakt startdatum, rekryteringstakt och fullständigt protokoll ska följas när de offentliggörs.</p><div class="kv"><span>Europa</span><strong>15–20 kliniker</strong></div><div class="kv"><span>Länder</span><strong>DE · ES · AT · GR</strong></div><div class="kv"><span>Japan</span><strong>Bryggstudie via Solasia</strong></div></div>
-  <div class="card"><h3>Viktigt att bevaka vetenskapligt</h3><p>De preliminära resultaten är från en liten, öppen patientgrupp. De är intressanta signaler men kan inte ensamma fastställa effekt eller jämförande nytta mot leukovorin.</p></div>
- </aside>
-</div>
-
-<div class="section-head"><div><h2>Kapital & TO2</h2><p>Villkor enligt tidigare kommunicerat optionsprogram.</p></div></div>
-<div class="grid">
- <div class="card"><h3>TO2 – teckningsfönster</h3><div class="big" style="font-size:26px">16–30 november 2026</div><p>Teckningskursen motsvarar 70 % av volymvägd genomsnittskurs under 2–13 november 2026, med golv och tak.</p><div class="kv"><span>Prisgolv</span><strong>0,48 kr</strong></div><div class="kv"><span>Pristak</span><strong>1,60 kr</strong></div><div class="kv"><span>Beräkningsmodell</span><strong>70 % av VWAP</strong></div><div class="callout">Kontrollera alltid slutligt lösenpris och fullständiga villkor i bolagets emissionsmeddelande innan beslut.</div></div>
- <div class="card"><h3>TO2 – räkneexempel</h3><p>Ungefärligt kapitalbehov om 61 724 optioner utnyttjas. Detta är ett beräkningsstöd, inte en order eller rekommendation.</p><div class="kv"><span>Vid 0,48 kr</span><strong>29 627,52 kr</strong></div><div class="kv"><span>Vid 1,00 kr</span><strong>61 724 kr</strong></div><div class="kv"><span>Vid 1,60 kr</span><strong>98 758,40 kr</strong></div><p class="muted" style="margin-top:8px">Antalet 58 672 är ett tidigare uppgivet innehav av TO2-optioner och bör uppdateras om det ändrats.</p></div>
-</div>
-
-<div class="section-head"><div><h2>Värderingsscenarier</h2><p>Historiska analysscenarier – inte aktuella riktkurser eller prognoser.</p></div></div>
-<div class="card">
- <div class="scenario">
-  <div class="metric"><div class="label">ABG · misslyckande</div><div class="value">0,10 kr/aktie</div><div class="note">Äldre scenario</div></div>
-  <div class="metric"><div class="label">ABG · 20 % framgång</div><div class="value">1,60 kr/aktie</div><div class="note">Äldre scenario</div></div>
-  <div class="metric"><div class="label">ABG · full framgång</div><div class="value">10,50 kr/aktie</div><div class="note">Äldre scenario</div></div>
- </div>
- <p style="margin-top:12px">Även Redeyes tidigare Base Case på 1,9 kr/aktie har förekommit i vår historiska analys. Samtliga värden behöver räknas om mot aktuell aktiestock, finansiering, studiedata och sannolikheter innan de används som beslutsunderlag.</p>
-</div>
-
-<div class="section-head"><div><h2>Klinisk bevakning · automatiska signaler</h2><p>Nyhetsrubriker sorteras automatiskt efter ämne. En signal är inte en bekräftad milstolpe.</p></div></div>
-<div class="grid" style="margin-bottom:16px">
- <div class="card"><h3>Bekräftade milstolpar</h3><div class="timeline">
-  <div class="event done"><div class="date">8 juli 2026</div><h3>Högsta doskohorten inledd</h3><p>Efter säkerhetsgranskning inleddes dosnivån 500 mg/m². <a href="https://isofolmedical.com/news-press/" target="_blank" rel="noopener noreferrer">Källa: Isofol</a></p></div>
-  <div class="event done"><div class="date">10 november 2026</div><h3>Interimsdata från fas Ib</h3><p>Tio patienter behandlade; inga dosbegränsande biverkningar rapporterade. Fem bedömdes kunna bli aktuella för tumörkirurgi. Små, preliminära data utan kontrollgrupp. <a href="https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe" target="_blank" rel="noopener noreferrer">Källa: bolagets pressmeddelande</a></p></div>
-  <div class="event future"><div class="date">Kommande · datum ej bekräftat</div><h3>Avslutad fas Ib och dosbeslut</h3><p>Inväntar slutförd säkerhetsutvärdering och rekommendation om dos till fas II.</p></div>
-  <div class="event future"><div class="date">Planerad · datum ej bekräftat</div><h3>Fas II och japansk bryggstudie</h3><p>Planerad utvidgning till 15–20 center i fyra europeiska länder samt parallell rekrytering i Japan. Inte samma sak som att rekrytering har startat.</p></div>
- </div></div>
- <div class="card"><h3>Nya möjliga kliniska händelser</h3><p class="muted">Identifieras dagligen bland nyhetsrubriker. Klicka vidare till originalkällan innan slutsatser dras.</p><p id="clinical-status" class="muted">Kontrollerar nyhetsflödet…</p><div id="clinical-signals" class="news"></div><p class="small" style="margin-top:12px">Automatiken ändrar aldrig status på de bekräftade milstolparna. Det kräver kontroll av bolagets originalinformation.</p></div>
-</div>
-<div class="section-head"><div><h2>Automatiskt nyhetsflöde</h2><p>Rubriker hämtas dagligen från Google News. De är sökträffar, inte verifierade kliniska händelser.</p></div></div>
-<div class="card" style="margin-bottom:14px"><p id="feed-status">Nyhetsflödet laddas…</p><div id="live-news" class="news"></div></div>
-<div class="section-head"><div><h2>Nyheter & källor</h2><p>Klicka för att läsa originalinformationen.</p></div></div>
-<div class="news">
- <div class="card"><div class="date">10 NOVEMBER 2026</div><h3>Ny uppdatering från fas Ib/II</h3><p>10 patienter behandlade, fem operationskandidater, inga rapporterade dosbegränsande biverkningar.</p><a href="https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe" target="_blank" rel="noopener">Läs pressmeddelandet ↗</a></div>
- <div class="card"><div class="date">12 NOVEMBER 2026</div><h3>Delårsrapport januari–september 2026</h3><p>Bolaget beskriver slutfasen av fas Ib och förberedelser inför fas II.</p><a href="https://isofolmedical.com/news-press/" target="_blank" rel="noopener">Bolagets pressmeddelanden ↗</a></div>
- <div class="card"><div class="date">13 OKTOBER 2026</div><h3>Investor & Scientific Update</h3><p>Vetenskaplig uppdatering med huvudprövare Sebastian Stintzing och farmakologiexpert Frits Peters.</p><a href="https://view.news.eu.nasdaq.com/view?id=b56cb9ca1ad3440ef691f6cc8f67b2a26&lang=en&src=listed" target="_blank" rel="noopener">Läs inbjudan ↗</a></div>
- <div class="card"><div class="date">LÖPANDE</div><h3>Isofol – investerarsida</h3><p>Bolagets officiella investerarinformation, rapporter och kommande evenemang.</p><a href="https://isofolmedical.com/" target="_blank" rel="noopener">Öppna Isofol ↗</a></div>
-</div>
-
-<footer>
-<strong>Viktig information:</strong> Detta är en privat, fristående investeraröversikt och inte en officiell Isofol-sida. Uppgifter är sammanställda från bolagets offentliggjorda information och tidigare analysantaganden. Kliniska data är preliminära; värderingsscenarier är historiska. Kontrollera alltid originalkällor. Nyhetsrubriker kan uppdateras automatiskt efter publicering via GitHub Actions. Tidslinje, kliniska KPI:er och värderingar uppdateras inte automatiskt.
-</footer>
-</div>
-<script>
-(async()=>{
- const status=document.getElementById('feed-status'), target=document.getElementById('live-news');
- try {
-  const res=await fetch('./data/news.json',{cache:'no-store'});
-  if(!res.ok) throw new Error('HTTP '+res.status);
-  const data=await res.json();
-  if(!data.items?.length){status.textContent='Inga automatiska rubriker ännu. Flödet fylls efter första lyckade körningen på GitHub.';document.getElementById('clinical-status').textContent='Inga nyhetssignaler tillgängliga ännu.';return;}
-  status.textContent='Senast hämtat: '+new Date(data.updated_at).toLocaleString('sv-SE')+' · '+data.items.length+' rubriker · kontrollera alltid originalkällan.';
-  const signalStatus=document.getElementById('clinical-status');
-  const signalTarget=document.getElementById('clinical-signals');
-  const topics=[
-    {name:'Fas Ib / säkerhet',rx:/phase i[b1]|fas i[b1]|dose|doskohort|safety|säkerhet|toxicit|tolerab/i},
-    {name:'Fas II / rekrytering',rx:/phase ii|fas ii|recruit|rekryter|study site|studiecenter|clinical study|klinisk studie/i},
-    {name:'Japan / ISO-010',rx:/solasia|japan|iso-010|bridging|bryggstudie/i},
-    {name:'Resultat / effekt',rx:/arfolitixorin|tumou?r|tumör|response|respons|efficacy|effekt|surgery|kirurg/i}
-  ];
-  let signalCount=0;
-  for(const item of data.items){
-   if(!/^https:\/\//.test(item.url)) continue;
-   const matches=topics.filter(t=>t.rx.test(item.title));
-   if(!matches.length || signalCount>=8) continue;
-   const el=document.createElement('div');el.className='card';
-   const type=document.createElement('div');type.className='date';type.textContent=matches.map(t=>t.name).join(' · ')+' · '+(item.date||'datum saknas');
-   const h=document.createElement('h3');h.textContent=item.title;
-   const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Granska originalnyheten ↗';
-   el.append(type,h,a);signalTarget.append(el);signalCount++;
-  }
-  signalStatus.textContent=signalCount?signalCount+' möjliga kliniska nyhetssignaler hittades (ej verifierade).':'Inga nya kliniska signaler bland de senaste rubrikerna.';
-  for(const item of data.items){
-   if(!/^https:\/\//.test(item.url)) continue;
-   const card=document.createElement('div');card.className='card';
-   const date=document.createElement('div');date.className='date';date.textContent=[item.date,item.source].filter(Boolean).join(' · ');
-   const h=document.createElement('h3');h.textContent=item.title;
-   const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Läs nyheten ↗';
-   card.append(date,h,a);target.append(card);
-  }
- }catch(e){status.textContent='Automatiska nyheter kunde inte laddas. Se de manuella källorna nedan.';document.getElementById('clinical-status').textContent='Kunde inte läsa nyhetssignaler.';}
-})();
-
-document.querySelectorAll('[data-filter]').forEach(btn=>{
- btn.addEventListener('click',()=>{
-  document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const f=btn.dataset.filter;
-  document.querySelectorAll('.event').forEach(e=>{
-   e.classList.toggle('hide',f!=='all' && e.dataset.status!==f);
-  });
- });
-});
-</script>
-</body></html>
+:root{color-scheme:light;--ink:#192d3c;--muted:#71818b;--teal:#008c8c;--line:#e4e9ec;--bg:#f5f7f8;--green:#2d9871;--amber:#c78a36}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:var(--teal)}.wrap{max-width:1120px;margin:auto;padding:42px 22px 80px}
+header{text-align:center;padding:24px 0 35px}header h1{font-size:clamp(29px,4vw,44px);font-weight:750;letter-spacing:-.045em;margin:0 0 6px}header p{font-size:16px;color:var(--muted);margin:0}
+.controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin:0 0 24px}.controls button{cursor:pointer;border:1px solid #d5dfe3;border-radius:8px;background:white;color:#4e6370;padding:9px 16px;font-weight:650;font-size:14px}.controls button.active{background:var(--teal);color:white;border-color:var(--teal)}.controls .divider{width:1px;height:25px;background:#cbd6dc;margin:0 8px}
+.legend{display:flex;justify-content:center;gap:22px;color:#647781;font-size:13px;margin-bottom:28px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;background:var(--green)}.dot.future{background:var(--amber)}
+.timeline{max-width:940px;margin:0 auto 44px;position:relative}.timeline:before{content:"";position:absolute;left:50%;top:10px;bottom:10px;width:3px;background:#dce4e7;transform:translateX(-50%)}
+.entry{width:50%;padding:0 35px 22px;position:relative}.entry:nth-child(even){margin-left:50%}.entry:before{content:"";position:absolute;top:24px;right:-7px;width:14px;height:14px;border-radius:50%;background:var(--green);border:3px solid var(--bg);z-index:1}.entry:nth-child(even):before{left:-7px;right:auto}.entry.future:before{background:var(--amber)}
+.card{background:white;border:1px solid var(--line);border-radius:11px;padding:20px 21px;box-shadow:0 3px 14px rgba(23,49,61,.045)}.date{font-size:12px;letter-spacing:.055em;text-transform:uppercase;font-weight:750;color:var(--teal)}.future .date{color:#a77732}.card h3{font-size:17px;line-height:1.35;margin:6px 0 8px}.card p{font-size:13px;color:#586c78;margin:0}.card a{display:inline-block;font-size:12px;margin-top:10px}.chip{font-size:11px;display:inline-block;border-radius:5px;background:#e9f4f3;color:#087e7b;padding:3px 7px;margin-top:11px;font-weight:700}.empty{text-align:center;color:var(--muted);display:none}
+h2.section{font-size:22px;margin:45px 0 13px;text-align:center;letter-spacing:-.025em}.desc{text-align:center;color:var(--muted);font-size:13px;margin:-7px 0 20px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid .card{height:100%}.grid .card h3{font-size:15px}.status{color:var(--muted);font-size:12px;text-align:center;margin-bottom:16px}.news{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.news .card{padding:16px}.news h3{font-size:14px}.news small{color:var(--muted)}footer{margin-top:55px;padding-top:24px;border-top:1px solid #dce5e8;color:#75858f;font-size:12px;text-align:center}
+@media(max-width:700px){.wrap{padding:22px 13px 60px}.timeline:before{left:10px}.entry,.entry:nth-child(even){width:100%;margin-left:0;padding:0 0 15px 32px}.entry:before,.entry:nth-child(even):before{left:3px;right:auto}.grid,.news{grid-template-columns:1fr}.controls .divider{display:none}.controls button{padding:8px 11px}.card{padding:16px}}
+</style></head><body><div class="wrap">
+<header><h1>Isofol Medical – Milstolpar</h1><p>Levererade milstolpar och kommande triggers för arfolitixorin</p></header>
+<nav class="controls" aria-label="Filtrera milstolpar"><button data-period="all" class="active">Allt</button><button data-period="done">Historik</button><button data-period="future">Framåt</button><span class="divider"></span><button data-track="all" class="active">Alla spår</button><button data-track="arfo">Arfolitixorin</button><button data-track="japan">Japan / ISO-010</button><button data-track="company">Företaget</button></nav>
+<div class="legend"><span><i class="dot"></i>Levererad</span><span><i class="dot future"></i>Kommande / planerad</span></div>
+<main class="timeline" id="timeline">
+<div class="entry done" data-track="arfo"><article class="card"><div class="date">13 oktober 2026</div><h3>Investor & Scientific Update</h3><p>Vetenskaplig genomgång med forskare och experter kring arfolitixorin och studiedesignen.</p><span class="chip">Arfolitixorin</span><div><a href="https://isofolmedical.com/news-press/" target="_blank" rel="noopener noreferrer">Bolagets pressinformation ↗</a></div></article></div>
+<div class="entry done" data-track="arfo"><article class="card"><div class="date">10 november 2026</div><h3>Preliminär uppdatering från fas Ib/II</h3><p>Bolaget rapporterade att tio patienter behandlats, utan rapporterade dosbegränsande biverkningar. Fem bedömdes vara potentiella kandidater för kirurgi. Resultaten är preliminära.</p><span class="chip">Arfolitixorin</span><div><a href="https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe" target="_blank" rel="noopener noreferrer">Läs pressmeddelandet ↗</a></div></article></div>
+<div class="entry done" data-track="company"><article class="card"><div class="date">November 2026</div><h3>Delårsrapport för januari–september</h3><p>Bolaget redovisar utvecklingen och förberedelserna inför kommande kliniska steg.</p><span class="chip">Företaget</span><div><a href="https://isofolmedical.com/news-press/" target="_blank" rel="noopener noreferrer">Rapporter och pressmeddelanden ↗</a></div></article></div>
+<div class="entry future" data-track="arfo"><article class="card"><div class="date">Kommande · inget bekräftat datum</div><h3>Slutföra fas Ib och välja dos</h3><p>Fortsatt säkerhetsutvärdering och beslut om lämplig dos inför fas II. Markeras som levererad först när originalkälla bekräftar det.</p><span class="chip">Arfolitixorin</span></article></div>
+<div class="entry future" data-track="arfo"><article class="card"><div class="date">Planerad · inget bekräftat datum</div><h3>Fas II – behandlingsutvärdering</h3><p>Nästa kliniska steg med större patientunderlag. Start och tidsplan behöver bekräftas av bolaget.</p><span class="chip">Arfolitixorin</span></article></div>
+<div class="entry future" data-track="japan"><article class="card"><div class="date">Planerad · inget bekräftat datum</div><h3>ISO-010 / Japan</h3><p>Följ bryggstudien och Solasias arbete i Japan. Kommande resultat och rekryteringsbesked kräver källbekräftelse.</p><span class="chip">Japan / ISO-010</span></article></div>
+<div class="entry future" data-track="company"><article class="card"><div class="date">Framåt · datum ej fastställt</div><h3>Finansiering och kommersiella möjligheter</h3><p>Bevaka kapitalbehov, partnersamarbeten och licensdiskussioner. Inget avtal förutsätts vara klart.</p><span class="chip">Företaget</span></article></div>
+</main><p id="empty" class="empty">Inga milstolpar matchar filtren.</p>
+<h2 class="section">Automatisk klinisk bevakning</h2><p class="desc">Möjliga nyhetssignaler – inte automatiskt verifierade milstolpar.</p><p id="clinical-status" class="status">Läser senaste nyheterna…</p><div class="grid" id="signals"></div>
+<h2 class="section">Senaste Isofol-nyheterna</h2><p class="desc">Dagligen hämtade rubriker. Läs originalartikeln innan du drar slutsatser.</p><p id="news-status" class="status">Läser nyheter…</p><div class="news" id="news"></div>
+<h2 class="section">Analytiker-riktkurser</h2><p class="desc">Äldre värderingar är inte aktuella riktkurser och visas inte utan uppdaterad källkontroll.</p><div class="card" style="max-width:940px;margin:auto"><p>Här kan vi senare lägga till verifierade riktkurser med datum, analysinstitut och källa. Det är viktigt att justera för nyemissioner, optioner och ändrat antal aktier.</p></div>
+<footer>Denna sida är inte skapad av Isofol Medical AB utan är en privat sammanställning. Historiska uppgifter och framtida milstolpar måste kontrolleras mot bolagets officiella pressmeddelanden. Nyhetsrubriker uppdateras automatiskt; milstolparnas status gör det inte.</footer>
+</div><script>
+let period='all',track='all';
+function filter(){let count=0;document.querySelectorAll('.entry').forEach(e=>{const show=(period==='all'||e.classList.contains(period))&&(track==='all'||e.dataset.track===track);e.style.display=show?'':'none';if(show)count++});document.getElementById('empty').style.display=count?'none':'block'}
+document.querySelectorAll('[data-period]').forEach(b=>b.addEventListener('click',()=>{period=b.dataset.period;document.querySelectorAll('[data-period]').forEach(x=>x.classList.toggle('active',x===b));filter()}));
+document.querySelectorAll('[data-track]').forEach(b=>b.addEventListener('click',()=>{track=b.dataset.track;document.querySelectorAll('[data-track]').forEach(x=>x.classList.toggle('active',x===b));filter()}));
+(async()=>{const ns=document.getElementById('news-status'),cs=document.getElementById('clinical-status');try{const r=await fetch('./data/news.json',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();const items=d.items||[];ns.textContent=items.length?'Senast hämtat: '+new Date(d.updated_at).toLocaleString('sv-SE')+' · '+items.length+' rubriker':'Inga nyheter hämtade ännu.';const terms=/fas i|phase i|arfolitixorin|clinical|klinisk|dos|säkerhet|safety|recruit|rekryter|solasia|japan|iso-010|studie|study|tumör|tumor|resultat/i;let n=0;for(const item of items){if(!/^https:\/\//.test(item.url))continue;const card=document.createElement('article');card.className='card';const meta=document.createElement('small');meta.textContent=[item.date,item.source].filter(Boolean).join(' · ');const h=document.createElement('h3');h.textContent=item.title;const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Läs originalet ↗';card.append(meta,h,a);document.getElementById('news').append(card);if(terms.test(item.title)&&n<6){document.getElementById('signals').append(card.cloneNode(true));n++}}cs.textContent=n?n+' möjliga kliniska signaler hittades · ej verifierade':'Inga tydliga kliniska signaler i de senaste rubrikerna.'}catch(e){ns.textContent='Kunde inte läsa nyhetsflödet.';cs.textContent='Kunde inte läsa kliniska signaler.'}})();
+</script></body></html>
