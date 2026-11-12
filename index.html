@@ -1305,10 +1305,17 @@ function drawValuation(){
   const pts=set.data.map(([date,value])=>({date,value,xx:x(date),yy:y(value)}));
   const last=pts[pts.length-1];
   const extended=[...pts.map(p=>p.xx+','+p.yy),x(new Date(end).toISOString().slice(0,10))+','+last.yy];
-  add('polyline',{points:extended.join(' '),fill:'none',stroke:set.color,'stroke-width':2.5,'stroke-dasharray':'6 4','stroke-linejoin':'round'});
+  add('polyline',{points:extended.join(' '),fill:'none',stroke:set.color,'stroke-width':2.5,'stroke-dasharray':'6 4','stroke-linejoin':'round','pointer-events':'none'});
+  // An invisible wider line captures hover without obscuring the point markers.
+  const hoverLine=add('polyline',{points:extended.join(' '),fill:'none',stroke:'transparent','stroke-width':14,'pointer-events':'stroke'});
+  const lineTitle=document.createElementNS(NS,'title');
+  lineTitle.textContent=set.name+': senast publicerat '+last.value.toFixed(2).replace('.',',')+' kr ('+last.date+'). Linjen är visuellt förlängd, inte en ny värdering.';
+  hoverLine.append(lineTitle);
   for(const p of pts){
-   add('circle',{cx:p.xx,cy:p.yy,r:6,fill:'#141414',stroke:set.color,'stroke-width':3});
-   const tip=add('title',{},set.name+': '+p.value.toFixed(2).replace('.',',')+' kr ('+p.date+')');
+   const marker=add('circle',{cx:p.xx,cy:p.yy,r:7,fill:'#141414',stroke:set.color,'stroke-width':3});
+   const tip=document.createElementNS(NS,'title');
+   tip.textContent=set.name+': '+p.value.toFixed(2).replace('.',',')+' kr ('+p.date+')';
+   marker.append(tip);
   }
  }
  // Separate legend below the plot, matching the dark reference chart.
