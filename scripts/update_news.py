@@ -1,6 +1,8 @@
 """Fetch public Google News RSS headlines about Isofol; do not infer clinical milestones."""
 import datetime as dt
 import email.utils
+import html
+import re
 import json
 import pathlib
 import urllib.parse
@@ -21,6 +23,12 @@ for item in root.findall('./channel/item'):
     link = (item.findtext('link') or '').strip()
     published = (item.findtext('pubDate') or '').strip()
     source = (item.findtext('source') or '').strip()
+    raw_description = item.findtext('description') or ''
+    # Google News RSS descriptions often contain only a list of linked headlines.
+    # Never present those as a factual article summary.
+    description = html.unescape(re.sub(r'<[^>]+>', ' ', raw_description))
+    description = ' '.join(description.split())
+    summary = description if (len(description) >= 90 and title.casefold() not in description.casefold() and 'google news' not in description.casefold()) else ''
     if not title or not link or link in seen or 'isofol' not in title.casefold():
         continue
     seen.add(link)
@@ -28,7 +36,7 @@ for item in root.findall('./channel/item'):
         date = email.utils.parsedate_to_datetime(published).astimezone(dt.timezone.utc).date().isoformat()
     except Exception:
         date = ''
-    items.append({'title': title, 'url': link, 'date': date, 'source': source})
+    items.append({'title': title, 'url': link, 'date': date, 'source': source, 'summary': summary})
 items.sort(key=lambda item: item['date'], reverse=True)
 items = items[:16]
 if not items:
