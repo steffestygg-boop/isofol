@@ -5,7 +5,7 @@
 @media(max-width:700px){.wrap{padding:18px 13px 45px}.toolbar{margin-top:23px}.cards,.news{grid-template-columns:1fr}.timeline{min-width:1080px}.section{margin-top:30px}}
 .valuation{margin-top:20px;border-top:1px solid #343434;padding-top:18px}.valuation h2{font-size:15px;color:#a3a3a3;font-weight:650;margin:0 0 8px}.valuation svg{display:block;width:100%;height:auto;max-height:none;overflow:visible}.valuation .legend{display:flex;gap:18px;align-items:center;color:#aaa;font-size:12px;margin:10px 0 0;flex-wrap:wrap}.valuation .legend i{display:inline-block;width:24px;border-top:3px dashed #f0b82f;vertical-align:middle;margin-right:6px}.valuation .note{font-size:12px;color:#8d8d8d;margin-top:9px}</style></head><body><div class="wrap">
 <header><h1>Isofol Medical – Milstolpar</h1><p>Levererade milstolpar och kommande triggers</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">▤ Isofol sammanfattning ↗</a></header>
-<div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
+<div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
 </div></div>
@@ -734,11 +734,26 @@ const milestones=[
 const tracks=[['arfo','Arfolitixorin'],['japan','Japan / Solasia'],['company','Företaget']];
 const periods=["2008–17","2018–21","2022","2023","2024","2025","Q1 2026","Q2 2026","Q3 2026","Q4 2026","2027","2028+"];
 const tl=document.getElementById('timeline');
-let period='all';
+let period='relevant';
+// Aktuellt: genomförda milstolpar från senaste 12 månaderna och alla kommande.
+function isRecentMilestone(m){
+ if(m.status==='future')return true;
+ const cutoff=new Date();cutoff.setFullYear(cutoff.getFullYear()-1);
+ const months={januari:0,februari:1,mars:2,april:3,maj:4,juni:5,juli:6,augusti:7,september:8,oktober:9,november:10,december:11};
+ const match=(m.date||'').toLowerCase().match(/(20\\d{2})/);
+ if(!match)return false;
+ const year=Number(match[1]);
+ const month=Object.entries(months).find(([name])=>(m.date||'').toLowerCase().includes(name));
+ const quarter=m.col>=6&&m.col<=9?(m.col-6)*3:null;
+ const mon=month?month[1]:quarter!==null?quarter:0;
+ const dayMatch=(m.date||'').match(/^(\\d{1,2})\\s/);
+ const day=dayMatch?Number(dayMatch[1]):1;
+ return new Date(year,mon,day)>=cutoff;
+}
 const selected=new Set(tracks.map(x=>x[0]));
 function renderTimeline(){
  closeModal();
- const matches=milestones.filter(m=>selected.has(m.track)&&(period==='all'||m.status===period));
+ const matches=milestones.filter(m=>selected.has(m.track)&&(period==='all'||(period==='relevant'?isRecentMilestone(m):m.status===period)));
  const cols=[...new Set(matches.map(m=>m.col))].sort((a,b)=>a-b);
  const rows=tracks.filter(([key])=>matches.some(m=>m.track===key));
  tl.replaceChildren();
