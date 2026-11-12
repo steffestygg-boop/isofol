@@ -349,18 +349,155 @@ footer{
   background:#fff;
   border-radius:5px;
 }
+
+/* Aktieöversikt v2: one unified compact market board instead of five separate cards. */
+.stock-overview .market-heading{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+.stock-overview .market-exchange{
+  display:inline-flex;gap:8px;align-items:center;white-space:nowrap;
+  color:#a7bdce;font-size:11px;font-weight:700;letter-spacing:.01em;
+  padding:6px 10px;border:1px solid #385364;border-radius:7px;background:#213645;
+}
+.stock-overview .market-exchange:hover{color:#e2f4ff;text-decoration:none;background:#29475a}
+.stock-overview .market-board{
+  display:grid;
+  grid-template-columns:minmax(280px,1.55fr) minmax(170px,.93fr) minmax(210px,1.1fr) minmax(145px,.78fr);
+  margin-top:18px;border:1px solid #385162;border-radius:13px;
+  background:linear-gradient(130deg,#1c2c39 0%,#1a2936 100%);
+  box-shadow:0 2px 14px #07131e42 inset,0 1px 0 #ffffff0c;
+  overflow:hidden;
+}
+.stock-overview .market-quote{
+  padding:14px 16px 11px;
+  min-width:0;display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(145deg,#263e4c,#1d3441 75%);
+  border-right:1px solid #3c5663;
+}
+.stock-overview .market-quote-heading{
+  display:flex;align-items:center;justify-content:space-between;gap:9px;
+  font-size:11px;font-weight:700;color:#c5d4dc;
+  margin-bottom:5px;
+}
+.stock-overview .market-quote-heading a{
+  color:#88d9c5;white-space:nowrap;font-size:10px;font-weight:650;
+}
+.stock-overview .tv-quote{min-height:79px;width:100%;margin:0;overflow:hidden;border-radius:7px}
+.stock-overview .tradingview-widget-container{width:100%;min-height:78px}
+.stock-overview .tradingview-widget-container__widget{min-height:78px}
+.stock-overview .tradingview-widget-container iframe{
+  filter:invert(1) hue-rotate(180deg);background:#fff;border-radius:6px;
+}
+.stock-overview .market-metric{
+  min-width:0;min-height:128px;
+  padding:18px clamp(12px,1.35vw,21px) 14px;
+  border-right:1px solid #354756;
+  display:flex;flex-direction:column;align-items:flex-start;
+  justify-content:center;
+}
+.stock-overview .market-metric:last-child{border-right:0}
+.stock-overview .metric-label{
+  color:#91aabd;font-size:10px;font-weight:700;line-height:1.4;
+  text-transform:uppercase;letter-spacing:.065em;
+}
+.stock-overview .market-metric>strong{
+  display:block;margin:11px 0 8px;
+  color:#eff7fc;font-size:clamp(19px,1.5vw,25px);
+  font-weight:740;line-height:1.12;letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.stock-overview .market-metric strong small{font-size:13px;color:#aec5d5;font-weight:650}
+.stock-overview .market-metric a{
+  color:#75bddb;font-size:10px;font-weight:650;line-height:1.3;
+}
+.stock-overview .owner-pair{
+  display:grid;grid-template-columns:1fr 1fr;gap:15px;
+  width:100%;margin-top:10px;
+}
+.stock-overview .owner-pair>div{min-width:0}
+.stock-overview .owner-pair>div+div{padding-left:15px;border-left:1px solid #3c5060}
+.stock-overview .owner-pair strong{
+  display:block;margin:0 0 6px;font-size:clamp(18px,1.35vw,23px);
+  font-weight:735;line-height:1.15;letter-spacing:-.028em;
+  font-variant-numeric:tabular-nums;color:#eff7fc;white-space:nowrap;
+}
+.stock-overview .market-footline{
+  display:flex;align-items:baseline;justify-content:space-between;gap:9px 20px;
+  margin:10px 0 0;color:#93a9b9;font-size:10px;line-height:1.6;
+}
+.stock-overview .market-footline details{flex:0 0 auto;position:relative}
+.stock-overview .market-footline summary{
+  color:#a4d6e6;cursor:pointer;list-style:revert;font-weight:650;
+}
+.stock-overview .market-footline details[open]{
+  flex-basis:100%;flex-grow:1;
+  padding:10px 13px;border:1px solid #354f60;background:#1c2c39;
+  border-radius:8px;
+}
+.stock-overview .market-footline details p{margin:5px 0 0;max-width:950px;color:#b2c5d0}
+@media(max-width:1160px){
+ .stock-overview .market-board{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .stock-overview .market-quote{grid-column:1/-1;border-right:0;border-bottom:1px solid #3c5663}
+ .stock-overview .market-metric{grid-column:span 1}
+ .stock-overview .market-owners{grid-column:span 2}
+}
+@media(max-width:640px){
+ .stock-overview .market-board{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stock-overview .market-quote{grid-column:1/-1;padding:12px}
+ .stock-overview .market-metric{min-height:105px;padding:13px 12px}
+ .stock-overview .market-metric:nth-of-type(3){border-right:0}
+ .stock-overview .market-owners{
+   grid-column:1/-1;grid-row:3;
+   border-top:1px solid #354756;border-right:0;min-height:104px;
+ }
+ .stock-overview .market-metric:last-child{grid-column:2;grid-row:2;border-right:0}
+ .stock-overview .market-metric>strong{font-size:20px}
+ .stock-overview .owner-pair{margin-top:8px}
+ .stock-overview .market-footline{flex-wrap:wrap}
+}
+@media(max-width:350px){
+ .stock-overview .market-metric>strong{font-size:18px}
+ .stock-overview .owner-pair strong{font-size:19px}
+}
 </style></head><body><div class="wrap">
-<header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading"><p class="section-kicker"><span class="section-number">01</span> Aktieöversikt</p><h2 id="stock-heading">Aktien · ISOFOL</h2><div class="stock-grid">
-<div class="stock-tile stock-price-tile"><small>Aktiekurs · ISOFOL</small><div class="tv-quote" aria-label="Aktuell fördröjd kurs för Isofol Medical från TradingView">
-<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div>
-<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-{"symbol":"OMXSTO:ISOFOL","width":"100%","isTransparent":false,"colorTheme":"dark","locale":"sv"}
-</script></div></div><a href="https://www.tradingview.com/symbols/OMXSTO-ISOFOL/" target="_blank" rel="noopener noreferrer">TradingView · fördröjd börskurs ↗</a></div>
-<div class="stock-tile"><small>Antal aktier</small><strong>320 491 623</strong><a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet / FactSet ↗</a></div>
-<div class="stock-tile"><small>Ägare på Avanza</small><strong>9 277</strong><a href="https://www.borskollen.se/aktie/isofol-medical" target="_blank" rel="noopener noreferrer">Börskollen · avläst 12 nov ↗</a></div>
-<div class="stock-tile"><small>Ägare på Nordnet</small><strong>1 067</strong><a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet · avläst 12 nov ↗</a></div>
-<div class="stock-tile"><small>Anmäld blankning totalt</small><strong>0,10 %</strong><a href="https://www.fi.se/sv/vara-register/blankningsregistret/Positionsinnehavare/" target="_blank" rel="noopener noreferrer">FI · positionsdatum 4 nov ↗</a></div>
-</div><p class="stock-footnote">Aktiekursen laddas direkt från TradingView när sidan öppnas och kan vara fördröjd enligt Nasdaq Stockholms villkor. Övriga uppgifter avlästes 12 november 2026. Ägarantal avser respektive plattform och kan förändras. Blankning avser FI:s rapporterade korta nettopositioner, inte separata siffror för Avanza och Nordnet. <a href="https://www.avanza.se/aktier/om-aktien.html/716442/isofol-medical" target="_blank" rel="noopener noreferrer">Avanza ↗</a> · <a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet ↗</a></p></section><section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">02</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"></div></section>
+<header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
+  <div class="market-heading">
+    <div><p class="section-kicker"><span class="section-number">01</span> Aktieöversikt</p><h2 id="stock-heading">Aktien · ISOFOL</h2></div>
+    <a class="market-exchange" href="https://www.nasdaq.com/market-activity/stocks/isofol" target="_blank" rel="noopener noreferrer">Nasdaq Stockholm <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="market-board">
+    <div class="market-quote">
+      <div class="market-quote-heading"><span>Kurs · fördröjd marknadsdata</span><a href="https://www.tradingview.com/symbols/OMXSTO-ISOFOL/" target="_blank" rel="noopener noreferrer">TradingView ↗</a></div>
+      <div class="tv-quote" aria-label="Senaste tillgängliga fördröjda kurs för Isofol Medical från TradingView">
+        <div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {"symbol":"OMXSTO:ISOFOL","width":"100%","isTransparent":false,"colorTheme":"dark","locale":"sv"}
+        </script></div>
+      </div>
+    </div>
+    <div class="market-metric">
+      <span class="metric-label">Antal aktier</span>
+      <strong>320 491 623</strong>
+      <a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet / FactSet ↗</a>
+    </div>
+    <div class="market-metric market-owners">
+      <span class="metric-label">Aktieägare på plattformarna</span>
+      <div class="owner-pair">
+        <div><strong>9 277</strong><a href="https://www.borskollen.se/aktie/isofol-medical" target="_blank" rel="noopener noreferrer">Avanza ↗</a></div>
+        <div><strong>1 067</strong><a href="https://www.nordnet.se/aktier/kurser/isofol-medical-isofol-xsto" target="_blank" rel="noopener noreferrer">Nordnet ↗</a></div>
+      </div>
+    </div>
+    <div class="market-metric">
+      <span class="metric-label">Rapporterad blankning</span>
+      <strong>0,10 <small>%</small></strong>
+      <a href="https://www.fi.se/sv/vara-register/blankningsregistret/Positionsinnehavare/" target="_blank" rel="noopener noreferrer">Finansinspektionen ↗</a>
+    </div>
+  </div>
+  <div class="market-footline">
+    <span>Nyckeltalen är ögonblicksbilder från <time datetime="2026-11-12">12 nov 2026</time>. Kursen hämtas från TradingView vid sidöppning och kan vara fördröjd.</span>
+    <details><summary>Om uppgifterna</summary><p>Ägarantal avser respektive plattform och kan förändras. Blankning avser Finansinspektionens rapporterade korta nettopositioner, inte separata siffror för Avanza och Nordnet. Kursen kan vara fördröjd enligt Nasdaq Stockholms villkor.</p></details>
+  </div>
+</section><section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">02</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"></div></section>
 <section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">03</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
