@@ -29,8 +29,8 @@ for item in root.findall('./channel/item'):
     except Exception:
         date = ''
     items.append({'title': title, 'url': link, 'date': date, 'source': source})
-    if len(items) >= 16:
-        break
+items.sort(key=lambda item: item['date'], reverse=True)
+items = items[:16]
 if not items:
     raise RuntimeError('No RSS items returned; retaining prior data instead of publishing an empty list')
 output = {'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'feed': 'Google News RSS – search results, not independently verified', 'items': items}
