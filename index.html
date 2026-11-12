@@ -83,6 +83,16 @@ a{color:var(--teal)}.muted{color:var(--muted)}.hide{display:none}
  <p style="margin-top:12px">Även Redeyes tidigare Base Case på 1,9 kr/aktie har förekommit i vår historiska analys. Samtliga värden behöver räknas om mot aktuell aktiestock, finansiering, studiedata och sannolikheter innan de används som beslutsunderlag.</p>
 </div>
 
+<div class="section-head"><div><h2>Klinisk bevakning · automatiska signaler</h2><p>Nyhetsrubriker sorteras automatiskt efter ämne. En signal är inte en bekräftad milstolpe.</p></div></div>
+<div class="grid" style="margin-bottom:16px">
+ <div class="card"><h3>Bekräftade milstolpar</h3><div class="timeline">
+  <div class="event done"><div class="date">8 juli 2026</div><h3>Högsta doskohorten inledd</h3><p>Efter säkerhetsgranskning inleddes dosnivån 500 mg/m². <a href="https://isofolmedical.com/news-press/" target="_blank" rel="noopener noreferrer">Källa: Isofol</a></p></div>
+  <div class="event done"><div class="date">10 november 2026</div><h3>Interimsdata från fas Ib</h3><p>Tio patienter behandlade; inga dosbegränsande biverkningar rapporterade. Fem bedömdes kunna bli aktuella för tumörkirurgi. Små, preliminära data utan kontrollgrupp. <a href="https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe" target="_blank" rel="noopener noreferrer">Källa: bolagets pressmeddelande</a></p></div>
+  <div class="event future"><div class="date">Kommande · datum ej bekräftat</div><h3>Avslutad fas Ib och dosbeslut</h3><p>Inväntar slutförd säkerhetsutvärdering och rekommendation om dos till fas II.</p></div>
+  <div class="event future"><div class="date">Planerad · datum ej bekräftat</div><h3>Fas II och japansk bryggstudie</h3><p>Planerad utvidgning till 15–20 center i fyra europeiska länder samt parallell rekrytering i Japan. Inte samma sak som att rekrytering har startat.</p></div>
+ </div></div>
+ <div class="card"><h3>Nya möjliga kliniska händelser</h3><p class="muted">Identifieras dagligen bland nyhetsrubriker. Klicka vidare till originalkällan innan slutsatser dras.</p><p id="clinical-status" class="muted">Kontrollerar nyhetsflödet…</p><div id="clinical-signals" class="news"></div><p class="small" style="margin-top:12px">Automatiken ändrar aldrig status på de bekräftade milstolparna. Det kräver kontroll av bolagets originalinformation.</p></div>
+</div>
 <div class="section-head"><div><h2>Automatiskt nyhetsflöde</h2><p>Rubriker hämtas dagligen från Google News. De är sökträffar, inte verifierade kliniska händelser.</p></div></div>
 <div class="card" style="margin-bottom:14px"><p id="feed-status">Nyhetsflödet laddas…</p><div id="live-news" class="news"></div></div>
 <div class="section-head"><div><h2>Nyheter & källor</h2><p>Klicka för att läsa originalinformationen.</p></div></div>
@@ -104,8 +114,28 @@ a{color:var(--teal)}.muted{color:var(--muted)}.hide{display:none}
   const res=await fetch('./data/news.json',{cache:'no-store'});
   if(!res.ok) throw new Error('HTTP '+res.status);
   const data=await res.json();
-  if(!data.items?.length){status.textContent='Inga automatiska rubriker ännu. Flödet fylls efter första lyckade körningen på GitHub.';return;}
+  if(!data.items?.length){status.textContent='Inga automatiska rubriker ännu. Flödet fylls efter första lyckade körningen på GitHub.';document.getElementById('clinical-status').textContent='Inga nyhetssignaler tillgängliga ännu.';return;}
   status.textContent='Senast hämtat: '+new Date(data.updated_at).toLocaleString('sv-SE')+' · '+data.items.length+' rubriker · kontrollera alltid originalkällan.';
+  const signalStatus=document.getElementById('clinical-status');
+  const signalTarget=document.getElementById('clinical-signals');
+  const topics=[
+    {name:'Fas Ib / säkerhet',rx:/phase i[b1]|fas i[b1]|dose|doskohort|safety|säkerhet|toxicit|tolerab/i},
+    {name:'Fas II / rekrytering',rx:/phase ii|fas ii|recruit|rekryter|study site|studiecenter|clinical study|klinisk studie/i},
+    {name:'Japan / ISO-010',rx:/solasia|japan|iso-010|bridging|bryggstudie/i},
+    {name:'Resultat / effekt',rx:/arfolitixorin|tumou?r|tumör|response|respons|efficacy|effekt|surgery|kirurg/i}
+  ];
+  let signalCount=0;
+  for(const item of data.items){
+   if(!/^https:\/\//.test(item.url)) continue;
+   const matches=topics.filter(t=>t.rx.test(item.title));
+   if(!matches.length || signalCount>=8) continue;
+   const el=document.createElement('div');el.className='card';
+   const type=document.createElement('div');type.className='date';type.textContent=matches.map(t=>t.name).join(' · ')+' · '+(item.date||'datum saknas');
+   const h=document.createElement('h3');h.textContent=item.title;
+   const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Granska originalnyheten ↗';
+   el.append(type,h,a);signalTarget.append(el);signalCount++;
+  }
+  signalStatus.textContent=signalCount?signalCount+' möjliga kliniska nyhetssignaler hittades (ej verifierade).':'Inga nya kliniska signaler bland de senaste rubrikerna.';
   for(const item of data.items){
    if(!/^https:\/\//.test(item.url)) continue;
    const card=document.createElement('div');card.className='card';
@@ -114,7 +144,7 @@ a{color:var(--teal)}.muted{color:var(--muted)}.hide{display:none}
    const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Läs nyheten ↗';
    card.append(date,h,a);target.append(card);
   }
- }catch(e){status.textContent='Automatiska nyheter kunde inte laddas. Se de manuella källorna nedan.';}
+ }catch(e){status.textContent='Automatiska nyheter kunde inte laddas. Se de manuella källorna nedan.';document.getElementById('clinical-status').textContent='Kunde inte läsa nyhetssignaler.';}
 })();
 
 document.querySelectorAll('[data-filter]').forEach(btn=>{
