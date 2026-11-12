@@ -459,6 +459,12 @@ footer{
  .stock-overview .market-metric>strong{font-size:18px}
  .stock-overview .owner-pair strong{font-size:19px}
 }
+
+/* Interactive valuation events use the same details popover as timeline milestones. */
+.valuation-point{cursor:pointer;outline:none}
+.valuation-point:hover,.valuation-point:focus-visible{
+  stroke:#d7e5f5;stroke-width:1.5;fill:#ffffff12;
+}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -1298,11 +1304,11 @@ function drawValuation(){
  }
  add('text',{x:22,y:(T+B)/2,fill:'#666','font-size':13,transform:'rotate(-90 22 '+((T+B)/2)+')','text-anchor':'middle'},'SEK');
  const sets=[
-  {name:'Redeye',color:'#f0b82f',data:[['2025-06-17',1.7],['2026-08-25',1.7]]},
-  {name:'ABG',color:'#55a7ff',data:[['2026-01-15',1.6],['2026-02-24',1.8]]}
+  {name:'Redeye',color:'#f0b82f',data:[['2025-06-17',1.7,'Redeye återupptar bevakning'],['2026-08-25',1.7,'Redeye behåller 1,70 kr']]},
+  {name:'ABG',color:'#55a7ff',data:[['2026-01-15',1.6,'ABG inleder'],['2026-02-24',1.8,'ABG höjer']]}
  ];
  for(const set of sets){
-  const pts=set.data.map(([date,value])=>({date,value,xx:x(date),yy:y(value)}));
+  const pts=set.data.map(([date,value,milestoneTitle])=>({date,value,milestoneTitle,xx:x(date),yy:y(value)}));
   const last=pts[pts.length-1];
   const extended=[...pts.map(p=>p.xx+','+p.yy),x(new Date(end).toISOString().slice(0,10))+','+last.yy];
   add('polyline',{points:extended.join(' '),fill:'none',stroke:set.color,'stroke-width':2.5,'stroke-dasharray':'6 4','stroke-linejoin':'round','pointer-events':'none'});
@@ -1312,10 +1318,22 @@ function drawValuation(){
   lineTitle.textContent=set.name+': senast publicerat '+last.value.toFixed(2).replace('.',',')+' kr ('+last.date+'). Linjen är visuellt förlängd, inte en ny värdering.';
   hoverLine.append(lineTitle);
   for(const p of pts){
-   const marker=add('circle',{cx:p.xx,cy:p.yy,r:7,fill:'#141414',stroke:set.color,'stroke-width':3});
+   add('circle',{cx:p.xx,cy:p.yy,r:7,fill:'#141414',stroke:set.color,'stroke-width':3,'pointer-events':'none'});
+   // A larger invisible target makes points clickable on mobile and keyboard-accessible.
+   const hit=add('circle',{cx:p.xx,cy:p.yy,r:17,fill:'transparent',stroke:'transparent',
+    'stroke-width':1.5,'class':'valuation-point',role:'button',tabindex:0,
+    'aria-label':'Visa analys: '+set.name+', '+p.value.toFixed(2).replace('.',',')+' kr, '+p.date});
    const tip=document.createElementNS(NS,'title');
-   tip.textContent=set.name+': '+p.value.toFixed(2).replace('.',',')+' kr ('+p.date+')';
-   marker.append(tip);
+   tip.textContent=set.name+': '+p.value.toFixed(2).replace('.',',')+' kr ('+p.date+') · klicka för analys';
+   hit.append(tip);
+   const showDetails=()=>{
+    const milestone=milestones.find(m=>m.track==='company'&&m.title===p.milestoneTitle);
+    if(milestone)openModal(milestone,hit);
+   };
+   hit.addEventListener('click',showDetails);
+   hit.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetails()}
+   });
   }
  }
  // Separate legend below the plot, matching the dark reference chart.
@@ -1365,7 +1383,7 @@ function openModal(m,anchor){
 }
 function closeModal(){document.getElementById('modal').classList.remove('open');activeAnchor=null}
 document.getElementById('close').addEventListener('click',closeModal);
-document.addEventListener('pointerdown',e=>{if(activeAnchor&&!e.target.closest('.dialog')&&!e.target.closest('.milestone'))closeModal()});
+document.addEventListener('pointerdown',e=>{if(activeAnchor&&!e.target.closest('.dialog')&&!e.target.closest('.milestone')&&!e.target.closest('.valuation-point'))closeModal()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 window.addEventListener('resize',()=>{if(activeAnchor)positionDialog()});
 window.addEventListener('scroll',()=>{if(activeAnchor)positionDialog()},true);
