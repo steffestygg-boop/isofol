@@ -740,13 +740,13 @@ function isRecentMilestone(m){
  if(m.status==='future')return true;
  const cutoff=new Date();cutoff.setFullYear(cutoff.getFullYear()-1);
  const months={januari:0,februari:1,mars:2,april:3,maj:4,juni:5,juli:6,augusti:7,september:8,oktober:9,november:10,december:11};
- const match=(m.date||'').toLowerCase().match(/(20\\d{2})/);
+ const match=(m.date||'').toLowerCase().match(/(20\d{2})/);
  if(!match)return false;
  const year=Number(match[1]);
  const month=Object.entries(months).find(([name])=>(m.date||'').toLowerCase().includes(name));
  const quarter=m.col>=6&&m.col<=9?(m.col-6)*3:null;
  const mon=month?month[1]:quarter!==null?quarter:0;
- const dayMatch=(m.date||'').match(/^(\\d{1,2})\\s/);
+ const dayMatch=(m.date||'').match(/^(\d{1,2})\s/);
  const day=dayMatch?Number(dayMatch[1]):1;
  return new Date(year,mon,day)>=cutoff;
 }
