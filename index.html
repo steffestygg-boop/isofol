@@ -29,8 +29,43 @@ const milestones=[
 {track:'company',col:5,status:'done',title:'TO2-period',subtitle:'November 2026',date:'November 2026',body:'Teckningsoptionsperioden är en historisk kapitalhändelse. Kontrollera slutliga villkor och utfall i bolagets information.',url:source},
 {track:'company',col:7,status:'future',title:'Partner / finansiering',subtitle:'Ingen tidplan fastställd',date:'Framtid – datum ej bekräftat',body:'Eventuella partneravtal eller kapitalanskaffningar är osäkra. Detta är ett bevakningsområde, inte ett annonserat avtal.',url:source}
 ];
-const tracks=[['arfo','Arfolitixorin'],['japan','ISO-010 / Japan'],['company','Företaget']];const tl=document.getElementById('timeline');
-for(const [track,name] of tracks){const label=document.createElement('div');label.className='track-label '+track;label.textContent=name;label.dataset.track=track;tl.append(label);for(let col=0;col<9;col++){const cell=document.createElement('div');cell.className='cell';cell.dataset.track=track;for(const m of milestones.filter(x=>x.track===track&&x.col===col)){const btn=document.createElement('button');btn.className='milestone '+(m.status==='future'?'future':'done');btn.dataset.status=m.status;btn.innerHTML='<strong></strong><small></small>';btn.querySelector('strong').textContent=m.title;btn.querySelector('small').textContent=m.subtitle;btn.addEventListener('click',()=>openModal(m,btn));cell.append(btn)}tl.append(cell)}}
+const tracks=[['arfo','Arfolitixorin'],['japan','ISO-010 / Japan'],['company','Företaget']];
+const periods=['2024','2025','Q1 2026','Q2 2026','Q3 2026','Q4 2026','Q1 2027','2027','2028+'];
+const tl=document.getElementById('timeline');
+let period='all';
+const selected=new Set(tracks.map(x=>x[0]));
+function renderTimeline(){
+ closeModal();
+ const matches=milestones.filter(m=>selected.has(m.track)&&(period==='all'||m.status===period));
+ const cols=[...new Set(matches.map(m=>m.col))].sort((a,b)=>a-b);
+ const rows=tracks.filter(([key])=>matches.some(m=>m.track===key));
+ tl.replaceChildren();
+ const n=Math.max(cols.length,1);
+ tl.style.gridTemplateColumns='100px repeat('+n+', minmax(125px,1fr))';
+ tl.style.minWidth=Math.max(0,100+n*145)+'px';
+ const corner=document.createElement('div');tl.append(corner);
+ const axis=document.createElement('div');axis.className='axis';
+ axis.style.gridTemplateColumns='repeat('+n+',minmax(0,1fr))';
+ for(const col of cols){const tick=document.createElement('span');tick.textContent=periods[col];axis.append(tick)}
+ tl.append(axis);
+ for(const [track,name] of rows){
+  const label=document.createElement('div');label.className='track-label '+track;label.textContent=name;tl.append(label);
+  for(const col of cols){
+   const cell=document.createElement('div');cell.className='cell';
+   for(const m of matches.filter(x=>x.track===track&&x.col===col)){
+    const btn=document.createElement('button');btn.className='milestone '+m.status;
+    const title=document.createElement('strong');title.textContent=m.title;
+    const subtitle=document.createElement('small');subtitle.textContent=m.subtitle;
+    btn.append(title,subtitle);
+    btn.addEventListener('click',()=>openModal(m,btn));
+    cell.append(btn);
+   }
+   tl.append(cell);
+  }
+ }
+ document.querySelectorAll('.track').forEach(el=>el.classList.toggle('active',selected.has(el.dataset.track)));
+ document.querySelector('[data-track="all"]').classList.toggle('active',selected.size===3);
+}
 let activeAnchor=null;
 function positionDialog(){
  if(!activeAnchor)return;
@@ -63,7 +98,20 @@ document.addEventListener('pointerdown',e=>{if(activeAnchor&&!e.target.closest('
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 window.addEventListener('resize',()=>{if(activeAnchor)positionDialog()});
 window.addEventListener('scroll',()=>{if(activeAnchor)positionDialog()},true);
-let period='all';const selected=new Set(tracks.map(x=>x[0]));function filter(){document.querySelectorAll('.milestone').forEach(el=>{el.hidden=period!=='all'&&el.dataset.status!==period});document.querySelectorAll('.track-label,.cell').forEach(el=>{el.style.display=selected.has(el.dataset.track)?'':'none'});document.querySelectorAll('.track').forEach(el=>el.classList.toggle('active',selected.has(el.dataset.track)));document.querySelector('[data-track="all"]').classList.toggle('active',selected.size===3)}
-document.querySelectorAll('[data-period]').forEach(b=>b.addEventListener('click',()=>{period=b.dataset.period;document.querySelectorAll('[data-period]').forEach(x=>x.classList.toggle('active',x===b));filter()}));document.querySelectorAll('.track').forEach(b=>b.addEventListener('click',()=>{const t=b.dataset.track;if(selected.has(t)){if(selected.size>1)selected.delete(t)}else selected.add(t);filter()}));document.querySelector('[data-track="all"]').addEventListener('click',()=>{selected.clear();tracks.forEach(x=>selected.add(x[0]));filter()});
+document.querySelectorAll('[data-period]').forEach(b=>b.addEventListener('click',()=>{
+ period=b.dataset.period;
+ document.querySelectorAll('[data-period]').forEach(x=>x.classList.toggle('active',x===b));
+ renderTimeline();
+}));
+document.querySelectorAll('.track').forEach(b=>b.addEventListener('click',()=>{
+ const t=b.dataset.track;
+ if(selected.has(t)){if(selected.size>1)selected.delete(t)}
+ else selected.add(t);
+ renderTimeline();
+}));
+document.querySelector('[data-track="all"]').addEventListener('click',()=>{
+ selected.clear();tracks.forEach(x=>selected.add(x[0]));renderTimeline();
+});
+renderTimeline();
 (async()=>{const ns=document.getElementById('news-status'),cs=document.getElementById('clinical-status');try{const r=await fetch('./data/news.json',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();const items=d.items||[];ns.textContent=items.length?'Senast hämtat: '+new Date(d.updated_at).toLocaleString('sv-SE')+' · '+items.length+' rubriker':'Inga nyheter ännu.';const rx=/fas i|phase i|arfolitixorin|clinical|klinisk|dos|säkerhet|safety|recruit|rekryter|solasia|japan|iso-010|studie|study|tumör|tumor|resultat/i;let n=0;for(const item of items){if(!/^https:\/\//.test(item.url))continue;function card(){const c=document.createElement('article');c.className='news-card';const s=document.createElement('small');s.textContent=[item.date,item.source].filter(Boolean).join(' · ');const h=document.createElement('h3');h.textContent=item.title;const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Läs originalet ↗';c.append(s,h,a);return c}document.getElementById('news').append(card());if(rx.test(item.title)&&n<6){document.getElementById('signals').append(card());n++}}cs.textContent=n?n+' möjliga kliniska signaler – ej verifierade':'Inga tydliga kliniska signaler i de senaste rubrikerna.'}catch(e){ns.textContent='Kunde inte läsa nyhetsflödet.';cs.textContent='Kunde inte läsa kliniska signaler.'}})();
 </script></body></html>
