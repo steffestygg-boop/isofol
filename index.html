@@ -5,7 +5,7 @@
 @media(max-width:700px){.wrap{padding:18px 13px 45px}.toolbar{margin-top:23px}.cards,.news{grid-template-columns:1fr}.timeline{min-width:1080px}.section{margin-top:30px}}
 .valuation{margin-top:20px;border-top:1px solid #343434;padding-top:18px}.valuation h2{font-size:15px;color:#a3a3a3;font-weight:650;margin:0 0 8px}.valuation svg{display:block;width:100%;height:auto;max-height:350px}.valuation .legend{display:flex;gap:18px;align-items:center;color:#aaa;font-size:12px;margin:10px 0 0;flex-wrap:wrap}.valuation .legend i{display:inline-block;width:24px;border-top:3px dashed #f0b82f;vertical-align:middle;margin-right:6px}.valuation .note{font-size:12px;color:#8d8d8d;margin-top:9px}</style></head><body><div class="wrap">
 <header><h1>Isofol Medical – Milstolpar</h1><p>Levererade milstolpar och kommande triggers</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">▤ Isofol sammanfattning ↗</a></header>
-<div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">ISO-010 / Japan</button><button class="track active" data-track="company">Företaget</button></div></div>
+<div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
 </div></div>
@@ -125,7 +125,7 @@ const milestones=[
   "track": "japan",
   "col": 5,
   "status": "done",
-  "title": "Solasia / Japan",
+  "title": "Japan – Solasia",
   "subtitle": "Separat utvecklingsspår",
   "date": "Historiskt samarbete – aktuell status måste verifieras",
   "body": "Solasia är kopplat till den japanska utvecklingen och kommersialiseringen av arfolitixorin. Japanska regulatoriska krav och eventuella kompletterande studier måste bedömas separat från den europeiska studien. Viktiga framtida datapunkter är officiella studiedetaljer, regulatorisk återkoppling och kommersiella villkor. Denna bakgrundshändelse är inte ett påstående om att en ny japansk studie nyligen startat.",
@@ -137,13 +137,13 @@ const milestones=[
   ]
  },
  {
-  "track": "japan",
+  "track": "arfo",
   "col": 6,
   "status": "future",
-  "title": "ISO-010 – studiedata",
-  "subtitle": "Europeisk studiebevakning",
+  "title": "ISO-CC-010 – nästa studiedata",
+  "subtitle": "Fas Ib/II · kohorter och dos",
   "date": "Kommande – datum ej verifierat",
-  "body": "ISO-010 och det japanska Solasia-spåret är inte samma studie. Här bevakas framför allt nya uppgifter om ISO-010:s kohorter, dosering, säkerhet och övergång till nästa studiedel. Enskilda kohortbesked behöver sättas i relation till hur många patienter som faktiskt utvärderats och om dosbeslut är formellt fattade. Den illustrativa placeringen innebär inte att en viss kohort kommer vara klar detta kvartal.",
+  "body": "ISO-CC-010 är den kliniska fas Ib/II-studien av arfolitixorin och hör till Arfolitixorin-spåret, inte till Japan/Solasia. Här bevakas nya uppgifter om doskohorter, säkerhet, tolerabilitet, rekrytering och övergång till fas II. Datumet på tidslinjen är illustrativt tills bolaget bekräftar en tidsplan.",
   "url": "https://isofolmedical.com/news-press/",
   "keywords": [
    "iso-010",
@@ -220,11 +220,69 @@ const milestones=[
    "finansiering",
    "emission"
   ]
+ },
+ {
+  "track": "company",
+  "col": 1,
+  "status": "done",
+  "title": "Redeye inleder",
+  "subtitle": "Base Case 1,70 kr",
+  "date": "17 juni 2025",
+  "body": "Redeye inledde uppdragsbevakning av Isofol med ett motiverat värde (Base Case) på 1,70 kronor per aktie. Analysen utgick från dåvarande utvecklingsplan, riskjusterade framtida möjligheter och den aktiestock som gällde vid analysen. Detta är inte en garanterad framtida aktiekurs. Vid jämförelse över tid bör emissioner, optioner och ändrade antaganden beaktas.",
+  "url": "https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617",
+  "keywords": [
+   "redeye",
+   "base case",
+   "fair value"
+  ]
+ },
+ {
+  "track": "company",
+  "col": 4,
+  "status": "done",
+  "title": "Redeye uppdaterar",
+  "subtitle": "Base Case 1,70 kr",
+  "date": "25 augusti 2026",
+  "body": "Efter Isofols rapport för andra kvartalet uppdaterade Redeye sin analys och angav fortsatt motiverat värde 1,70 kronor per aktie. Enligt referatet lyfte Redeye fram slutförda doskohorter utan dosbegränsande toxicitet och att högsta dosnivån påbörjats, samtidigt som rekryteringen innebar utmaningar. Det motiverade värdet var därmed oförändrat jämfört med bevakningsstarten i juni 2025.",
+  "url": "https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27",
+  "keywords": [
+   "redeye",
+   "base case",
+   "fair value"
+  ]
+ },
+ {
+  "track": "company",
+  "col": 2,
+  "status": "done",
+  "title": "ABG inleder",
+  "subtitle": "Base 1,60 kr",
+  "date": "15 januari 2026",
+  "body": "ABG Sundal Collier inledde uppdragsbevakning med tre scenarier: Bear Case 0,10 kr, riskjusterat Base Case 1,60 kr och Bull Case 10,50 kr per aktie. Basscenariot utgick från 20 procents sannolikhet för klinisk framgång och en riskjusterad kassaflödesmodell som inkluderade antagen framtida utspädning. Det är ett motiverat värde i en uppdragsanalys, inte en traditionell tolvmånadersriktkurs.",
+  "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second",
+  "keywords": [
+   "abg",
+   "scenario b",
+   "fair value"
+  ]
+ },
+ {
+  "track": "company",
+  "col": 2,
+  "status": "done",
+  "title": "ABG höjer",
+  "subtitle": "Base 1,60 → 1,80 kr",
+  "date": "24 februari 2026",
+  "body": "ABG höjde sitt riskjusterade basscenario från 1,60 till 1,80 kronor per aktie (+12,5 procent) efter de preliminära kliniska observationerna från sex utvärderingsbara patienter. Sannolikheten för klinisk framgång i modellen höjdes från 20 till 22,5 procent. Bear Case 0,10 kr och Bull Case 10,50 kr lämnades oförändrade. Patientunderlaget var litet och värderingen är en uppdragsanalys, inte en garanterad aktiekurs.",
+  "url": "https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224",
+  "keywords": [
+   "abg",
+   "scenario b",
+   "fair value"
+  ]
  }
-,{"track":"company","col":1,"status":"done","title":"Redeye inleder","subtitle":"Base Case 1,70 kr","date":"17 juni 2025","body":"Redeye inledde uppdragsbevakning av Isofol med ett motiverat värde (Base Case) på 1,70 kronor per aktie. Analysen utgick från dåvarande utvecklingsplan, riskjusterade framtida möjligheter och den aktiestock som gällde vid analysen. Detta är inte en garanterad framtida aktiekurs. Vid jämförelse över tid bör emissioner, optioner och ändrade antaganden beaktas.","url":"https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617","keywords":["redeye","base case","fair value"]},
-{"track":"company","col":4,"status":"done","title":"Redeye uppdaterar","subtitle":"Base Case 1,70 kr","date":"25 augusti 2026","body":"Efter Isofols rapport för andra kvartalet uppdaterade Redeye sin analys och angav fortsatt motiverat värde 1,70 kronor per aktie. Enligt referatet lyfte Redeye fram slutförda doskohorter utan dosbegränsande toxicitet och att högsta dosnivån påbörjats, samtidigt som rekryteringen innebar utmaningar. Det motiverade värdet var därmed oförändrat jämfört med bevakningsstarten i juni 2025.","url":"https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27","keywords":["redeye","base case","fair value"]},{"track":"company","col":2,"status":"done","title":"ABG inleder","subtitle":"Base 1,60 kr","date":"15 januari 2026","body":"ABG Sundal Collier inledde uppdragsbevakning med tre scenarier: Bear Case 0,10 kr, riskjusterat Base Case 1,60 kr och Bull Case 10,50 kr per aktie. Basscenariot utgick från 20 procents sannolikhet för klinisk framgång och en riskjusterad kassaflödesmodell som inkluderade antagen framtida utspädning. Det är ett motiverat värde i en uppdragsanalys, inte en traditionell tolvmånadersriktkurs.","url":"https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second","keywords":["abg","scenario b","fair value"]},
-{"track":"company","col":2,"status":"done","title":"ABG höjer","subtitle":"Base 1,60 → 1,80 kr","date":"24 februari 2026","body":"ABG höjde sitt riskjusterade basscenario från 1,60 till 1,80 kronor per aktie (+12,5 procent) efter de preliminära kliniska observationerna från sex utvärderingsbara patienter. Sannolikheten för klinisk framgång i modellen höjdes från 20 till 22,5 procent. Bear Case 0,10 kr och Bull Case 10,50 kr lämnades oförändrade. Patientunderlaget var litet och värderingen är en uppdragsanalys, inte en garanterad aktiekurs.","url":"https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224","keywords":["abg","scenario b","fair value"]}];
-const tracks=[['arfo','Arfolitixorin'],['japan','ISO-010 / Japan'],['company','Företaget']];
+];
+const tracks=[['arfo','Arfolitixorin'],['japan','Japan / Solasia'],['company','Företaget']];
 const periods=['2024','2025','Q1 2026','Q2 2026','Q3 2026','Q4 2026','Q1 2027','2027','2028+'];
 const tl=document.getElementById('timeline');
 let period='all';
