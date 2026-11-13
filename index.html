@@ -567,6 +567,12 @@ footer{
 .to2-latest-facts b{color:#f0cfa0}
 .to2-latest-links{display:flex;gap:10px 16px;flex-wrap:wrap;margin-top:12px}
 .to2-latest-links a{font-size:11px;color:#e7c28b;font-weight:700}
+
+.to2-scenario{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:11px}
+.to2-scenario>div{min-width:0;display:flex;flex-direction:column;gap:4px;background:#242a2b;border:1px solid #4e493d;border-radius:10px;padding:11px 14px}
+.to2-scenario span{font-size:10px;color:#ccb99e}
+.to2-scenario strong{font-size:16px;color:#f6f1e7;overflow-wrap:anywhere}
+@media(max-width:640px){.to2-scenario{grid-template-columns:1fr 1fr}.to2-scenario>div:last-child{grid-column:1/-1}}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -612,39 +618,45 @@ footer{
       <p class="section-kicker"><span class="section-number">02</span> Teckningsoptioner &amp; finansiering</p>
       <h2 id="to2-heading">ISOFOL TO2 <span class="to2-period">16–30 nov 2026</span></h2>
     </div>
-    <span id="to2-status" class="to2-status">Inför teckningsperioden</span>
+    <span id="to2-status" class="to2-status">Teckningskurs fastställd</span>
   </div>
   <div class="to2-grid">
     <div class="to2-result">
-      <span class="to2-caption">Uppskattat teckningspris</span>
-      <strong id="to2-price">0,97 <small>kr/aktie</small></strong>
-      <span class="to2-subtext">Scenario – INTE officiellt fastställt TO2-pris</span>
+      <span class="to2-caption">Fastställd teckningskurs</span>
+      <strong id="to2-price">0,95 <small>kr/aktie</small></strong>
+      <span class="to2-subtext">Officiellt fastställd 13 nov 2026 · VWAP cirka 1,35 kr</span>
     </div>
     <div class="to2-result">
-      <span class="to2-caption">Möjlig likvid vid 100 % utnyttjande</span>
-      <strong id="to2-proceeds">38,7 <small>miljoner kr</small></strong>
-      <span class="to2-subtext">Brutto före emissionskostnader · ej garanterat</span>
+      <span class="to2-caption">Beräknad bruttolikvid vid vald nyttjandegrad</span>
+      <strong id="to2-proceeds">37,9 <small>miljoner kr</small></strong>
+      <span class="to2-subtext">Vid 100 % utnyttjande, före kostnader · ej garanterat</span>
     </div>
     <div class="to2-input">
-      <label for="to2-vwap">Egen antagen VWAP 2–13 nov <span>(kr)</span></label>
-      <div class="to2-input-wrap"><input id="to2-vwap" type="number" value="1.384" min="0.01" max="20" step="0.001" inputmode="decimal" aria-describedby="to2-vwap-help"/><span>SEK</span></div>
-      <p id="to2-vwap-help">Startvärde: stängningskursen 11 nov (1,384 kr), <strong>inte</strong> periodens verkliga VWAP. Mätperioden slutar den 13 november; det exakta teckningspriset måste styrkas av ett officiellt besked.</p>
+      <label for="to2-take-up">Scenario: andel TO2 som utnyttjas <span>(%)</span></label>
+      <div class="to2-input-wrap"><input id="to2-take-up" type="number" value="100" min="0" max="100" step="5" inputmode="decimal" aria-describedby="to2-take-up-help"/><span>%</span></div>
+      <p id="to2-take-up-help">Ändra nyttjandegraden för att se hur mycket kapital Isofol kan tillföras. Utfallet blir känt först efter teckningsperioden.</p>
     </div>
   </div>
-  <div class="to2-latest" aria-label="Senast verifierade information om TO2">
- <div class="to2-latest-title"><span class="to2-latest-dot"></span> TO2 · senaste verifierade läget <small>Kontrollerat 13 nov 2026</small></div>
- <p><strong>Prissättningsperioden 2–13 november är avslutad.</strong> Det slutliga lösenpriset kräver bolagets bekräftade VWAP-beräkning och har <strong>inte kunnat verifieras i ett nytt officiellt besked den 13 november</strong>. Priset i kalkylen ovan är enbart ett eget antagande, inte Isofols fastställda teckningskurs.</p>
- <div class="to2-latest-facts"><span><b>16–30 november:</b> Teckningsperiod för TO2</span><span><b>1 TO2:</b> Rätt att teckna 1 ny aktie</span><span><b>Början av december:</b> Förväntat besked om faktiskt nyttjande</span></div>
- <p><b>Ny finansiell information:</b> Q3-rapporten den 12 november redovisade 98,1 miljoner kr i likvida medel per 30 september. TO2 kan förbättra finansieringsläget men ingen ännu okänd optionslikvid har räknats in i kassan eller emissionsbarometern.</p>
- <div class="to2-latest-links"><a href="https://isofolmedical.com/sv/investerare/teckningsoptioner-2026-serie-to2/" target="_blank" rel="noopener noreferrer">Isofols officiella TO2-sida ↗</a><a href="https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026" target="_blank" rel="noopener noreferrer">Q3-rapport 12 nov ↗</a><a href="https://isofolmedical.com/sv/nyheter-press/" target="_blank" rel="noopener noreferrer">Senaste pressmeddelanden ↗</a></div>
-</div>
-<div class="to2-details">
-    <span><strong>39 863 928</strong> utestående TO2</span>
-    <span><strong>1 TO2 = 1 aktie</strong></span>
-    <span><strong>70 % av VWAP</strong>, golv 0,48 kr · tak 1,60 kr</span>
-    <span><strong>Prissättning</strong> 2–13 nov</span>
+  <div class="to2-scenario">
+    <div><span>Nya aktier i scenariot</span><strong id="to2-new-shares">39 863 928</strong></div>
+    <div><span>Utspädning efter emissionen</span><strong id="to2-dilution">11,06 %</strong></div>
+    <div><span>Beräknad bruttolikvid</span><strong id="to2-gross">37,9 miljoner kr</strong></div>
   </div>
-  <p class="to2-footnote">Det officiella teckningspriset beräknas på VWAP för hela perioden 2–13 november och behöver verifieras mot Isofols prisbesked. Ett hypotetiskt exempel är inte en offentliggjord kurs. Full teckning förutsätter att alla TO2 utnyttjas. <a href="https://isofolmedical.com/sv/mfn_news/isofol-offentliggor-slutliga-villkor-i-foretradesemission-samt-for-en-potentiell-overtilldelningsemission/" target="_blank" rel="noopener noreferrer">Villkor ↗</a> · <a href="https://isofolmedical.com/sv/mfn_news/isofols-foretradesemission-overtecknad-utnyttjar-overtilldelning-till-japansk-samarbetspartner/" target="_blank" rel="noopener noreferrer">Antal optioner ↗</a></p>
+  <div class="to2-latest" aria-label="Officiellt TO2-besked 13 november 2026">
+    <div class="to2-latest-title"><span class="to2-latest-dot"></span> Officiellt prisbesked <small>13 nov 2026 · kl. 19.00</small></div>
+    <p><strong>Isofol har fastställt lösenpriset till 0,95 kr per aktie.</strong> Det motsvarar 70 % av periodens volymvägda genomsnittskurs, cirka 1,35 kr. Det tidigare uppskattade priset har därför ersatts med bolagets offentliggjorda uppgift.</p>
+    <div class="to2-latest-facts"><span><b>16–30 nov:</b> Nyttjandeperiod</span><span><b>26 nov:</b> Sista handel i TO2</span><span><b>Omkring 1 dec:</b> Besked om utfall</span><span><b>1 TO2:</b> Rätt till 1 ny aktie</span></div>
+    <p><b>Viktigt:</b> Teckningsoptioner som varken används senast 30 november eller säljs senast 26 november förfaller värdelösa. Förvaltarregistrerade optioner kan ha <strong>tidigare sista svarsdag hos banken</strong> – kontrollera din depå.</p>
+    <p><b>Likviden:</b> Bolaget skriver cirka 37,7 miljoner kr vid full teckning. Multiplikationen 39 863 928 × 0,95 kr ger däremot 37 870 731,60 kr, avrundat <strong>37,9 miljoner kr</strong>. Kalkylrutorna visar den aritmetiska summan; avvikelsen från pressmeddelandets cirka-belopp är inte förklarad. Ingen teckning eller kontant inbetalning är ännu bekräftad.</p>
+    <div class="to2-latest-links"><a href="https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026" target="_blank" rel="noopener noreferrer">Läs originalbeskedet på MFN ↗</a><a href="https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026" target="_blank" rel="noopener noreferrer">Q3-rapport ↗</a></div>
+  </div>
+  <div class="to2-details">
+    <span><strong>39 863 928</strong> TO2 utgivna</span>
+    <span><strong>0,95 kr</strong> fastställd teckningskurs</span>
+    <span><strong>320 491 623</strong> aktier före TO2</span>
+    <span><strong>360 355 551</strong> aktier vid 100 %</span>
+  </div>
+  <p class="to2-footnote">Kalkylen är ett scenario som beräknas på det <strong>officiella teckningspriset</strong> och en valbar nyttjandegrad. Den faktiska likviden kan bli lägre och tillkommer först efter genomförd teckning och betalning. <a href="https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026" target="_blank" rel="noopener noreferrer">Fullständiga TO2-villkor ↗</a></p>
 </section><section class="financing-overview" aria-labelledby="fin-title">
  <p class="section-kicker"><span class="section-number">03</span> Finansiering och risk</p>
  <div class="fin-head"><div><h2 id="fin-title">Emissionsbarometern</h2><p class="intro">Hur sannolikt är det att Isofol <b>annonserar en ny kontant aktie- eller unitemission</b>? Modellen skiljer en helt ny emission från <b>redan utgivna TO2</b> som kan tillföra pengar och ge utspädning utan ett nytt emissionsbeslut.</p></div><span class="fin-frequency">Uppdateras varje vecka</span></div>
@@ -1596,36 +1608,38 @@ renderTimeline();
 
 
 function initTO2(){
- const input=document.getElementById('to2-vwap');
- const priceElement=document.getElementById('to2-price');
- const proceedsElement=document.getElementById('to2-proceeds');
+ const input=document.getElementById('to2-take-up');
+ const proceeds=document.getElementById('to2-proceeds');
+ const shares=document.getElementById('to2-new-shares');
+ const dilution=document.getElementById('to2-dilution');
+ const gross=document.getElementById('to2-gross');
  const status=document.getElementById('to2-status');
- if(!input||!priceElement||!proceedsElement||!status)return;
- const warrants=39863928;
- const money=(value,digits)=>value.toLocaleString('sv-SE',{minimumFractionDigits:digits,maximumFractionDigits:digits});
+ if(!input||!proceeds||!shares||!dilution||!gross||!status)return;
+ const optionCount=39863928,shareCount=320491623,price=0.95;
+ const money=(x,d)=>x.toLocaleString('sv-SE',{minimumFractionDigits:d,maximumFractionDigits:d});
  const render=()=>{
-  const vwap=Number(input.value);
-  if(!Number.isFinite(vwap)||vwap<=0){
-   priceElement.textContent='—';proceedsElement.textContent='—';return;
-  }
-  // Two decimal SEK scenario; official rounding and full-period VWAP are determined by the company.
-  const subscriptionPrice=Math.round(Math.min(1.60,Math.max(0.48,vwap*0.7))*100)/100;
-  priceElement.replaceChildren();
-  priceElement.append(document.createTextNode(money(subscriptionPrice,2)+' '));
-  const priceUnit=document.createElement('small');priceUnit.textContent='kr/aktie';priceElement.append(priceUnit);
-  proceedsElement.replaceChildren();
-  proceedsElement.append(document.createTextNode(money(warrants*subscriptionPrice/1000000,1)+' '));
-  const proceedsUnit=document.createElement('small');proceedsUnit.textContent='miljoner kr';proceedsElement.append(proceedsUnit);
+   const pct=Math.max(0,Math.min(100,Number(input.value)));
+   if(!Number.isFinite(Number(input.value))||input.value.trim()===''){
+     proceeds.textContent='—';shares.textContent='—';dilution.textContent='—';gross.textContent='—';return;
+   }
+   const newShares=Math.round(optionCount*pct/100);
+   const totalGross=newShares*price/1e6;
+   const dilutionPercent=100*newShares/(shareCount+newShares);
+   proceeds.replaceChildren();
+   proceeds.append(document.createTextNode(money(totalGross,1)+' '));
+   const unit=document.createElement('small');unit.textContent='miljoner kr';proceeds.append(unit);
+   shares.textContent=money(newShares,0);
+   dilution.textContent=money(dilutionPercent,2)+' %';
+   gross.textContent=money(totalGross,1)+' miljoner kr';
  };
- input.addEventListener('input',render);
- render();
+ input.addEventListener('input',render);render();
  const today=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  if(today>='2026-11-16'&&today<='2026-11-30'){
-  status.textContent='Teckningsperiod pågår';status.classList.add('is-active');
+   status.textContent='Teckningsperiod pågår · 0,95 kr';status.classList.add('is-active');
  }else if(today>'2026-11-30'){
-  status.textContent='Teckningsperioden avslutad · inväntar utfall';
- }else if(today>='2026-11-13'){
-  status.textContent='Mätperioden avslutad · pris ej verifierat';
+   status.textContent='Teckningsperioden slut · inväntar utfall';
+ }else{
+   status.textContent='Teckningskurs fastställd · 0,95 kr';
  }
 }
 initTO2();
