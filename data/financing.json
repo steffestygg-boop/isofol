@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T21:55:16+01:00",
+  "updated_at": "2026-11-13T21:55:40+01:00",
   "based_on_report": "2026-09-30",
   "automated_checked": true,
   "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
@@ -197,7 +197,7 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-13T21:55:16+01:00",
+  "alerts_checked_at": "2026-11-13T21:55:40+01:00",
   "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
