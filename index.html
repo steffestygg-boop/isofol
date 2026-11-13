@@ -517,6 +517,44 @@ footer{
  .to2-details{gap:8px 12px}
  .to2-details span+span:before{display:none}
 }
+.wrap>.financing-overview{--section-accent:#ecc08b;background:linear-gradient(120deg,#2b2928,#1b2931);border-color:#4c4540}
+.fin-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.fin-head .intro{max-width:850px}.fin-frequency{white-space:nowrap;border:1px solid #876e4c;border-radius:20px;color:#f5d4a5;padding:5px 11px;font-size:11px}
+.fin-grid{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(0,1.2fr);gap:12px}
+.fin-risk,.fin-facts,.fin-box,.fin-comps,.fin-method{background:#1a2a34;border:1px solid #43545d;border-radius:13px;overflow:hidden}
+.fin-risk{padding:19px;background:linear-gradient(135deg,#323332,#1b3038)}
+.fin-caption{font-size:11px;color:#d9c5a9;letter-spacing:.06em;text-transform:uppercase;font-weight:730}
+.fin-main{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:8px 0 13px}
+.fin-main strong{font-size:clamp(38px,3vw,55px);color:#fcf5e9;letter-spacing:-.04em}
+.fin-main span{font-size:12px;color:#f0c486;font-weight:720}
+.fin-meter{height:9px;background:#35434c;border-radius:6px;overflow:hidden}.fin-meter>div{height:100%;border-radius:6px;background:linear-gradient(90deg,#7bd4b9,#ecc080);transition:width .2s ease}
+.fin-small{font-size:11px;color:#b0c3cc;line-height:1.75;margin:11px 0}
+.fin-horizons{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:18px 0}
+.fin-horizons>div{border:1px solid #52636a;border-radius:10px;padding:11px;background:#18252e}
+.fin-horizons small{display:block;font-size:11px;color:#bdd0d7}
+.fin-horizons strong{display:block;font-size:24px;color:#eaf4f6}
+.fin-facts{display:grid;grid-template-columns:1fr 1fr}
+.fin-facts>div{min-width:0;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:18px;border-bottom:1px solid #40515b}
+.fin-facts>div:nth-child(odd){border-right:1px solid #40515b}.fin-facts>div:nth-child(n+3){border-bottom:0}
+.fin-facts small{font-size:11px;color:#b1c5cf;line-height:1.4}.fin-facts strong{font-size:clamp(19px,1.8vw,27px);line-height:1.2}
+.fin-facts strong em{font-size:12px;font-style:normal;color:#b7c9d5}
+.fin-facts span,.fin-facts a{font-size:11px;color:#bbd0d8;line-height:1.5}
+.fin-two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.fin-box{padding:17px 19px}.fin-box h3,.fin-comps h3{margin:0 0 9px;font-size:14px}
+.fin-box p{color:#c1d1d9;line-height:1.7;font-size:12px;margin:6px 0}
+.fin-box p+p{margin-top:9px}.fin-comps{padding:17px 19px;margin-top:12px}
+.fin-comps h3 small{font-size:11px;color:#9fb5c4;font-weight:400;margin-left:7px}
+.fin-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.fin-case{min-width:0;background:#22323c;border:1px solid #455660;border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:7px}
+.fin-case strong{font-size:12px}.fin-case p{font-size:11px;line-height:1.6;color:#bfd0d9;margin:0;flex:1}.fin-case a{font-size:11px}
+.fin-method{margin:12px 0 0;padding:0 17px}
+.fin-method summary{font-size:12px;color:#cfedff;font-weight:700;cursor:pointer;padding:14px 0}
+.fin-method p{font-size:12px;line-height:1.8;color:#b9ccd5}.fin-method code{white-space:normal}
+.fin-news-item{padding:8px 0;border-bottom:1px solid #40535a;font-size:11px;color:#c7d6de}
+.fin-news-item a{display:block;margin-top:4px}
+.fin-warning{font-size:11px;color:#f3c99b;padding:9px;border-radius:8px;background:#50402c70}
+@media(max-width:900px){.fin-grid,.fin-two{grid-template-columns:1fr}.fin-cases{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.fin-cases{grid-template-columns:1fr}.fin-facts>div{padding:12px}.fin-facts strong{font-size:19px}.fin-facts strong em{display:block;font-size:11px}}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -588,12 +626,60 @@ footer{
     <span><strong>Prissättning</strong> 2–13 nov</span>
   </div>
   <p class="to2-footnote">Det officiella teckningspriset bestäms av den volymvägda genomsnittskursen (VWAP) under hela mätperioden och kan avvika från exemplet ovan. Full teckning förutsätter att alla TO2 utnyttjas. <a href="https://isofolmedical.com/sv/mfn_news/isofol-offentliggor-slutliga-villkor-i-foretradesemission-samt-for-en-potentiell-overtilldelningsemission/" target="_blank" rel="noopener noreferrer">Villkor ↗</a> · <a href="https://isofolmedical.com/sv/mfn_news/isofols-foretradesemission-overtecknad-utnyttjar-overtilldelning-till-japansk-samarbetspartner/" target="_blank" rel="noopener noreferrer">Antal optioner ↗</a></p>
-</section><section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">03</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"></div></section>
-<section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">04</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
+</section><section class="financing-overview" aria-labelledby="fin-title">
+ <p class="section-kicker"><span class="section-number">03</span> Finansiering och risk</p>
+ <div class="fin-head"><div><h2 id="fin-title">Emissionsbarometern</h2><p class="intro">Hur sannolikt är det att Isofol <b>annonserar en ny kontant aktie- eller unitemission</b>? Modellen skiljer en helt ny emission från <b>redan utgivna TO2</b> som kan tillföra pengar och ge utspädning utan ett nytt emissionsbeslut.</p></div><span class="fin-frequency">Uppdateras varje vecka</span></div>
+ <div class="fin-grid">
+  <div class="fin-risk">
+   <div class="fin-caption">Modellrisk · närmaste 6 månader</div>
+   <div class="fin-main"><strong id="fin-risk-6">21,4 %</strong><span id="fin-risk-level">Förhöjd men osäker</span></div>
+   <div class="fin-meter"><div id="fin-risk-bar" style="width:21.4%"></div></div>
+   <p class="fin-small">Känslighetsintervall <b id="fin-range">13,9–31,1 %</b> · inte statistiskt konfidensintervall</p>
+   <div class="fin-horizons"><div><small>3 månader</small><strong id="fin-risk-3">9,1 %</strong></div><div><small>12 månader</small><strong id="fin-risk-12">49,4 %</strong></div></div>
+   <p class="fin-small">Procentsatserna är uttryckligen <b>subjektiva scenariosiffror</b>, inte en historiskt uppmätt emissionsfrekvens.</p>
+  </div>
+  <div class="fin-facts">
+   <div><small>Likvida medel · 30 sep 2026</small><strong>98,1 <em>miljoner kr</em></strong><a href="https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-janu-september-2026" target="_blank" rel="noopener">Källa: Q3 2026 ↗</a></div>
+   <div><small>Operativt kassaflöde · Q3 2026</small><strong>−16,9 <em>miljoner kr</em></strong><span>−5,6 miljoner kr/mån i kvartalssnitt</span></div>
+   <div><small>TO2 · möjlig bruttolikvid vid full teckning</small><strong>19,1–63,8 <em>miljoner kr</em></strong><span>Villkorad av teckningskurs och nyttjandegrad, ännu inte erhållen</span></div>
+   <div><small>Bolagets finansieringsbedömning</small><strong>Minst 12 mån</strong><span id="fin-runway">Från 30 september 2026; ≈ 10,5 månader till modellriktmärket</span></div>
+  </div>
+ </div>
+ <div class="fin-two">
+  <div class="fin-box"><h3>Vad höjer emissionsrisken?</h3><p>En utökad fas II med 15–20 kliniker i flera länder kan bli dyrare än historisk kassaförbrukning. Isofol har ännu ingen läkemedelsförsäljning. Om TO2 tecknas i låg grad uteblir en del av det kapital som skulle kunna finansiera ytterligare studiearbete.</p></div>
+  <div class="fin-box"><h3>Vad minskar risken?</h3><p>Isofol rapporterade 98,1 miljoner kr i likvida medel och inga upptagna lån i Q3. Styrelsen bedömer att kassan räcker för planerad drift minst tolv månader från balansdagen. TO2 kan förstärka finansieringen och ett samarbete med Solasia kan minska kostnaderna för utveckling i Japan. Inget framtida kapital räknas som säkert.</p></div>
+ </div>
+ <div class="fin-two">
+  <div class="fin-box"><h3>Senaste riskuppdateringen</h3><p id="fin-updated">Grundbedömning 13 november 2026. Automatisk veckobevakning är schemalagd på måndagar.</p><p id="fin-coverage">TO2-utfallet och nya finansieringsrapporter behöver granskas innan riskmodellens grundantaganden ändras.</p></div>
+  <div class="fin-box"><h3>Nyheter att kontrollera</h3><div id="fin-news"><p>Bevakningen följer Isofols pressmeddelanden, finansrapporter, TO2-utfallet och jämförbara emissioner i andra bolag.</p></div></div>
+ </div>
+ <div class="fin-comps">
+  <h3>Historiska jämförelsefall <small>Riktiga kapitalanskaffningar med originalkällor</small></h3>
+  <div class="fin-cases" id="fin-cases">
+   <div class="fin-case"><strong>Isofol · juli 2025</strong><p>Företrädesemission inklusive övertilldelning tillförde cirka 91 miljoner kr brutto trots partnersamarbete.</p><a href="https://isofolmedical.com/sv/mfn_news/isofols-foretradesemission-overtecknad-utnyttjar-overtilldelning-till-japansk-samarbetspartner/" target="_blank" rel="noopener">Originalkälla ↗</a></div>
+   <div class="fin-case"><strong>BioInvent · oktober 2026</strong><p>Ny företrädesemission cirka 430 miljoner kr aviserades trots kvarvarande kassa.</p><a href="https://mfn.se/a/bioinvent-international/bioinvent-resolves-on-a-rights-issue-of-approximately-sek-430-million-subject-to-approval-by-an-extraordinary-general-meeting-and-earlier-publication-of-interim-report-january-september-2026" target="_blank" rel="noopener">Originalkälla ↗</a></div>
+   <div class="fin-case"><strong>Cereno Scientific · november 2026</strong><p>Aviserade avsikt om en emission på 400 miljoner kr parallellt med utökad lånefinansiering.</p><a href="https://www.cerenoscientific.com/en/newsroom/press-releases?slug=cereno-scientific-intends-to-carry-out-a-rights-issue-of-units-of-approximately-sek-400-million-with-a-focus-on-the-global-phase-iib-study-epimode-and-obtains-extended-loan-financing-of-up-to-sek-175-million" target="_blank" rel="noopener">Originalkälla ↗</a></div>
+  </div>
+  <p class="fin-small">De verkliga fallen visar att emissioner kan ske långt innan kassan tar slut. Urvalet är inte representativt för alla bioteknikbolag och kan därför inte användas som en empiriskt fastställd sannolikhet.</p>
+ </div>
+ <details class="fin-method">
+  <summary>Så fungerar riskmodellen och veckouppdateringen</summary>
+  <p><b>Definition:</b> Modellen bedömer ett nytt besked om kontant emission av aktier eller units inom 3, 6 och 12 månader. Utnyttjande av TO2 är en förutbestämd möjlig finansiering, inte en ny emission som ska räknas som ett nytt riskutfall. Även TO2 kan dock innebära nyemitterade aktier och utspädning.</p>
+  <p><b>Beräkning:</b> Analytiskt grundantagande 2,1 % per månad × 1,18 för möjlig ökning av fas II-kostnader × 1,12 för osäkerhet kring ytterligare finansiering och TO2 × en närhetsfaktor som ökar när 30 september 2027 närmar sig. Sannolikhet för h månader beräknas som <code>1 − exp(−h × månatlig riskintensitet)</code>. Antagandena är inte kalibrerade på en representativ databas.</p>
+  <p><b>Veckoräknaren:</b> GitHub Actions kör varje måndag och räknar om risken utifrån kvarvarande tid. Den söker efter nya rapporter, kapitalbesked, TO2 och partnernyheter. Nya kassavärden eller optionslikvider flaggas för genomgång i stället för att gissas från rubriker.</p>
+  <p><b>Historiskt kassaflöde:</b> Q3 gav −16,9 miljoner kr och januari–september −47,4 miljoner kr i operativt kassaflöde. Historisk förbrukning är inte samma sak som en prognos över en expanderad fas II-studie.</p>
+  <p><b>TO2:</b> Det finns 39 863 928 optioner. Varje TO2 ger rätt till en aktie. Lösenpriset är 70 % av VWAP 2–13 november 2026, dock 0,48–1,60 kr, med nyttjande 16–30 november. 19,1–63,8 miljoner kr är endast ett bruttoscenario vid full teckning. Om ingen tecknar kan kassainflödet bli noll. Faktiskt netto ska ersätta antaganden först när det offentliggjorts.</p>
+  <p><b>Finansieringshorisont:</b> Isofol uppger tillräckliga befintliga likvida medel för kommande 12 månaders planerad verksamhet från 30 september 2026. Modellen använder 30 september 2027 som en konservativ tidsproxy, inte som en bestämd kassabristdag. Känslighetsintervallet baseras på att riskintensiteten multipliceras med 0,62 respektive 1,55 – inte statistiska konfidensgränser.</p>
+  <p><a href="https://github.com/steffestygg-boop/isofol/blob/main/data/financing_model.json" target="_blank" rel="noopener">Läs hela modellen med referensfall och källor ↗</a> · <a href="https://github.com/steffestygg-boop/isofol/actions/workflows/update-financing.yml" target="_blank" rel="noopener">Kontrollera veckokörningarna ↗</a></p>
+ </details>
+ <p class="fin-small">Automatisk veckokontroll på måndagar 07:25 UTC. Modellen bygger på senast verifierade rapportdata; bevakningen är inte en garanti för att all ny information upptäcks. Avsnittet är inte investeringsrådgivning.</p>
+</section>
+<section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">04</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"></div></section>
+<section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">05</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
 </div></div><div class="milestone-key" aria-label="Förklaring till milstolparnas utseende"><span><i aria-hidden="true"></i>Levererad</span><span><i class="upcoming" aria-hidden="true"></i>Kommande</span></div></section>
-<section class="valuation" aria-labelledby="valuation-heading"><p class="section-kicker"><span class="section-number">05</span> Analys &amp; värdering</p><h2 id="valuation-heading">Analytiker-riktkurser / motiverade värden</h2><p class="intro">Verifierade publiceringar · kronor per aktie · Base Case (uppdragsanalyser)</p><svg id="valuation-chart" viewBox="0 0 1100 410" role="img" aria-label="Redeyes Base Case 1,70 kronor vid två tillfällen och ABG:s basscenario från 1,60 till 1,80 kronor"></svg><p class="note">Grafen visar fyra verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section><footer>Privat, inofficiell investeraröversikt. Datum och kliniska uppgifter måste kontrolleras mot Isofols originalkällor. Planerade milstolpar är inte bekräftade utfall. Nyhetsflödet uppdateras automatiskt; tidslinjen kräver källkontrollerad uppdatering.</footer></div>
+<section class="valuation" aria-labelledby="valuation-heading"><p class="section-kicker"><span class="section-number">06</span> Analys &amp; värdering</p><h2 id="valuation-heading">Analytiker-riktkurser / motiverade värden</h2><p class="intro">Verifierade publiceringar · kronor per aktie · Base Case (uppdragsanalyser)</p><svg id="valuation-chart" viewBox="0 0 1100 410" role="img" aria-label="Redeyes Base Case 1,70 kronor vid två tillfällen och ABG:s basscenario från 1,60 till 1,80 kronor"></svg><p class="note">Grafen visar fyra verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section><footer>Privat, inofficiell investeraröversikt. Datum och kliniska uppgifter måste kontrolleras mot Isofols originalkällor. Planerade milstolpar är inte bekräftade utfall. Nyhetsflödet uppdateras automatiskt; tidslinjen kräver källkontrollerad uppdatering.</footer></div>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="dialog"><button id="close" aria-label="Stäng">×</button><div class="date" id="modal-date"></div><h2 id="modal-title"></h2><p id="modal-body"></p><div id="modal-links"></div></div></div>
 <script>
 const source='https://isofolmedical.com/news-press/';
@@ -1524,4 +1610,70 @@ function initTO2(){
  }
 }
 initTO2();
+(async function updateFinancingBarometer(){
+ const el=id=>document.getElementById(id);
+ function link(parent,label,url){
+   if(!url||!url.startsWith('https://'))return;
+   const a=document.createElement('a');a.textContent=label;a.href=url;a.target='_blank';a.rel='noopener noreferrer';parent.append(a);
+ }
+ try{
+   const resp=await Promise.all([
+     fetch('./data/financing.json',{cache:'no-store'}),
+     fetch('./data/financing_model.json',{cache:'no-store'})
+   ]);
+   if(!resp[0].ok||!resp[1].ok)throw Error('Datafilerna kan inte läsas');
+   const [d,model]=await Promise.all(resp.map(x=>x.json()));
+   if(!d.risk||!Array.isArray(model.peer_cases))throw Error('Datafilerna är ofullständiga');
+   const issue=(d.emission_detected||[])[0];
+   if(issue){
+     el('fin-risk-6').textContent='Besked';
+     el('fin-risk-level').textContent='Möjlig nyemission upptäckt';
+     el('fin-risk-bar').style.width='100%';
+     el('fin-range').textContent='Granska originalbeskedet';
+     el('fin-risk-3').textContent='—';el('fin-risk-12').textContent='—';
+   }else{
+     const p=d.risk.months_6;
+     el('fin-risk-6').textContent=Number(p.percent).toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+' %';el('fin-risk-bar').style.width=Math.max(0,Math.min(100,p.percent))+'%';
+     el('fin-risk-level').textContent=p.percent>=45?'Hög modellrisk':p.percent>=20?'Förhöjd men osäker':'Lägre kortsiktig risk';
+     el('fin-range').textContent=Number(p.low).toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+'–'+Number(p.high).toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+' %';
+     el('fin-risk-3').textContent=Number(d.risk.months_3.percent).toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+' %';
+     el('fin-risk-12').textContent=Number(d.risk.months_12.percent).toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+' %';
+   }
+   el('fin-runway').textContent='≈ '+Number(d.months_to_company_runway_proxy).toLocaleString('sv-SE',{maximumFractionDigits:1})+' månader till modellriktmärket 30 sep 2027';
+   const date=new Date(d.updated_at);
+   el('fin-updated').textContent='Senaste beräkning '+(Number.isFinite(date.getTime())?date.toLocaleDateString('sv-SE'):'okänt datum')+' · '+d.days_since_report+' dagar sedan Q3-balansdagen.';
+   const statuses={
+     initial_bedömning:'Grundbedömning; den automatiska veckokontrollen har ännu inte körts.',
+     källor_kontrollerade_inga_nya_finansfakta:'Källor har kontrollerats. Inga nya finansrubriker identifierades automatiskt.',
+     nytt_besked_kräver_granskning:'Nytt bolagsbesked upptäckt. Tidseffekten är uppdaterad men de nya villkoren kräver genomgång.',
+     emissionsbesked_upptäckt:'VARNING: en ny emissionsrubrik har upptäckts. Läs originalkällan för att bekräfta villkoren.',
+     delvis_kontrollerad:'Källkontrollen var ofullständig; minst en källa gick inte att läsa.',
+     ingen_nätkontroll:'Ingen fungerande nyhetskontroll; endast tidseffekten har uppdaterats.'
+   };
+   el('fin-coverage').textContent=statuses[d.coverage_status]||'Se veckokontroll i GitHub Actions.';
+   const news=el('fin-news');news.replaceChildren();
+   const relevant=(d.review_needed||[]).slice(0,6);
+   if(!relevant.length){
+     const p=document.createElement('p');p.textContent='Inga nytillkomna finansrelaterade rubriker redovisas. Automatisk bevakning är aldrig heltäckande.';news.append(p);
+   }
+   for(const item of relevant){
+     const box=document.createElement('div');box.className='fin-news-item';
+     const title=document.createElement('span');title.textContent=(item.date||'Datum ej angivet')+' · '+(item.signal||'Nyhet')+' · '+item.source;
+     box.append(title);link(box,item.title,item.url);news.append(box);
+   }
+   if(relevant.length){
+     const p=document.createElement('p');p.className='fin-warning';p.textContent='Nya rubriker kräver källkontroll; nya belopp räknas inte in automatiskt.';news.append(p);
+   }
+   const comps=el('fin-cases');comps.replaceChildren();
+   for(const x of model.peer_cases){
+     const box=document.createElement('div');box.className='fin-case';
+     const heading=document.createElement('strong');heading.textContent=x.company+' · '+x.date;
+     const event=document.createElement('p');event.textContent=x.event;
+     const why=document.createElement('p');why.textContent=x.why;
+     box.append(heading,event,why);link(box,'Läs källa ↗',x.source);comps.append(box);
+   }
+ }catch(err){
+   el('fin-coverage').textContent='Kunde inte hämta veckodata: '+err.message+'. Visar grundbedömningen från 13 november 2026.';
+ }
+})();
 </script></body></html>
