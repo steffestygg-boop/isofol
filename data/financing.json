@@ -1,12 +1,14 @@
 {
-  "updated_at": "2026-11-13T21:39:08+01:00",
+  "updated_at": "2026-11-13T21:55:16+01:00",
   "based_on_report": "2026-09-30",
   "automated_checked": true,
-  "coverage_status": "official_to2_terms_verified",
+  "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
   "checked_sources": [
     "bolaget: Google News RSS",
     "omvärld: Google News RSS",
     "jämförelsebolag: Google News RSS",
+    "varningssignaler: Google News RSS",
+    "börsmeddelanden: Google News RSS",
     "officiell presslista"
   ],
   "failed_sources": [],
@@ -31,11 +33,9 @@
     }
   },
   "latest_information": [
-    "13 november 2026 kl. 19.00: Isofol fastställde TO2-kursen till 0,95 kr efter VWAP cirka 1,35 kr under 2–13 november.",
-    "39 863 928 optioner. Teckning 16–30 november och sista handel 26 november. Bolaget väntar besked om nyttjande omkring 1 december.",
-    "Vid full teckning blir aritmetisk bruttolikvid 37,9 miljoner kr; pressmeddelandet anger cirka 37,7 miljoner kr. Faktiskt utfall och nettolikvid är ännu okända och inte inräknade i kassasiffrorna.",
-    "Q3 2026: 98,1 miljoner kr i likvida medel 30 september och −16,9 miljoner kr i operativt kassaflöde under tredje kvartalet. Finansieringsprognos minst 12 månader från balansdagen.",
-    "Modellriskerna 3/6/12 månader är oförändrade: fastställd TO2-kurs är inte redan inbetald finansiering. Modellen ska omprövas när faktiskt nyttjande/likvid meddelas."
+    "Senast verifierad Q3 2026: 98,1 miljoner kr i likvida medel den 30 september, kvartalets operativa kassaflöde −16,9 miljoner kr.",
+    "TO2: officiell kurs 0,95 kr fastställd 13 november. Teckningsperiod 16–30 november, sista handel 26 november. Faktiskt utfall meddelas omkring 1 december. Ingen framtida likvid antas förrän faktisk teckning och betalning verifierats.",
+    "Bolaget bedömer befintlig finansiering tillräcklig för planerad drift 12 månader efter 30 september 2026. Tidens gång mot riktmärket räknas om varje vecka."
   ],
   "latest_items": [
     {
@@ -165,24 +165,40 @@
       "signal": "övrigt"
     }
   ],
-  "review_needed": [
-    {
-      "title": "Isofol fastställer TO2 till 0,95 kr – invänta faktiskt utnyttjande",
-      "date": "2026-11-13",
-      "source": "Isofol via MFN",
-      "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
-      "category": "bolaget",
-      "official": true,
-      "signal": "TO2 / befintliga optioner"
-    }
-  ],
+  "review_needed": [],
   "emission_detected": [],
-  "review_warning": "Prisvillkoret för TO2 är nu officiellt bekräftat: 0,95 kr. Kassan och emissionsriskens grundantaganden är oförändrade tills den faktiska nyttjandegraden och betalningen är kända. Bolagets cirka 37,7 Mkr i texten skiljer sig från 39 863 928 × 0,95 kr = cirka 37,9 Mkr. Automatiska veckokörningar kan flagga nya besked men ändrar inte verifierade kassasiffror utan källgranskning.",
+  "review_warning": "Detta är en regelstyrd bedömningsmodell, inte ett objektivt förutsagt utfall. Tidsfaktorn uppdateras automatiskt. RSS och officiell presslista bevakas men rubriker kan varken ersätta rapportläsning eller garantera att alla nyheter hittas. Nya villkor, kassavärden och eventuella emissioner måste verifieras mot fullständiga originalbesked innan prognosen omkalibreras.",
   "sources": {
     "company_report": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
     "warrants": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
     "official_feed": "https://isofolmedical.com/sv/nyheter-press/"
   },
+  "alerts": [
+    {
+      "id": "base:runway",
+      "level": "bevakning",
+      "title": "Finansieringshorisonten närmar sig",
+      "detail": "Omkring 10.5 månader till modellens konservativa riktmärke 2027-09-30. Det är INTE en verifierad dag då kassan tar slut; bolagets egen prognos och tidsfaktorn är redan inräknade i riskmodellen.",
+      "source": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
+      "date": "2026-11-13",
+      "status": "Beräknad från verifierad bolagsprognos",
+      "next_step": "Kontrollera ny likviditetsprognos i kommande kvartalsrapport.",
+      "category": "runway"
+    },
+    {
+      "id": "base:warrant_outcome",
+      "level": "bevakning",
+      "title": "TO2: finansieringsutfallet ännu inte verifierat",
+      "detail": "TO2-kursen är fastställd till 0,95 kr, men hur många optioner som utnyttjas och vilket nettobelopp Isofol faktiskt får kan inte fastställas utifrån teckningspriset. Sista nyttjandedag är den 30 november 2026.",
+      "source": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+      "date": "2026-11-13",
+      "status": "Fastställt pris – utfall kräver kontroll",
+      "next_step": "Granska bolagets slutliga TO2-utfall och uppdatera finansieringsmodellen.",
+      "category": "warrants"
+    }
+  ],
+  "alerts_checked_at": "2026-11-13T21:55:16+01:00",
+  "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
     "exercise_price_sek": 0.95,
