@@ -599,6 +599,17 @@ footer{
 .fin-alert-card a{display:inline-block;font-size:11px;margin-top:4px}
 .fin-signal-foot{font-size:10px;color:#a7b8c4;line-height:1.7;margin:12px 0 0}
 @media(max-width:700px){.fin-alert-list{grid-template-columns:1fr}.fin-signals{padding:14px}.fin-alert-card{padding:11px}}
+
+/* All future Isofol milestones have an individual quarter; ≈ means editorial timing estimate. */
+.milestone.estimated-time{position:relative;border-color:#a88b60}
+.milestone.estimated-time:after{content:"≈";position:absolute;top:3px;right:5px;font-size:12px;color:#dfbd7f;font-weight:800}
+.milestone.estimated-time strong{padding-right:11px}
+.milestone-timing-note,.milestone-timing-info{color:#b9b3c8;font-size:11px;line-height:1.65}
+.milestone-timing-info{margin:3px 0 14px}
+.modal-milestone-description{white-space:pre-line}
+.milestone-time-explanation{margin-top:14px;border:1px solid #745e42;border-radius:9px;padding:11px 13px;background:#34302c}
+.milestone-time-explanation>strong{font-size:12px;color:#efcb91}
+.milestone-time-explanation p{font-size:12px;color:#cbd1d3;line-height:1.65;margin:6px 0 0}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -742,743 +753,776 @@ footer{
  <p class="fin-small">Automatisk veckokontroll på måndagar 07:25 UTC. Modellen bygger på senast verifierade rapportdata; bevakningen är inte en garanti för att all ny information upptäcks. Avsnittet är inte investeringsrådgivning.</p>
 </section>
 <section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">04</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"><article class="news-card"><small>13 november 2026 · Isofol Medical via MFN · verifierat</small><h3>TO2-kursen fastställd till 0,95 kr – teckning 16–30 november</h3><a href="https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026" target="_blank" rel="noopener noreferrer">Läs bolagets originalmeddelande ↗</a></article></div></section>
-<section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">05</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
+<section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">05</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><p class="milestone-timing-info">Framtida händelser är placerade per kvartal. När Isofol inte har angett ett kvartal visas en försiktig uppskattning (≈) som förklaras när du klickar på milstolpen.</p><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
-</div></div><div class="milestone-key" aria-label="Förklaring till milstolparnas utseende"><span><i aria-hidden="true"></i>Levererad</span><span><i class="upcoming" aria-hidden="true"></i>Kommande</span></div></section>
+</div></div><div class="milestone-key" aria-label="Förklaring till milstolparnas utseende"><span><i aria-hidden="true"></i>Levererad</span><span><i class="upcoming" aria-hidden="true"></i>Kommande</span><span class="milestone-timing-note">≈ betyder preliminär kvartalsuppskattning, inte ett av bolaget fastställt datum. Klicka för tidsmotivering.</span></div></section>
 <section class="valuation" aria-labelledby="valuation-heading"><p class="section-kicker"><span class="section-number">06</span> Analys &amp; värdering</p><h2 id="valuation-heading">Analytiker-riktkurser / motiverade värden</h2><p class="intro">Verifierade publiceringar · kronor per aktie · Base Case (uppdragsanalyser)</p><svg id="valuation-chart" viewBox="0 0 1100 410" role="img" aria-label="Redeyes Base Case 1,70 kronor vid två tillfällen och ABG:s basscenario från 1,60 till 1,80 kronor"></svg><p class="note">Grafen visar fyra verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section><footer>Privat, inofficiell investeraröversikt. Datum och kliniska uppgifter måste kontrolleras mot Isofols originalkällor. Planerade milstolpar är inte bekräftade utfall. Nyhetsflödet uppdateras automatiskt; tidslinjen kräver källkontrollerad uppdatering.</footer></div>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="dialog"><button id="close" aria-label="Stäng">×</button><div class="date" id="modal-date"></div><h2 id="modal-title"></h2><p id="modal-body"></p><div id="modal-links"></div></div></div>
 <script>
 const source='https://isofolmedical.com/news-press/';
 const milestones=[
- {
-  "track":"company",
-  "col":5,
-  "status":"done",
-  "title":"TO2-kurs fastställd",
-  "subtitle":"0,95 kr · 37,9 Mkr maximalt brutto",
-  "date":"13 november 2026",
-  "body":"Isofol offentliggjorde att lösenpriset för TO2 är 0,95 kr efter en genomsnittlig volymvägd aktiekurs på cirka 1,35 kr under 2–13 november. Totalt finns 39 863 928 optioner, en aktie per option. Teckning kan ske 16–30 november, medan sista dag för handel är 26 november. Vid full teckning tillförs cirka 37,9 miljoner kronor brutto enligt antalet optioner multiplicerat med 0,95 kr. Bolagets pressmeddelande uppger cirka 37,7 miljoner kronor; beloppsskillnaden är inte förklarad. Fullt utnyttjande ger cirka 11,06 procent utspädning. Utfallet beräknas meddelas omkring 1 december. Det fastställda priset undanröjer en osäkerhet, men kapitalet är ännu inte inbetalt. Optioner som inte säljs i tid eller utnyttjas förfaller värdelösa.",
-  "url":"https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
-  "keywords":["TO2","warrants","emission","financing"]
- },
- {
-  "track": "company",
-  "col": 0,
-  "status": "done",
-  "title": "Isofol grundas",
-  "subtitle": "Forskningsbolaget bildas",
-  "date": "2008",
-  "body": "Isofol grundades av professor Bengt Gustavsson med utgångspunkt i forskning om folatbaserad cancerbehandling och samarbete med Merck.",
-  "url": "https://isofolmedical.com/about-isofol/our-history/",
-  "keywords": [
-   "history",
-   "founding"
-  ]
- },
- {
-  "track": "company",
-  "col": 0,
-  "status": "done",
-  "title": "First North-notering",
-  "subtitle": "Börsintroduktion",
-  "date": "2017",
-  "body": "Isofol noterades på Nasdaq First North Premier Growth Market 2017.",
-  "url": "https://isofolmedical.com/about-isofol/our-history/",
-  "keywords": [
-   "listing",
-   "nasdaq"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 1,
-  "status": "done",
-  "title": "AGENT startar",
-  "subtitle": "Global fas III",
-  "date": "2018",
-  "body": "Den globala randomiserade fas III-studien AGENT inleddes för att jämföra arfolitixorin med leukovorin i kombination med standardkemoterapi vid metastaserad kolorektalcancer.",
-  "url": "https://isofolmedical.com/about-isofol/our-history/",
-  "keywords": [
-   "agent",
-   "phase iii"
-  ]
- },
- {
-  "track": "japan",
-  "col": 1,
-  "status": "done",
-  "title": "Solasia får Japanrättigheter",
-  "subtitle": "SP-05 · licensavtal",
-  "date": "Augusti 2020",
-  "body": "Solasia Pharma K.K. förvärvade exklusiva japanska utvecklings- och kommersialiseringsrättigheter till arfolitixorin, som hos Solasia benämns SP-05. Enligt Isofol har avtalet ett sammanlagt potentiellt värde om 100 miljoner USD, med initiala och villkorade milstolpsbetalningar samt stegvis tvåsiffrig royalty på eventuell framtida japansk nettoförsäljning. Avtalets totalvärde är inte redan erhållna pengar.",
-  "url": "https://isofolmedical.com/about-isofol/partners/",
-  "keywords": [
-   "solasia",
-   "sp-05",
-   "license",
-   "japan"
-  ]
- },
- {
-  "track": "company",
-  "col": 1,
-  "status": "done",
-  "title": "Redeye publicerar scenarier",
-  "subtitle": "Bear 14 · Base 35 · Bull 72 kr",
-  "date": "November 2020",
-  "body": "Redeyes värderingsscenarier var Bear 14 kr, Base 35 kr och Bull 72 kr per aktie vid publiceringen.",
-  "url": "https://www.redeye.se/company/isofol-medical",
-  "keywords": [
-   "redeye",
-   "base case",
-   "valuation"
-  ]
- },
- {
-  "track": "company",
-  "col": 1,
-  "status": "done",
-  "title": "Nasdaq Stockholm",
-  "subtitle": "Byte av handelsplats",
-  "date": "2021",
-  "body": "Isofols aktie började handlas på Nasdaq Stockholm 2021.",
-  "url": "https://isofolmedical.com/about-isofol/our-history/",
-  "keywords": [
-   "nasdaq",
-   "listing"
-  ]
- },
- {
-  "track": "company",
-  "col": 1,
-  "status": "done",
-  "title": "Redeye sänker",
-  "subtitle": "Base 35 → 32 kr",
-  "date": "22 mars 2021",
-  "body": "Efter DSMB:s besked att slutföra AGENT med 440 patienter justerade Redeye basscenariot från 35 till 32 kronor. En lägre bedömd toppförsäljning vägde tyngre än ökad sannolikhet för godkännande.",
-  "url": "https://www.borsvarlden.com/Foretagsinfo/isofol-medical",
-  "keywords": [
-   "redeye",
-   "agent",
-   "base case"
-  ]
- },
- {
-  "track": "company",
-  "col": 1,
-  "status": "done",
-  "title": "DNB sänker intervallet",
-  "subtitle": "21–37 → 13–23 kr",
-  "date": "21 maj 2021",
-  "body": "DNB Markets sänkte sitt motiverade värderingsintervall från 21–37 till 13–23 kronor efter en uppdatering av aktiestocken och förväntade kommersialiseringskostnader.",
-  "url": "https://news.cision.com/isofol-medical-ab--publ-/r/dnb-markets---isofol-medical-q1-in-line--as-company-readies-for-pre-commercial-activity-ramp-up%2Cc3351234",
-  "keywords": [
-   "dnb",
-   "fair value",
-   "rights issue"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 2,
-  "status": "done",
-  "title": "AGENT missar primärt mål",
-  "subtitle": "Negativt fas III-resultat",
-  "date": "3 augusti 2022",
-  "body": "Isofol meddelade att fas III-studien AGENT inte nådde sitt primära effektmått i den övergripande analysen. Beskedet innebar ett avgörande bakslag för arfolitixorins dåvarande utvecklingsplan.",
-  "url": "https://isofolmedical.com/news-press/",
-  "keywords": [
-   "agent",
-   "phase iii",
-   "fas iii"
-  ]
- },
- {
-  "track": "company",
-  "col": 2,
-  "status": "done",
-  "title": "Redeye kapar värdering",
-  "subtitle": "Base 24 → 1,00 kr",
-  "date": "4 augusti 2022",
-  "body": "Efter det negativa AGENT-resultatet sänkte Redeye sitt motiverade basscenario från 24 kronor till 1,00 krona.",
-  "url": "https://se.marketscreener.com/kurs/aktie/ISOFOL-MEDICAL-AB-PUBL-34912582/nyheter-maklar-forskning/",
-  "keywords": [
-   "redeye",
-   "agent",
-   "base case"
-  ]
- },
- {
-  "track": "company",
-  "col": 2,
-  "status": "done",
-  "title": "Carnegie sänker kraftigt",
-  "subtitle": "Riktkurs 20 → 1,31 kr",
-  "date": "5 augusti 2022",
-  "body": "Carnegie sänkte riktkursen från 20 till 1,31 kronor och rekommendationen från köp till behåll efter AGENT-resultatet.",
-  "url": "https://www.placera.se/placera/redaktionellt/2022/08/05/fredagens-alla-nya-aktierekar.html",
-  "keywords": [
-   "carnegie",
-   "target price",
-   "agent"
-  ]
- },
- {
-  "track": "company",
-  "col": 2,
-  "status": "done",
-  "title": "Pareto sänker kraftigt",
-  "subtitle": "Riktkurs 30 → 1,10 kr",
-  "date": "24 augusti 2022",
-  "body": "Pareto Securities sänkte riktkursen från 30 till 1,10 kronor och rekommendationen från köp till behåll. Sänkningen skedde efter AGENT-studiens negativa resultat.",
-  "url": "https://www.placera.se/telegram/pareto-securities-sanker-isofol-medical-till-behall-kop-riktkurs-1-1-kronor-30-2022-08-24",
-  "keywords": [
-   "pareto",
-   "target price",
-   "agent"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 3,
-  "status": "done",
-  "title": "AGENT-analys presenteras",
-  "subtitle": "Ny dosstrategi övervägs",
-  "date": "4 juli 2023",
-  "body": "Isofol presenterade slutsatser från en fördjupad analys av AGENT. Bolaget pekade på dosering och administreringstidpunkt som möjliga förklaringar till resultatet och presenterade en reviderad klinisk utvecklingsstrategi.",
-  "url": "https://news.cision.com/isofol-medical-ab--publ-/r/isofol-presents-conclusions-from-the-in-depth-analysis-of-the-agent-study,c3799939",
-  "keywords": [
-   "agent",
-   "dose",
-   "2023"
-  ]
- },
- {
-  "track": "japan",
-  "col": 4,
-  "status": "done",
-  "title": "Solasia fortsätter utvecklingen",
-  "subtitle": "Ny utvecklingsplan",
-  "date": "19 mars 2024",
-  "body": "Solasia bekräftade att bolaget fortsätter delta i utvecklingen av arfolitixorin och bidra med expertis till den omarbetade kliniska planen.",
-  "url": "https://mfn.se/a/isofol-medical/isofols-japanese-partner-solasia-intensifies-its-commitment-to-the-clinical-development-of-arfolitixorin",
-  "keywords": [
-   "solasia",
-   "japan",
-   "development",
-   "sp-05"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 4,
-  "status": "done",
-  "title": "AGENT: per-protokollanalys",
-  "subtitle": "Post hoc · lovande signal",
-  "date": "5 juli 2024",
-  "body": "En extern expertkommitté presenterade en efterhandsanalys av patienter som följt AGENT-protokollet. Analysen gav en möjlig positiv effektsignal, men var explorativ och kunde inte ändra studiens negativa primärresultat.",
-  "url": "https://mfn.se/all/a/isofol-medical/isofol-announces-a-post-hoc-per-protocol-analysis-of-the-agent-study-further-supporting-arfolitixorins-continued-clinical-development",
-  "keywords": [
-   "agent",
-   "per protocol",
-   "post hoc"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 4,
-  "status": "done",
-  "title": "Dosrespons visas prekliniskt",
-  "subtitle": "Två laboratoriestudier",
-  "date": "16 juli 2024",
-  "body": "Två prekliniska studier från Norge och Sverige gav stöd för ett dos–responsförhållande för arfolitixorin tillsammans med 5-FU. Ingen tilläggseffekt av PLP sågs i de testade modellerna.",
-  "url": "https://isofolmedical.com/sv/mfn_news/isofol-meddelar-att-nya-prekliniska-data-stoder-den-tidigare-annonserade-kliniska-utvecklingsplanen-for-arfolitixorin/",
-  "keywords": [
-   "dose",
-   "preclinical",
-   "plp"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 4,
-  "status": "done",
-  "title": "MODELL-E publiceras",
-  "subtitle": "Vävnadsdata · TS-hämning",
-  "date": "21 november 2024",
-  "body": "Den prövarinitierade MODELL-E-studien publicerades i BJC Reports. Enligt Isofol visade resultaten dosberoende hämning av tymidylatsyntas i undersökt vävnad.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-year-end-report-january-december-2024/",
-  "keywords": [
-   "modelle",
-   "ts inhibition"
-  ]
- },
- {
-  "track": "japan",
-  "col": 4,
-  "status": "done",
-  "title": "Solasia planerar japansk fas II",
-  "subtitle": "Beslut om medverkan",
-  "date": "18 december 2024",
-  "body": "Isofol och Solasia presenterade en plan att inkludera japanska patienter i fas II-delen av det kliniska programmet.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-and-its-partner-solasia-plan-to-expand-the-upcoming-clinical-trial-of-arfolitixorin-to-japan/",
-  "keywords": [
-   "solasia",
-   "japan",
-   "phase ii",
-   "bridging"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 5,
-  "status": "done",
-  "title": "AGENT-analys på ASCO GI",
-  "subtitle": "Per-protokoll · abstract",
-  "date": "27 januari 2025",
-  "body": "En efterhandsanalys av AGENT presenterades vid ASCO GI. Den undersökte protokollföljsamhet och skillnader mellan regioner; resultaten var hypotesgenererande.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-year-end-report-january-december-2024/",
-  "keywords": [
-   "agent",
-   "asco gi"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 5,
-  "status": "done",
-  "title": "Tyskt studiegodkännande",
-  "subtitle": "BfArM · fas Ib/II",
-  "date": "21 mars 2025",
-  "body": "Tyska BfArM gav slutligt godkännande för den nya fas Ib/II-studien av arfolitixorin vid Charité i Berlin. Studien prövar en optimerad dos- och administrationsregim i kombination med 5-FU-baserad behandling vid metastaserad kolorektalcancer.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-receives-regulatory-approval-to-initiate-clinical-study-of-arfolitixorin/",
-  "keywords": [
-   "bfarm",
-   "phase ib"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 5,
-  "status": "done",
-  "title": "Första patient behandlas",
-  "subtitle": "ISO-CC-010 startar",
-  "date": "April 2025",
-  "body": "Den första patienten inkluderades och behandlades i fas Ib/II-studien ISO-CC-010 vid Charité i Berlin.",
-  "url": "https://isofolmedical.com/wp-content/uploads/2026/02/20260218_Isofol_Year-end-report-2025_final_ISO-576.pdf",
-  "keywords": [
-   "first patient",
-   "charite"
-  ]
- },
- {
-  "track": "japan",
-  "col": 5,
-  "status": "done",
-  "title": "Solasia planerar 140 Mkr",
-  "subtitle": "Japansk fas II/III",
-  "date": "3 april 2025",
-  "body": "Isofol meddelade att Solasia avser investera omkring 140 miljoner SEK i kommande japanska fas II- och fas III-studier samt regulatoriska ansökningar. Solasia ska sponsra de japanska studierna, medan Isofol stödjer samordningen med det globala programmet. Beloppet avser planerade investeringar och är inte en kontantbetalning på 140 miljoner till Isofol.",
-  "url": "https://mfn.se/a/isofol-medical/isofols-partner-solasia-intends-to-increase-investments-in-upcoming-trials-with-arfolitixorin",
-  "keywords": [
-   "solasia",
-   "140",
-   "japan",
-   "investment"
-  ]
- },
- {
-  "track": "company",
-  "col": 5,
-  "status": "done",
-  "title": "Isofol beslutar om unitemission",
-  "subtitle": "Units · TO1 och TO2",
-  "date": "12 maj 2025",
-  "body": "Styrelsen beslutade om en företrädesemission av units för att finansiera utvecklingen. De slutliga villkoren omfattade aktier samt teckningsoptionerna TO1 och TO2.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-announces-final-terms-of-the-rights-issue-and-the-potential-overallotment-issue/",
-  "keywords": [
-   "rights issue",
-   "to1",
-   "to2"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 5,
-  "status": "done",
-  "title": "Första dosnivån klar",
-  "subtitle": "120 mg/m²",
-  "date": "Juni 2025",
-  "body": "Den första doskohorten på 120 mg/m² avslutades och säkerhetskommittén rekommenderade fortsatt doseskalering.",
-  "url": "https://isofolmedical.com/mfn_news/isofols-clinical-study-with-arfolitixorin-reaches-another-important-milestone/",
-  "keywords": [
-   "cohort",
-   "120"
-  ]
- },
- {
-  "track": "company",
-  "col": 5,
-  "status": "done",
-  "title": "Redeye återupptar bevakning",
-  "subtitle": "Base Case 1,70 kr",
-  "date": "17 juni 2025",
-  "body": "Redeye inledde en ny period av uppdragsbevakning med Base Case 1,70 kronor per aktie. Redeye hade även publicerat analyser av Isofol under tidigare år.",
-  "url": "https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617",
-  "keywords": [
-   "redeye",
-   "base case",
-   "fair value"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 5,
-  "status": "done",
-  "title": "Andra dosnivån klar",
-  "subtitle": "200 → 300 mg/m²",
-  "date": "30 september 2025",
-  "body": "Säkerhetskommittén bedömde dosnivån 200 mg/m² som säker och tolererad och gav klartecken för nästa kohort på 300 mg/m².",
-  "url": "https://isofolmedical.com/mfn_news/isofols-clinical-study-with-arfolitixorin-reaches-another-important-milestone/",
-  "keywords": [
-   "cohort",
-   "200",
-   "300"
-  ]
- },
- {
-  "track": "japan",
-  "col": 5,
-  "status": "done",
-  "title": "Solasias ägarandel rapporteras",
-  "subtitle": "Cirka 2 % hösten 2025",
-  "date": "30 september 2025",
-  "body": "Enligt Isofols bolagspresentation hade Solasia cirka 2 procent av aktierna per den 30 september 2025.",
-  "url": "https://isofolmedical.com/wp-content/uploads/2026/02/Isofol-Corporate-Deck-February-2026-ISO-44-r20.pdf",
-  "keywords": [
-   "solasia",
-   "shareholder",
-   "ownership"
-  ]
- },
- {
-  "track": "company",
-  "col": 6,
-  "status": "done",
-  "title": "ABG inleder",
-  "subtitle": "Base 1,60 kr",
-  "date": "15 januari 2026",
-  "body": "ABG Sundal Collier inledde uppdragsbevakning med tre scenarier: Bear Case 0,10 kr, riskjusterat Base Case 1,60 kr och Bull Case 10,50 kr per aktie. Basscenariot utgick från 20 procents sannolikhet för klinisk framgång och en riskjusterad kassaflödesmodell som inkluderade antagen framtida utspädning. Det är ett motiverat värde i en uppdragsanalys, inte en traditionell tolvmånadersriktkurs.",
-  "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second",
-  "keywords": [
-   "abg",
-   "scenario b",
-   "fair value"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 6,
-  "status": "done",
-  "title": "Isofol redovisar tidiga patientdata",
-  "subtitle": "Tidiga patientobservationer",
-  "date": "24 februari 2026",
-  "body": "Isofol publicerade preliminära kliniska observationer från fas Ib/II-studien. Underlaget var begränsat och resultaten kunde ännu inte fastställa jämförande behandlingseffekt.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-provides-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin/",
-  "keywords": [
-   "phase ib",
-   "patients"
-  ]
- },
- {
-  "track": "company",
-  "col": 6,
-  "status": "done",
-  "title": "ABG höjer",
-  "subtitle": "Base 1,60 → 1,80 kr",
-  "date": "24 februari 2026",
-  "body": "ABG höjde sitt riskjusterade basscenario från 1,60 till 1,80 kronor per aktie (+12,5 procent) efter de preliminära kliniska observationerna från sex utvärderingsbara patienter. Sannolikheten för klinisk framgång i modellen höjdes från 20 till 22,5 procent. Bear Case 0,10 kr och Bull Case 10,50 kr lämnades oförändrade. Patientunderlaget var litet och värderingen är en uppdragsanalys, inte en garanterad aktiekurs.",
-  "url": "https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224",
-  "keywords": [
-   "abg",
-   "scenario b",
-   "fair value"
-  ]
- },
- {
-  "track": "japan",
-  "col": 6,
-  "status": "done",
-  "title": "Solasia garanterar TO1",
-  "subtitle": "Finansiellt åtagande",
-  "date": "11 mars 2026",
-  "body": "Solasia lämnade ett toppgarantiåtagande i samband med Isofols TO1-inlösen. Tillsammans med andra ägares avsiktsförklaringar motsvarade åtagandena 42 procent av potentiell emissionslikvid. Solasias garanti var en del av detta, inte hela beloppet.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-receives-top-guarantee-commitment-and-letters-of-intent-corresponding-to-42-percent-of-upcoming-warrant-exercise/",
-  "keywords": [
-   "solasia",
-   "to1",
-   "guarantee"
-  ]
- },
- {
-  "track": "company",
-  "col": 6,
-  "status": "done",
-  "title": "Autismrättigheter säkras",
-  "subtitle": "CFD · ny möjlig indikation",
-  "date": "18 mars 2026",
-  "body": "Isofol utökade sitt exklusiva licensområde för arfolitixorin till autismspektrumtillstånd och lämnade in en patentansökan med koppling till cerebral folatbrist.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-secures-license-rights-for-arfolitixorin-in-autism/",
-  "keywords": [
-   "autism",
-   "cfd",
-   "license"
-  ]
- },
- {
-  "track": "company",
-  "col": 6,
-  "status": "done",
-  "title": "TO1 tillför 18,9 Mkr",
-  "subtitle": "Optionsinlösen och garanti",
-  "date": "31 mars 2026",
-  "body": "Isofol redovisade cirka 18,9 miljoner kronor i bruttolikvid från utnyttjade TO1 och garantiåtaganden samt beslutade om en riktad emission till Solasia.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-receives-gross-proceeds-of-18-9-msek-in-connection-with-the-exercise-of-warrants-and-guarantee-commitments-for-warrants-of-series-to1-and-resolves-on-a-directed-share-issue/",
-  "keywords": [
-   "to1",
-   "financing"
-  ]
- },
- {
-  "track": "japan",
-  "col": 6,
-  "status": "done",
-  "title": "Solasia ökar ägandet",
-  "subtitle": "2 083 332 nya aktier",
-  "date": "31 mars–1 april 2026",
-  "body": "Efter att TO1 utnyttjats till 93,57 procent aktiverades Solasias toppgaranti. Isofol beslutade om en riktad emission på 2 083 332 aktier till Solasia, motsvarande omkring 1 miljon SEK vid 0,48 kr per aktie. Solasia kommunicerade senare investeringen som en förstärkning av kapital- och utvecklingssamarbetet. Detta ska inte förväxlas med det separata planerade japanska studiebudgetbeloppet.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-receives-gross-proceeds-of-18-9-msek-in-connection-with-the-exercise-of-warrants-and-guarantee-commitments-for-warrants-of-series-to1-and-resolves-on-a-directed-share-issue/",
-  "keywords": [
-   "solasia",
-   "to1",
-   "shares",
-   "investment"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 7,
-  "status": "done",
-  "title": "BfArM godkänner ändring",
-  "subtitle": "Jämförelse mot leukovorin",
-  "date": "15 april 2026",
-  "body": "Tyska BfArM godkände bredare inklusionskriterier och en studiedesign som möjliggör direkt jämförelse med leukovorin. Ändringen öppnade även för ytterligare studiecenter under fas Ib.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-optimizes-the-design-of-its-phase-ib-ii-study-following-new-regulatory-approval/",
-  "keywords": [
-   "bfarm",
-   "leucovorin",
-   "protocol"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 8,
-  "status": "done",
-  "title": "Högsta dosen inleds",
-  "subtitle": "300 klar · 500 mg/m²",
-  "date": "8 juli 2026",
-  "body": "Den tredje dosnivån, 300 mg/m², avslutades utan dosbegränsande toxicitet. Säkerhetskommittén gav klartecken att inleda den sista planerade dosnivån på 500 mg/m².",
-  "url": "https://isofolmedical.com/mfn_news/isofol-initiates-last-dose-cohort-in-ongoing-phase-ib-study-with-arfolitixorin/",
-  "keywords": [
-   "cohort",
-   "500"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 8,
-  "status": "done",
-  "title": "Isofol utökar studiecentren",
-  "subtitle": "Rekryteringen breddas",
-  "date": "24 augusti 2026",
-  "body": "Isofol meddelade att ytterligare kliniska center ska anslutas för att bredda rekryteringen i fas Ib/II-programmet.",
-  "url": "https://isofolmedical.com/news-press/",
-  "keywords": [
-   "recruitment",
-   "sites"
-  ]
- },
- {
-  "track": "company",
-  "col": 8,
-  "status": "done",
-  "title": "Redeye behåller 1,70 kr",
-  "subtitle": "Base Case 1,70 kr",
-  "date": "25 augusti 2026",
-  "body": "Redeye uppdaterade sin analys efter andra kvartalets rapport och behöll sitt motiverade Base Case på 1,70 kronor per aktie.",
-  "url": "https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27",
-  "keywords": [
-   "redeye",
-   "base case",
-   "fair value"
-  ]
- },
- {
-  "track": "company",
-  "col": 8,
-  "status": "done",
-  "title": "Isofol rapporterar Q2",
-  "subtitle": "Kassa 114,8 Mkr vid juni",
-  "date": "25 augusti 2026",
-  "body": "Isofol redovisade 114,8 miljoner kronor i likvida medel per den 30 juni 2026 och ingen nettoomsättning för andra kvartalet.",
-  "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-interim-report-january-june-2026/",
-  "keywords": [
-   "q2",
-   "cash"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 9,
-  "status": "done",
-  "title": "Isofol rapporterar tio behandlade",
-  "subtitle": "10 patienter behandlade",
-  "date": "10 november 2026",
-  "body": "Isofol meddelade att tio patienter hade behandlats utan rapporterade dosbegränsande biverkningar. Fem bedömdes som potentiella kandidater för kirurgi. Observationerna är preliminära och baseras på ett litet patientunderlag.",
-  "url": "https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe",
-  "keywords": [
-   "arfolitixorin",
-   "phase ib",
-   "fas ib",
-   "dose",
-   "dos",
-   "safety"
-  ]
- },
- {
-  "track": "japan",
-  "col": 9,
-  "status": "done",
-  "title": "Japanplanen bekräftas i november",
-  "subtitle": "Bridging-studie parallellt",
-  "date": "10 november 2026 (Isofol), 11 november (Solasia)",
-  "body": "Isofol upprepade planen att rekrytera japanska patienter parallellt med den europeiska fas II-studien genom en bridging-studie tillsammans med Solasia. Solasia publicerade en egen uppdatering den 11 november.",
-  "url": "https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe",
-  "keywords": [
-   "solasia",
-   "japan",
-   "bridging",
-   "sp-05"
-  ]
- },
- {
-  "track": "company",
-  "col": 9,
-  "status": "done",
-  "title": "Isofol publicerar Q3-rapport",
-  "subtitle": "Rapport och finansiering",
-  "date": "12 november 2026",
-  "body": "Isofol publicerade delårsrapporten för januari–september 2026, med redovisning av bolagets verksamhet, finansiella ställning och kliniska utvecklingsarbete.",
-  "url": "https://www.inderes.dk/en/releases/isofol-medical-ab-publ-publishes-interim-report-january-september-2026",
-  "keywords": [
-   "interim report",
-   "delårsrapport",
-   "quarterly",
-   "q3",
-   "financing"
-  ]
- },
- {
-  "track": "company",
-  "col": 9,
-  "status": "future",
-  "title": "TO2: teckningsperiod öppnar",
-  "subtitle": "November 2026",
-  "date": "16 november 2026 (planerat)",
-  "body": "Den planerade teckningsperioden för TO2 inleds. Slutligt utfall, emissionslikvid och utspädning kan fastställas först efter att teckningsperioden avslutats.",
-  "url": "https://isofolmedical.com/news-press/",
-  "keywords": [
-   "to2",
-   "warrant",
-   "teckningsoption",
-   "subscription"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 10,
-  "status": "future",
-  "title": "Fas Ib: dosbeslut väntas",
-  "subtitle": "Säkerhet och dosval",
-  "date": "Kommande – kvartalsplacering ej bekräftad",
-  "body": "Den samlade utvärderingen av säkerhet och tolerabilitet ska ligga till grund för val av dos inför nästa studiedel. Tidpunkten är ännu inte bekräftad.",
-  "url": "https://isofolmedical.com/news-press/",
-  "keywords": [
-   "dose",
-   "dos",
-   "phase ib",
-   "fas ib",
-   "safety",
-   "tolerability",
-   "säkerhet"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 10,
-  "status": "future",
-  "title": "Fas II-studiestart väntas",
-  "subtitle": "Start och rekrytering",
-  "date": "Planerad – startdatum ej verifierat",
-  "body": "Isofol planerar att gå vidare till fas II för att utvärdera arfolitixorins kliniska effekt och säkerhet. Startdatum och slutlig studiedesign är ännu inte bekräftade.",
-  "url": "https://isofolmedical.com/news-press/",
-  "keywords": [
-   "phase ii",
-   "fas ii",
-   "recruitment",
-   "rekrytering",
-   "first patient",
-   "study start"
-  ]
- },
- {
-  "track": "japan",
-  "col": 10,
-  "status": "future",
-  "title": "Japansk studiestart väntas",
-  "subtitle": "Första patient / formellt startbesked",
-  "date": "Planerat parallellt med fas II – datum ej bekräftat",
-  "body": "Solasia planerar en japansk bridging-studie parallellt med fas II-programmet. Datum för myndighetsbesked och första patient är ännu inte bekräftade.",
-  "url": "https://isofolmedical.com/our-drug-candidate/the-phase-ib-ii-study/",
-  "keywords": [
-   "solasia",
-   "japan",
-   "bridging",
-   "first patient"
-  ]
- },
- {
-  "track": "arfo",
-  "col": 11,
-  "status": "future",
-  "title": "Fas II-resultat väntas",
-  "subtitle": "Effekt, säkerhet och nästa beslut",
-  "date": "Framtid – datum ej verifierat",
-  "body": "Resultat från den planerade fas II-delen väntas efter genomförd rekrytering och uppföljning. Inget publiceringsdatum är bekräftat.",
-  "url": "https://isofolmedical.com/news-press/",
-  "keywords": [
-   "phase ii",
-   "fas ii",
-   "topline",
-   "results",
-   "resultat",
-   "efficacy"
-  ]
- }
+  {
+    "track": "company",
+    "col": 5,
+    "status": "done",
+    "title": "TO2-kurs fastställd",
+    "subtitle": "0,95 kr · 37,9 Mkr maximalt brutto",
+    "date": "13 november 2026",
+    "body": "Isofol offentliggjorde att lösenpriset för TO2 är 0,95 kr efter en genomsnittlig volymvägd aktiekurs på cirka 1,35 kr under 2–13 november. Totalt finns 39 863 928 optioner, en aktie per option. Teckning kan ske 16–30 november, medan sista dag för handel är 26 november. Vid full teckning tillförs cirka 37,9 miljoner kronor brutto enligt antalet optioner multiplicerat med 0,95 kr. Bolagets pressmeddelande uppger cirka 37,7 miljoner kronor; beloppsskillnaden är inte förklarad. Fullt utnyttjande ger cirka 11,06 procent utspädning. Utfallet beräknas meddelas omkring 1 december. Det fastställda priset undanröjer en osäkerhet, men kapitalet är ännu inte inbetalt. Optioner som inte säljs i tid eller utnyttjas förfaller värdelösa.",
+    "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+    "keywords": [
+      "TO2",
+      "warrants",
+      "emission",
+      "financing"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 0,
+    "status": "done",
+    "title": "Isofol grundas",
+    "subtitle": "Forskningsbolaget bildas",
+    "date": "2008",
+    "body": "Isofol grundades av professor Bengt Gustavsson med utgångspunkt i forskning om folatbaserad cancerbehandling och samarbete med Merck.",
+    "url": "https://isofolmedical.com/about-isofol/our-history/",
+    "keywords": [
+      "history",
+      "founding"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 0,
+    "status": "done",
+    "title": "First North-notering",
+    "subtitle": "Börsintroduktion",
+    "date": "2017",
+    "body": "Isofol noterades på Nasdaq First North Premier Growth Market 2017.",
+    "url": "https://isofolmedical.com/about-isofol/our-history/",
+    "keywords": [
+      "listing",
+      "nasdaq"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 1,
+    "status": "done",
+    "title": "AGENT startar",
+    "subtitle": "Global fas III",
+    "date": "2018",
+    "body": "Den globala randomiserade fas III-studien AGENT inleddes för att jämföra arfolitixorin med leukovorin i kombination med standardkemoterapi vid metastaserad kolorektalcancer.",
+    "url": "https://isofolmedical.com/about-isofol/our-history/",
+    "keywords": [
+      "agent",
+      "phase iii"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 1,
+    "status": "done",
+    "title": "Solasia får Japanrättigheter",
+    "subtitle": "SP-05 · licensavtal",
+    "date": "Augusti 2020",
+    "body": "Solasia Pharma K.K. förvärvade exklusiva japanska utvecklings- och kommersialiseringsrättigheter till arfolitixorin, som hos Solasia benämns SP-05. Enligt Isofol har avtalet ett sammanlagt potentiellt värde om 100 miljoner USD, med initiala och villkorade milstolpsbetalningar samt stegvis tvåsiffrig royalty på eventuell framtida japansk nettoförsäljning. Avtalets totalvärde är inte redan erhållna pengar.",
+    "url": "https://isofolmedical.com/about-isofol/partners/",
+    "keywords": [
+      "solasia",
+      "sp-05",
+      "license",
+      "japan"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 1,
+    "status": "done",
+    "title": "Redeye publicerar scenarier",
+    "subtitle": "Bear 14 · Base 35 · Bull 72 kr",
+    "date": "November 2020",
+    "body": "Redeyes värderingsscenarier var Bear 14 kr, Base 35 kr och Bull 72 kr per aktie vid publiceringen.",
+    "url": "https://www.redeye.se/company/isofol-medical",
+    "keywords": [
+      "redeye",
+      "base case",
+      "valuation"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 1,
+    "status": "done",
+    "title": "Nasdaq Stockholm",
+    "subtitle": "Byte av handelsplats",
+    "date": "2021",
+    "body": "Isofols aktie började handlas på Nasdaq Stockholm 2021.",
+    "url": "https://isofolmedical.com/about-isofol/our-history/",
+    "keywords": [
+      "nasdaq",
+      "listing"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 1,
+    "status": "done",
+    "title": "Redeye sänker",
+    "subtitle": "Base 35 → 32 kr",
+    "date": "22 mars 2021",
+    "body": "Efter DSMB:s besked att slutföra AGENT med 440 patienter justerade Redeye basscenariot från 35 till 32 kronor. En lägre bedömd toppförsäljning vägde tyngre än ökad sannolikhet för godkännande.",
+    "url": "https://www.borsvarlden.com/Foretagsinfo/isofol-medical",
+    "keywords": [
+      "redeye",
+      "agent",
+      "base case"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 1,
+    "status": "done",
+    "title": "DNB sänker intervallet",
+    "subtitle": "21–37 → 13–23 kr",
+    "date": "21 maj 2021",
+    "body": "DNB Markets sänkte sitt motiverade värderingsintervall från 21–37 till 13–23 kronor efter en uppdatering av aktiestocken och förväntade kommersialiseringskostnader.",
+    "url": "https://news.cision.com/isofol-medical-ab--publ-/r/dnb-markets---isofol-medical-q1-in-line--as-company-readies-for-pre-commercial-activity-ramp-up%2Cc3351234",
+    "keywords": [
+      "dnb",
+      "fair value",
+      "rights issue"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 2,
+    "status": "done",
+    "title": "AGENT missar primärt mål",
+    "subtitle": "Negativt fas III-resultat",
+    "date": "3 augusti 2022",
+    "body": "Isofol meddelade att fas III-studien AGENT inte nådde sitt primära effektmått i den övergripande analysen. Beskedet innebar ett avgörande bakslag för arfolitixorins dåvarande utvecklingsplan.",
+    "url": "https://isofolmedical.com/news-press/",
+    "keywords": [
+      "agent",
+      "phase iii",
+      "fas iii"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 2,
+    "status": "done",
+    "title": "Redeye kapar värdering",
+    "subtitle": "Base 24 → 1,00 kr",
+    "date": "4 augusti 2022",
+    "body": "Efter det negativa AGENT-resultatet sänkte Redeye sitt motiverade basscenario från 24 kronor till 1,00 krona.",
+    "url": "https://se.marketscreener.com/kurs/aktie/ISOFOL-MEDICAL-AB-PUBL-34912582/nyheter-maklar-forskning/",
+    "keywords": [
+      "redeye",
+      "agent",
+      "base case"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 2,
+    "status": "done",
+    "title": "Carnegie sänker kraftigt",
+    "subtitle": "Riktkurs 20 → 1,31 kr",
+    "date": "5 augusti 2022",
+    "body": "Carnegie sänkte riktkursen från 20 till 1,31 kronor och rekommendationen från köp till behåll efter AGENT-resultatet.",
+    "url": "https://www.placera.se/placera/redaktionellt/2022/08/05/fredagens-alla-nya-aktierekar.html",
+    "keywords": [
+      "carnegie",
+      "target price",
+      "agent"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 2,
+    "status": "done",
+    "title": "Pareto sänker kraftigt",
+    "subtitle": "Riktkurs 30 → 1,10 kr",
+    "date": "24 augusti 2022",
+    "body": "Pareto Securities sänkte riktkursen från 30 till 1,10 kronor och rekommendationen från köp till behåll. Sänkningen skedde efter AGENT-studiens negativa resultat.",
+    "url": "https://www.placera.se/telegram/pareto-securities-sanker-isofol-medical-till-behall-kop-riktkurs-1-1-kronor-30-2022-08-24",
+    "keywords": [
+      "pareto",
+      "target price",
+      "agent"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 3,
+    "status": "done",
+    "title": "AGENT-analys presenteras",
+    "subtitle": "Ny dosstrategi övervägs",
+    "date": "4 juli 2023",
+    "body": "Isofol presenterade slutsatser från en fördjupad analys av AGENT. Bolaget pekade på dosering och administreringstidpunkt som möjliga förklaringar till resultatet och presenterade en reviderad klinisk utvecklingsstrategi.",
+    "url": "https://news.cision.com/isofol-medical-ab--publ-/r/isofol-presents-conclusions-from-the-in-depth-analysis-of-the-agent-study,c3799939",
+    "keywords": [
+      "agent",
+      "dose",
+      "2023"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 4,
+    "status": "done",
+    "title": "Solasia fortsätter utvecklingen",
+    "subtitle": "Ny utvecklingsplan",
+    "date": "19 mars 2024",
+    "body": "Solasia bekräftade att bolaget fortsätter delta i utvecklingen av arfolitixorin och bidra med expertis till den omarbetade kliniska planen.",
+    "url": "https://mfn.se/a/isofol-medical/isofols-japanese-partner-solasia-intensifies-its-commitment-to-the-clinical-development-of-arfolitixorin",
+    "keywords": [
+      "solasia",
+      "japan",
+      "development",
+      "sp-05"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 4,
+    "status": "done",
+    "title": "AGENT: per-protokollanalys",
+    "subtitle": "Post hoc · lovande signal",
+    "date": "5 juli 2024",
+    "body": "En extern expertkommitté presenterade en efterhandsanalys av patienter som följt AGENT-protokollet. Analysen gav en möjlig positiv effektsignal, men var explorativ och kunde inte ändra studiens negativa primärresultat.",
+    "url": "https://mfn.se/all/a/isofol-medical/isofol-announces-a-post-hoc-per-protocol-analysis-of-the-agent-study-further-supporting-arfolitixorins-continued-clinical-development",
+    "keywords": [
+      "agent",
+      "per protocol",
+      "post hoc"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 4,
+    "status": "done",
+    "title": "Dosrespons visas prekliniskt",
+    "subtitle": "Två laboratoriestudier",
+    "date": "16 juli 2024",
+    "body": "Två prekliniska studier från Norge och Sverige gav stöd för ett dos–responsförhållande för arfolitixorin tillsammans med 5-FU. Ingen tilläggseffekt av PLP sågs i de testade modellerna.",
+    "url": "https://isofolmedical.com/sv/mfn_news/isofol-meddelar-att-nya-prekliniska-data-stoder-den-tidigare-annonserade-kliniska-utvecklingsplanen-for-arfolitixorin/",
+    "keywords": [
+      "dose",
+      "preclinical",
+      "plp"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 4,
+    "status": "done",
+    "title": "MODELL-E publiceras",
+    "subtitle": "Vävnadsdata · TS-hämning",
+    "date": "21 november 2024",
+    "body": "Den prövarinitierade MODELL-E-studien publicerades i BJC Reports. Enligt Isofol visade resultaten dosberoende hämning av tymidylatsyntas i undersökt vävnad.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-year-end-report-january-december-2024/",
+    "keywords": [
+      "modelle",
+      "ts inhibition"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 4,
+    "status": "done",
+    "title": "Solasia planerar japansk fas II",
+    "subtitle": "Beslut om medverkan",
+    "date": "18 december 2024",
+    "body": "Isofol och Solasia presenterade en plan att inkludera japanska patienter i fas II-delen av det kliniska programmet.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-and-its-partner-solasia-plan-to-expand-the-upcoming-clinical-trial-of-arfolitixorin-to-japan/",
+    "keywords": [
+      "solasia",
+      "japan",
+      "phase ii",
+      "bridging"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 5,
+    "status": "done",
+    "title": "AGENT-analys på ASCO GI",
+    "subtitle": "Per-protokoll · abstract",
+    "date": "27 januari 2025",
+    "body": "En efterhandsanalys av AGENT presenterades vid ASCO GI. Den undersökte protokollföljsamhet och skillnader mellan regioner; resultaten var hypotesgenererande.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-year-end-report-january-december-2024/",
+    "keywords": [
+      "agent",
+      "asco gi"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 5,
+    "status": "done",
+    "title": "Tyskt studiegodkännande",
+    "subtitle": "BfArM · fas Ib/II",
+    "date": "21 mars 2025",
+    "body": "Tyska BfArM gav slutligt godkännande för den nya fas Ib/II-studien av arfolitixorin vid Charité i Berlin. Studien prövar en optimerad dos- och administrationsregim i kombination med 5-FU-baserad behandling vid metastaserad kolorektalcancer.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-receives-regulatory-approval-to-initiate-clinical-study-of-arfolitixorin/",
+    "keywords": [
+      "bfarm",
+      "phase ib"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 5,
+    "status": "done",
+    "title": "Första patient behandlas",
+    "subtitle": "ISO-CC-010 startar",
+    "date": "April 2025",
+    "body": "Den första patienten inkluderades och behandlades i fas Ib/II-studien ISO-CC-010 vid Charité i Berlin.",
+    "url": "https://isofolmedical.com/wp-content/uploads/2026/02/20260218_Isofol_Year-end-report-2025_final_ISO-576.pdf",
+    "keywords": [
+      "first patient",
+      "charite"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 5,
+    "status": "done",
+    "title": "Solasia planerar 140 Mkr",
+    "subtitle": "Japansk fas II/III",
+    "date": "3 april 2025",
+    "body": "Isofol meddelade att Solasia avser investera omkring 140 miljoner SEK i kommande japanska fas II- och fas III-studier samt regulatoriska ansökningar. Solasia ska sponsra de japanska studierna, medan Isofol stödjer samordningen med det globala programmet. Beloppet avser planerade investeringar och är inte en kontantbetalning på 140 miljoner till Isofol.",
+    "url": "https://mfn.se/a/isofol-medical/isofols-partner-solasia-intends-to-increase-investments-in-upcoming-trials-with-arfolitixorin",
+    "keywords": [
+      "solasia",
+      "140",
+      "japan",
+      "investment"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 5,
+    "status": "done",
+    "title": "Isofol beslutar om unitemission",
+    "subtitle": "Units · TO1 och TO2",
+    "date": "12 maj 2025",
+    "body": "Styrelsen beslutade om en företrädesemission av units för att finansiera utvecklingen. De slutliga villkoren omfattade aktier samt teckningsoptionerna TO1 och TO2.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-announces-final-terms-of-the-rights-issue-and-the-potential-overallotment-issue/",
+    "keywords": [
+      "rights issue",
+      "to1",
+      "to2"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 5,
+    "status": "done",
+    "title": "Första dosnivån klar",
+    "subtitle": "120 mg/m²",
+    "date": "Juni 2025",
+    "body": "Den första doskohorten på 120 mg/m² avslutades och säkerhetskommittén rekommenderade fortsatt doseskalering.",
+    "url": "https://isofolmedical.com/mfn_news/isofols-clinical-study-with-arfolitixorin-reaches-another-important-milestone/",
+    "keywords": [
+      "cohort",
+      "120"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 5,
+    "status": "done",
+    "title": "Redeye återupptar bevakning",
+    "subtitle": "Base Case 1,70 kr",
+    "date": "17 juni 2025",
+    "body": "Redeye inledde en ny period av uppdragsbevakning med Base Case 1,70 kronor per aktie. Redeye hade även publicerat analyser av Isofol under tidigare år.",
+    "url": "https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617",
+    "keywords": [
+      "redeye",
+      "base case",
+      "fair value"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 5,
+    "status": "done",
+    "title": "Andra dosnivån klar",
+    "subtitle": "200 → 300 mg/m²",
+    "date": "30 september 2025",
+    "body": "Säkerhetskommittén bedömde dosnivån 200 mg/m² som säker och tolererad och gav klartecken för nästa kohort på 300 mg/m².",
+    "url": "https://isofolmedical.com/mfn_news/isofols-clinical-study-with-arfolitixorin-reaches-another-important-milestone/",
+    "keywords": [
+      "cohort",
+      "200",
+      "300"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 5,
+    "status": "done",
+    "title": "Solasias ägarandel rapporteras",
+    "subtitle": "Cirka 2 % hösten 2025",
+    "date": "30 september 2025",
+    "body": "Enligt Isofols bolagspresentation hade Solasia cirka 2 procent av aktierna per den 30 september 2025.",
+    "url": "https://isofolmedical.com/wp-content/uploads/2026/02/Isofol-Corporate-Deck-February-2026-ISO-44-r20.pdf",
+    "keywords": [
+      "solasia",
+      "shareholder",
+      "ownership"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 6,
+    "status": "done",
+    "title": "ABG inleder",
+    "subtitle": "Base 1,60 kr",
+    "date": "15 januari 2026",
+    "body": "ABG Sundal Collier inledde uppdragsbevakning med tre scenarier: Bear Case 0,10 kr, riskjusterat Base Case 1,60 kr och Bull Case 10,50 kr per aktie. Basscenariot utgick från 20 procents sannolikhet för klinisk framgång och en riskjusterad kassaflödesmodell som inkluderade antagen framtida utspädning. Det är ett motiverat värde i en uppdragsanalys, inte en traditionell tolvmånadersriktkurs.",
+    "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second",
+    "keywords": [
+      "abg",
+      "scenario b",
+      "fair value"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 6,
+    "status": "done",
+    "title": "Isofol redovisar tidiga patientdata",
+    "subtitle": "Tidiga patientobservationer",
+    "date": "24 februari 2026",
+    "body": "Isofol publicerade preliminära kliniska observationer från fas Ib/II-studien. Underlaget var begränsat och resultaten kunde ännu inte fastställa jämförande behandlingseffekt.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-provides-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin/",
+    "keywords": [
+      "phase ib",
+      "patients"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 6,
+    "status": "done",
+    "title": "ABG höjer",
+    "subtitle": "Base 1,60 → 1,80 kr",
+    "date": "24 februari 2026",
+    "body": "ABG höjde sitt riskjusterade basscenario från 1,60 till 1,80 kronor per aktie (+12,5 procent) efter de preliminära kliniska observationerna från sex utvärderingsbara patienter. Sannolikheten för klinisk framgång i modellen höjdes från 20 till 22,5 procent. Bear Case 0,10 kr och Bull Case 10,50 kr lämnades oförändrade. Patientunderlaget var litet och värderingen är en uppdragsanalys, inte en garanterad aktiekurs.",
+    "url": "https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224",
+    "keywords": [
+      "abg",
+      "scenario b",
+      "fair value"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 6,
+    "status": "done",
+    "title": "Solasia garanterar TO1",
+    "subtitle": "Finansiellt åtagande",
+    "date": "11 mars 2026",
+    "body": "Solasia lämnade ett toppgarantiåtagande i samband med Isofols TO1-inlösen. Tillsammans med andra ägares avsiktsförklaringar motsvarade åtagandena 42 procent av potentiell emissionslikvid. Solasias garanti var en del av detta, inte hela beloppet.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-receives-top-guarantee-commitment-and-letters-of-intent-corresponding-to-42-percent-of-upcoming-warrant-exercise/",
+    "keywords": [
+      "solasia",
+      "to1",
+      "guarantee"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 6,
+    "status": "done",
+    "title": "Autismrättigheter säkras",
+    "subtitle": "CFD · ny möjlig indikation",
+    "date": "18 mars 2026",
+    "body": "Isofol utökade sitt exklusiva licensområde för arfolitixorin till autismspektrumtillstånd och lämnade in en patentansökan med koppling till cerebral folatbrist.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-secures-license-rights-for-arfolitixorin-in-autism/",
+    "keywords": [
+      "autism",
+      "cfd",
+      "license"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 6,
+    "status": "done",
+    "title": "TO1 tillför 18,9 Mkr",
+    "subtitle": "Optionsinlösen och garanti",
+    "date": "31 mars 2026",
+    "body": "Isofol redovisade cirka 18,9 miljoner kronor i bruttolikvid från utnyttjade TO1 och garantiåtaganden samt beslutade om en riktad emission till Solasia.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-receives-gross-proceeds-of-18-9-msek-in-connection-with-the-exercise-of-warrants-and-guarantee-commitments-for-warrants-of-series-to1-and-resolves-on-a-directed-share-issue/",
+    "keywords": [
+      "to1",
+      "financing"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 6,
+    "status": "done",
+    "title": "Solasia ökar ägandet",
+    "subtitle": "2 083 332 nya aktier",
+    "date": "31 mars–1 april 2026",
+    "body": "Efter att TO1 utnyttjats till 93,57 procent aktiverades Solasias toppgaranti. Isofol beslutade om en riktad emission på 2 083 332 aktier till Solasia, motsvarande omkring 1 miljon SEK vid 0,48 kr per aktie. Solasia kommunicerade senare investeringen som en förstärkning av kapital- och utvecklingssamarbetet. Detta ska inte förväxlas med det separata planerade japanska studiebudgetbeloppet.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-receives-gross-proceeds-of-18-9-msek-in-connection-with-the-exercise-of-warrants-and-guarantee-commitments-for-warrants-of-series-to1-and-resolves-on-a-directed-share-issue/",
+    "keywords": [
+      "solasia",
+      "to1",
+      "shares",
+      "investment"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 7,
+    "status": "done",
+    "title": "BfArM godkänner ändring",
+    "subtitle": "Jämförelse mot leukovorin",
+    "date": "15 april 2026",
+    "body": "Tyska BfArM godkände bredare inklusionskriterier och en studiedesign som möjliggör direkt jämförelse med leukovorin. Ändringen öppnade även för ytterligare studiecenter under fas Ib.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-optimizes-the-design-of-its-phase-ib-ii-study-following-new-regulatory-approval/",
+    "keywords": [
+      "bfarm",
+      "leucovorin",
+      "protocol"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 8,
+    "status": "done",
+    "title": "Högsta dosen inleds",
+    "subtitle": "300 klar · 500 mg/m²",
+    "date": "8 juli 2026",
+    "body": "Den tredje dosnivån, 300 mg/m², avslutades utan dosbegränsande toxicitet. Säkerhetskommittén gav klartecken att inleda den sista planerade dosnivån på 500 mg/m².",
+    "url": "https://isofolmedical.com/mfn_news/isofol-initiates-last-dose-cohort-in-ongoing-phase-ib-study-with-arfolitixorin/",
+    "keywords": [
+      "cohort",
+      "500"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 8,
+    "status": "done",
+    "title": "Isofol utökar studiecentren",
+    "subtitle": "Rekryteringen breddas",
+    "date": "24 augusti 2026",
+    "body": "Isofol meddelade att ytterligare kliniska center ska anslutas för att bredda rekryteringen i fas Ib/II-programmet.",
+    "url": "https://isofolmedical.com/news-press/",
+    "keywords": [
+      "recruitment",
+      "sites"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 8,
+    "status": "done",
+    "title": "Redeye behåller 1,70 kr",
+    "subtitle": "Base Case 1,70 kr",
+    "date": "25 augusti 2026",
+    "body": "Redeye uppdaterade sin analys efter andra kvartalets rapport och behöll sitt motiverade Base Case på 1,70 kronor per aktie.",
+    "url": "https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27",
+    "keywords": [
+      "redeye",
+      "base case",
+      "fair value"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 8,
+    "status": "done",
+    "title": "Isofol rapporterar Q2",
+    "subtitle": "Kassa 114,8 Mkr vid juni",
+    "date": "25 augusti 2026",
+    "body": "Isofol redovisade 114,8 miljoner kronor i likvida medel per den 30 juni 2026 och ingen nettoomsättning för andra kvartalet.",
+    "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-interim-report-january-june-2026/",
+    "keywords": [
+      "q2",
+      "cash"
+    ]
+  },
+  {
+    "track": "arfo",
+    "col": 9,
+    "status": "done",
+    "title": "Isofol rapporterar tio behandlade",
+    "subtitle": "10 patienter behandlade",
+    "date": "10 november 2026",
+    "body": "Isofol meddelade att tio patienter hade behandlats utan rapporterade dosbegränsande biverkningar. Fem bedömdes som potentiella kandidater för kirurgi. Observationerna är preliminära och baseras på ett litet patientunderlag.",
+    "url": "https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe",
+    "keywords": [
+      "arfolitixorin",
+      "phase ib",
+      "fas ib",
+      "dose",
+      "dos",
+      "safety"
+    ]
+  },
+  {
+    "track": "japan",
+    "col": 9,
+    "status": "done",
+    "title": "Japanplanen bekräftas i november",
+    "subtitle": "Bridging-studie parallellt",
+    "date": "10 november 2026 (Isofol), 11 november (Solasia)",
+    "body": "Isofol upprepade planen att rekrytera japanska patienter parallellt med den europeiska fas II-studien genom en bridging-studie tillsammans med Solasia. Solasia publicerade en egen uppdatering den 11 november.",
+    "url": "https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe",
+    "keywords": [
+      "solasia",
+      "japan",
+      "bridging",
+      "sp-05"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 9,
+    "status": "done",
+    "title": "Isofol publicerar Q3-rapport",
+    "subtitle": "Rapport och finansiering",
+    "date": "12 november 2026",
+    "body": "Isofol publicerade delårsrapporten för januari–september 2026, med redovisning av bolagets verksamhet, finansiella ställning och kliniska utvecklingsarbete.",
+    "url": "https://www.inderes.dk/en/releases/isofol-medical-ab-publ-publishes-interim-report-january-september-2026",
+    "keywords": [
+      "interim report",
+      "delårsrapport",
+      "quarterly",
+      "q3",
+      "financing"
+    ]
+  },
+  {
+    "track": "company",
+    "col": 9,
+    "status": "future",
+    "title": "TO2: teckningsperiod öppnar",
+    "subtitle": "November 2026",
+    "date": "16 november 2026 · Q4 2026",
+    "body": "TO2 har ett fastställt lösenpris på 0,95 kr per aktie. Nyttjandeperioden börjar den 16 november 2026 och slutar den 30 november. Sista handel i TO2 sker 26 november. Redan utgivna optioner är inte en ny framtida kapitalanskaffningsplan; bolaget får endast likvid för de optioner som faktiskt utnyttjas.",
+    "url": "https://isofolmedical.com/news-press/",
+    "keywords": [
+      "to2",
+      "warrant",
+      "teckningsoption",
+      "subscription"
+    ],
+    "time_basis": "company",
+    "time_rationale": "Isofol har publicerat att TO2 kan utnyttjas 16–30 november 2026. Datumet och kvartalet är officiellt angivna."
+  },
+  {
+    "track": "arfo",
+    "col": 10,
+    "status": "future",
+    "title": "Fas Ib: dosbeslut väntas",
+    "subtitle": "Säkerhet och dosval",
+    "date": "Q1 2027 · uppskattad placering",
+    "body": "Isofol slutför högsta fas Ib-dosen på 500 mg/m². Efter att de återstående patienterna behandlats och säkerhetsdata granskats kan studiens Safety Review Committee rekommendera en eller flera dosnivåer för fas II. Beslutet är ett viktigt villkor för nästa studiedel. Tidpunkten Q1 2027 är vår uppskattning, inte en kommunicerad exakt bolagstidplan.",
+    "url": "https://isofolmedical.com/news-press/",
+    "keywords": [
+      "dose",
+      "dos",
+      "phase ib",
+      "fas ib",
+      "safety",
+      "tolerability",
+      "säkerhet"
+    ],
+    "time_basis": "estimated",
+    "time_rationale": "Vid uppdateringen 10 november 2026 hade tre patienter inkluderats på sista dosnivån 500 mg/m² och tre återstod. En säkerhetsgranskning följer efter deras behandling och uppföljning. Q1 2027 är därför en försiktig tidsuppskattning – Isofol har inte lovat detta kvartal."
+  },
+  {
+    "track": "arfo",
+    "col": 11,
+    "status": "future",
+    "title": "Fas II-studiestart väntas",
+    "subtitle": "Start och rekrytering",
+    "date": "Q2 2027 · analytisk uppskattning",
+    "body": "Isofol planerar den utökade fas II-delen för att undersöka arfolitixorins effekt och säkerhet i en bredare patientpopulation med en jämförande leukovorinarm. Antalet planerade center har ökat till 15–20 i Tyskland, Österrike, Spanien och Grekland. Ett möjligt startkvartal är Q2 2027 enligt en försiktig planeringsuppskattning – inte ett bekräftat datum. Rekryteringskapacitet, regulatoriska tillstånd och dosval kan ändra tidpunkten.",
+    "url": "https://isofolmedical.com/news-press/",
+    "keywords": [
+      "phase ii",
+      "fas ii",
+      "recruitment",
+      "rekrytering",
+      "first patient",
+      "study start"
+    ],
+    "time_basis": "estimated",
+    "time_rationale": "Bolaget rapporterar i november 2026 att fas Ib är på upploppet och att 15–20 center planeras i fas II, men anger inget startkvartal. Q2 2027 är en preliminär planeringsbedömning efter säkerhetsgranskning, land-/kliniköppningar och regulatoriska förberedelser."
+  },
+  {
+    "track": "japan",
+    "col": 12,
+    "status": "future",
+    "title": "Japansk studiestart väntas",
+    "subtitle": "Första patient / formellt startbesked",
+    "date": "Q3 2027 · analytisk uppskattning",
+    "body": "Solasia planerar att rekrytera patienter i Japan till en bridging-studie som ska stödja utvärderingen i den japanska populationen parallellt med europeiska fas II. Q3 2027 är en försiktig kvartalsuppskattning, inte ett officiellt löfte. Den japanska regulatoriska processen och samordningen med den europeiska studien kan flytta starten.",
+    "url": "https://isofolmedical.com/our-drug-candidate/the-phase-ib-ii-study/",
+    "keywords": [
+      "solasia",
+      "japan",
+      "bridging",
+      "first patient"
+    ],
+    "time_basis": "estimated",
+    "time_rationale": "Isofol uppger att Solasias japanska bridging-studie ska löpa parallellt med fas II, men utan offentliggjort startkvartal. Q3 2027 är ett illustrativt uppskattat kvartal som ger viss tid för japanska förberedelser efter möjlig europeisk fas II-start."
+  },
+  {
+    "track": "arfo",
+    "col": 17,
+    "status": "future",
+    "title": "Fas II-resultat väntas",
+    "subtitle": "Effekt, säkerhet och nästa beslut",
+    "date": "Q4 2028 · mycket preliminärt scenario",
+    "body": "Resultat från den kommande, utökade fas II-delen väntas först efter patientrekrytering vid upp till 15–20 center, behandling och uppföljning samt kvalitetssäkrad statistisk analys. Q4 2028 används endast som grov illustrativ kvartalsplacering om studien startar under 2027 och kan genomföras utan större avbrott. Isofol har inte guidat för något sådant kvartal och resultat kan komma betydligt tidigare eller senare.",
+    "url": "https://isofolmedical.com/news-press/",
+    "keywords": [
+      "phase ii",
+      "fas ii",
+      "topline",
+      "results",
+      "resultat",
+      "efficacy"
+    ],
+    "time_basis": "estimated",
+    "time_rationale": "Bolaget har inte publicerat något resultatkvartal. Q4 2028 är ett mycket grovt scenario baserat på antagen fas II-start under 2027, multicenterrekrytering och efterföljande behandling, uppföljning, datalås och analys. Det är INTE en bolagsprognos; 2029 eller senare är möjligt."
+  },
+  {
+    "track": "company",
+    "col": 9,
+    "status": "future",
+    "title": "TO2: teckningsutfall",
+    "subtitle": "Kapitaltillskott och utspädning",
+    "date": "Q4 2026 · omkring 1 december (bolagets tidplan)",
+    "time_basis": "company",
+    "time_rationale": "Bolaget har angivit att utfallet av nyttjandeperioden 16–30 november väntas offentliggöras omkring 1 december 2026. Datumet kan ändras; Q4 2026 är ett officiellt avgränsat kvartal.",
+    "body": "Efter 30 november meddelar Isofol hur många av de 39 863 928 utestående TO2-optionerna som faktiskt har utnyttjats till 0,95 kr per aktie. Utfallet avgör antal nya aktier, verklig utspädning och tillförd bruttolikvid. Vid full teckning är den aritmetiska bruttolikviden cirka 37,9 miljoner kr. Detta ska inte räknas som erhållen likvid före offentliggjort utfall och betalning.",
+    "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+    "keywords": [
+      "TO2",
+      "optioner",
+      "teckningsutfall",
+      "finansiering"
+    ]
+  }
 ];
 const tracks=[['arfo','Arfolitixorin'],['japan','Japan / Solasia'],['company','Företaget']];
-const periods=["2008–17","2018–21","2022","2023","2024","2025","Q1 2026","Q2 2026","Q3 2026","Q4 2026","2027","2028+"];
+const periods=["2008–17","2018–21","2022","2023","2024","2025","Q1 2026","Q2 2026","Q3 2026","Q4 2026","Q1 2027","Q2 2027","Q3 2027","Q4 2027","Q1 2028","Q2 2028","Q3 2028","Q4 2028"];
 const tl=document.getElementById('timeline');
 let period='relevant';
 // Aktuellt: genomförda milstolpar från senaste 12 månaderna och alla kommande.
@@ -1500,7 +1544,11 @@ const selected=new Set(tracks.map(x=>x[0]));
 function renderTimeline(){
  closeModal();
  const matches=milestones.filter(m=>selected.has(m.track)&&(period==='all'||(period==='relevant'?isRecentMilestone(m):m.status===period)));
- const cols=[...new Set(matches.map(m=>m.col))].sort((a,b)=>a-b);
+ const usedCols=[...new Set(matches.map(m=>m.col))].sort((a,b)=>a-b);
+ const cols=usedCols.length?Array.from(
+   {length:usedCols[usedCols.length-1]-(period==='future'?Math.min(9,usedCols[0]):usedCols[0])+1},
+   (_,i)=>(period==='future'?Math.min(9,usedCols[0]):usedCols[0])+i
+ ):[];
  const rows=tracks.filter(([key])=>matches.some(m=>m.track===key));
  tl.replaceChildren();
  const n=Math.max(cols.length,1);
@@ -1516,7 +1564,7 @@ function renderTimeline(){
   for(const col of cols){
    const cell=document.createElement('div');cell.className='cell';
    for(const m of matches.filter(x=>x.track===track&&x.col===col)){
-    const btn=document.createElement('button');btn.className='milestone '+m.status+' '+m.track;
+    const btn=document.createElement('button');btn.className='milestone '+m.status+' '+m.track+(m.time_basis==='estimated'?' estimated-time':'');
     const title=document.createElement('strong');title.textContent=m.title;
     const subtitle=document.createElement('small');subtitle.textContent=m.subtitle;
     btn.append(title,subtitle);
@@ -1617,7 +1665,16 @@ function openModal(m,anchor){
  activeAnchor=anchor;
  document.getElementById('modal-date').textContent=m.date;
  document.getElementById('modal-title').textContent=m.title;
- document.getElementById('modal-body').textContent=m.body;
+ const modalBody=document.getElementById('modal-body');
+ modalBody.replaceChildren();
+ const description=document.createElement('p');description.textContent=m.body;
+ description.className='modal-milestone-description';modalBody.append(description);
+ if(m.status==='future'&&m.time_rationale){
+   const timing=document.createElement('div');timing.className='milestone-time-explanation';
+   const heading=document.createElement('strong');heading.textContent=m.time_basis==='estimated'?'≈ Vår kvartalsuppskattning':'Bolagets tidsbedömning';
+   const p=document.createElement('p');p.textContent=m.time_rationale;
+   timing.append(heading,p);modalBody.append(timing);
+ }
  const links=document.getElementById('modal-links');links.replaceChildren();
  if(m.url){const a=document.createElement('a');a.href=m.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Läs källa / bolagsinformation ↗';links.append(a)}
  if(m.keywords&&latestItems.length){
