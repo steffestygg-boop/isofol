@@ -1,8 +1,15 @@
 {
-  "updated_at": "2026-11-13T20:58:00+01:00",
+  "updated_at": "2026-11-13T21:21:27+01:00",
   "based_on_report": "2026-09-30",
-  "automated_checked": false,
-  "coverage_status": "initial_bedömning",
+  "automated_checked": true,
+  "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
+  "checked_sources": [
+    "bolaget: Google News RSS",
+    "omvärld: Google News RSS",
+    "jämförelsebolag: Google News RSS",
+    "officiell presslista"
+  ],
+  "failed_sources": [],
   "days_since_report": 44,
   "months_to_company_runway_proxy": 10.5,
   "methodology_version": "1.0.0-isofol",
@@ -24,14 +31,141 @@
     }
   },
   "latest_information": [
-    "Q3-rapport 12 november 2026: 98,1 miljoner kr i likvida medel per 30 september, −16,9 miljoner kr i operativt kassaflöde Q3 och bedömd finansiering för planerad verksamhet minst 12 månader från balansdagen.",
-    "TO2 16–30 november: 39 863 928 optioner, 1 option per aktie, lösenpris inom 0,48–1,60 kr. Brutto upp till 63,8 miljoner kr, men utfall och faktisk nettolikvid okända.",
-    "Planerad utvidgad fas II med 15–20 kliniker och japansk bridging. Framtida kostnader kan avvika från historisk förbrukning.",
-    "Historiska fall: Isofol 2025, BioInvent, Cereno, Alligator, Immunovia, Active Biotech och SynAct."
+    "Senast verifierad Q3 2026: 98,1 miljoner kr i likvida medel den 30 september, kvartalets operativa kassaflöde −16,9 miljoner kr.",
+    "TO2: 39 863 928 utestående optioner, teckningsperiod 16–30 november 2026. Ingen framtida TO2-likvid antas förrän faktiskt utfall offentliggjorts.",
+    "Bolaget bedömer befintlig finansiering tillräcklig för planerad drift 12 månader efter 30 september 2026. Tidens gång mot riktmärket räknas om varje vecka."
   ],
-  "latest_items": [],
+  "latest_items": [
+    {
+      "title": "Isofol Medical (Q3 Review): Phase II within reach - Redeye - Börsvärlden",
+      "date": "2026-11-13",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTU9aM3lWZk9aTlVzLXZ2bGdycWkwZ1NoQlR3S2dSZnBhYXN1SkNuR2h2SlVOM0xqVHZKQUFINGY3Y0xiTzRKZ2dVVU1nNnZJWGJBbHdfTlV6Z09nSVBWbnRiY0JfNjh2MFBXeHg5LWZxLVdkV09PUC14SHZabEFTR2dxd1FVdWE1VGdFdUlhU0xpTE9s?oc=5",
+      "category": "omvärld",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Isofols Q3: fas Ib på upploppet och utökad fas II - Biostock",
+      "date": "2026-11-13",
+      "source": "Biostock",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd05sRGc1dUxuOUM0eGpjdDJoMHBOdWhsQmI0ZGNlTzAzT0lRQXN6QzFqUjhBeG01MTR4N3ZGektlX2ZsRHcyekNSNDhXYW1oWU9FZnp3WWVNUjRSWlZWdm9QSmllT2ExN0l1WnlPdGY3bEwyRzdJang2bmxjeHliclBRMA?oc=5",
+      "category": "omvärld",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Cereno Scientific rasar efter handelsstopp 13 november 2026 - HurBra.se",
+      "date": "2026-11-13",
+      "source": "HurBra.se",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CcFdTR3pIa0NUMnNMUklqX0NpWUNDV3F3RWloSEFZUWNzYWVwMVVFbFllaDRjaXVSNXZqdWFKczhrVktVeHk5R0dxTGVZZEJhaGxkTndOX0NmVUtSSmF0a3ladU42em5vakl1VWtwc3NjUkVz?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Cereno Scientific planerar företrädesemission om 400 miljoner kronor för fortsatt klinisk utveckling - Biostock",
+      "date": "2026-11-12",
+      "source": "Biostock",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVmRaek9sMVZyc0Y4MC1EakZQWmRvOHQ5MHE1VlZocGpWN1R1MTRkVzRLUEFRaGFHTHdOMEw2UE9BcjBGbkVXWDhnb2h5c3ZCZ09yNWh4d1BpaU9OdG9GbUJQanpVa25zZUI4azEyWTlyUk9TNlNGeURJWDhHa3lpaldtdlZzMEJZVTFqbjV1ek1RZTJVZUV6M2ZyM0xPcThhUThrRDhHTVVXOW1mRDFlc1NVbHRHWWtFeG5Kb0RMUDczRDN1a0tZVQ?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "emission"
+    },
+    {
+      "title": "Cereno Scientific planerar företrädesemission på 400 miljoner kronor – förlänger lån - Börsvärlden",
+      "date": "2026-11-12",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGZjdVdjVWNHSURna1VrRWtLQ0xPNHRkV2NRamo4QnlhTEJsbUtpVW9meThLOUpna3dTWVUxMXlWYjZHRjNoaXJuc0JCWUUteERRRWlfd1EwSFBsdFFQT1NKVGpaRHdmSWJSeWJGQVRIVkZxXzFrc19xTFFYRUdSN1ctYWNPRkF1Q05YT0VkN1V3YU9aM1RqcXBLMkM1cS04bzU5Y0tUOG1nSHNranFRcFhPVkpuUQ?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "emission"
+    },
+    {
+      "title": "Isofol om patienter som oväntat blev operabla i cancerstudien - Biostock",
+      "date": "2026-11-11",
+      "source": "Biostock",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN3hyWDFieVRCRWlzM05FTndzUmNnSnlsa3luNmhrMENSQ201UmJxY01lZzRQc2U4ZWxPTGcxZXhHY2VKS2ZLMnYzMGVLNWlaVzYwVnhBcFVERXpKUHhhMGEwZ0wyc2VlUFBwT1pzRjVZblBLZ1NOSkhzSUdBMG5wUmpLcDdwNEpRMTB2czA0aGRyOEJ1?oc=5",
+      "category": "omvärld",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Bioinvents nyemission: Tre flaggor efter kursslakten - Affärsvärlden",
+      "date": "2026-11-11",
+      "source": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSzAyeVp0eDRDWW1Pa3c1ZzNHOEdBUl9Ram5tdklqY3NndndlV0JRS0VKNWpwVlY4R3FnRW9TOWdlUXh1dEpudW5iLWowSncyeXVJMm5kVGFKTGY1Q0N0TFJZbEl0TmFrMktEdHhndGllLWNHNVJtRWRYRHoxWlRiMlRWSlNiR1lFYXI3ZjJuVUswQQ?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "emission"
+    },
+    {
+      "title": "Isofol Medical | Life Sciences Summit 2026 - Biostock",
+      "date": "2026-11-09",
+      "source": "Biostock",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzeXlBMmZ2TkJhWlFIdXFkazdydXd5aUtrZkNpQ1R5MWtXQXh5RkN3Mm8xNU53dXM2b3dqZEloZy1iemV1eXgwUnlIY0dxS3YtakhMTEgwdUFSeVRtUXNGUm9VdkliVENiSWtkVUw4eGZob28zR0Fmczk1TQ?oc=5",
+      "category": "omvärld",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Bioinvent rasar vidare – teckningskurs 1 krona - Affärsvärlden",
+      "date": "2026-11-06",
+      "source": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYlFEaFVrbHA5RU5TSTdYeExLYVVjV3Rnd19GQzlMbk5lbTBiYlJPUHNmV0NoNDBVR19vNGljRXRnSGdXLWhJel9pREdvanc2UVR6NmpjbHppSGx4UzV2bC1IUExQUHgyRUNNbE5HejJJVWFkVHJ6OFNEYV90NGRsRndDQlJTQnR4?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Immunovia: Fem flaggor – aktien halverades i väntan på villkor - Affärsvärlden",
+      "date": "2026-10-30",
+      "source": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbHd0bjhybFBOdUotejdzdDEzc2NsSWxjRXZaTTIxSVk0RXAyQWRzdFlDZXVWQUJtdGxuM1ZHTDNPLVg5NFBfVVlUNVpOYk1taTE1Wndid0V1U2FQT1FudXdydFdyUnNtZzVGZzJNRFRXYkhZRVVoQlBhcDhEYmZiU2ZOSjNrMG5CckJlbkpqb2luVmdWWi1UNExyWEs?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Immunovia beslutar om villkor i aviserad företrädesemission - Börsvärlden",
+      "date": "2026-10-29",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUjRENWdwRFJSQllsb2dVWnRtRzM4N1k1OW1nQTJLdng2UUF2Y0ZqWWdOSGxDdEpFM2RNczVoU0xWM3MxWWJiYTREUjFlWldSTkI3eWNiRjlZaXZwUmFya3RjUU9pNVpIWEtBZWhRNG9rUXhtWlA3VFVkLVRoZXM3U0hsY0tUVXU2c0h1NW9iUHdVSUF0Umk1WXVJcnk?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "emission"
+    },
+    {
+      "title": "Immunovia behöver pengar: Ber om 63 miljoner till 76% utspädning - Affärsvärlden",
+      "date": "2026-10-29",
+      "source": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdTRnLThCMGF3SF9jbUh3Q3llMlpuejllaW9HeGRrNHFsMUZOTlZ0M1hIRlN4QThZRUprVGJOalY1NXpfSk9PSFRTTmlTZzl3R2s4RmlrQjlxdUNDMmhheEY3T0p0QzB0SkdVSTBNMzN0WEtCbVAwRzZjZ2E3M1MweEVaWE1UZmNJQjFVVzlXb2lOenZfc0JSSEZ3REpSMksw?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Bioinvent minskade rörelseförlusten i tredje kvartalet - föreslår stor nyemission - Börsvärlden",
+      "date": "2026-10-29",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcmhOb1lyenJjYnNsQlRMVVNTSGU2dEJCdktVSmJGZnJzaEtYTDh0WkRvTGdVSlNod3g2NlotZWszbGg0TFNQNVV1RGxpUWtyMmFyYnM4cWExVkoySTczRHh0UmxuSWxUN0hDWlVxZktyYzJLRmJrTHNZeF82Um5WaE9HTldmM1JiNHYtNk82cFN2S3MwNE5GaElKLUlNUUF5UGN2Rjg1OTFMamxZUDJMS2RB?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "emission"
+    },
+    {
+      "title": "Bioinvent publicerar positiva fas 1-data för BI-1808 i vetenskaplig tidskrift - Börsvärlden",
+      "date": "2026-10-15",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tYWRmRVMwVXVKcFBLWDhBWTRFVm95NVBvNlFtSG52eUZ2OGZJa1Y1c1ZWaGJFTFNJOF9renRYWGlIb21HYzc5b2pEZEdQbWNLU2l5cg?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
+    }
+  ],
   "review_needed": [],
-  "review_warning": "Bedömningen är ett subjektivt scenario, inte en uppmätt sannolikhet. TO2-resultat och eventuella nya rapporter flaggas för mänsklig källgranskning; formeln uppdateras automatiskt för tidens gång.",
+  "emission_detected": [],
+  "review_warning": "Detta är en regelstyrd bedömningsmodell, inte ett objektivt förutsagt utfall. Tidsfaktorn uppdateras automatiskt. RSS och officiell presslista bevakas men rubriker kan varken ersätta rapportläsning eller garantera att alla nyheter hittas. Nya villkor, kassavärden och eventuella emissioner måste verifieras mot fullständiga originalbesked innan prognosen omkalibreras.",
   "sources": {
     "company_report": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
     "warrants": "https://mfn.se/all/a/isofol-medical/isofol-offentliggor-slutliga-villkor-i-foretradesemission-samt-for-en-potentiell-overtilldelningsemission",
