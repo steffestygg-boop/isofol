@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0-isofol",
+  "version": "1.0.1-isofol",
   "curated_at": "2026-11-13",
-  "scope": "Modell för hur sannolikt det är att Isofol ANNONSerar en ny kontant kapitalanskaffning via aktie- eller unitemission inom rullande 3/6/12 månader. Exkluderar lösen av redan emitterade TO2 och TO1 och annan befintlig teckningsrätt. TO2 bedöms som en viktig alternativ finansieringskälla.",
+  "scope": "Bedömning av risken att Isofol annonserar en NY kontant kapitalanskaffning via aktie- eller unitemission inom rullande 3/6/12 månader. Befintliga TO2-optioners lösen räknas separat; kursen har fastställts men nyttjande och likvid är ännu inte kända.",
   "company": {
     "report_date": "2026-09-30",
     "reported_at": "2026-11-12",
@@ -17,15 +17,23 @@
       "series": "TO2",
       "option_count": 39863928,
       "exercise_ratio": "1 TO2 = 1 aktie",
-      "price_formula": "70 % av VWAP 2–13 november 2026, dock lägst 0,48 kr och högst 1,60 kr",
+      "price_formula": "Fastställd kurs 0,95 kr efter ca 1,35 kr i VWAP 2–13 november 2026 (70 % av VWAP).",
       "subscription_period": "2026-11-16–2026-11-30",
       "vwap_period": "2026-11-02–2026-11-13",
       "price_floor_sek": 0.48,
       "price_ceiling_sek": 1.6,
-      "proceeds_floor_msek": 19.1,
-      "proceeds_ceiling_msek": 63.8,
-      "potential_cash_comment": "19,1–63,8 miljoner kr brutto om alla 39 863 928 optioner utnyttjas, beroende på teckningskurs. Vid lägre nyttjandegrad kan nettolikviden bli lägre eller noll. Den faktiska likviden är ännu okänd och har inte lagts till kassan.",
-      "url": "https://mfn.se/all/a/isofol-medical/isofol-offentliggor-slutliga-villkor-i-foretradesemission-samt-for-en-potentiell-overtilldelningsemission"
+      "potential_cash_comment": "Vid 100 % nyttjande kan Isofol få cirka 37,9 miljoner kr brutto enligt 39 863 928 × 0,95 kr; pressmeddelandet uppger cirka 37,7 miljoner kr. Faktisk nyttjandegrad och inbetald nettolikvid är okända och har INTE räknats in i den rapporterade kassan.",
+      "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+      "price_status": "fastställt",
+      "price_decision_date": "2026-11-13",
+      "confirmed_vwap_sek_approx": 1.35,
+      "confirmed_exercise_price_sek": 0.95,
+      "fixed_price_sek": 0.95,
+      "full_exercise_calculated_gross_msek": 37.8707316,
+      "full_exercise_press_release_approx_msek": 37.7,
+      "gross_amount_discrepancy": "Pressmeddelandet anger cirka 37,7 miljoner kr vid full teckning, medan 39 863 928 × 0,95 = 37,8707316 miljoner kr (cirka 37,9). Webbplatsen visar den aritmetiska uträkningen och noterar avvikelsen.",
+      "last_trading_day": "2026-11-26",
+      "anticipated_outcome_announcement_date": "2026-12-01"
     },
     "other_context": [
       "Fas Ib/II-programmet går mot utökad fas II med 15–20 kliniker i flera europeiska länder och planerad japansk bridging med Solasia. En sådan utvidgning kan innebära större framtida kostnader än historiskt kassaflöde.",
@@ -39,13 +47,13 @@
     "credit_dependency_multiplier": 1.12,
     "proximity_formula": "max(0,85; min(2,60; 1 + 0,10 × (prognosmånader + 9 − månader kvar till riktmärket 30 sep 2027)))",
     "probability_formula": "P(h) = 1 − exp(−h × 0,021 × 1,18 × 1,12 × närhetsfaktor).",
-    "evidence_note": "2,1 % per månad och multiplikatorerna är öppna analytiska antaganden, inte empiriskt uppmätta frekvenser. 1,18 beskriver planerad utvidgning av fas II och 1,12 osäkerheten i TO2 och framtida studiefinansiering. Osäkerhetsintervallen är känslighetsband, inte konfidensintervall.",
+    "evidence_note": "Grundrisk och multiplikatorer är subjektiva modellantaganden. Den 13 november fastställdes TO2-kursen till 0,95 kr men ännu finns inga bekräftade inbetalningar; därför ändras inte risken enbart för att priset nu är känt. När utfallet blir klart ska finansieringshorisont och grundantaganden omprövas. Känslighetsintervallet är inte ett konfidensintervall.",
     "uncertainty_band_monthly_hazard_multiplier": [
       0.62,
       1.55
     ],
     "anchor_reference_cases": "Verkliga fall illustrerar att bioteknikbolag kan emittera innan kassan tagit slut. Urvalet är selekterat och stöder inte en kvantitativ frekvensskattning.",
-    "special_handling": "TO2:s utfall måste källgranskas. Om lösenpriset och emissionslikviden publiceras ska cash_runway_proxy och basrisk justeras manuellt efter faktisk kassaförstärkning, inte efter antagna 100 % utnyttjande."
+    "special_handling": "Efter officiellt prisbesked 13 november ska framtida veckokörningar behandla 0,95 kr som fastställt och identifiera nyttjandegraden runt 1 december. Likvid ska inte tillföras kassamodellen innan faktiskt utfall och genomförd betalning har verifierats."
   },
   "peer_cases": [
     {
@@ -109,7 +117,7 @@
     "run_frequency": "Varje måndag 07:25 UTC via GitHub Actions. Körningstid kan fördröjas.",
     "official_press": "https://isofolmedical.com/sv/nyheter-press/",
     "financial_reports": "https://isofolmedical.com/sv/investerare/finansiella-rapporter/",
-    "warrant_outcome_note": "Kontrollera fastställt lösenpris för TO2 runt 14–16 november och utnyttjandegrad/slutlig likvid efter 30 november 2026. Om ny information upptäcks flaggas den, men inga kassavärden skrivs över automatiskt.",
+    "warrant_outcome_note": "TO2 0,95 kr fastställt 13 nov 2026, sista handel 26 nov, sista nyttjande 30 nov och besked om utfall runt 1 december. Veckokontroll ska flagga utfallet. Officiella rapportdata justeras efter verifiering.",
     "note": "Bevakar officiella bolagsmeddelanden och omvärldsflöden. Veckoberäkningen tar hänsyn till förfluten tid; finansiella uppdateringar baserade på nya rapporter kräver källgranskning. Bevakningen är inte fullständig."
   }
 }
