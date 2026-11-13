@@ -201,7 +201,7 @@ def main() -> None:
                  i.get("date", "") > cutoff.isoformat() and i["signal"] == "emission"]
     latest_info = [
       "Senast verifierad Q3 2026: 98,1 miljoner kr i likvida medel den 30 september, kvartalets operativa kassaflöde −16,9 miljoner kr.",
-      "TO2: 39 863 928 utestående optioner, teckningsperiod 16–30 november 2026. Ingen framtida TO2-likvid antas förrän faktiskt utfall offentliggjorts.",
+      "TO2: officiell kurs 0,95 kr fastställd 13 november. Teckningsperiod 16–30 november, sista handel 26 november. Faktiskt utfall meddelas omkring 1 december. Ingen framtida likvid antas förrän faktisk teckning och betalning verifierats.",
       "Bolaget bedömer befintlig finansiering tillräcklig för planerad drift 12 månader efter 30 september 2026. Tidens gång mot riktmärket räknas om varje vecka.",
     ]
     if issues:
