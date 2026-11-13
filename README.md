@@ -47,3 +47,17 @@ Båda investerarsidorna har nu ett särskilt avsnitt **Varningssignaler** direkt
 - Om bolaget bara angivit ett halvår eller inget datum alls visas en försiktig analytisk kvartalsuppskattning med **≈-markering**. Det betyder inte att bolaget har lovat kvartalet.
 - Klicka på en framtida milstolpe för utförlig **tidsbedömning**, bakgrund, osäkerhet och länk till originalkälla. Osäkra placeringar kan behöva omprövas när bolaget uppdaterar tidsplanen.
 - Historiska händelser får fortsätta grupperas per år eller längre perioder.
+
+
+## Uppdaterad avläsningsplan efter källgenomgång 13 november 2026
+
+Tre **olika** resultatnivåer skiljs åt i tidslinjen:
+
+- **Q2 2027 (≈)** – **fullständiga data från fas Ib**, enligt vd:s vårprognos i BioStock-intervju 11 november. Våren kan också innebära senare del av Q1; placeringen är inte ett fast datum.
+- **Q1 2027 (≈)** – **start av fas II**, förväntad men fortfarande beroende av sista doskohorten, säkerhetskommitté och studiecentra. Markeras som uppskattning.
+- **Q4 2027 (≈)** – **första preliminära resultatavläsningen från fas II**, eftersom vd i samma intervju uttryckligen anger hösten 2027. Höstfönstret omfattar delar av Q3 och Q4, varför Q4 används som försiktigare platsmarkör.
+- **Q1 2029 (≈)** – **slutliga topline-data från hela fas II** som analytiskt tidsscenario, *inte* bolagsguidning. ClinicalTrials.gov [NCT06922383](https://clinicaltrials.gov/study/NCT06922383) (registrering senast uppdaterad 29 juni 2026) visar planerad primary completion 30 november 2028. Databearbetning krävs efter primär datainsamling. Det offentliga [EU CTIS-registret](https://euclinicaltrials.eu/ctis-public/view/2024-516802-43-00) visar ett annat preliminärt studieslut, 1 april 2028. Båda uppgifterna kan ha förändrats med det utökade studieprogrammet; inget publicerat definitivt topline-kvartal har hittats.
+
+**Källor:** [BioStock-intervju med vd 11 nov 2026](https://biostock.se/2026/11/isofol-om-patienter-som-ovantat-blev-operabla-i-cancerstudien/), [Isofols uppdatering 10 nov 2026](https://www.mfn.se/a/isofol-medical/isofol-lamnar-ny-uppdatering-fran-pagaende-fas-ib-ii-studie-av-arfolitixorin), [Q3-rapport 12 nov 2026](https://www.mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026), [ClinicalTrials.gov](https://clinicaltrials.gov/study/NCT06922383), [EU CTIS](https://euclinicaltrials.eu/ctis-public/view/2024-516802-43-00).
+
+Att bolaget redan presenterat *preliminära* fas Ib-avläsningar i februari och november 2026 betyder inte att de fullständiga fas Ib-data som väntas våren 2027 redan är rapporterade.
