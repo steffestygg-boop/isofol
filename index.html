@@ -681,7 +681,7 @@ footer{
   <div class="fin-box"><h3>Vad minskar risken?</h3><p>Isofol rapporterade 98,1 miljoner kr i likvida medel och inga upptagna lån i Q3. Styrelsen bedömer att kassan räcker för planerad drift minst tolv månader från balansdagen. TO2 kan förstärka finansieringen och ett samarbete med Solasia kan minska kostnaderna för utveckling i Japan. Inget framtida kapital räknas som säkert.</p></div>
  </div>
  <div class="fin-two">
-  <div class="fin-box"><h3>Senaste riskuppdateringen</h3><p id="fin-updated">Grundbedömning 13 november 2026. Automatisk veckobevakning är schemalagd på måndagar.</p><p id="fin-coverage">TO2-utfallet och nya finansieringsrapporter behöver granskas innan riskmodellens grundantaganden ändras.</p></div>
+  <div class="fin-box"><h3>Senaste riskuppdateringen</h3><p id="fin-updated">Grundbedömning 13 november 2026. Automatisk veckobevakning är schemalagd på måndagar.</p><p id="fin-coverage">TO2-kursen är fastställd till 0,95 kr. Risken för en helt ny emission är inte omräknad för ett ännu okänt faktiskt nyttjande.</p></div>
   <div class="fin-box"><h3>Nyheter att kontrollera</h3><div id="fin-news"><p>Bevakningen följer Isofols pressmeddelanden, finansrapporter, TO2-utfallet och jämförbara emissioner i andra bolag.</p></div></div>
  </div>
  <div class="fin-comps">
@@ -705,7 +705,7 @@ footer{
  </details>
  <p class="fin-small">Automatisk veckokontroll på måndagar 07:25 UTC. Modellen bygger på senast verifierade rapportdata; bevakningen är inte en garanti för att all ny information upptäcks. Avsnittet är inte investeringsrådgivning.</p>
 </section>
-<section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">04</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"></div></section>
+<section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">04</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"><article class="news-card"><small>13 november 2026 · Isofol Medical via MFN · verifierat</small><h3>TO2-kursen fastställd till 0,95 kr – teckning 16–30 november</h3><a href="https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026" target="_blank" rel="noopener noreferrer">Läs bolagets originalmeddelande ↗</a></article></div></section>
 <section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">05</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
@@ -715,6 +715,17 @@ footer{
 <script>
 const source='https://isofolmedical.com/news-press/';
 const milestones=[
+ {
+  "track":"company",
+  "col":5,
+  "status":"done",
+  "title":"TO2-kurs fastställd",
+  "subtitle":"0,95 kr · 37,9 Mkr maximalt brutto",
+  "date":"13 november 2026",
+  "body":"Isofol offentliggjorde att lösenpriset för TO2 är 0,95 kr efter en genomsnittlig volymvägd aktiekurs på cirka 1,35 kr under 2–13 november. Totalt finns 39 863 928 optioner, en aktie per option. Teckning kan ske 16–30 november, medan sista dag för handel är 26 november. Vid full teckning tillförs cirka 37,9 miljoner kronor brutto enligt antalet optioner multiplicerat med 0,95 kr. Bolagets pressmeddelande uppger cirka 37,7 miljoner kronor; beloppsskillnaden är inte förklarad. Fullt utnyttjande ger cirka 11,06 procent utspädning. Utfallet beräknas meddelas omkring 1 december. Det fastställda priset undanröjer en osäkerhet, men kapitalet är ännu inte inbetalt. Optioner som inte säljs i tid eller utnyttjas förfaller värdelösa.",
+  "url":"https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+  "keywords":["TO2","warrants","emission","financing"]
+ },
  {
   "track": "company",
   "col": 0,
@@ -1677,6 +1688,7 @@ initTO2();
    el('fin-updated').textContent='Senaste beräkning '+(Number.isFinite(date.getTime())?date.toLocaleDateString('sv-SE'):'okänt datum')+' · '+d.days_since_report+' dagar sedan Q3-balansdagen.';
    const statuses={
      initial_bedömning:'Grundbedömning; den automatiska veckokontrollen har ännu inte körts.',
+     official_to2_terms_verified:'TO2-priset 0,95 kr är bekräftat den 13 november. Kassan och emissionsrisken har inte ändrats, eftersom utfallet och inbetalningen fortfarande är okända.',
      källor_kontrollerade_inga_nya_finansfakta:'Källor har kontrollerats. Inga nya finansrubriker identifierades automatiskt.',
      nytt_besked_kräver_granskning:'Nytt bolagsbesked upptäckt. Tidseffekten är uppdaterad men de nya villkoren kräver genomgång.',
      emissionsbesked_upptäckt:'VARNING: en ny emissionsrubrik har upptäckts. Läs originalkällan för att bekräfta villkoren.',
