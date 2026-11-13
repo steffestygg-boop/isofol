@@ -1,0 +1,40 @@
+{
+  "updated_at": "2026-11-13T20:58:00+01:00",
+  "based_on_report": "2026-09-30",
+  "automated_checked": false,
+  "coverage_status": "initial_bedömning",
+  "days_since_report": 44,
+  "months_to_company_runway_proxy": 10.5,
+  "methodology_version": "1.0.0-isofol",
+  "risk": {
+    "months_3": {
+      "percent": 9.1,
+      "low": 5.7,
+      "high": 13.7
+    },
+    "months_6": {
+      "percent": 21.4,
+      "low": 13.9,
+      "high": 31.1
+    },
+    "months_12": {
+      "percent": 49.4,
+      "low": 34.4,
+      "high": 65.2
+    }
+  },
+  "latest_information": [
+    "Q3-rapport 12 november 2026: 98,1 miljoner kr i likvida medel per 30 september, −16,9 miljoner kr i operativt kassaflöde Q3 och bedömd finansiering för planerad verksamhet minst 12 månader från balansdagen.",
+    "TO2 16–30 november: 39 863 928 optioner, 1 option per aktie, lösenpris inom 0,48–1,60 kr. Brutto upp till 63,8 miljoner kr, men utfall och faktisk nettolikvid okända.",
+    "Planerad utvidgad fas II med 15–20 kliniker och japansk bridging. Framtida kostnader kan avvika från historisk förbrukning.",
+    "Historiska fall: Isofol 2025, BioInvent, Cereno, Alligator, Immunovia, Active Biotech och SynAct."
+  ],
+  "latest_items": [],
+  "review_needed": [],
+  "review_warning": "Bedömningen är ett subjektivt scenario, inte en uppmätt sannolikhet. TO2-resultat och eventuella nya rapporter flaggas för mänsklig källgranskning; formeln uppdateras automatiskt för tidens gång.",
+  "sources": {
+    "company_report": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
+    "warrants": "https://mfn.se/all/a/isofol-medical/isofol-offentliggor-slutliga-villkor-i-foretradesemission-samt-for-en-potentiell-overtilldelningsemission",
+    "official_feed": "https://isofolmedical.com/sv/nyheter-press/"
+  }
+}
