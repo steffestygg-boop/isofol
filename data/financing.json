@@ -129,15 +129,6 @@
       "signal": "övrigt"
     },
     {
-      "title": "Immunovia beslutar om villkor i aviserad företrädesemission - Börsvärlden",
-      "date": "2026-10-29",
-      "source": "Börsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUjRENWdwRFJSQllsb2dVWnRtRzM4N1k1OW1nQTJLdng2UUF2Y0ZqWWdOSGxDdEpFM2RNczVoU0xWM3MxWWJiYTREUjFlWldSTkI3eWNiRjlZaXZwUmFya3RjUU9pNVpIWEtBZWhRNG9rUXhtWlA3VFVkLVRoZXM3U0hsY0tUVXU2c0h1NW9iUHdVSUF0Umk1WXVJcnk?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
-    },
-    {
       "title": "Immunovia behöver pengar: Ber om 63 miljoner till 76% utspädning - Affärsvärlden",
       "date": "2026-10-29",
       "source": "Affärsvärlden",
@@ -145,6 +136,15 @@
       "category": "jämförelsebolag",
       "official": false,
       "signal": "övrigt"
+    },
+    {
+      "title": "Immunovia beslutar om villkor i aviserad företrädesemission - Börsvärlden",
+      "date": "2026-10-29",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUjRENWdwRFJSQllsb2dVWnRtRzM4N1k1OW1nQTJLdng2UUF2Y0ZqWWdOSGxDdEpFM2RNczVoU0xWM3MxWWJiYTREUjFlWldSTkI3eWNiRjlZaXZwUmFya3RjUU9pNVpIWEtBZWhRNG9rUXhtWlA3VFVkLVRoZXM3U0hsY0tUVXU2c0h1NW9iUHdVSUF0Umk1WXVJcnk?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "emission"
     },
     {
       "title": "Bioinvent minskade rörelseförlusten i tredje kvartalet - föreslår stor nyemission - Börsvärlden",
@@ -180,7 +180,7 @@
       "title": "Finansieringshorisonten närmar sig",
       "detail": "Omkring 10.5 månader till modellens konservativa riktmärke 2027-09-30. Det är INTE en verifierad dag då kassan tar slut; bolagets egen prognos och tidsfaktorn är redan inräknade i riskmodellen.",
       "source": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "status": "Beräknad från verifierad bolagsprognos",
       "next_step": "Kontrollera ny likviditetsprognos i kommande kvartalsrapport.",
       "category": "runway"
@@ -197,7 +197,7 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-13T22:00:06+01:00",
+  "alerts_checked_at": "2026-11-14T12:20:39+01:00",
   "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
