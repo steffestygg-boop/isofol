@@ -658,6 +658,15 @@ footer{
 }
 .milestone-timing-info strong{color:#dfbf9f}
 .dialog p{white-space:pre-line}
+
+.milestone-shift{
+ display:inline-block;margin-top:8px;padding:3px 6px;border-radius:5px;
+ background:#f0dbbd;color:#6d451f;border:1px solid #dcb47b;
+ font-size:9px;font-weight:800;letter-spacing:.01em;line-height:1.2;
+}
+.milestone.future .milestone-shift{
+ background:#4a322c;color:#ffd49d;border:1px solid #76533c;
+}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -1694,6 +1703,12 @@ function renderTimeline(){
     const title=document.createElement('strong');title.textContent=m.title;
     const subtitle=document.createElement('small');subtitle.textContent=m.subtitle;
     btn.append(title,subtitle);
+    const shift=visibleChanges.find(change=>change.track===m.track&&change.targetTitle===m.title);
+    if(shift){
+     const chip=document.createElement('span');chip.className='milestone-shift';
+     chip.textContent='Tidsplansskifte '+shift.shift;
+     btn.append(chip);
+    }
     btn.addEventListener('click',()=>openModal(m,btn));
     cell.append(btn);
    }
@@ -1848,7 +1863,7 @@ function openDelayModal(change,anchor){
  activeAnchor=anchor;
  document.getElementById('modal-date').textContent='Tidsplansförskjutning · '+change.type;
  document.getElementById('modal-title').textContent=change.targetTitle;
- document.getElementById('modal-body').textContent='Tidigare: '+change.original+'   →   Senare: '+change.latest+' ('+change.shift+')\\n\\n'+change.description;
+ document.getElementById('modal-body').textContent='Tidigare: '+change.original+' → Senare: '+change.latest+' ('+change.shift+')'+String.fromCharCode(10,10)+change.description;
  const links=document.getElementById('modal-links');links.replaceChildren();
  for(const item of [
   {url:change.earlierUrl,label:'Äldre tidsplan · källa ↗'},
