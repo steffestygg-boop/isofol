@@ -39,7 +39,10 @@
       "Fas Ib/II-programmet går mot utökad fas II med 15–20 kliniker i flera europeiska länder och planerad japansk bridging med Solasia. En sådan utvidgning kan innebära större framtida kostnader än historiskt kassaflöde.",
       "Isofol finansierades under 2025 av företrädesemission och har under mars 2026 erhållit TO1-likvid. Detta är tidigare finansiering, inte garanti för ny TO2-inlösen.",
       "Solasia är en utvecklings-/kommersialiseringspartner i Japan. Nytt partnerskap eller framtida betalningar har inte antagits ge säker likvid före formellt offentliggörande."
-    ]
+    ],
+    "shares_before_to2": 320491623,
+    "shares_before_to2_source": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+    "shares_before_to2_note": "Antal registrerade aktier innan TO2-nyttjandet enligt offentliga TO2-villkor. Vid förändringar i aktiekapitalet måste siffran uppdateras och verifieras innan utspädningsberäkningen används."
   },
   "calculation": {
     "baseline_monthly_hazard": 0.021,
