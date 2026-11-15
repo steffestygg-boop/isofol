@@ -680,6 +680,31 @@ footer{
 .toolbar button.delay-toggle:hover{background:#e3a85e;color:#1d150e;border-color:#f0c084}
 .delay-key[hidden],.delay-overview[hidden]{display:none!important}
 @media(max-width:600px){.toolbar button.delay-toggle{margin-left:4px}}
+
+/* Clickable and fully explained financial calculations */
+.fin-calc-trigger{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin-left:7px;padding:0;width:24px;height:24px;border-radius:7px;border:1px solid #a98551;background:#372e24;color:#ffe0a4;font-size:14px;line-height:1;cursor:pointer;flex-shrink:0;transition:background .16s,border-color .16s}
+.fin-calc-trigger:hover,.fin-calc-trigger:focus-visible{background:#655034;border-color:#f0c588;color:#fff;outline-offset:2px}
+.fin-calc-trigger:focus-visible{outline:2px solid #f5d5a0}
+.fin-calc-trigger.fin-calc-inline{margin-left:5px;width:21px;height:21px;font-size:12px}
+.fin-calc-trigger[disabled]{opacity:.55;cursor:default}
+.fin-calc-explain{font-size:10px;color:#e8c58d;white-space:nowrap;vertical-align:middle}
+.fin-calculation-modal[hidden]{display:none!important}
+.fin-calculation-modal{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(7,12,19,.82);backdrop-filter:blur(3px)}
+.fin-calculation-dialog{position:relative;width:min(620px,100%);max-height:min(85vh,740px);overflow-y:auto;border:1px solid #71818a;border-radius:15px;background:linear-gradient(145deg,#253743,#172530);box-shadow:0 20px 75px rgba(0,0,0,.7);padding:26px 25px 24px;color:#e6eef1}
+.fin-calculation-dialog h2{margin:0 40px 9px 0;font-size:21px;line-height:1.3;color:#fff5e3}
+.fin-calculation-dialog h3{margin:17px 0 8px;font-size:12px;letter-spacing:.02em;color:#f4d4a2}
+.fin-calculation-dialog .fin-calc-lead{margin:0 0 15px;font-size:12px;line-height:1.7;color:#c8d9e0}
+.fin-calculation-dialog .fin-calc-formula{font-size:12px;line-height:1.7;font-weight:680;color:#f1e4c7;background:#172730;border:1px solid #546879;padding:12px 14px;border-radius:9px;white-space:pre-wrap;overflow-wrap:anywhere}
+.fin-calculation-dialog ol{padding-left:22px;margin:8px 0}
+.fin-calculation-dialog li{font-size:12px;line-height:1.8;color:#d0dce1;margin-bottom:5px}
+.fin-calculation-dialog .fin-calc-result{display:block;font-size:19px;font-weight:760;color:#f7d5a3;margin:13px 0}
+.fin-calculation-dialog .fin-calc-caveat{background:#2c2d2b;border:1px solid #6c604d;border-radius:9px;padding:10px 12px;font-size:11px;line-height:1.75;color:#dfd4c2}
+.fin-calculation-dialog .fin-calc-sources{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:12px}
+.fin-calculation-dialog .fin-calc-sources a{font-size:11px;color:#f4c980}
+.fin-calculation-close{position:absolute;top:12px;right:13px;display:grid;place-items:center;width:34px;height:34px;border-radius:9px;border:1px solid #637786;background:#263745;color:#e7f1f3;font-size:21px;cursor:pointer}
+.fin-calculation-close:hover,.fin-calculation-close:focus-visible{background:#46606b;outline:2px solid #e0bc8c;outline-offset:2px}
+body.fin-calc-open{overflow:hidden}
+@media(max-width:600px){.fin-calculation-dialog{padding:23px 16px 18px}.fin-calculation-dialog h2{font-size:18px}.fin-calculation-modal{padding:10px}}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -735,7 +760,7 @@ footer{
     </div>
     <div class="to2-result">
       <span class="to2-caption">Beräknad bruttolikvid vid vald nyttjandegrad</span>
-      <strong id="to2-proceeds">37,9 <small>miljoner kr</small></strong>
+      <strong id="to2-proceeds">37,9 <small>miljoner kr</small></strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="to2-gross" title="Visa beräkning av TO2-likvid vid vald nyttjandegrad" aria-label="Visa beräkning av TO2-likvid vid vald nyttjandegrad" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button>
       <span class="to2-subtext">Vid 100 % utnyttjande, före kostnader · ej garanterat</span>
     </div>
     <div class="to2-input">
@@ -745,9 +770,9 @@ footer{
     </div>
   </div>
   <div class="to2-scenario">
-    <div><span>Nya aktier i scenariot</span><strong id="to2-new-shares">39 863 928</strong></div>
-    <div><span>Utspädning efter emissionen</span><strong id="to2-dilution">11,06 %</strong></div>
-    <div><span>Beräknad bruttolikvid</span><strong id="to2-gross">37,9 miljoner kr</strong></div>
+    <div><span>Nya aktier i scenariot</span><strong id="to2-new-shares">39 863 928</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="to2-shares" title="Visa beräkning av antal nya TO2-aktier" aria-label="Visa beräkning av antal nya TO2-aktier" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div>
+    <div><span>Utspädning efter emissionen</span><strong id="to2-dilution">11,06 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="to2-dilution" title="Visa beräkning av TO2-utspädning" aria-label="Visa beräkning av TO2-utspädning" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div>
+    <div><span>Beräknad bruttolikvid</span><strong id="to2-gross">37,9 miljoner kr</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="to2-gross" title="Visa beräkning av TO2-bruttolikvid" aria-label="Visa beräkning av TO2-bruttolikvid" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div>
   </div>
   <div class="to2-latest" aria-label="Officiellt TO2-besked 13 november 2026">
     <div class="to2-latest-title"><span class="to2-latest-dot"></span> Officiellt prisbesked <small>13 nov 2026 · kl. 19.00</small></div>
@@ -770,17 +795,17 @@ footer{
  <div class="fin-grid">
   <div class="fin-risk">
    <div class="fin-caption">Modellrisk · närmaste 6 månader</div>
-   <div class="fin-main"><strong id="fin-risk-6">21,4 %</strong><span id="fin-risk-level">Förhöjd men osäker</span></div>
+   <div class="fin-main"><strong id="fin-risk-6">21,4 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-6" title="Visa beräkningen av emissionsrisk inom 6 månader" aria-label="Visa beräkningen av emissionsrisk inom 6 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button><span id="fin-risk-level">Förhöjd men osäker</span></div>
    <div class="fin-meter"><div id="fin-risk-bar" style="width:21.4%"></div></div>
-   <p class="fin-small">Känslighetsintervall <b id="fin-range">13,9–31,1 %</b> · inte statistiskt konfidensintervall</p>
-   <div class="fin-horizons"><div><small>3 månader</small><strong id="fin-risk-3">9,1 %</strong></div><div><small>12 månader</small><strong id="fin-risk-12">49,4 %</strong></div></div>
+   <p class="fin-small">Känslighetsintervall <b id="fin-range">13,9–31,1 %</b><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="sensitivity" title="Visa beräkningen av känslighetsintervallet" aria-label="Visa beräkningen av känslighetsintervallet" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button> · inte statistiskt konfidensintervall</p>
+   <div class="fin-horizons"><div><small>3 månader</small><strong id="fin-risk-3">9,1 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-3" title="Visa beräkningen av emissionsrisk inom 3 månader" aria-label="Visa beräkningen av emissionsrisk inom 3 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div><div><small>12 månader</small><strong id="fin-risk-12">49,4 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-12" title="Visa beräkningen av emissionsrisk inom 12 månader" aria-label="Visa beräkningen av emissionsrisk inom 12 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div></div>
    <p class="fin-small">Procentsatserna är uttryckligen <b>subjektiva scenariosiffror</b>, inte en historiskt uppmätt emissionsfrekvens.</p>
   </div>
   <div class="fin-facts">
    <div><small>Likvida medel · 30 sep 2026</small><strong>98,1 <em>miljoner kr</em></strong><a href="https://www.mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026" target="_blank" rel="noopener">Källa: Q3 2026 ↗</a></div>
-   <div><small>Operativt kassaflöde · Q3 2026</small><strong>−16,9 <em>miljoner kr</em></strong><span>−5,6 miljoner kr/mån i kvartalssnitt</span></div>
-   <div><small>TO2 · möjlig bruttolikvid vid full teckning</small><strong>≈37,9 <em>miljoner kr</em></strong><span>Vid 100 % nyttjande och fastställd kurs 0,95 kr. Bolaget skriver cirka 37,7 Mkr; ännu inte erhållen.</span></div>
-   <div><small>Bolagets finansieringsbedömning</small><strong>Minst 12 mån</strong><span id="fin-runway">Från 30 september 2026; ≈ 10,5 månader till modellriktmärket</span></div>
+   <div><small>Operativt kassaflöde · Q3 2026</small><strong>−16,9 <em>miljoner kr</em></strong><span>−5,6 miljoner kr/mån i kvartalssnitt</span><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="cash-burn" title="Visa hur kvartalets genomsnittliga kassaflöde per månad beräknas" aria-label="Visa hur kvartalets genomsnittliga kassaflöde per månad beräknas" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div>
+   <div><small>TO2 · möjlig bruttolikvid vid full teckning</small><strong>≈37,9 <em>miljoner kr</em></strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="to2-gross" title="Visa beräkningen av TO2:s maximala bruttolikvid" aria-label="Visa beräkningen av TO2:s maximala bruttolikvid" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button><span>Vid 100 % nyttjande och fastställd kurs 0,95 kr. Bolaget skriver cirka 37,7 Mkr; ännu inte erhållen.</span></div>
+   <div><small>Bolagets finansieringsbedömning</small><strong>Minst 12 mån</strong><span id="fin-runway">Från 30 september 2026; ≈ 10,5 månader till modellriktmärket</span><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="runway" title="Visa hur månader kvar till bolagets finansieringsriktmärke beräknas" aria-label="Visa hur månader kvar till bolagets finansieringsriktmärke beräknas" aria-haspopup="dialog" aria-controls="fin-calculation-modal">ⓘ</button></div>
   </div>
  </div>
  <div class="fin-signals" id="fin-signals" aria-labelledby="fin-signals-heading">
@@ -829,6 +854,20 @@ footer{
 </div></div><div class="milestone-key" aria-label="Förklaring till milstolparnas utseende"><span class="delay-key"><i aria-hidden="true"></i>Tidigare prognos → senare prognos</span><span><i aria-hidden="true"></i>Levererad</span><span><i class="upcoming" aria-hidden="true"></i>Kommande</span><span class="milestone-timing-note">≈ betyder preliminär kvartalsuppskattning, inte ett av bolaget fastställt datum. Klicka för tidsmotivering.</span></div></section>
 <section class="valuation" aria-labelledby="valuation-heading"><p class="section-kicker"><span class="section-number">06</span> Analys &amp; värdering</p><h2 id="valuation-heading">Analytiker-riktkurser / motiverade värden</h2><p class="intro">Verifierade publiceringar · kronor per aktie · Base Case (uppdragsanalyser)</p><svg id="valuation-chart" viewBox="0 0 1100 410" role="img" aria-label="Redeyes Base Case 1,70 kronor vid två tillfällen och ABG:s basscenario från 1,60 till 1,80 kronor"></svg><p class="note">Grafen visar fyra verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section><footer>Privat, inofficiell investeraröversikt. Datum och kliniska uppgifter måste kontrolleras mot Isofols originalkällor. Planerade milstolpar är inte bekräftade utfall. Nyhetsflödet uppdateras automatiskt; tidslinjen kräver källkontrollerad uppdatering.</footer></div>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="dialog"><button id="close" aria-label="Stäng">×</button><div class="date" id="modal-date"></div><h2 id="modal-title"></h2><p id="modal-body"></p><div id="modal-links"></div></div></div>
+
+<div class="fin-calculation-modal" id="fin-calculation-modal" hidden role="presentation">
+  <div class="fin-calculation-dialog" role="dialog" aria-modal="true" aria-labelledby="fin-calc-title" aria-describedby="fin-calc-lead" tabindex="-1">
+    <button type="button" id="fin-calculation-close" class="fin-calculation-close" aria-label="Stäng beräkningsrutan">×</button>
+    <h2 id="fin-calc-title">Så har siffran beräknats</h2>
+    <p id="fin-calc-lead" class="fin-calc-lead"></p>
+    <div id="fin-calc-formula" class="fin-calc-formula"></div>
+    <h3>Insatta värden och uträkning</h3>
+    <ol id="fin-calc-steps"></ol>
+    <strong id="fin-calc-result" class="fin-calc-result"></strong>
+    <p id="fin-calc-caveat" class="fin-calc-caveat"></p>
+    <div id="fin-calc-sources" class="fin-calc-sources"></div>
+  </div>
+</div>
 <script>
 const source='https://isofolmedical.com/news-press/';
 const milestones=[
