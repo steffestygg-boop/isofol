@@ -667,6 +667,19 @@ footer{
 .milestone.future .milestone-shift{
  background:#4a322c;color:#ffd49d;border:1px solid #76533c;
 }
+
+/* User-controlled delay overlay: distinct orange toggle; hide accompanying key/description. */
+.toolbar button.delay-toggle{
+ background:#493326;border:1px solid #c98a50;color:#fbd7b0;
+ font-weight:760;margin-left:10px;box-shadow:0 0 0 1px #f0ab6620 inset;
+}
+.toolbar button.delay-toggle.active{
+ background:#d6984d;border-color:#efb76d;color:#21160d;
+ box-shadow:0 3px 14px #d68b4035;
+}
+.toolbar button.delay-toggle:hover{background:#e3a85e;color:#1d150e;border-color:#f0c084}
+.delay-key[hidden],.delay-overview[hidden]{display:none!important}
+@media(max-width:600px){.toolbar button.delay-toggle{margin-left:4px}}
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -810,7 +823,7 @@ footer{
  <p class="fin-small">Automatisk veckokontroll på måndagar 07:25 UTC. Modellen bygger på senast verifierade rapportdata; bevakningen är inte en garanti för att all ny information upptäcks. Avsnittet är inte investeringsrådgivning.</p>
 </section>
 <section aria-labelledby="news-heading"><p class="section-kicker"><span class="section-number">04</span> Omvärld &amp; händelser</p><h2 class="section" id="news-heading">Senaste nyheterna</h2><p class="intro">Daglig nyhetshämtning från GitHub Actions. Endast rubriker som nämner Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"><article class="news-card"><small>13 november 2026 · Isofol Medical via MFN · verifierat</small><h3>TO2-kursen fastställd till 0,95 kr – teckning 16–30 november</h3><a href="https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026" target="_blank" rel="noopener noreferrer">Läs bolagets originalmeddelande ↗</a></article></div></section>
-<section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">05</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><p class="milestone-timing-info"><strong>Tidsplansförändringar:</strong> Orange streckade kopplingar visar äldre och senare tidsangivelser. Etiketterna anger kvartalsskillnader mellan prognosfönster, <em>inte</em> nödvändigtvis konstaterade förseningar. Klicka på en koppling för båda källorna och osäkerheter. Framtida händelser är placerade per kvartal. När Isofol bara anger årstid eller inget exakt kvartal visas en uppskattning (≈). Viktiga skillnader: <b>fullständig fas Ib-data våren 2027</b>, <b>första fas II-avläsning hösten 2027</b> och <b>slutlig fas II-topline saknar ny bolagsprognos; äldre mål för avslutad fas II var slutet av 2027</b>. Klicka för källor och tidsmotivering.</p><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
+<section aria-labelledby="milestones-heading"><p class="section-kicker"><span class="section-number">05</span> Klinisk utveckling &amp; bolaget</p><h2 class="section" id="milestones-heading">Milstolpar</h2><p class="milestone-timing-info"><span class="delay-overview"><strong>Tidsplansförändringar:</strong> Orange streckade kopplingar visar äldre och senare tidsangivelser. Etiketterna anger kvartalsskillnader mellan prognosfönster, <em>inte</em> nödvändigtvis konstaterade förseningar. Klicka på en koppling för båda källorna och osäkerheter.</span> Framtida händelser är placerade per kvartal. När Isofol bara anger årstid eller inget exakt kvartal visas en uppskattning (≈). Viktiga skillnader: <b>fullständig fas Ib-data våren 2027</b>, <b>första fas II-avläsning hösten 2027</b> och <b>slutlig fas II-topline saknar ny bolagsprognos; äldre mål för avslutad fas II var slutet av 2027</b>. Klicka för källor och tidsmotivering.</p><div class="toolbar"><div class="group"><span class="hint">VISA</span><button class="period active" data-period="relevant">Aktuellt</button><button class="period" data-period="all">Allt</button><button class="period" data-period="done">Historik</button><button class="period" data-period="future">Framåt</button><button id="toggle-delays" class="delay-toggle active" type="button" aria-pressed="true" aria-label="Visa eller dölj förseningar" title="Visa eller dölj tidsplansförskjutningar">Förseningar</button></div><div class="group"><span class="hint">SPÅR</span><button data-track="all" class="active">Alla</button><button class="track active" data-track="arfo">Arfolitixorin</button><button class="track active" data-track="japan">Japan / Solasia</button><button class="track active" data-track="company">Företaget</button></div></div>
 <div class="timeline-scroll"><div class="timeline" id="timeline">
 <div style="grid-column:1"></div><div class="axis"><span>2024</span><span>2025</span><span>Q1 2026</span><span>Q2 2026</span><span>Q3 2026</span><span>Q4 2026</span><span>Q1 2027</span><span>2027</span><span>2028+</span></div>
 </div></div><div class="milestone-key" aria-label="Förklaring till milstolparnas utseende"><span class="delay-key"><i aria-hidden="true"></i>Tidigare prognos → senare prognos</span><span><i aria-hidden="true"></i>Levererad</span><span><i class="upcoming" aria-hidden="true"></i>Kommande</span><span class="milestone-timing-note">≈ betyder preliminär kvartalsuppskattning, inte ett av bolaget fastställt datum. Klicka för tidsmotivering.</span></div></section>
@@ -1665,10 +1678,11 @@ function isRecentMilestone(m){
  return new Date(year,mon,day)>=cutoff;
 }
 const selected=new Set(tracks.map(x=>x[0]));
+let showDelays=true;
 function renderTimeline(){
  closeModal();
  const matches=milestones.filter(m=>selected.has(m.track)&&(period==='all'||(period==='relevant'?isRecentMilestone(m):m.status===period)));
- const visibleChanges=scheduleChanges.filter(change=>matches.some(m=>m.track===change.track&&m.title===change.targetTitle));
+ const visibleChanges=showDelays?scheduleChanges.filter(change=>matches.some(m=>m.track===change.track&&m.title===change.targetTitle)):[];
  const usedCols=[...new Set([...matches.map(m=>m.col),...visibleChanges.flatMap(change=>[change.originalCol,change.latestCol])])].sort((a,b)=>a-b);
  const cols=usedCols.length?Array.from(
    {length:usedCols[usedCols.length-1]-(period==='future'?Math.min(9,usedCols[0]):usedCols[0])+1},
@@ -1730,6 +1744,10 @@ function renderTimeline(){
  }
  document.querySelectorAll('.track').forEach(el=>el.classList.toggle('active',selected.has(el.dataset.track)));
  document.querySelector('[data-track="all"]').classList.toggle('active',selected.size===3);
+ const delayToggle=document.getElementById('toggle-delays');
+ delayToggle.classList.toggle('active',showDelays);
+ delayToggle.setAttribute('aria-pressed',String(showDelays));
+ document.querySelectorAll('.delay-key,.delay-overview').forEach(el=>{el.hidden=!showDelays});
 }
 function drawValuation(){
  const svg=document.getElementById('valuation-chart');
@@ -1870,6 +1888,10 @@ document.addEventListener('pointerdown',e=>{if(activeAnchor&&!e.target.closest('
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 window.addEventListener('resize',()=>{if(activeAnchor)positionDialog()});
 window.addEventListener('scroll',()=>{if(activeAnchor)positionDialog()},true);
+document.getElementById('toggle-delays').addEventListener('click',()=>{
+ showDelays=!showDelays;
+ renderTimeline();
+});
 document.querySelectorAll('[data-period]').forEach(b=>b.addEventListener('click',()=>{
  period=b.dataset.period;
  document.querySelectorAll('[data-period]').forEach(x=>x.classList.toggle('active',x===b));
