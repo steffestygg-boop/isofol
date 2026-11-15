@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:00:06+01:00",
+  "updated_at": "2026-11-15T16:35:05+01:00",
   "based_on_report": "2026-09-30",
   "automated_checked": true,
   "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
@@ -12,24 +12,24 @@
     "officiell presslista"
   ],
   "failed_sources": [],
-  "days_since_report": 44,
+  "days_since_report": 46,
   "months_to_company_runway_proxy": 10.5,
   "methodology_version": "1.0.1-isofol",
   "risk": {
     "months_3": {
       "percent": 9.1,
-      "low": 5.7,
-      "high": 13.7
+      "low": 5.8,
+      "high": 13.8
     },
     "months_6": {
-      "percent": 21.4,
+      "percent": 21.5,
       "low": 13.9,
-      "high": 31.1
+      "high": 31.3
     },
     "months_12": {
-      "percent": 49.4,
-      "low": 34.4,
-      "high": 65.2
+      "percent": 49.5,
+      "low": 34.5,
+      "high": 65.3
     }
   },
   "latest_information": [
@@ -197,7 +197,7 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-15T12:23:11+01:00",
+  "alerts_checked_at": "2026-11-15T16:35:05+01:00",
   "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
