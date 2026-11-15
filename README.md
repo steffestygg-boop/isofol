@@ -61,3 +61,15 @@ Tre **olika** resultatnivåer skiljs åt i tidslinjen:
 **Källor:** [BioStock-intervju med vd 11 nov 2026](https://biostock.se/2026/11/isofol-om-patienter-som-ovantat-blev-operabla-i-cancerstudien/), [Isofols uppdatering 10 nov 2026](https://www.mfn.se/a/isofol-medical/isofol-lamnar-ny-uppdatering-fran-pagaende-fas-ib-ii-studie-av-arfolitixorin), [Q3-rapport 12 nov 2026](https://www.mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026), [ClinicalTrials.gov](https://clinicaltrials.gov/study/NCT06922383), [EU CTIS](https://euclinicaltrials.eu/ctis-public/view/2024-516802-43-00).
 
 Att bolaget redan presenterat *preliminära* fas Ib-avläsningar i februari och november 2026 betyder inte att de fullständiga fas Ib-data som väntas våren 2027 redan är rapporterade.
+
+
+## Klickbara finansiella beräkningar
+
+**∑** intill ett beräknat tal öppnar en separat, tangentbordstillgänglig dialog med formeln, de värden som faktiskt används, uträkningen, avrundat resultat och relevanta originalkällor. Tryck **Escape**, klicka utanför dialogen eller använd stängknappen för att stänga; fokus återgår till den ursprungliga knappen.
+
+- På båda sidorna: emissionsrisk 3/6/12 månader och känslighetsintervall, Q3:s genomsnittliga månatliga operativa kassaflöde och antalet månader fram till finansieringsmodellens riktmärke.
+- **Finansieringshorisont:** Bolagets uttalande är en *guidning från originalrapporten*, inte en matematisk slutsats härledd ur historiskt kassaflöde. Dialogen skiljer uttryckligen bolagets guidning från veckomodellens datumräkning och en separat, förenklad Q3-baserad kassakvot.
+- Isofol: TO2:s antal nya aktier, ägarutspädning och bruttolikvid enligt vald nyttjandegrad. Maximala 37,9 Mkr vid 100 % teckning visas och förklaras alltid oberoende av aktuell inställning. Pressmeddelandets cirka 37,7 Mkr redovisas separat.
+- Underlaget läses från `data/financing.json` och `data/financing_model.json`. Ingen data ersätts med en förmodad aktuell kurs eller likvid när filer inte kan läsas.
+
+Begränsning: det är en beskrivning av modellens beräkningsgång och antaganden, **inte** en statistiskt kalibrerad riskprognos eller investeringsrekommendation.
