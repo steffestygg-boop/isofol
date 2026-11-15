@@ -804,7 +804,7 @@ body.fin-calc-open{overflow:hidden}
   <div class="fin-facts">
    <div><small>Likvida medel · 30 sep 2026</small><strong>98,1 <em>miljoner kr</em></strong><a href="https://www.mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026" target="_blank" rel="noopener">Källa: Q3 2026 ↗</a></div>
    <div><small>Operativt kassaflöde · Q3 2026</small><strong>−16,9 <em>miljoner kr</em></strong><span>−5,6 miljoner kr/mån i kvartalssnitt</span><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="cash-burn" title="Visa hur kvartalets genomsnittliga kassaflöde per månad beräknas" aria-label="Visa hur kvartalets genomsnittliga kassaflöde per månad beräknas" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div>
-   <div><small>TO2 · möjlig bruttolikvid vid full teckning</small><strong>≈37,9 <em>miljoner kr</em></strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="to2-gross" title="Visa beräkningen av TO2:s maximala bruttolikvid" aria-label="Visa beräkningen av TO2:s maximala bruttolikvid" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button><span>Vid 100 % nyttjande och fastställd kurs 0,95 kr. Bolaget skriver cirka 37,7 Mkr; ännu inte erhållen.</span></div>
+   <div><small>TO2 · möjlig bruttolikvid vid full teckning</small><strong>≈37,9 <em>miljoner kr</em></strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="to2-max" title="Visa beräkningen av TO2:s maximala bruttolikvid" aria-label="Visa beräkningen av TO2:s maximala bruttolikvid" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button><span>Vid 100 % nyttjande och fastställd kurs 0,95 kr. Bolaget skriver cirka 37,7 Mkr; ännu inte erhållen.</span></div>
    <div><small>Bolagets finansieringsbedömning</small><strong>Minst 12 mån</strong><span id="fin-runway">Från 30 september 2026; ≈ 10,5 månader till modellriktmärket</span><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="runway" title="Visa hur månader kvar till bolagets finansieringsriktmärke beräknas" aria-label="Visa hur månader kvar till bolagets finansieringsriktmärke beräknas" aria-haspopup="dialog" aria-controls="fin-calculation-modal">ⓘ</button></div>
   </div>
  </div>
@@ -2121,7 +2121,7 @@ function finCalcProof(key){
    const w=c.warrants;
    const input=document.getElementById('to2-take-up');
    const value=input?input.value:'100';
-   const takeup=value===''?NaN:Math.max(0,Math.min(100,Number(value)));
+   const takeup=key==='to2-max'?100:(value===''?NaN:Math.max(0,Math.min(100,Number(value))));
    if(!Number.isFinite(takeup))return {title:'TO2-scenario',lead:'Ange nyttjandegrad mellan 0 och 100 procent först.',formula:'—',steps:[],result:'—',caveat:'Inget belopp kan beräknas innan ett giltigt scenario har valts.',sources:[source(w.url,'Isofols TO2-villkor')]};
    const options=Number(w.option_count),price=Number(w.fixed_price_sek),
      sharesBefore=Number(c.shares_before_to2||320491623);
@@ -2149,7 +2149,7 @@ function finCalcProof(key){
       caveat:'Utspädning gäller ägarandel, inte automatiskt samma procentuella kursfall. Beräkningen förutsätter oförändrat antal övriga aktier.',sources};
    }
    const press=Number(w.full_exercise_press_release_approx_msek);
-   return {title:'TO2: beräknad bruttolikvid',lead:'Beräknas från den fastställda teckningskursen och den valda andelen optioner som används.',
+   return {title:key==='to2-max'?'TO2: maximal bruttolikvid vid 100 %':'TO2: beräknad bruttolikvid',lead:key==='to2-max'?'Här används alltid full teckning (100 %), oberoende av reglaget i TO2-kalkylen.':'Beräknas från den fastställda teckningskursen och den valda andelen optioner som används.',
     formula:'Bruttolikvid = avrunda(TO2 × nyttjandegrad / 100) × 0,95 kr ÷ 1 000 000',
     steps:[...shared,
       num(newShares,0)+' × '+num(price,2)+' kr = '+num(newShares*price,2)+' kr = '+num(gross,3)+' Mkr.',
