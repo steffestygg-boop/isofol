@@ -1651,7 +1651,7 @@ const scheduleChanges=[
  },
  {
   id:'japan-start',track:'japan',targetTitle:'Japansk studiestart väntas',
-  originalCol:9,latestCol:11,original:'Q4 2026',latest:'Q2 2027 ≈',shift:'+≤2 kv',
+  originalCol:9,latestCol:11,original:'Q4 2026',latest:'Q2 2027 ≈',shift:'≈+2 kv',
   type:'Prognosförskjutning',description:'I december 2024 var Isofols och Solasias mål att rekrytera japanska patienter under 2026. I The Japan Times den 19 oktober 2026 uppgav vd att japansk patientrekrytering planeras under första halvåret 2027. Q4 2026 respektive Q2 2027 är de sista kvartalen i de bredare år-/halvårsintervallen. Två kvartal är därför skillnaden mellan fönstrens slutpunkter, inte en exakt uppmätt försening; starten kan ske tidigare inom halvåret.',
   earlierUrl:'https://mfn.se/all/a/isofol-medical/isofol-och-samarbetspartnern-solasia-planerar-att-expandera-den-kommande-kliniska-studien-av-arfolitixorin-till-japan',
   laterUrl:'https://www.japantimes.co.jp/country-report/2026/10/19/sweden-report-2026/isofol-solasia-test-promise-effective-chemotherapy/'
@@ -1717,7 +1717,7 @@ function renderTimeline(){
   for(const change of visibleChanges.filter(c=>c.track===track)){
    const lane=document.createElement('button');
    lane.className='delay-lane';lane.type='button';
-   lane.setAttribute('aria-label',change.targetTitle+': tidigare '+change.original+', nu '+change.latest+', tidsförskjutning '+change.shift+'. Visa källor.');
+   lane.setAttribute('aria-label',change.targetTitle+': tidigare '+change.original+', nu '+change.latest+', beräknad tidsskillnad '+change.shift+'. Visa källor.');
    const label=document.createElement('span');label.className='delay-lane-name';
    const heading=document.createElement('strong');heading.textContent=change.targetTitle.replace(' väntas','').replace('Fas II: slutliga topline-data','Fas II: slutdata');
    const tag=document.createElement('small');tag.textContent='Tidsplansskifte · klicka för källor';
