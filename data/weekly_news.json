@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Söndag kväll 19:30 UTC (20:30 vintertid / 21:30 sommartid), med måndagskontroll",
-  "updated_at": "2026-11-16T11:28:48+01:00",
+  "updated_at": "2026-11-16T12:00:00+01:00",
   "latest_week": "2026-W46",
   "weeks": [
     {
@@ -13,132 +13,100 @@
       "start": "2026-11-09",
       "end": "2026-11-15",
       "generated_at": "2026-11-16T11:28:48+01:00",
-      "intro": "Veckans tydligaste källanknutna besked: TO2: lösenpris 0,95 kr – möjlig likvid 37,9 Mkr.",
+      "intro": "Veckans viktigaste besked: ABG: riskjusterat värde höjs 1,80 → 2,10 kr.",
       "events": [
         {
           "date": "2026-11-15",
           "title": "ABG: riskjusterat värde höjs 1,80 → 2,10 kr",
           "category": "Rapport och ekonomi",
-          "summary": "ABG höjer sitt riskjusterade scenario från 1,80 till 2,10 kr (+16,7 %). Bull Case höjs 10,50 → 11,00 kr; Bear Case kvar på 0,10 kr.",
+          "summary": "",
           "source": "Dokumenterad milstolpe",
           "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/11/isofol-medical---clinical-momentum-builds-ahead-of-phase-2/",
           "verified": true,
           "origin": "milstolpe",
           "source_note": "Manuellt källgranskad post",
-          "details": "I analysen den 15 november lyfter ABG tidiga kliniska effektsignaler i fas Ib, lägre Q3-kostnader och minskad antagen utspädning. Q3:s rörelsekostnader var 13 Mkr mot ABG:s prognos på 16 Mkr. Samtidigt flyttar ABG utvecklingsplanen cirka sex månader jämfört med sin tidigare modell och räknar med fas II-start tidigt i Q1 2027.",
-          "importance": "Det riskjusterade värdet är ett modellscenario, inte en traditionell tolvmånadersriktkurs eller garanti för framtida aktiekurs.",
-          "key_facts": [
-            "Scenario B (riskjusterat): 1,80 → 2,10 kr",
-            "Scenario C (optimistiskt): 10,50 → 11,00 kr",
-            "Scenario A (negativt): 0,10 kr, oförändrat",
-            "Fas II-start enligt ABG: tidigt Q1 2027",
-            "Rörelsekostnader Q3: 13 Mkr (ABG-prognos 16 Mkr)"
-          ],
-          "editorial_verified": true
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
         },
         {
           "date": "2026-11-13",
           "title": "TO2: lösenpris 0,95 kr – möjlig likvid 37,9 Mkr",
           "category": "Emission och finansiering",
-          "summary": "Lösenpriset fastställdes till 0,95 kr. Alla 39 863 928 optioner ger vid full teckning 37,9 Mkr brutto. Nyttjandeperiod 16–30 november.",
+          "summary": "",
           "source": "Dokumenterad milstolpe",
           "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
           "verified": true,
           "origin": "milstolpe",
           "source_note": "Manuellt källgranskad post",
-          "details": "Teckningskursen motsvarar 70 % av VWAP på cirka 1,35 kr under mätperioden 2–13 november. Varje TO2 ger rätt att köpa en ny aktie. Sista handelsdag för optionerna är 26 november och nyttjandeperioden avslutas 30 november. Full teckning skulle öka aktieantalet med 39 863 928, vilket motsvarar omkring 11,06 % utspädning. Utfallet väntas omkring 1 december. Bolagets pressmeddelande anger cirka 37,7 Mkr, medan multiplikationen 39 863 928 × 0,95 kr ger 37,87 Mkr; skillnaden är inte förklarad.",
-          "importance": "Det fastställda priset ändrar inte bolagets kassa innan optionerna har utnyttjats och betalats.",
-          "key_facts": [
-            "Lösenpris: 0,95 kr per aktie",
-            "Antal TO2: 39 863 928",
-            "Maximal aritmetisk bruttolikvid: 37,87 Mkr",
-            "Sista handel: 26 november 2026",
-            "Sista nyttjandedag: 30 november 2026"
-          ],
-          "editorial_verified": true
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
         },
         {
           "date": "2026-11-13",
           "title": "Isofol Q3: fas II planeras i 15–20 europeiska center",
           "category": "Studie och resultat",
-          "summary": "Högsta fas Ib-dosen 500 mg/m² håller på att avslutas. Isofol utökar fas II-planen till 15–20 kliniker, samtidigt som kassan uppgår till 98,1 Mkr.",
+          "summary": "",
           "source": "Biostock",
           "url": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
           "verified": false,
           "origin": "rubrik",
           "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
-          "details": "Den utökade fas II-studien ska omfatta fler patienter och fler kliniker. De nya planerna följer de preliminära fas Ib-observationerna och ett behov av ökad rekryteringskapacitet. Tidsplan och kostnader beror på kvarvarande fas Ib-patienter och regulatoriska förberedelser.",
-          "importance": "Utökad rekryteringskapacitet kan vara positiv för tidsplanen men kan också ge högre kostnader.",
-          "key_facts": [
-            "15–20 planerade fas II-center",
-            "Högsta fas Ib-dos: 500 mg/m²",
-            "Q3-kassa: cirka 98,1 Mkr"
-          ],
+          "details": "",
+          "importance": "",
+          "key_facts": [],
           "additional_source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd05sRGc1dUxuOUM0eGpjdDJoMHBOdWhsQmI0ZGNlTzAzT0lRQXN6QzFqUjhBeG01MTR4N3ZGektlX2ZsRHcyekNSNDhXYW1oWU9FZnp3WWVNUjRSWlZWdm9QSmllT2ExN0l1WnlPdGY3bEwyRzdJang2bmxjeHliclBRMA?oc=5",
-          "editorial_verified": true
+          "editorial_verified": false
         },
         {
           "date": "2026-11-13",
           "title": "Redeye: basvärde 1,70 kr – oförändrat",
           "category": "Rapport och ekonomi",
-          "summary": "Redeye behåller motiverat värde på 1,70 kr/aktie. Q3-kostnaderna var omkring 15 % lägre än väntat och kassan uppgick till 98,1 Mkr.",
+          "summary": "",
           "source": "Dokumenterad milstolpe",
           "url": "https://www.borsvarlden.com/finwire/CRF00FEECC",
           "verified": true,
           "origin": "milstolpe",
           "source_note": "Manuellt källgranskad post",
-          "details": "Redeye konstaterar att den andra kliniska interimsavläsningen bekräftar de positiva signalerna från februari. Av tio behandlade patienter hade hälften blivit möjliga kandidater för kirurgi med botande avsikt, och inga dosbegränsande biverkningar hade observerats. Värderingen lämnas ändå oförändrad efter uppdaterad modell.",
-          "importance": "Redeyes 1,70 kr är ett motiverat värde i uppdragsanalys – inte ett kursmål som måste nås.",
-          "key_facts": [
-            "Tidigare motiverat värde: 1,70 kr",
-            "Nytt motiverat värde: 1,70 kr",
-            "Q3 OPEX: cirka 15 % under Redeyes förväntningar",
-            "Kassa 30 september: 98,1 Mkr"
-          ],
-          "editorial_verified": true
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
         },
         {
           "date": "2026-11-12",
           "title": "Isofol Q3: 98,1 Mkr i kassan och fas Ib nära avslut",
           "category": "Rapport och ekonomi",
-          "summary": "Kassan var 98,1 Mkr per 30 september, jämfört med 138,8 Mkr året innan. Periodresultatet för Q3 var −12,0 Mkr. Fas Ib går mot sista dosbeslutet.",
+          "summary": "",
           "source": "Dokumenterad milstolpe",
           "url": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
           "verified": true,
           "origin": "milstolpe",
           "source_note": "Manuellt källgranskad post",
-          "details": "Bolagets delårsrapport publicerades den 12 november. Nettoomsättningen under kvartalet var noll. Styrelsen och ledningen bedömer att befintliga likvida medel täcker planerad verksamhet minst tolv månader från balansdagen 30 september 2026. I läkemedelsprogrammet avslutas högsta fas Ib-dosnivån, 500 mg/m², inför utökad fas II.",
-          "importance": "Finansieringsbedömningen är bolagets egen och utgår från planerad drift. Den verkliga kostnaden beror bland annat på studietakt och ny finansiering.",
-          "key_facts": [
-            "Kassa 30 sep: 98,087 Mkr",
-            "Kassa jämförelseår: 138,786 Mkr",
-            "Q3-resultat: −11,995 Mkr",
-            "Maxdos i fas Ib: 500 mg/m²",
-            "Bolagets kapitalbedömning: minst 12 månader från 30 sep"
-          ],
+          "details": "",
+          "importance": "",
+          "key_facts": [],
           "additional_source_url": "https://www.inderes.dk/en/releases/isofol-medical-ab-publ-publishes-interim-report-january-september-2026",
-          "editorial_verified": true
+          "editorial_verified": false
         },
         {
           "date": "2026-11-10",
           "title": "Fas Ib: 10 behandlade, 5 bedöms kunna opereras",
           "category": "Övrigt",
-          "summary": "Samtliga utvärderade patienter hade sjukdomskontroll; 5 av 10 behandlade bedömdes kunna bli aktuella för tumörkirurgi. Inga dosbegränsande biverkningar noterades.",
+          "summary": "",
           "source": "Dokumenterad milstolpe",
           "url": "https://mfn.se/a/isofol-medical/isofol-lamnar-ny-uppdatering-fran-pagaende-fas-ib-ii-studie-av-arfolitixorin",
           "verified": true,
           "origin": "milstolpe",
           "source_note": "Manuellt källgranskad post",
-          "details": "Isofol rapporterade den 10 november preliminära data från fas Ib/II-studien i metastaserad kolorektalcancer. En tydlig majoritet av de utvärderade patienterna uppvisade tumörkrympning. Bolaget beslutade också att utöka fas II-delen till fler center och länder för en bredare randomiserad jämförelse.",
-          "importance": "Det är tidiga observationer utan avslutad randomiserad fas II-jämförelse, och de visar inte ännu säker klinisk överlägsenhet.",
-          "key_facts": [
-            "10 patienter behandlade",
-            "5 patienter möjliga kirurgikandidater",
-            "Sjukdomskontroll hos samtliga utvärderade",
-            "Inga dosbegränsande toxiciteter hittills"
-          ],
+          "details": "",
+          "importance": "",
+          "key_facts": [],
           "additional_source_url": "https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe",
-          "editorial_verified": true
+          "editorial_verified": false
         }
       ],
       "updates": [],
