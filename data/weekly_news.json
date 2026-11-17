@@ -2,10 +2,565 @@
   "version": 1,
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
-  "schedule": "Söndag kväll 19:30 UTC (20:30 vintertid / 21:30 sommartid), med måndagskontroll",
-  "updated_at": "2026-11-16T11:38:23+01:00",
-  "latest_week": "2026-W46",
+  "schedule": "Varje dag kl. 09:00 Europe/Stockholm; ny ISO-vecka från måndag",
+  "updated_at": "2026-11-17T09:19:57+01:00",
+  "latest_week": "2026-W47",
   "weeks": [
+    {
+      "id": "2026-W47",
+      "week": 47,
+      "year": 2026,
+      "start": "2026-11-11",
+      "end": "2026-11-17",
+      "generated_at": "2026-11-17T09:19:57+01:00",
+      "intro": "Veckans tydligaste källanknutna besked: TO2: lösenpris 0,95 kr – möjlig likvid 37,9 Mkr. Dessutom finns 1 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
+      "events": [
+        {
+          "date": "2026-11-16",
+          "title": "Isofol Medical har spikat lösenpris för teckningsoptioner till 0,95 kronor per aktie (Finwire News) - Aktiellt",
+          "category": "Emission och finansiering",
+          "summary": "",
+          "source": "Aktiellt",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZMzVHVUZkWFA2UWlCUExBNWRBSUJadTdKRm1WLThpR1U2R3BoNjVQaktZZTZNOWFaUkZtQXpPSUVZYXF0Ukk0Tk5oWW53TVFaRlNSWFRqZGl1WWxlLXpB?oc=5",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        },
+        {
+          "date": "2026-11-16",
+          "title": "Isofol Medical: Clinical momentum builds ahead of Phase 2 - ABG",
+          "category": "Studie och resultat",
+          "summary": "",
+          "source": "Börsvärlden",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYUR5TTIyaGpuMzFybzBYbWRpVkliN3Y0YkpwaFJrTFJLeEtuQVA3U0Jmc2M3RHhfX2cxcm5iMm1TblZNSTRuUnNmRGRVU05BUE95elBTTHRkX1Q3SWdqWFZFdTl6SExTTjZXU0lfVTQwOTUzbGxzZzFqX3puZ21yWFo2WHRGWUNSS18xTmFIa1JDcXZjRV95TXEyZnRkUQ?oc=5",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        },
+        {
+          "date": "2026-11-15",
+          "title": "ABG: riskjusterat värde höjs 1,80 → 2,10 kr",
+          "category": "Rapport och ekonomi",
+          "summary": "ABG höjer sitt riskjusterade scenario från 1,80 till 2,10 kr (+16,7 %). Bull Case höjs 10,50 → 11,00 kr; Bear Case kvar på 0,10 kr.",
+          "source": "Dokumenterad milstolpe",
+          "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/11/isofol-medical---clinical-momentum-builds-ahead-of-phase-2/",
+          "verified": true,
+          "origin": "milstolpe",
+          "source_note": "Manuellt källgranskad post",
+          "details": "I analysen den 15 november lyfter ABG tidiga kliniska effektsignaler i fas Ib, lägre Q3-kostnader och minskad antagen utspädning. Q3:s rörelsekostnader var 13 Mkr mot ABG:s prognos på 16 Mkr. Samtidigt flyttar ABG utvecklingsplanen cirka sex månader jämfört med sin tidigare modell och räknar med fas II-start tidigt i Q1 2027.",
+          "importance": "Det riskjusterade värdet är ett modellscenario, inte en traditionell tolvmånadersriktkurs eller garanti för framtida aktiekurs.",
+          "key_facts": [
+            "Scenario B (riskjusterat): 1,80 → 2,10 kr",
+            "Scenario C (optimistiskt): 10,50 → 11,00 kr",
+            "Scenario A (negativt): 0,10 kr, oförändrat",
+            "Fas II-start enligt ABG: tidigt Q1 2027",
+            "Rörelsekostnader Q3: 13 Mkr (ABG-prognos 16 Mkr)"
+          ],
+          "editorial_verified": true
+        },
+        {
+          "date": "2026-11-13",
+          "title": "TO2: lösenpris 0,95 kr – möjlig likvid 37,9 Mkr",
+          "category": "Emission och finansiering",
+          "summary": "Lösenpriset fastställdes till 0,95 kr. Alla 39 863 928 optioner ger vid full teckning 37,9 Mkr brutto. Nyttjandeperiod 16–30 november.",
+          "source": "Dokumenterad milstolpe",
+          "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+          "verified": true,
+          "origin": "milstolpe",
+          "source_note": "Manuellt källgranskad post",
+          "details": "Teckningskursen motsvarar 70 % av VWAP på cirka 1,35 kr under mätperioden 2–13 november. Varje TO2 ger rätt att köpa en ny aktie. Sista handelsdag för optionerna är 26 november och nyttjandeperioden avslutas 30 november. Full teckning skulle öka aktieantalet med 39 863 928, vilket motsvarar omkring 11,06 % utspädning. Utfallet väntas omkring 1 december. Bolagets pressmeddelande anger cirka 37,7 Mkr, medan multiplikationen 39 863 928 × 0,95 kr ger 37,87 Mkr; skillnaden är inte förklarad.",
+          "importance": "Det fastställda priset ändrar inte bolagets kassa innan optionerna har utnyttjats och betalats.",
+          "key_facts": [
+            "Lösenpris: 0,95 kr per aktie",
+            "Antal TO2: 39 863 928",
+            "Maximal aritmetisk bruttolikvid: 37,87 Mkr",
+            "Sista handel: 26 november 2026",
+            "Sista nyttjandedag: 30 november 2026"
+          ],
+          "editorial_verified": true
+        },
+        {
+          "date": "2026-11-13",
+          "title": "Teckningskursen för teckningsoptioner av serie TO2 i Isofol har fastställts till 0,95 SEK och nyttjandeperioden inleds den 16 november 2026",
+          "category": "Emission och finansiering",
+          "summary": "",
+          "source": "MFN · bolagets pressmeddelande",
+          "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026.iframe",
+          "verified": false,
+          "origin": "bolagsflöde",
+          "source_note": "Direkt hämtad publicerad bolagsrubrik; eventuella detaljer kräver granskning av pressmeddelandet.",
+          "published_at": "2026-11-13 \n         19:00:00",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        },
+        {
+          "date": "2026-11-13",
+          "title": "Isofol Q3: fas II planeras i 15–20 europeiska center",
+          "category": "Studie och resultat",
+          "summary": "Högsta fas Ib-dosen 500 mg/m² håller på att avslutas. Isofol utökar fas II-planen till 15–20 kliniker, samtidigt som kassan uppgår till 98,1 Mkr.",
+          "source": "Biostock",
+          "url": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "Den utökade fas II-studien ska omfatta fler patienter och fler kliniker. De nya planerna följer de preliminära fas Ib-observationerna och ett behov av ökad rekryteringskapacitet. Tidsplan och kostnader beror på kvarvarande fas Ib-patienter och regulatoriska förberedelser.",
+          "importance": "Utökad rekryteringskapacitet kan vara positiv för tidsplanen men kan också ge högre kostnader.",
+          "key_facts": [
+            "15–20 planerade fas II-center",
+            "Högsta fas Ib-dos: 500 mg/m²",
+            "Q3-kassa: cirka 98,1 Mkr"
+          ],
+          "additional_source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd05sRGc1dUxuOUM0eGpjdDJoMHBOdWhsQmI0ZGNlTzAzT0lRQXN6QzFqUjhBeG01MTR4N3ZGektlX2ZsRHcyekNSNDhXYW1oWU9FZnp3WWVNUjRSWlZWdm9QSmllT2ExN0l1WnlPdGY3bEwyRzdJang2bmxjeHliclBRMA?oc=5",
+          "editorial_verified": true
+        },
+        {
+          "date": "2026-11-13",
+          "title": "Redeye: basvärde 1,70 kr – oförändrat",
+          "category": "Rapport och ekonomi",
+          "summary": "Redeye behåller motiverat värde på 1,70 kr/aktie. Q3-kostnaderna var omkring 15 % lägre än väntat och kassan uppgick till 98,1 Mkr.",
+          "source": "Dokumenterad milstolpe",
+          "url": "https://www.borsvarlden.com/finwire/CRF00FEECC",
+          "verified": true,
+          "origin": "milstolpe",
+          "source_note": "Manuellt källgranskad post",
+          "details": "Redeye konstaterar att den andra kliniska interimsavläsningen bekräftar de positiva signalerna från februari. Av tio behandlade patienter hade hälften blivit möjliga kandidater för kirurgi med botande avsikt, och inga dosbegränsande biverkningar hade observerats. Värderingen lämnas ändå oförändrad efter uppdaterad modell.",
+          "importance": "Redeyes 1,70 kr är ett motiverat värde i uppdragsanalys – inte ett kursmål som måste nås.",
+          "key_facts": [
+            "Tidigare motiverat värde: 1,70 kr",
+            "Nytt motiverat värde: 1,70 kr",
+            "Q3 OPEX: cirka 15 % under Redeyes förväntningar",
+            "Kassa 30 september: 98,1 Mkr"
+          ],
+          "editorial_verified": true
+        },
+        {
+          "date": "2026-11-12",
+          "title": "Isofol Q3: 98,1 Mkr i kassan och fas Ib nära avslut",
+          "category": "Rapport och ekonomi",
+          "summary": "Kassan var 98,1 Mkr per 30 september, jämfört med 138,8 Mkr året innan. Periodresultatet för Q3 var −12,0 Mkr. Fas Ib går mot sista dosbeslutet.",
+          "source": "Dokumenterad milstolpe",
+          "url": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
+          "verified": true,
+          "origin": "milstolpe",
+          "source_note": "Manuellt källgranskad post",
+          "details": "Bolagets delårsrapport publicerades den 12 november. Nettoomsättningen under kvartalet var noll. Styrelsen och ledningen bedömer att befintliga likvida medel täcker planerad verksamhet minst tolv månader från balansdagen 30 september 2026. I läkemedelsprogrammet avslutas högsta fas Ib-dosnivån, 500 mg/m², inför utökad fas II.",
+          "importance": "Finansieringsbedömningen är bolagets egen och utgår från planerad drift. Den verkliga kostnaden beror bland annat på studietakt och ny finansiering.",
+          "key_facts": [
+            "Kassa 30 sep: 98,087 Mkr",
+            "Kassa jämförelseår: 138,786 Mkr",
+            "Q3-resultat: −11,995 Mkr",
+            "Maxdos i fas Ib: 500 mg/m²",
+            "Bolagets kapitalbedömning: minst 12 månader från 30 sep"
+          ],
+          "additional_source_url": "https://www.inderes.dk/en/releases/isofol-medical-ab-publ-publishes-interim-report-january-september-2026",
+          "editorial_verified": true
+        },
+        {
+          "date": "2026-11-12",
+          "title": "Isofol Medical AB (publ) publicerar delårsrapport för januari – september 2026",
+          "category": "Rapport och ekonomi",
+          "summary": "",
+          "source": "MFN · bolagets pressmeddelande",
+          "url": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026.iframe",
+          "verified": false,
+          "origin": "bolagsflöde",
+          "source_note": "Direkt hämtad publicerad bolagsrubrik; eventuella detaljer kräver granskning av pressmeddelandet.",
+          "published_at": "2026-11-12 \n         08:00:00",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        }
+      ],
+      "updates": [
+        {
+          "title": "Milstolpe uppdaterad: Fas II-studiestart väntas",
+          "detail": "Tidigare: Q1 2027 · förväntad start, ännu ej bekräftat av bolaget. Nu: Q4 2026 · bolagets uttalade ambition. Kvartalsplaceringen eller tidsbedömningen har justerats.",
+          "kind": "milstolpe",
+          "url": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026"
+        }
+      ],
+      "omitted_events": 0,
+      "finance_snapshot": {
+        "risk_3": 9.2,
+        "risk_6": 21.5,
+        "risk_12": 49.6,
+        "risk_as_of": "2026-11-16T10:57:11+01:00",
+        "emission_status": "",
+        "explanation": "Lägesbild vid sammanställningen, inte ett påstående om att siffrorna offentliggjordes denna vecka."
+      },
+      "snapshot": {
+        "risk_3": 9.2,
+        "risk_6": 21.5,
+        "risk_12": 49.6,
+        "risk_as_of": "2026-11-16T10:57:11+01:00",
+        "model_version": "1.0.1-isofol",
+        "model_fingerprint": "e811d4d7d05f52a4",
+        "emission_status": "",
+        "alerts": {
+          "base:runway": {
+            "title": "Finansieringshorisonten närmar sig",
+            "level": "bevakning",
+            "source": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026"
+          },
+          "base:warrant_outcome": {
+            "title": "TO2: finansieringsutfallet ännu inte verifierat",
+            "level": "bevakning",
+            "source": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026"
+          }
+        },
+        "milestones": {
+          "TO2-kurs fastställd": {
+            "date": "13 november 2026",
+            "status": "done",
+            "period": "5",
+            "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026"
+          },
+          "Isofol grundas": {
+            "date": "2008",
+            "status": "done",
+            "period": "0",
+            "url": "https://isofolmedical.com/about-isofol/our-history/"
+          },
+          "First North-notering": {
+            "date": "2017",
+            "status": "done",
+            "period": "0",
+            "url": "https://isofolmedical.com/about-isofol/our-history/"
+          },
+          "AGENT startar": {
+            "date": "2018",
+            "status": "done",
+            "period": "1",
+            "url": "https://isofolmedical.com/about-isofol/our-history/"
+          },
+          "Solasia får Japanrättigheter": {
+            "date": "Augusti 2020",
+            "status": "done",
+            "period": "1",
+            "url": "https://isofolmedical.com/about-isofol/partners/"
+          },
+          "Redeye publicerar scenarier": {
+            "date": "November 2020",
+            "status": "done",
+            "period": "1",
+            "url": "https://www.redeye.se/company/isofol-medical"
+          },
+          "Nasdaq Stockholm": {
+            "date": "2021",
+            "status": "done",
+            "period": "1",
+            "url": "https://isofolmedical.com/about-isofol/our-history/"
+          },
+          "Redeye sänker": {
+            "date": "22 mars 2021",
+            "status": "done",
+            "period": "1",
+            "url": "https://www.borsvarlden.com/Foretagsinfo/isofol-medical"
+          },
+          "DNB sänker intervallet": {
+            "date": "21 maj 2021",
+            "status": "done",
+            "period": "1",
+            "url": "https://news.cision.com/isofol-medical-ab--publ-/r/dnb-markets---isofol-medical-q1-in-line--as-company-readies-for-pre-commercial-activity-ramp-up%2Cc3351234"
+          },
+          "AGENT missar primärt mål": {
+            "date": "3 augusti 2022",
+            "status": "done",
+            "period": "2",
+            "url": "https://isofolmedical.com/news-press/"
+          },
+          "Redeye kapar värdering": {
+            "date": "4 augusti 2022",
+            "status": "done",
+            "period": "2",
+            "url": "https://se.marketscreener.com/kurs/aktie/ISOFOL-MEDICAL-AB-PUBL-34912582/nyheter-maklar-forskning/"
+          },
+          "Carnegie sänker kraftigt": {
+            "date": "5 augusti 2022",
+            "status": "done",
+            "period": "2",
+            "url": "https://www.placera.se/placera/redaktionellt/2022/08/05/fredagens-alla-nya-aktierekar.html"
+          },
+          "Pareto sänker kraftigt": {
+            "date": "24 augusti 2022",
+            "status": "done",
+            "period": "2",
+            "url": "https://www.placera.se/telegram/pareto-securities-sanker-isofol-medical-till-behall-kop-riktkurs-1-1-kronor-30-2022-08-24"
+          },
+          "AGENT-analys presenteras": {
+            "date": "4 juli 2023",
+            "status": "done",
+            "period": "3",
+            "url": "https://news.cision.com/isofol-medical-ab--publ-/r/isofol-presents-conclusions-from-the-in-depth-analysis-of-the-agent-study,c3799939"
+          },
+          "Solasia fortsätter utvecklingen": {
+            "date": "19 mars 2024",
+            "status": "done",
+            "period": "4",
+            "url": "https://mfn.se/a/isofol-medical/isofols-japanese-partner-solasia-intensifies-its-commitment-to-the-clinical-development-of-arfolitixorin"
+          },
+          "AGENT: per-protokollanalys": {
+            "date": "5 juli 2024",
+            "status": "done",
+            "period": "4",
+            "url": "https://mfn.se/all/a/isofol-medical/isofol-announces-a-post-hoc-per-protocol-analysis-of-the-agent-study-further-supporting-arfolitixorins-continued-clinical-development"
+          },
+          "Dosrespons visas prekliniskt": {
+            "date": "16 juli 2024",
+            "status": "done",
+            "period": "4",
+            "url": "https://isofolmedical.com/sv/mfn_news/isofol-meddelar-att-nya-prekliniska-data-stoder-den-tidigare-annonserade-kliniska-utvecklingsplanen-for-arfolitixorin/"
+          },
+          "MODELL-E publiceras": {
+            "date": "21 november 2024",
+            "status": "done",
+            "period": "4",
+            "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-year-end-report-january-december-2024/"
+          },
+          "Solasia planerar japansk fas II": {
+            "date": "18 december 2024",
+            "status": "done",
+            "period": "4",
+            "url": "https://isofolmedical.com/mfn_news/isofol-and-its-partner-solasia-plan-to-expand-the-upcoming-clinical-trial-of-arfolitixorin-to-japan/"
+          },
+          "AGENT-analys på ASCO GI": {
+            "date": "27 januari 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-year-end-report-january-december-2024/"
+          },
+          "Tyskt studiegodkännande": {
+            "date": "21 mars 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://isofolmedical.com/mfn_news/isofol-receives-regulatory-approval-to-initiate-clinical-study-of-arfolitixorin/"
+          },
+          "Första patient behandlas": {
+            "date": "April 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://isofolmedical.com/wp-content/uploads/2026/02/20260218_Isofol_Year-end-report-2025_final_ISO-576.pdf"
+          },
+          "Solasia planerar 140 Mkr": {
+            "date": "3 april 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://mfn.se/a/isofol-medical/isofols-partner-solasia-intends-to-increase-investments-in-upcoming-trials-with-arfolitixorin"
+          },
+          "Isofol beslutar om unitemission": {
+            "date": "12 maj 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://isofolmedical.com/mfn_news/isofol-announces-final-terms-of-the-rights-issue-and-the-potential-overallotment-issue/"
+          },
+          "Första dosnivån klar": {
+            "date": "Juni 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://isofolmedical.com/mfn_news/isofols-clinical-study-with-arfolitixorin-reaches-another-important-milestone/"
+          },
+          "Redeye återupptar bevakning": {
+            "date": "17 juni 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617"
+          },
+          "Andra dosnivån klar": {
+            "date": "30 september 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://isofolmedical.com/mfn_news/isofols-clinical-study-with-arfolitixorin-reaches-another-important-milestone/"
+          },
+          "Solasias ägarandel rapporteras": {
+            "date": "30 september 2025",
+            "status": "done",
+            "period": "5",
+            "url": "https://isofolmedical.com/wp-content/uploads/2026/02/Isofol-Corporate-Deck-February-2026-ISO-44-r20.pdf"
+          },
+          "ABG inleder": {
+            "date": "15 januari 2026",
+            "status": "done",
+            "period": "6",
+            "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second"
+          },
+          "Isofol redovisar tidiga patientdata": {
+            "date": "24 februari 2026",
+            "status": "done",
+            "period": "6",
+            "url": "https://isofolmedical.com/mfn_news/isofol-provides-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin/"
+          },
+          "Redeye behåller efter Q3": {
+            "date": "13 november 2026",
+            "status": "done",
+            "period": "10",
+            "url": "https://www.borsvarlden.com/finwire/CRF00FEECC"
+          },
+          "ABG höjer efter Q3": {
+            "date": "15 november 2026",
+            "status": "done",
+            "period": "10",
+            "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/11/isofol-medical---clinical-momentum-builds-ahead-of-phase-2/"
+          },
+          "ABG höjer": {
+            "date": "24 februari 2026",
+            "status": "done",
+            "period": "6",
+            "url": "https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224"
+          },
+          "Solasia garanterar TO1": {
+            "date": "11 mars 2026",
+            "status": "done",
+            "period": "6",
+            "url": "https://isofolmedical.com/mfn_news/isofol-receives-top-guarantee-commitment-and-letters-of-intent-corresponding-to-42-percent-of-upcoming-warrant-exercise/"
+          },
+          "Autismrättigheter säkras": {
+            "date": "18 mars 2026",
+            "status": "done",
+            "period": "6",
+            "url": "https://isofolmedical.com/mfn_news/isofol-secures-license-rights-for-arfolitixorin-in-autism/"
+          },
+          "TO1 tillför 18,9 Mkr": {
+            "date": "31 mars 2026",
+            "status": "done",
+            "period": "6",
+            "url": "https://isofolmedical.com/mfn_news/isofol-receives-gross-proceeds-of-18-9-msek-in-connection-with-the-exercise-of-warrants-and-guarantee-commitments-for-warrants-of-series-to1-and-resolves-on-a-directed-share-issue/"
+          },
+          "Solasia ökar ägandet": {
+            "date": "31 mars–1 april 2026",
+            "status": "done",
+            "period": "6",
+            "url": "https://isofolmedical.com/mfn_news/isofol-receives-gross-proceeds-of-18-9-msek-in-connection-with-the-exercise-of-warrants-and-guarantee-commitments-for-warrants-of-series-to1-and-resolves-on-a-directed-share-issue/"
+          },
+          "BfArM godkänner ändring": {
+            "date": "15 april 2026",
+            "status": "done",
+            "period": "7",
+            "url": "https://isofolmedical.com/mfn_news/isofol-optimizes-the-design-of-its-phase-ib-ii-study-following-new-regulatory-approval/"
+          },
+          "Högsta dosen inleds": {
+            "date": "8 juli 2026",
+            "status": "done",
+            "period": "8",
+            "url": "https://isofolmedical.com/mfn_news/isofol-initiates-last-dose-cohort-in-ongoing-phase-ib-study-with-arfolitixorin/"
+          },
+          "Isofol utökar studiecentren": {
+            "date": "24 augusti 2026",
+            "status": "done",
+            "period": "8",
+            "url": "https://isofolmedical.com/news-press/"
+          },
+          "Redeye behåller 1,70 kr": {
+            "date": "25 augusti 2026",
+            "status": "done",
+            "period": "8",
+            "url": "https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27"
+          },
+          "Isofol rapporterar Q2": {
+            "date": "25 augusti 2026",
+            "status": "done",
+            "period": "8",
+            "url": "https://isofolmedical.com/mfn_news/isofol-medical-ab-publ-publishes-interim-report-january-june-2026/"
+          },
+          "Isofol rapporterar tio behandlade": {
+            "date": "10 november 2026",
+            "status": "done",
+            "period": "9",
+            "url": "https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe"
+          },
+          "Japanplanen bekräftas i november": {
+            "date": "10 november 2026 (Isofol), 11 november (Solasia)",
+            "status": "done",
+            "period": "9",
+            "url": "https://mfn.se/a/isofol-medical/isofol-provides-a-new-update-on-the-ongoing-phase-ib-ii-clinical-study-of-arfolitixorin.iframe"
+          },
+          "Isofol publicerar Q3-rapport": {
+            "date": "12 november 2026",
+            "status": "done",
+            "period": "9",
+            "url": "https://www.inderes.dk/en/releases/isofol-medical-ab-publ-publishes-interim-report-january-september-2026"
+          },
+          "TO2: teckningsperiod öppnar": {
+            "date": "16 november 2026 · Q4 2026",
+            "status": "future",
+            "period": "9",
+            "url": "https://isofolmedical.com/news-press/"
+          },
+          "Fas Ib: dosbeslut väntas": {
+            "date": "Q1 2027 · uppskattad placering",
+            "status": "future",
+            "period": "10",
+            "url": "https://isofolmedical.com/news-press/"
+          },
+          "Fas II-studiestart väntas": {
+            "date": "Q4 2026 · bolagets uttalade ambition",
+            "status": "future",
+            "period": "9",
+            "url": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026"
+          },
+          "Japansk studiestart väntas": {
+            "date": "Q2 2027 · placering inom vd-prognosen H1 2027",
+            "status": "future",
+            "period": "11",
+            "url": "https://www.japantimes.co.jp/country-report/2026/10/19/sweden-report-2026/isofol-solasia-test-promise-effective-chemotherapy/"
+          },
+          "Fas II: slutliga topline-data": {
+            "date": "Q4 2027 · äldre vd-prognos, inte bekräftat datum för slutlig topline",
+            "status": "future",
+            "period": "13",
+            "url": "https://www.placera.se/telegram/isofol-medical-isofol-medical-planerar-ga-over-till-fas-2-delen-av-studien-med-arfolitixorin-i-2h-2026-vd-20260304"
+          },
+          "TO2: teckningsutfall": {
+            "date": "Q4 2026 · omkring 1 december (bolagets tidplan)",
+            "status": "future",
+            "period": "9",
+            "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026"
+          },
+          "Fas Ib: fullständiga data": {
+            "date": "Q2 2027 · vårprognos från Isofols vd",
+            "status": "future",
+            "period": "11",
+            "url": "https://biostock.se/2026/11/isofol-om-patienter-som-ovantat-blev-operabla-i-cancerstudien/"
+          },
+          "Fas II: första resultatavläsning": {
+            "date": "Q4 2027 · bolagets höstprognos, kvartalet uppskattat",
+            "status": "future",
+            "period": "13",
+            "url": "https://biostock.se/2026/11/isofol-om-patienter-som-ovantat-blev-operabla-i-cancerstudien/"
+          }
+        }
+      },
+      "sources_checked": [
+        "lokal bevakningsfil",
+        "direkta bolagsmeddelanden på MFN",
+        "nyhetssökningar via Google News RSS",
+        "daterade milstolpar",
+        "finansierings- och riskdata"
+      ],
+      "source_errors": [],
+      "note": "Automatiskt sammanställda rubriker och källgranskade dataposter; inte fulltextbevakning av all nyhetsrapportering. Endast uttryckligen källgranskade poster markeras verifierade.",
+      "stock_change": {
+        "symbol": "ISOFOL.ST",
+        "baseline_date": "2026-11-10",
+        "baseline": 1.472,
+        "latest_date": "2026-11-17",
+        "latest": 1.002,
+        "change_sek": -0.47,
+        "change_percent": -31.93,
+        "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
+        "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
+      }
+    },
     {
       "id": "2026-W46",
       "week": 46,
