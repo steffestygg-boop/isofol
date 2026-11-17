@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-17T09:23:09+01:00",
+  "updated_at": "2026-11-17T09:24:20+01:00",
   "latest_week": "2026-W47",
   "weeks": [
     {
@@ -12,7 +12,7 @@
       "year": 2026,
       "start": "2026-11-16",
       "end": "2026-11-17",
-      "generated_at": "2026-11-17T09:23:09+01:00",
+      "generated_at": "2026-11-17T09:24:20+01:00",
       "intro": "En framträdande nyhetsrubrik: TO2-handel: lösenpris 0,95 kr, nyttjande 16–30 nov. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 1 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
         {
@@ -33,8 +33,8 @@
             "Maximalt antal nya aktier: 39 863 928",
             "Maximal bruttolikvid enligt multiplikation: cirka 37,9 Mkr"
           ],
-          "editorial_verified": true,
-          "additional_source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZMzVHVUZkWFA2UWlCUExBNWRBSUJadTdKRm1WLThpR1U2R3BoNjVQaktZZTZNOWFaUkZtQXpPSUVZYXF0Ukk0Tk5oWW53TVFaRlNSWFRqZGl1WWxlLXpB?oc=5"
+          "additional_source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZMzVHVUZkWFA2UWlCUExBNWRBSUJadTdKRm1WLThpR1U2R3BoNjVQaktZZTZNOWFaUkZtQXpPSUVZYXF0Ukk0Tk5oWW53TVFaRlNSWFRqZGl1WWxlLXpB?oc=5",
+          "editorial_verified": true
         },
         {
           "date": "2026-11-16",
@@ -54,8 +54,8 @@
             "Negativt scenario: oförändrat 0,10 kr",
             "Fas II-start i ABG:s modell: tidigt Q1 2027"
           ],
-          "editorial_verified": true,
-          "additional_source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYUR5TTIyaGpuMzFybzBYbWRpVkliN3Y0YkpwaFJrTFJLeEtuQVA3U0Jmc2M3RHhfX2cxcm5iMm1TblZNSTRuUnNmRGRVU05BUE95elBTTHRkX1Q3SWdqWFZFdTl6SExTTjZXU0lfVTQwOTUzbGxzZzFqX3puZ21yWFo2WHRGWUNSS18xTmFIa1JDcXZjRV95TXEyZnRkUQ?oc=5"
+          "additional_source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYUR5TTIyaGpuMzFybzBYbWRpVkliN3Y0YkpwaFJrTFJLeEtuQVA3U0Jmc2M3RHhfX2cxcm5iMm1TblZNSTRuUnNmRGRVU05BUE95elBTTHRkX1Q3SWdqWFZFdTl6SExTTjZXU0lfVTQwOTUzbGxzZzFqX3puZ21yWFo2WHRGWUNSS18xTmFIa1JDcXZjRV95TXEyZnRkUQ?oc=5",
+          "editorial_verified": true
         }
       ],
       "updates": [
