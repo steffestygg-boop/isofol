@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-17T09:26:55+01:00",
+  "updated_at": "2026-11-17T15:47:42+01:00",
   "latest_week": "2026-W47",
   "weeks": [
     {
@@ -12,8 +12,8 @@
       "year": 2026,
       "start": "2026-11-16",
       "end": "2026-11-17",
-      "generated_at": "2026-11-17T09:26:55+01:00",
-      "intro": "En framträdande nyhetsrubrik: TO2-handel: lösenpris 0,95 kr, nyttjande 16–30 nov. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 1 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
+      "generated_at": "2026-11-17T15:47:42+01:00",
+      "intro": "En framträdande nyhetsrubrik: TO2-handel: lösenpris 0,95 kr, nyttjande 16–30 nov. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 3 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
         {
           "date": "2026-11-16",
@@ -35,6 +35,21 @@
           ],
           "additional_source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZMzVHVUZkWFA2UWlCUExBNWRBSUJadTdKRm1WLThpR1U2R3BoNjVQaktZZTZNOWFaUkZtQXpPSUVZYXF0Ukk0Tk5oWW53TVFaRlNSWFRqZGl1WWxlLXpB?oc=5",
           "editorial_verified": true
+        },
+        {
+          "date": "2026-11-16",
+          "title": "Isofol Medical har spikat lösenpris för teckningsoptioner till 0,95 kronor per aktie",
+          "category": "Emission och finansiering",
+          "summary": "",
+          "source": "Börsvärlden",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOVlnNnlqeFM4U1FlUWJwVDdyRU4tb2J4NnkzMkh1RkRNQkNXa3U4ZW5Bc3hnVWVQdy1mbTdFODFOV1N4SXM1LWsxeFZwVENWM25zZHZRUlZvWjBIWFlVMXVnUHQ3WU14QzkzWlFOT3pmSXU1R2JvcHlsTzF3OEdiSHRnU3ZIRmM2Xy1xYjFtU2FjNXJneEUwTlgtNlBVYVdxS0Nla21vcC13S3kyNUFkWllvaDJVdFo2TlpuXw?oc=5",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
         },
         {
           "date": "2026-11-16",
@@ -60,6 +75,16 @@
       ],
       "updates": [
         {
+          "title": "Emissionsbarometern uppdaterad",
+          "detail": "Jämfört med förra veckoutgåvan: 3 mån 10,1 % (+0,9 procentenheter); 6 mån 23,4 % (+1,9 procentenheter); 12 mån 53,0 % (+3,4 procentenheter).",
+          "kind": "finansiering"
+        },
+        {
+          "title": "Emissionsbarometerns grundantaganden reviderade",
+          "detail": "Källdata eller modellantaganden har ändrats sedan förra veckoutgåvan. Läs modellens metodavsnitt för vad uppdateringen innebär; ändringen ska inte automatiskt tolkas som ett nytt bolagsbesked.",
+          "kind": "modell"
+        },
+        {
           "title": "Milstolpe uppdaterad: Fas II-studiestart väntas",
           "detail": "Tidigare: Q1 2027 · förväntad start, ännu ej bekräftat av bolaget. Nu: Q4 2026 · bolagets uttalade ambition. Kvartalsplaceringen eller tidsbedömningen har justerats.",
           "kind": "milstolpe",
@@ -68,20 +93,20 @@
       ],
       "omitted_events": 0,
       "finance_snapshot": {
-        "risk_3": 9.2,
-        "risk_6": 21.5,
-        "risk_12": 49.6,
-        "risk_as_of": "2026-11-16T10:57:11+01:00",
+        "risk_3": 10.1,
+        "risk_6": 23.4,
+        "risk_12": 53.0,
+        "risk_as_of": "2026-11-17T11:19:37+01:00",
         "emission_status": "",
         "explanation": "Lägesbild vid sammanställningen, inte ett påstående om att siffrorna offentliggjordes denna vecka."
       },
       "snapshot": {
-        "risk_3": 9.2,
-        "risk_6": 21.5,
-        "risk_12": 49.6,
-        "risk_as_of": "2026-11-16T10:57:11+01:00",
-        "model_version": "1.0.1-isofol",
-        "model_fingerprint": "e811d4d7d05f52a4",
+        "risk_3": 10.1,
+        "risk_6": 23.4,
+        "risk_12": 53.0,
+        "risk_as_of": "2026-11-17T11:19:37+01:00",
+        "model_version": "1.2.0-partner-dd-process",
+        "model_fingerprint": "a611000327bb48be",
         "emission_status": "",
         "alerts": {
           "base:runway": {
@@ -430,9 +455,9 @@
         "baseline_date": "2026-11-13",
         "baseline": 1.018,
         "latest_date": "2026-11-17",
-        "latest": 1.028,
-        "change_sek": 0.01,
-        "change_percent": 0.98,
+        "latest": 1.016,
+        "change_sek": -0.002,
+        "change_percent": -0.2,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
