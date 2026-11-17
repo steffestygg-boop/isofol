@@ -40,7 +40,10 @@ CONFIG = {
         "queries": ['"Isofol" when:14d',
                     '"Isofol Medical" OR arfolitixorin when:14d',
                     'site:mfn.se/a/isofol-medical/ when:14d',
-                    '"Isofol" (TO2 OR teckning OR studie OR ABG OR Redeye OR fas II OR finansiering) when:14d'],
+                    '"Isofol" (TO2 OR teckning OR studie OR ABG OR Redeye OR fas II OR finansiering) when:14d',
+                    'site:biostock.se "Isofol" when:14d',
+                    'site:borsvarlden.com "Isofol" when:14d',
+                    'site:redeye.se "Isofol" OR "arfolitixorin" when:14d'],
         "aliases": ("isofol", "arfolitixorin"),
     },
     "cereno": {
