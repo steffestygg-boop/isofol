@@ -784,6 +784,27 @@ body.weekly-dialog-open{overflow:hidden}
 .shared-quote-status{font-size:11px;color:#c4d4df;line-height:1.45;margin-top:4px}
 .shared-quote-note{font-size:10px;color:#91b5bb;line-height:1.55}
 
+
+/* Buyer-side due diligence, complementary to capital/credit risk, not a second cash input */
+.dd-risk-module{margin:19px 0 20px;padding:16px 18px;background:rgba(14,31,43,.72);border:1px solid rgba(137,174,196,.35);border-radius:12px}
+.dd-risk-heading{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:750;color:#aed5e2}
+.dd-risk-heading span{font-size:11px;letter-spacing:normal;text-transform:none;font-weight:450;color:#a6b7c4}
+.dd-risk-summary{font-size:13px;line-height:1.6;color:#e3eaf1;margin:9px 0 11px}
+.dd-risk-module details{border-top:1px solid rgba(157,180,192,.2);padding-top:11px}
+.dd-risk-module summary{cursor:pointer;font-size:13px;font-weight:650;color:#b9d5ed}
+.dd-risk-module .dd-block{margin:13px 0}
+.dd-risk-module .dd-block strong{display:block;color:#f4d8aa;font-size:12px;margin-bottom:3px}
+.dd-risk-module .dd-block p{font-size:12px;line-height:1.6;color:#c7d3df;margin:0}
+.dd-risk-module .dd-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:9px;margin:15px 0}
+.dd-risk-module .dd-pillar{border:1px solid rgba(131,164,185,.22);border-radius:8px;padding:10px;background:rgba(13,23,35,.45)}
+.dd-risk-module .dd-pillar small{display:block;color:#e5b982;font-size:11px;margin:3px 0}
+.dd-risk-module .dd-pillar strong{font-size:12px}
+.dd-risk-module .dd-pillar p{font-size:12px;line-height:1.5;margin:0;color:#c3d2db}
+.dd-risk-module .dd-scenarios{padding-left:20px;font-size:12px;line-height:1.55;color:#cbdae4}
+.dd-risk-module .dd-scenarios li{margin:7px 0}
+.dd-risk-module .dd-caveat{font-size:11px;color:#9eaebd;line-height:1.55;margin:12px 0 0}
+.dd-risk-module a{color:#9ed5ff}
+
 </style></head><body><div class="wrap">
 <header class="hero"><div class="hero-content"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Oberoende investeraröversikt · ISOFOL</div><h1>Isofol <span>Medical</span></h1><p>Aktien, forskningen och milstolparna – samlade på ett ställe, med källor nära till hands.</p><a class="summary" href="https://isofolmedical.com/" target="_blank" rel="noopener noreferrer">Besök bolagets webbplats <span class="arrow" aria-hidden="true">↗</span></a></div></header><section class="stock-overview" aria-labelledby="stock-heading">
   <div class="market-heading">
@@ -903,10 +924,10 @@ body.weekly-dialog-open{overflow:hidden}
   <div class="fin-grid">
   <div class="fin-risk">
    <div class="fin-caption">Modellrisk · närmaste 6 månader</div>
-   <div class="fin-main"><strong id="fin-risk-6">21,4 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-6" title="Visa beräkningen av emissionsrisk inom 6 månader" aria-label="Visa beräkningen av emissionsrisk inom 6 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button><span id="fin-risk-level">Förhöjd men osäker</span></div>
+   <div class="fin-main"><strong id="fin-risk-6">23,4 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-6" title="Visa beräkningen av emissionsrisk inom 6 månader" aria-label="Visa beräkningen av emissionsrisk inom 6 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button><span id="fin-risk-level">Förhöjd men osäker</span></div>
    <div class="fin-meter"><div id="fin-risk-bar" style="width:21.4%"></div></div>
-   <p class="fin-small">Känslighetsintervall <b id="fin-range">13,9–31,1 %</b><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="sensitivity" title="Visa beräkningen av känslighetsintervallet" aria-label="Visa beräkningen av känslighetsintervallet" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button> · inte statistiskt konfidensintervall</p>
-   <div class="fin-horizons"><div><small>3 månader</small><strong id="fin-risk-3">9,1 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-3" title="Visa beräkningen av emissionsrisk inom 3 månader" aria-label="Visa beräkningen av emissionsrisk inom 3 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div><div><small>12 månader</small><strong id="fin-risk-12">49,4 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-12" title="Visa beräkningen av emissionsrisk inom 12 månader" aria-label="Visa beräkningen av emissionsrisk inom 12 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div></div>
+   <p class="fin-small">Känslighetsintervall <b id="fin-range">15,3–33,9 %</b><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="sensitivity" title="Visa beräkningen av känslighetsintervallet" aria-label="Visa beräkningen av känslighetsintervallet" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button> · inte statistiskt konfidensintervall</p>
+   <div class="fin-horizons"><div><small>3 månader</small><strong id="fin-risk-3">10,1 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-3" title="Visa beräkningen av emissionsrisk inom 3 månader" aria-label="Visa beräkningen av emissionsrisk inom 3 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div><div><small>12 månader</small><strong id="fin-risk-12">53,0 %</strong><button type="button" class="fin-calc-trigger fin-calc-inline" data-fin-calc="risk-12" title="Visa beräkningen av emissionsrisk inom 12 månader" aria-label="Visa beräkningen av emissionsrisk inom 12 månader" aria-haspopup="dialog" aria-controls="fin-calculation-modal">∑</button></div></div>
    <p class="fin-small">Procentsatserna är uttryckligen <b>subjektiva scenariosiffror</b>, inte en historiskt uppmätt emissionsfrekvens.</p>
   </div>
   <div class="fin-facts">
@@ -934,7 +955,13 @@ body.weekly-dialog-open{overflow:hidden}
   <div class="fin-box"><h3>Senaste riskuppdateringen</h3><p id="fin-updated">Grundbedömning 13 november 2026. Automatisk veckobevakning är schemalagd på måndagar.</p><p id="fin-coverage">TO2-kursen är fastställd till 0,95 kr. Risken för en helt ny emission är inte omräknad för ett ännu okänt faktiskt nyttjande.</p></div>
   <div class="fin-box"><h3>Nyheter att kontrollera</h3><div id="fin-news"><p>Bevakningen följer Isofols pressmeddelanden, finansrapporter, TO2-utfallet och jämförbara emissioner i andra bolag.</p></div></div>
  </div>
- <div class="fin-comps">
+ <div class="dd-risk-module" id="dd-risk-module">
+ <div class="dd-risk-heading">Big Pharma · due diligence <span>Partneravtalets timing och finansieringsrisk</span></div>
+ <p class="dd-risk-summary" id="dd-risk-summary">Granskar risk för att en möjlig partner vill invänta mer data innan avtal.</p>
+ <details><summary>Visa de sju granskningsområdena, beslutströsklar och scenarier</summary>
+ <div id="dd-risk-detail"><p class="dd-caveat">Läser källmärkt DD-underlag …</p></div></details>
+</div>
+  <div class="fin-comps">
   <h3>Historiska jämförelsefall <small>Riktiga kapitalanskaffningar med originalkällor</small></h3>
   <div class="fin-cases" id="fin-cases">
    <div class="fin-case"><strong>Isofol · juli 2025</strong><p>Företrädesemission inklusive övertilldelning tillförde cirka 91 miljoner kr brutto trots partnersamarbete.</p><a href="https://isofolmedical.com/sv/mfn_news/isofols-foretradesemission-overtecknad-utnyttjar-overtilldelning-till-japansk-samarbetspartner/" target="_blank" rel="noopener">Originalkälla ↗</a></div>
@@ -944,9 +971,9 @@ body.weekly-dialog-open{overflow:hidden}
   <p class="fin-small">De verkliga fallen visar att emissioner kan ske långt innan kassan tar slut. Urvalet är inte representativt för alla bioteknikbolag och kan därför inte användas som en empiriskt fastställd sannolikhet.</p>
  </div>
  <details class="fin-method">
-  <summary>Så fungerar riskmodellen och veckouppdateringen</summary>
+  <summary>Så fungerar riskmodellen och veckouppdateringen</summary><p><b>Partner-DD:</b> En separat subjektiv faktor för risken att köpare kräver ytterligare klinisk evidens före licensaffär ingår nu i de publicerade procentsatserna. Läs DD-kriterierna ovan. Osäker upfront är inte kassa.</p>
   <p><b>Definition:</b> Modellen bedömer ett nytt besked om kontant emission av aktier eller units inom 3, 6 och 12 månader. Utnyttjande av TO2 är en förutbestämd möjlig finansiering, inte en ny emission som ska räknas som ett nytt riskutfall. Även TO2 kan dock innebära nyemitterade aktier och utspädning.</p>
-  <p><b>Beräkning:</b> Analytiskt grundantagande 2,1 % per månad × 1,18 för möjlig ökning av fas II-kostnader × 1,12 för osäkerhet kring ytterligare finansiering och TO2 × en närhetsfaktor som ökar när 30 september 2027 närmar sig. Sannolikhet för h månader beräknas som <code>1 − exp(−h × månatlig riskintensitet)</code>. Antagandena är inte kalibrerade på en representativ databas.</p>
+  <p><b>Beräkning:</b> Analytiskt grundantagande 2,1 % per månad × 1,18 för möjlig ökning av fas II-kostnader × 1,12 för osäkerhet kring ytterligare finansiering och TO2 × 1,10 för partner-DD-timing × en närhetsfaktor som ökar när 30 september 2027 närmar sig. Sannolikhet för h månader beräknas som <code>1 − exp(−h × månatlig riskintensitet)</code>. Antagandena är inte kalibrerade på en representativ databas.</p>
   <p><b>Veckoräknaren:</b> GitHub Actions kör varje måndag och räknar om risken utifrån kvarvarande tid. Den söker efter nya rapporter, kapitalbesked, TO2 och partnernyheter. Nya kassavärden eller optionslikvider flaggas för genomgång i stället för att gissas från rubriker.</p>
   <p><b>Historiskt kassaflöde:</b> Q3 gav −16,9 miljoner kr och januari–september −47,4 miljoner kr i operativt kassaflöde. Historisk förbrukning är inte samma sak som en prognos över en expanderad fas II-studie.</p>
   <p><b>TO2:</b> Det finns 39 863 928 optioner. Varje TO2 ger rätt till en aktie. Lösenpriset är nu fastställt till <b>0,95 kr</b> per aktie efter cirka 1,35 kr i VWAP 2–13 november 2026. Teckning 16–30 november; sista handel 26 november. Vid full teckning motsvarar 39 863 928 × 0,95 kr cirka <b>37,9 miljoner kr brutto</b>, medan pressmeddelandet uppger cirka 37,7 miljoner kr. Om inga optioner utnyttjas blir kassainflödet noll. Faktisk nettolikvid och nyttjandegrad kontrolleras när utfallet rapporteras omkring 1 december 2026.</p>
@@ -2150,13 +2177,14 @@ function finCalcProof(key){
         ))/Number(c.fenja.remaining_nominal_msek))
     ):1)):1;
    const monthly=Number(calc.baseline_monthly_hazard)*
-    Number(calc.clinical_phase3_multiplier)*Number(calc.credit_dependency_multiplier)*fenjaFac*proximity;
+    Number(calc.clinical_phase3_multiplier)*Number(calc.credit_dependency_multiplier)*Number(calc.partner_dd_multiplier||1)*fenjaFac*proximity;
    const p=100*(1-Math.exp(-horizon*monthly));
    const band=calc.uncertainty_band_monthly_hazard_multiplier||[.62,1.55];
    const result=key==='sensitivity'?num(r.low,1)+'–'+num(r.high,1)+' %':pct(r.percent,1);
    const steps=[
     'Horisont h = '+horizon+' månader; daterat riktmärke: '+c.cash_runway_proxy+'; månader kvar enligt kalendern: '+num(monthsLeft,2)+'.',
     'Basrisk '+num(calc.baseline_monthly_hazard*100,2)+' %/månad × klinisk faktor '+num(calc.clinical_phase3_multiplier,2)+' × kredit-/finansieringsfaktor '+num(calc.credit_dependency_multiplier,2)+'.',
+    'Separat partner-DD-faktor '+num(calc.partner_dd_multiplier||1,2)+' för risken att en möjlig licenspartner avvaktar mer underlag. Subjektivt och manuellt granskat; inga garanterade upfronts räknas in.',
     hasFenja?'Fenja-kapacitetsfaktor '+num(fenjaFac,6)+' baserad på verifierad kursbild '+c.fenja.market_snapshot.as_of_date+' (inte livekurs).':'Inget redan erhållet TO2-kapital räknas in; utfallet är ännu obekräftat.',
     'Tidsfaktor = max(0,85; min(2,60; 1 + 0,10 × ('+horizon+' + 9 − '+num(monthsLeft,2)+'))) = '+num(proximity,3)+'.',
     'Månatlig riskintensitet = '+num(monthly*100,3)+' %. P = 100 × (1 − e^(−'+horizon+' × '+num(monthly,6)+')) ≈ '+num(p,1)+' %.',
@@ -2164,7 +2192,7 @@ function finCalcProof(key){
    ];
    return {title:key==='sensitivity'?'Så beräknas riskintervallet':'Emissionsrisk de närmaste '+horizon+' månaderna',
     lead:'Siffran är en transparent subjektiv scenarioberäkning, inte en statistisk sannolikhet uppmätt bland representativa biotechbolag.',
-    formula:'P(h) = 100 × (1 − exp(−h × basrisk × klinisk faktor × kreditfaktor × '+(hasFenja?'Fenja-tillgänglighetsfaktor × ':'')+'tidsfaktor))',
+    formula:'P(h) = 100 × (1 − exp(−h × basrisk × klinisk faktor × kreditfaktor × partner-DD-faktor × '+(hasFenja?'Fenja-tillgänglighetsfaktor × ':'')+'tidsfaktor))',
     steps,result:result+' (publicerad modellberäkning)',
     caveat:'Riskfaktorerna är analytiska antaganden och riskintervallet ett känslighetsband – inte ett konfidensintervall. Om kontrollräkningen skiljer någon tiondel från den publicerade siffran beror det på avrundning av kvarvarande månader eller modellversion. En ny uppgift i pressen ändrar inte automatiskt modellparametrarna.',
     sources:baseSources};
@@ -2674,6 +2702,39 @@ document.addEventListener('keydown',event=>{
   }
   refresh();
   setInterval(refresh,120000);
+})();
+
+
+/* Shared buyer-side DD panel. Data is manually reviewed; news/RSS cannot change ratings. */
+(async function renderPartnerDueDiligence(){
+ const summary=document.getElementById("dd-risk-summary"),host=document.getElementById("dd-risk-detail");
+ if(!summary||!host)return;
+ const add=(tag,cls,value,parent)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined)el.textContent=value;(parent||host).appendChild(el);return el};
+ try{
+  const res=await fetch("./data/financing_model.json",{cache:"no-store"});
+  if(!res.ok)throw new Error("HTTP "+res.status);
+  const model=await res.json(),dd=model.partner_due_diligence;
+  if(!dd||!Array.isArray(dd.pillars)||dd.pillars.length!==7)throw new Error("Ofullständig partner-DD");
+  summary.textContent=dd.summary;
+  host.replaceChildren();
+  const block=(title,body)=>{const b=add("div","dd-block","");add("strong","",title,b);add("p","",body,b)};
+  block("Vad behöver en möjlig köpare härnäst?",dd.next_decision_gate);
+  block("Koppling till kassalivslängd och emission",dd.time_to_cash_assessment);
+  const factor=model.calculation&&Number(model.calculation.partner_dd_multiplier);
+  if(Number.isFinite(factor)&&factor>0)block("Påverkan på emissionsbarometern","Riskfaktor ×"+factor.toLocaleString("sv-SE",{minimumFractionDigits:2,maximumFractionDigits:2})+" ingår i det publicerade scenariotalet. Detta är en subjektiv försiktighetsfaktor för möjlig affärsfördröjning, inte verifierad partnerstatistik.");
+  if(typeof PARTNER_DD_STRESS_POINTS!=="undefined" && Number.isFinite(Number(dd.post_financing_stress_points))){
+    PARTNER_DD_STRESS_POINTS=Number(dd.post_financing_stress_points);
+    block("Påverkan på konkursbarometern","Efter antagen emission: +"+PARTNER_DD_STRESS_POINTS+" subjektiv stresspoäng för osäker partnerfinansiering efter nästa DD-granskning. Nuvarande stressindex 9/10 för ej genomförd emission räknas inte om; ingen konkurssannolikhet visas.");
+    if(typeof drawBankruptcy==="function")drawBankruptcy();
+  }
+  const grid=add("div","dd-pillars","");
+  dd.pillars.forEach(p=>{const card=add("div","dd-pillar","",grid);add("strong","",p.area,card);add("small","",p.status,card);add("p","",p.assessment,card)});
+  const cases=add("div","dd-block","");add("strong","","Partner-/kapitalscenarier",cases);const ul=add("ul","dd-scenarios","",cases);
+  (dd.scenarios||[]).forEach(c=>add("li","",c.name+": "+c.effect,ul));
+  add("p","dd-caveat",dd.uncertainty+" "+dd.assumptions_policy);
+  const src=add("p","dd-caveat","Ramverk: ",host),a=document.createElement("a");
+  a.href=dd.framework_url;a.rel="noopener noreferrer";a.target="_blank";a.textContent="Vision Lifesciences checklista";src.appendChild(a);src.appendChild(document.createTextNode(" · bedömning "+dd.review_date+"."));
+ }catch(err){summary.textContent="DD-underlag kunde inte läsas – använd inte framtida partnerbetalningar som säker finansiering.";host.textContent="Kontrollera data/financing_model.json: "+err.message}
 })();
 
 </script></body></html>
