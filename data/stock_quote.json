@@ -2,11 +2,10 @@
   "symbol": "ISOFOL.ST",
   "currency": "SEK",
   "price": 1.058,
-  "quote_time": "2026-11-16",
-  "quote_granularity": "date",
-  "fetched_at": null,
-  "source": "MarketScreener / Nasdaq Stockholm",
-  "source_url": "https://se.marketscreener.com/kurs/aktie/ISOFOL-MEDICAL-AB-39436714/",
+  "quote_time": "2026-11-16T17:29:53+01:00",
+  "fetched_at": "2026-11-17T08:58:07+01:00",
+  "source": "Yahoo Finance chart / Nasdaq Stockholm",
+  "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/",
   "delayed": true,
-  "source_note": "Senast kända stängningskurs 2026-11-16; exakt kursklockslag saknas för startvärdet. Nästa automatiska kurs uppdateras med källans faktiska tidsstämpel."
+  "source_note": "Extern, potentiellt fördröjd marknadskurs. Tidpunkten är kursens källtidsstämpel; kontrollera alltid tidsstämpeln."
 }
