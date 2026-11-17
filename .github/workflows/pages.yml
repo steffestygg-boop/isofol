@@ -1,5 +1,10 @@
 name: Publish Isofol Tracker to GitHub Pages
 on:
+  # Kursjobbets git push använder GITHUB_TOKEN och utlöser därför inte ett nytt push-flöde.
+  # Publicera om GitHub Pages när kursjobbet slutförts framgångsrikt.
+  workflow_run:
+    workflows: ["Uppdatera Isofol Medical aktiekurs"]
+    types: [completed]
   push:
     branches: [main]
   workflow_dispatch:
@@ -12,6 +17,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
