@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T10:57:11+01:00",
+  "updated_at": "2026-11-17T10:39:18+01:00",
   "based_on_report": "2026-09-30",
   "automated_checked": true,
   "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
@@ -12,9 +12,9 @@
     "officiell presslista"
   ],
   "failed_sources": [],
-  "days_since_report": 47,
+  "days_since_report": 48,
   "months_to_company_runway_proxy": 10.4,
-  "methodology_version": "1.0.1-isofol",
+  "methodology_version": "1.1.0-partner-dd",
   "risk": {
     "months_3": {
       "percent": 9.2,
@@ -22,9 +22,9 @@
       "high": 13.9
     },
     "months_6": {
-      "percent": 21.5,
+      "percent": 21.6,
       "low": 14.0,
-      "high": 31.3
+      "high": 31.4
     },
     "months_12": {
       "percent": 49.6,
@@ -38,6 +38,15 @@
     "Bolaget bedömer befintlig finansiering tillräcklig för planerad drift 12 månader efter 30 september 2026. Tidens gång mot riktmärket räknas om varje vecka."
   ],
   "latest_items": [
+    {
+      "title": "Isofol Medical har spikat lösenpris för teckningsoptioner till 0,95 kronor per aktie (Finwire News) - Aktiellt",
+      "date": "2026-11-16",
+      "source": "Aktiellt",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZMzVHVUZkWFA2UWlCUExBNWRBSUJadTdKRm1WLThpR1U2R3BoNjVQaktZZTZNOWFaUkZtQXpPSUVZYXF0Ukk0Tk5oWW53TVFaRlNSWFRqZGl1WWxlLXpB?oc=5",
+      "category": "omvärld",
+      "official": false,
+      "signal": "TO2 / befintliga optioner"
+    },
     {
       "title": "Isofol Medical: Clinical momentum builds ahead of Phase 2 - ABG - Börsvärlden",
       "date": "2026-11-16",
@@ -57,19 +66,19 @@
       "signal": "TO2 / befintliga optioner"
     },
     {
-      "title": "Isofols Q3: fas Ib på upploppet och utökad fas II - Biostock",
-      "date": "2026-11-13",
-      "source": "Biostock",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd05sRGc1dUxuOUM0eGpjdDJoMHBOdWhsQmI0ZGNlTzAzT0lRQXN6QzFqUjhBeG01MTR4N3ZGektlX2ZsRHcyekNSNDhXYW1oWU9FZnp3WWVNUjRSWlZWdm9QSmllT2ExN0l1WnlPdGY3bEwyRzdJang2bmxjeHliclBRMA?oc=5",
-      "category": "omvärld",
+      "title": "Cereno Scientific: More runway, more opportunity - Edison - Börsvärlden",
+      "date": "2026-11-16",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObGpPR3E3TmYtbzZReFh2c1Q3WUgyaXJlakF0cTJKa0h6bTNBcm1KaDB2WlpBTTlySUxLWmtST003bEZwVmMyUE9CcmdBUVdreUl1WmxLUFVrZHdCU1hlWFVGWlpkUEpQQm8tSGc5cnJ4Y1VtLUdyaEJncmZ3UE5xU21DNFNGaWZ0dGZnek5aaktqY2lt?oc=5",
+      "category": "jämförelsebolag",
       "official": false,
       "signal": "övrigt"
     },
     {
-      "title": "Isofol Medical (Q3 Review): Phase II within reach - Redeye - Börsvärlden",
+      "title": "Isofols Q3: fas Ib på upploppet och utökad fas II - Biostock",
       "date": "2026-11-13",
-      "source": "Börsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTU9aM3lWZk9aTlVzLXZ2bGdycWkwZ1NoQlR3S2dSZnBhYXN1SkNuR2h2SlVOM0xqVHZKQUFINGY3Y0xiTzRKZ2dVVU1nNnZJWGJBbHdfTlV6Z09nSVBWbnRiY0JfNjh2MFBXeHg5LWZxLVdkV09PUC14SHZabEFTR2dxd1FVdWE1VGdFdUlhU0xpTE9s?oc=5",
+      "source": "Biostock",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd05sRGc1dUxuOUM0eGpjdDJoMHBOdWhsQmI0ZGNlTzAzT0lRQXN6QzFqUjhBeG01MTR4N3ZGektlX2ZsRHcyekNSNDhXYW1oWU9FZnp3WWVNUjRSWlZWdm9QSmllT2ExN0l1WnlPdGY3bEwyRzdJang2bmxjeHliclBRMA?oc=5",
       "category": "omvärld",
       "official": false,
       "signal": "övrigt"
@@ -93,22 +102,22 @@
       "signal": "emission"
     },
     {
-      "title": "Cereno Scientific planerar företrädesemission på 400 miljoner kronor – förlänger lån - Börsvärlden",
+      "title": "Lannebo Hälsa och Ny Teknik ökade 7,2 procent i oktober - Bonesupport och Cellavision bland vinnarna - Börsvärlden",
       "date": "2026-11-12",
       "source": "Börsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGZjdVdjVWNHSURna1VrRWtLQ0xPNHRkV2NRamo4QnlhTEJsbUtpVW9meThLOUpna3dTWVUxMXlWYjZHRjNoaXJuc0JCWUUteERRRWlfd1EwSFBsdFFQT1NKVGpaRHdmSWJSeWJGQVRIVkZxXzFrc19xTFFYRUdSN1ctYWNPRkF1Q05YT0VkN1V3YU9aM1RqcXBLMkM1cS04bzU5Y0tUOG1nSHNranFRcFhPVkpuUQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPM2t5VTFURUUweEtuNjhvSU44ZFp5emRlTVhVRnFLNkpmeDk2b3BBMG9pYlJzcElSNWE4b3hOb0pXaXo4a1EyYjVGMWwtWkhDWkpaQnEwT05vdGtzejVPcXdhNWdVcldJbndwa0NjRDhpVl9RSVp3M0pfbDEyeFJZV1NlV0tOMEQyQWEybk45VTJ1dGthZjFmY051ZndPN3BEN1dNblhSc3l3TWlsLW9VeWtRcm9yajBROVBaQmE0NmRtX01kRk85QWRR?oc=5",
       "category": "jämförelsebolag",
       "official": false,
-      "signal": "emission"
+      "signal": "övrigt"
     },
     {
-      "title": "Bioinvents nyemission: Tre flaggor efter kursslakten - Affärsvärlden",
-      "date": "2026-11-11",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSzAyeVp0eDRDWW1Pa3c1ZzNHOEdBUl9Ram5tdklqY3NndndlV0JRS0VKNWpwVlY4R3FnRW9TOWdlUXh1dEpudW5iLWowSncyeXVJMm5kVGFKTGY1Q0N0TFJZbEl0TmFrMktEdHhndGllLWNHNVJtRWRYRHoxWlRiMlRWSlNiR1lFYXI3ZjJuVUswQQ?oc=5",
+      "title": "Egetis receives bid, Novo raises outlook - Biostock",
+      "date": "2026-11-09",
+      "source": "Biostock",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPRHFxdVpXUGpRWm8zM3VOajZrNXFfYWNsUjI5YkoxUDhMc2NJLWVScnBWdUlteVZCMFZQaDQydjJvN0d0ZzJNaWktbmVodXJJZ0Z1OVlTNjlIQnExMW1xdHUzWWJiUDFnTVViUjdzLVZGbEYxZE9YMVlGQ3A0bVRUWHI0SXY5ZFZTV2JDNTRfTFI1Mi1pUkJyQkNHVXRhYUsyRjZZQXd4d3FPdE1MMkw5SkxXZzgzRmRGRDRkbWxJMm9KeDJCWXVrSjRKOGoyT0NwRlUzYlY2WEt2SzVsS1h6a1ByLTRKQUJZRUZJR0lXN184aU1wUmQ3eTI5TkZvWkc2X3FhUXd0VVdkeWJJNVZTd0Vmdkk?oc=5",
       "category": "jämförelsebolag",
       "official": false,
-      "signal": "emission"
+      "signal": "övrigt"
     },
     {
       "title": "Bioinvent rasar vidare – teckningskurs 1 krona - Affärsvärlden",
@@ -129,15 +138,6 @@
       "signal": "övrigt"
     },
     {
-      "title": "Immunovia behöver pengar: Ber om 63 miljoner till 76% utspädning - Affärsvärlden",
-      "date": "2026-10-29",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdTRnLThCMGF3SF9jbUh3Q3llMlpuejllaW9HeGRrNHFsMUZOTlZ0M1hIRlN4QThZRUprVGJOalY1NXpfSk9PSFRTTmlTZzl3R2s4RmlrQjlxdUNDMmhheEY3T0p0QzB0SkdVSTBNMzN0WEtCbVAwRzZjZ2E3M1MweEVaWE1UZmNJQjFVVzlXb2lOenZfc0JSSEZ3REpSMksw?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "övrigt"
-    },
-    {
       "title": "Immunovia beslutar om villkor i aviserad företrädesemission - Börsvärlden",
       "date": "2026-10-29",
       "source": "Börsvärlden",
@@ -147,19 +147,19 @@
       "signal": "emission"
     },
     {
-      "title": "Bioinvent gör emission på 430 Mkr - DI",
-      "date": "2026-10-28",
-      "source": "DI",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IcENJREpRdjA1ZGFZemp2dEoxaG1HR0FjTkk3NERkX3ZzaUVnaG44N180X2ZOMmZhTk00ZV9GUDRCNGhBRGRBSHptcHY1bEJrbnNPSk9ZTDVXM2RUY2NqWFZ0SloxSm41?oc=5",
+      "title": "Immunovia behöver pengar: Ber om 63 miljoner till 76% utspädning - Affärsvärlden",
+      "date": "2026-10-29",
+      "source": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdTRnLThCMGF3SF9jbUh3Q3llMlpuejllaW9HeGRrNHFsMUZOTlZ0M1hIRlN4QThZRUprVGJOalY1NXpfSk9PSFRTTmlTZzl3R2s4RmlrQjlxdUNDMmhheEY3T0p0QzB0SkdVSTBNMzN0WEtCbVAwRzZjZ2E3M1MweEVaWE1UZmNJQjFVVzlXb2lOenZfc0JSSEZ3REpSMksw?oc=5",
       "category": "jämförelsebolag",
       "official": false,
       "signal": "övrigt"
     },
     {
-      "title": "Bioinvent publicerar positiva fas 1-data för BI-1808 i vetenskaplig tidskrift - Börsvärlden",
-      "date": "2026-10-15",
-      "source": "Börsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tYWRmRVMwVXVKcFBLWDhBWTRFVm95NVBvNlFtSG52eUZ2OGZJa1Y1c1ZWaGJFTFNJOF9renRYWGlIb21HYzc5b2pEZEdQbWNLU2l5cg?oc=5",
+      "title": "Bioinvent gör emission på 430 Mkr - DI",
+      "date": "2026-10-28",
+      "source": "DI",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IcENJREpRdjA1ZGFZemp2dEoxaG1HR0FjTkk3NERkX3ZzaUVnaG44N180X2ZOMmZhTk00ZV9GUDRCNGhBRGRBSHptcHY1bEJrbnNPSk9ZTDVXM2RUY2NqWFZ0SloxSm41?oc=5",
       "category": "jämförelsebolag",
       "official": false,
       "signal": "övrigt"
@@ -180,7 +180,7 @@
       "title": "Finansieringshorisonten närmar sig",
       "detail": "Omkring 10.4 månader till modellens konservativa riktmärke 2027-09-30. Det är INTE en verifierad dag då kassan tar slut; bolagets egen prognos och tidsfaktorn är redan inräknade i riskmodellen.",
       "source": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "status": "Beräknad från verifierad bolagsprognos",
       "next_step": "Kontrollera ny likviditetsprognos i kommande kvartalsrapport.",
       "category": "runway"
@@ -197,7 +197,7 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-16T12:50:13+01:00",
+  "alerts_checked_at": "2026-11-17T10:39:18+01:00",
   "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
