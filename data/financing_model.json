@@ -1,6 +1,6 @@
 {
-  "version": "1.0.1-isofol",
-  "curated_at": "2026-11-13",
+  "version": "1.1.0-partner-dd",
+  "curated_at": "2026-11-17",
   "scope": "Bedömning av risken att Isofol annonserar en NY kontant kapitalanskaffning via aktie- eller unitemission inom rullande 3/6/12 månader. Befintliga TO2-optioners lösen räknas separat; kursen har fastställts men nyttjande och likvid är ännu inte kända.",
   "company": {
     "report_date": "2026-09-30",
@@ -49,14 +49,17 @@
     "clinical_phase3_multiplier": 1.18,
     "credit_dependency_multiplier": 1.12,
     "proximity_formula": "max(0,85; min(2,60; 1 + 0,10 × (prognosmånader + 9 − månader kvar till riktmärket 30 sep 2027)))",
-    "probability_formula": "P(h) = 1 − exp(−h × 0,021 × 1,18 × 1,12 × närhetsfaktor).",
-    "evidence_note": "Grundrisk och multiplikatorer är subjektiva modellantaganden. Den 13 november fastställdes TO2-kursen till 0,95 kr men ännu finns inga bekräftade inbetalningar; därför ändras inte risken enbart för att priset nu är känt. När utfallet blir klart ska finansieringshorisont och grundantaganden omprövas. Känslighetsintervallet är inte ett konfidensintervall.",
+    "probability_formula": "P(h) = 1 − exp(−h × 0,021 × 1,18 × 1,12 × partner-DD-faktor × närhetsfaktor).",
+    "evidence_note": "Grundrisk och multiplikatorer är subjektiva modellantaganden. Den 13 november fastställdes TO2-kursen till 0,95 kr men ännu finns inga bekräftade inbetalningar; därför ändras inte risken enbart för att priset nu är känt. När utfallet blir klart ska finansieringshorisont och grundantaganden omprövas. Känslighetsintervallet är inte ett konfidensintervall. Från 17 november ingår en separat, subjektiv faktor 1,10 för osäker partner-timing, utan att osäkra upfronts räknas som kassa.",
     "uncertainty_band_monthly_hazard_multiplier": [
       0.62,
       1.55
     ],
     "anchor_reference_cases": "Verkliga fall illustrerar att bioteknikbolag kan emittera innan kassan tagit slut. Urvalet är selekterat och stöder inte en kvantitativ frekvensskattning.",
-    "special_handling": "Efter officiellt prisbesked 13 november ska framtida veckokörningar behandla 0,95 kr som fastställt och identifiera nyttjandegraden runt 1 december. Likvid ska inte tillföras kassamodellen innan faktiskt utfall och genomförd betalning har verifierats."
+    "special_handling": "Efter officiellt prisbesked 13 november ska framtida veckokörningar behandla 0,95 kr som fastställt och identifiera nyttjandegraden runt 1 december. Likvid ska inte tillföras kassamodellen innan faktiskt utfall och genomförd betalning har verifierats.",
+    "partner_dd_multiplier": 1.1,
+    "partner_dd_methodology": "Subjektivt försiktighetspåslag för risken att en global partner avvaktar mer klinisk/regulatorisk/kommersiell DD innan avtal. Inte en statistisk sannolikhet för misslyckad affär eller en verifierad köparbedömning. Förändra bara efter manuell källgranskning och undvik dubbelräkning av kostnads- och tidsfaktorer.",
+    "partner_dd_review_date": "2026-11-17"
   },
   "peer_cases": [
     {
@@ -144,5 +147,67 @@
     "verification": "Direkt beräknade rapportkvoter och kända kredit-/TO2-villkor märks som dokumenterad siffergrund. Automatisk analys av rubriker är alltid bara en signal för manuell kontroll mot börs eller bolagets fullständiga originalbesked.",
     "probability_policy": "Obekräftade varningssignaler ändrar inte automatiskt emissionssannolikheten. Verifierad ny information måste införas i finansieringsmodellen, annars skulle systemet ge falskt exakta procentsatser.",
     "sources": "Se varje varningsruta för originalkälla och data/financing_model.json för rapport- och avtalsreferenser."
+  },
+  "partner_due_diligence": {
+    "framework": "Vision Lifesciences: The Complete Pharma Due Diligence Checklist for Licensing & M&A",
+    "framework_url": "https://visionlifesciences.com/insights/pharma-due-diligence-checklist",
+    "review_date": "2026-11-17",
+    "evidence_type": "Offentliga uppgifter + subjektiv analystolkning; inte tillgång till konfidentiellt data room",
+    "summary": "Arfolitixorin har en etablerad mekanism och preliminära positiva signaler, men en ny global affär kan kräva kontrollerade fas II-data och oberoende granskning av hela AGENT-historiken. Solasias Japan-avtal innebär inte garanterad finansiering för hela globala programmet.",
+    "next_decision_gate": "Randomiserad fas II mot leukovorin med kliniskt relevanta effektmått, full säkerhets-/subgruppsredovisning och tydlig finansiering för perioden fram till dataläsning.",
+    "time_to_cash_assessment": "Ett bra tidigt kliniskt utfall garanterar inte en affär före nästa större fas II-kostnad. Vänta inte med emissionsscenariot på att ett möjligt partneravtal ska rädda finansieringen.",
+    "uncertainty": "Partnerdialogers verkliga DD-status och villkor är inte offentliga. Risk för vänteläge är en analytisk hypotes.",
+    "pillars": [
+      {
+        "area": "Kliniska data",
+        "status": "Delvis styrkt",
+        "assessment": "Små öppna fas Ib/II-data och tidigare negativ fas III i AGENT; kontrollarm och replikerbarhet är kritiska för ny DD."
+      },
+      {
+        "area": "Patent/IP",
+        "status": "Ej fullständigt verifierat",
+        "assessment": "Patentens räckvidd, återstående exklusivitet och freedom-to-operate behöver granskas land för land."
+      },
+      {
+        "area": "Regulatoriskt",
+        "status": "Återstår att verifiera",
+        "assessment": "Bekräfta effektmått, jämförelsearm och myndighetsdialog för kommande registreringsväg."
+      },
+      {
+        "area": "Kommersiellt",
+        "status": "Analys krävs",
+        "assessment": "Värdera relevant patientsegment, prissättning och klinisk fördel jämfört med leukovorin; inte enbart TAM."
+      },
+      {
+        "area": "Finansiellt",
+        "status": "Finansieringsgap möjligt",
+        "assessment": "Utökad fas II och TO2 med okänt utfall; jämför nästa beslutspåverkande data med kassans verkliga räckvidd."
+      },
+      {
+        "area": "Tillverkning/CMC",
+        "status": "Ej fullständigt verifierat",
+        "assessment": "Utvärdera skalbar tillverkning, kvalitetsdata, leverantörskedja och regulatorisk CMC-beredskap."
+      },
+      {
+        "area": "Juridik/avtal",
+        "status": "Delvis känt",
+        "assessment": "Solasias territorierättigheter och återstående globala rättigheter/royalties behöver förstås."
+      }
+    ],
+    "assumptions_policy": "En DD-risk är en möjlig fördröjning av partnerfinansiering, inte ett bevis för att en affär avvisats. Alla sju områden, strategisk köparpassform och nästa värdehöjande data ska granskas vid omprövning; osäkrade upfronts förs inte som kassa.",
+    "scenarios": [
+      {
+        "name": "Avtal före avgörande data",
+        "effect": "Kan minska kapitalbehov om faktisk signerad upfront och betalningsdatum bekräftas; räknas inte i grundscenariot."
+      },
+      {
+        "name": "Partner avvaktar nästa data",
+        "effect": "Bolaget behöver bära studie- och rörelsekostnader själv längre; höjer refinansierings-/emissionspress."
+      },
+      {
+        "name": "Inget avtal / svag finansiering",
+        "effect": "Beakta ytterligare kapitalbehov, sämre emissionsvillkor eller utvecklingsstopp, utan att likställa finansieringsstress med juridisk konkurs."
+      }
+    ]
   }
 }
