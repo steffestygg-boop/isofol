@@ -96,3 +96,12 @@ Avsnittet **Veckans nyheter** ligger direkt efter **Aktien** och hämtar `data/w
 - Generiska innehållstexter som `Rapporterad kassa och historiskt kassaflöde är inte en dagsaktuell finansieringsprognos` har tagits bort från händelsekorten. Om en obekräftad RSS-rubrik saknar tillräcklig information används **inte** en påhittad förklaring; källan kan öppnas från informationsrutan.
 - `data/weekly_event_details.json` innehåller **källgranskade** fördjupningar för viktiga händelser. Söndagsjobbet använder dessa plus `body`/`meaning` från redan dokumenterade milstolpar när det skapar `data/weekly_news.json`, så att tidigare manuellt förtydligade nyheter inte skrivs över med generiskt standardinnehåll.
 - Källgranskade uppgifter hålls åtskilda från automatiskt inlästa rubriker. Källgranskade analysscenarier är fortfarande inte traditionella garanterade kursmål.
+
+## Aktiekurs – automatisk och tidsstämplad (november 2026)
+
+Under **Aktien** visas nu kursen med samma utformning som på SynAct-sidan: stor kurs i kronor, källa och den **faktiska kurstidpunkten**. TradingViews separata inbäddade kursruta har ersatts med en direktläst kursruta; en länk till TradingView finns kvar för jämförelse. Kursen kan vara fördröjd.
+
+- `scripts/update_stock_quote.py` hämtar Isofol Medical (Yahoo-symbol `ISOFOL.ST`) från Yahoo Finances chart-endpoint och kontrollerar bolagssymbol, SEK, positivt kursvärde och tidsstämpel. Hämtningen sker automatiskt via `.github/workflows/refresh-stock-quote.yml` ungefär var 20:e minut på vardagar, med hänsyn till att GitHub Actions kan fördröjas och den externa kurskällan ibland kan vara otillgänglig.
+- Kursen sparas i `data/stock_quote.json`. Webbplatsen hämtar filen vid öppning och kontrollerar om den ändrats varannan minut. Om kursen är från föregående handelsdag ska **detta datum synas**, inte klockslaget då GitHub Actions senast körde.
+- Kurser under en krona behåller fler decimaler för att inte förlora meningsfull prisprecision. Kurserna har ingen automatisk påverkan på analysens emissionsrisk, milstolpar eller andra finansieringsantaganden.
+- Källa och tidsstämpel visas intill kursen. Vid fel i kursleverantören behålls senast verifierade kurs och den ska inte presenteras som dagens livekurs. Regressionstester i `tests/test_stock_quote.py` kontrollerar kursvalidering och kursrutan.
