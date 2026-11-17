@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-17T09:20:46+01:00",
+  "updated_at": "2026-11-17T09:22:38+01:00",
   "latest_week": "2026-W47",
   "weeks": [
     {
@@ -12,8 +12,8 @@
       "year": 2026,
       "start": "2026-11-16",
       "end": "2026-11-17",
-      "generated_at": "2026-11-17T09:20:46+01:00",
-      "intro": "En framträdande nyhetsrubrik: Isofol Medical har spikat lösenpris för teckningsoptioner till 0,95 kronor per aktie (Finwire News) - Aktiellt. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 1 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
+      "generated_at": "2026-11-17T09:22:38+01:00",
+      "intro": "En framträdande nyhetsrubrik: TO2-handel: lösenpris 0,95 kr, nyttjande 16–30 nov. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 1 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
         {
           "date": "2026-11-16",
@@ -44,6 +44,48 @@
           "importance": "",
           "key_facts": [],
           "editorial_verified": false
+        },
+        {
+          "date": "2026-11-16",
+          "title": "TO2-handel: lösenpris 0,95 kr, nyttjande 16–30 nov",
+          "category": "Emission och finansiering",
+          "summary": "Isofols TO2 kan lösas in för 0,95 kr per aktie under 16–30 november. Maximalt 39 863 928 nya aktier kan tecknas, vilket matematiskt motsvarar cirka 37,9 Mkr brutto.",
+          "source": "Aktiellt",
+          "url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "Finwires text från den 16 november återger de redan offentliggjorda villkoren från Isofols pressmeddelande den 13 november. Det är alltså ingen ny prisändring den 16 november. Utfallet beror på hur många optionsinnehavare som faktiskt tecknar och betalar.",
+          "importance": "Villkoren är fastställda, men den maximala likviden är inte säkerställd.",
+          "key_facts": [
+            "Teckningskurs: 0,95 kr",
+            "Nyttjandeperiod: 16–30 november",
+            "Maximalt antal nya aktier: 39 863 928",
+            "Maximal bruttolikvid enligt multiplikation: cirka 37,9 Mkr"
+          ],
+          "additional_source_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZMzVHVUZkWFA2UWlCUExBNWRBSUJadTdKRm1WLThpR1U2R3BoNjVQaktZZTZNOWFaUkZtQXpPSUVZYXF0Ukk0Tk5oWW53TVFaRlNSWFRqZGl1WWxlLXpB?oc=5",
+          "editorial_verified": true
+        },
+        {
+          "date": "2026-11-16",
+          "title": "ABG: riskjusterat Isofol-värde höjs till 2,10 kr",
+          "category": "Studie och resultat",
+          "summary": "ABG höjer sitt riskjusterade värde från 1,80 till 2,10 kr efter Q3. Optimistiskt scenario höjs från 10,50 till 11,00 kr, medan negativt scenario ligger kvar på 0,10 kr.",
+          "source": "Börsvärlden",
+          "url": "https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/11/isofol-medical---clinical-momentum-builds-ahead-of-phase-2/",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "ABG lyfter tidiga kliniska signaler från fas Ib och lägre kostnader än väntat. Analytikern ser fas II-start tidigt i Q1 2027 och anser att de kvarvarande kliniska och finansiella riskerna fortfarande är betydande.",
+          "importance": "Detta är en extern modellvärdering, inte ett garanterat kursmål eller bevis på effekt i randomiserad fas II.",
+          "key_facts": [
+            "Riskjusterat: 1,80 → 2,10 kr",
+            "Optimistiskt scenario: 10,50 → 11,00 kr",
+            "Negativt scenario: oförändrat 0,10 kr",
+            "Fas II-start i ABG:s modell: tidigt Q1 2027"
+          ],
+          "additional_source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYUR5TTIyaGpuMzFybzBYbWRpVkliN3Y0YkpwaFJrTFJLeEtuQVA3U0Jmc2M3RHhfX2cxcm5iMm1TblZNSTRuUnNmRGRVU05BUE95elBTTHRkX1Q3SWdqWFZFdTl6SExTTjZXU0lfVTQwOTUzbGxzZzFqX3puZ21yWFo2WHRGWUNSS18xTmFIa1JDcXZjRV95TXEyZnRkUQ?oc=5",
+          "editorial_verified": true
         },
         {
           "date": "2026-11-15",
@@ -554,9 +596,9 @@
         "baseline_date": "2026-11-13",
         "baseline": 1.018,
         "latest_date": "2026-11-17",
-        "latest": 1.002,
-        "change_sek": -0.016,
-        "change_percent": -1.57,
+        "latest": 1.028,
+        "change_sek": 0.01,
+        "change_percent": 0.98,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
