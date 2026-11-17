@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0-partner-dd",
+  "version": "1.2.0-partner-dd-process",
   "curated_at": "2026-11-17",
   "scope": "Bedömning av risken att Isofol annonserar en NY kontant kapitalanskaffning via aktie- eller unitemission inom rullande 3/6/12 månader. Befintliga TO2-optioners lösen räknas separat; kursen har fastställts men nyttjande och likvid är ännu inte kända.",
   "company": {
@@ -58,7 +58,7 @@
     "anchor_reference_cases": "Verkliga fall illustrerar att bioteknikbolag kan emittera innan kassan tagit slut. Urvalet är selekterat och stöder inte en kvantitativ frekvensskattning.",
     "special_handling": "Efter officiellt prisbesked 13 november ska framtida veckokörningar behandla 0,95 kr som fastställt och identifiera nyttjandegraden runt 1 december. Likvid ska inte tillföras kassamodellen innan faktiskt utfall och genomförd betalning har verifierats.",
     "partner_dd_multiplier": 1.1,
-    "partner_dd_methodology": "Subjektivt försiktighetspåslag för risken att en global partner avvaktar mer klinisk/regulatorisk/kommersiell DD innan avtal. Inte en statistisk sannolikhet för misslyckad affär eller en verifierad köparbedömning. Förändra bara efter manuell källgranskning och undvik dubbelräkning av kostnads- och tidsfaktorer.",
+    "partner_dd_methodology": "Subjektivt försiktighetspåslag för risken att en global partner avvaktar mer klinisk/regulatorisk/kommersiell DD innan avtal. Inte en statistisk sannolikhet för misslyckad affär eller en verifierad köparbedömning. Förändra bara efter manuell källgranskning och undvik dubbelräkning av kostnads- och tidsfaktorer. De fem sell-side M&A-processfrågorna är kvalitativa kontrollpunkter; ingen extra numerisk faktor utan verifierad bolagsinformation.",
     "partner_dd_review_date": "2026-11-17"
   },
   "peer_cases": [
@@ -194,7 +194,7 @@
         "assessment": "Solasias territorierättigheter och återstående globala rättigheter/royalties behöver förstås."
       }
     ],
-    "assumptions_policy": "En DD-risk är en möjlig fördröjning av partnerfinansiering, inte ett bevis för att en affär avvisats. Alla sju områden, strategisk köparpassform och nästa värdehöjande data ska granskas vid omprövning; osäkrade upfronts förs inte som kassa.",
+    "assumptions_policy": "En DD-risk är en möjlig fördröjning av partnerfinansiering, inte ett bevis för att en affär avvisats. Alla sju områden, strategisk köparpassform och nästa värdehöjande data ska granskas vid omprövning; osäkrade upfronts förs inte som kassa. Även säljprocessens konkurrens, tajming, budekonomi, CIM-kvalitet och sekretess beaktas kvalitativt, men okända interna förhållanden utlöser aldrig ett extra automatiskt riskpåslag.",
     "scenarios": [
       {
         "name": "Avtal före avgörande data",
@@ -208,6 +208,47 @@
         "name": "Inget avtal / svag finansiering",
         "effect": "Beakta ytterligare kapitalbehov, sämre emissionsvillkor eller utvecklingsstopp, utan att likställa finansieringsstress med juridisk konkurs."
       }
-    ]
+    ],
+    "sell_side_process": {
+      "title": "Affärsprocess, förhandlingsstyrka och Big Pharma",
+      "source_note": "Fem användartillförda sell-side M&A-principer, tillämpade med försiktighet även på licens-/partneravtal. Separat från köparens sju due diligence-områden.",
+      "review_date": "2026-11-17",
+      "summary": "Isofols möjliga förhandlingsstyrka hänger på tiden till randomiserade fas II-resultat i förhållande till verifierad finansiering, inklusive faktiskt TO2-utfall. Partnerintresse får inte likställas med garanterat kapital.",
+      "items": [
+        {
+          "key": "buyer_competition",
+          "title": "1. Konkurrens mellan köpare",
+          "principle": "Ett spontant bud bör, där det är genomförbart, jämföras med alternativa köpare och en strukturerad process. Ett enda intressebevis garanterar inte högsta möjliga pris.",
+          "company_assessment": "Solasias regionala samarbete är inte bevis för en pågående konkurrensutsatt global försäljningsprocess. Bedöm vid konkreta bud om fler relevanta partnerbolag har möjlighet att delta."
+        },
+        {
+          "key": "milestone_timing",
+          "title": "2. Tajming mot kliniska milstolpar och kassa",
+          "principle": "Bedöm om bolaget kan förbereda och driva en process före nästa värdehöjande datapunkt och utan press från kort kassalivslängd. 12–18 månader är en föreslagen planeringshorisont, inte ett bevisat universellt optimum.",
+          "company_assessment": "Randomiserade fas II-data kan bli nästa stora värdeinflektionspunkt. Jämför en realistisk processplan och datum till data med kassalivslängd, TO2-utfall och eventuellt nytt studiebehov."
+        },
+        {
+          "key": "certainty_vs_economics",
+          "title": "3. Affärsekonomi kontra genomförandesäkerhet",
+          "principle": "Jämför riskjusterat totalvärde, upfront, milstolpar, royalties, regulatoriska villkor och sannolikheten att affären fullföljs. Ett säkert men lågt bud kan innebära värdeförlust.",
+          "company_assessment": "Ett eventuellt snabbt avtal måste jämföras med värdet av att bära fas II-risk själv, med utspädning och med villkor för upfront, delbetalningar, royalties och rättighetsområde."
+        },
+        {
+          "key": "buyer_oriented_cim",
+          "title": "4. Köparorienterat investeringsunderlag (CIM)",
+          "principle": "Ett Confidential Information Memorandum bör tydliggöra köparens strategiska och kommersiella nytta, marknad, konkurrens och ekonomi — inte bara verkningsmekanism och kliniska data.",
+          "company_assessment": "En potentiell köpare behöver en kommersiellt begriplig förklaring till arfolitixorins fördel jämfört med leukovorin, patientsegment och varför AGENT-resultaten inte förväntas upprepas. Eventuellt CIM är inte offentligt."
+        },
+        {
+          "key": "process_confidentiality",
+          "title": "5. Sekretess och läckagerisk",
+          "principle": "Rykten eller offentliggjorda strategiska överväganden kan påverka köparnas beteende och prissättning. Ingen offentlig nyhet är däremot inte bevis för att dialoger saknas.",
+          "company_assessment": "Inga verifierade offentliga uppgifter finns om en formaliserad global M&A-process. Rykten och avsaknad av pressmeddelande ska inte ändra emissionsrisken numeriskt."
+        }
+      ],
+      "risk_model_application": "Emissionsbarometerns nuvarande partner-DD-faktor täcker en osäker affärstiming. De fem processfrågorna används för att bedöma avtalsvärde och möjlig finansieringspress, men inget extra numeriskt påslag görs utan verifierad bolagsinformation. Uppdatera först när kassalivslängd, finansieringsutfall eller en konkret processförändring är belagd.",
+      "numeric_adjustment_policy": "Ingen separat procentsats eller stresspoäng sätts utifrån antagna budgivare, CIM-kvalitet, läckor eller en schablon om 12–18 månader. Redan modellerad partner-DD och kassapress dubbelräknas inte; endast granskade bolagsspecifika fakta får ändra talen.",
+      "uncertainty_note": "Det går inte att se konfidentiella bud, processen, CIM eller data room. Påståendet om 50–100 % skillnad i affärsvärde är inte verifierat som generell effekt och används inte som värderingsmultiplikator. Utfallet för licensaffärer kan skilja sig från rena förvärv."
+    }
   }
 }
