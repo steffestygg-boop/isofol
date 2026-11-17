@@ -1,0 +1,42 @@
+name: Uppdatera Isofol Medical aktiekurs
+on:
+  schedule:
+    # Cirka var tjugonde minut vardagar. GitHub Actions kan vara försenat.
+    - cron: '*/20 7-17 * * 1-5'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_stock_quote.py'
+      - 'tests/test_stock_quote.py'
+      - '.github/workflows/refresh-stock-quote.yml'
+permissions:
+  contents: write
+concurrency:
+  group: isofol-quote-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kontrollera kursvalidering
+        run: |
+          python -m py_compile scripts/update_stock_quote.py
+          python scripts/update_stock_quote.py --check-only
+          python -m unittest discover -s tests -p 'test_stock_quote.py'
+      - name: Hämta tidsstämplad börskurs
+        run: python scripts/update_stock_quote.py
+      - name: Publicera uppdateringen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stock_quote.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Isofol Medical exchange quote"
+            git pull --rebase
+            git push
+          fi
