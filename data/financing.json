@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17",
+  "updated_at": "2026-11-17T11:19:37+01:00",
   "based_on_report": "2026-09-30",
   "automated_checked": true,
   "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
@@ -14,7 +14,7 @@
   "failed_sources": [],
   "days_since_report": 48,
   "months_to_company_runway_proxy": 10.4,
-  "methodology_version": "1.1.0-partner-dd",
+  "methodology_version": "1.2.0-partner-dd-process",
   "risk": {
     "months_3": {
       "percent": 10.1,
@@ -27,16 +27,22 @@
       "high": 33.9
     },
     "months_12": {
-      "percent": 53,
+      "percent": 53.0,
       "low": 37.3,
       "high": 68.9
     }
   },
+  "partner_dd_assessment": {
+    "review_date": "2026-11-17",
+    "source": "https://visionlifesciences.com/insights/pharma-due-diligence-checklist",
+    "multiplier": 1.1,
+    "status": "Partnerdialogers verkliga DD-status och villkor är inte offentliga. Risk för vänteläge är en analytisk hypotes.",
+    "next_decision_gate": "Randomiserad fas II mot leukovorin med kliniskt relevanta effektmått, full säkerhets-/subgruppsredovisning och tydlig finansiering för perioden fram till dataläsning."
+  },
   "latest_information": [
     "Senast verifierad Q3 2026: 98,1 miljoner kr i likvida medel den 30 september, kvartalets operativa kassaflöde −16,9 miljoner kr.",
     "TO2: officiell kurs 0,95 kr fastställd 13 november. Teckningsperiod 16–30 november, sista handel 26 november. Faktiskt utfall meddelas omkring 1 december. Ingen framtida likvid antas förrän faktisk teckning och betalning verifierats.",
-    "Bolaget bedömer befintlig finansiering tillräcklig för planerad drift 12 månader efter 30 september 2026. Tidens gång mot riktmärket räknas om varje vecka.",
-    "Partner-DD: subjektivt scenariopåslag ×1,10 för risken att partner inväntar ytterligare data. Varken ett uteblivet avtal eller framtida upfront har bekräftats."
+    "Bolaget bedömer befintlig finansiering tillräcklig för planerad drift 12 månader efter 30 september 2026. Tidens gång mot riktmärket räknas om varje vecka."
   ],
   "latest_items": [
     {
@@ -112,15 +118,6 @@
       "signal": "övrigt"
     },
     {
-      "title": "Egetis receives bid, Novo raises outlook - Biostock",
-      "date": "2026-11-09",
-      "source": "Biostock",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPRHFxdVpXUGpRWm8zM3VOajZrNXFfYWNsUjI5YkoxUDhMc2NJLWVScnBWdUlteVZCMFZQaDQydjJvN0d0ZzJNaWktbmVodXJJZ0Z1OVlTNjlIQnExMW1xdHUzWWJiUDFnTVViUjdzLVZGbEYxZE9YMVlGQ3A0bVRUWHI0SXY5ZFZTV2JDNTRfTFI1Mi1pUkJyQkNHVXRhYUsyRjZZQXd4d3FPdE1MMkw5SkxXZzgzRmRGRDRkbWxJMm9KeDJCWXVrSjRKOGoyT0NwRlUzYlY2WEt2SzVsS1h6a1ByLTRKQUJZRUZJR0lXN184aU1wUmQ3eTI5TkZvWkc2X3FhUXd0VVdkeWJJNVZTd0Vmdkk?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "övrigt"
-    },
-    {
       "title": "Bioinvent rasar vidare – teckningskurs 1 krona - Affärsvärlden",
       "date": "2026-11-06",
       "source": "Affärsvärlden",
@@ -164,11 +161,20 @@
       "category": "jämförelsebolag",
       "official": false,
       "signal": "övrigt"
+    },
+    {
+      "title": "Bioinvent publicerar positiva fas 1-data för BI-1808 i vetenskaplig tidskrift - Börsvärlden",
+      "date": "2026-10-15",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9tYWRmRVMwVXVKcFBLWDhBWTRFVm95NVBvNlFtSG52eUZ2OGZJa1Y1c1ZWaGJFTFNJOF9renRYWGlIb21HYzc5b2pEZEdQbWNLU2l5cg?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
     }
   ],
   "review_needed": [],
   "emission_detected": [],
-  "review_warning": "Detta är en regelstyrd bedömningsmodell, inte ett objektivt förutsagt utfall. Tidsfaktorn uppdateras automatiskt. RSS och officiell presslista bevakas men rubriker kan varken ersätta rapportläsning eller garantera att alla nyheter hittas. Nya villkor, kassavärden och eventuella emissioner måste verifieras mot fullständiga originalbesked innan prognosen omkalibreras. Den 17 november har en subjektiv DD-faktor lagts till; inga nya konfidentiella partneruppgifter har verifierats.",
+  "review_warning": "Detta är en regelstyrd bedömningsmodell, inte ett objektivt förutsagt utfall. Tidsfaktorn uppdateras automatiskt. RSS och officiell presslista bevakas men rubriker kan varken ersätta rapportläsning eller garantera att alla nyheter hittas. Nya villkor, kassavärden och eventuella emissioner måste verifieras mot fullständiga originalbesked innan prognosen omkalibreras.",
   "sources": {
     "company_report": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
     "warrants": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
@@ -198,7 +204,7 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-17T10:39:18+01:00",
+  "alerts_checked_at": "2026-11-17T11:19:37+01:00",
   "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
@@ -208,13 +214,5 @@
     "full_take_up_gross_reported_approx_msek": 37.7,
     "source": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026",
     "exercise_rate_known": false
-  },
-  "partner_dd_assessment": {
-    "review_date": "2026-11-17",
-    "source": "https://visionlifesciences.com/insights/pharma-due-diligence-checklist",
-    "multiplier": 1.1,
-    "status": "Partnerdialogers verkliga DD-status och villkor är inte offentliga. Risk för vänteläge är en analytisk hypotes.",
-    "next_decision_gate": "Randomiserad fas II mot leukovorin med kliniskt relevanta effektmått, full säkerhets-/subgruppsredovisning och tydlig finansiering för perioden fram till dataläsning."
-  },
-  "risk_revision_type": "Manuell metoduuppdatering: partner-DD-timingfaktor, utan ny kassauppgift eller uppdaterad RSS-bevakning."
+  }
 }
