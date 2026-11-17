@@ -1866,37 +1866,15 @@ function renderTimeline(){
     const shift=visibleChanges.find(change=>change.track===m.track&&change.targetTitle===m.title);
     if(shift){
      const chip=document.createElement('span');chip.className='milestone-shift';
-     chip.textContent='Tidsplansskifte '+shift.shift;
+     chip.textContent='⏱ '+shift.original+' → '+shift.latest+' ('+shift.shift+')';
      btn.append(chip);
     }
-    btn.addEventListener('click',()=>openModal(m,btn));
+    btn.addEventListener('click',()=>{if(shift)openDelayModal(shift,btn);else openModal(m,btn)});
     cell.append(btn);
    }
    tl.append(cell);
   }
-  for(const change of visibleChanges.filter(c=>c.track===track)){
-   const lane=document.createElement('button');
-   lane.className='delay-lane';lane.type='button';
-   lane.setAttribute('aria-label',change.targetTitle+': tidigare '+change.original+', nu '+change.latest+', beräknad tidsskillnad '+change.shift+'. Visa källor.');
-   const label=document.createElement('span');label.className='delay-lane-name';
-   const heading=document.createElement('strong');heading.textContent=change.targetTitle.replace(' väntas','').replace('Fas II: slutliga topline-data','Fas II: slutdata');
-   const tag=document.createElement('small');tag.textContent='Tidsplansskifte · klicka för källor';
-   label.append(heading,tag);
-   const plot=document.createElement('span');plot.className='delay-plot';
-   const x0=(change.originalCol-cols[0]+0.5)/n*100;
-   const x1=(change.latestCol-cols[0]+0.5)/n*100;
-   const wire=document.createElement('span');wire.className='delay-wire';
-   wire.style.left=x0+'%';wire.style.width=(x1-x0)+'%';
-   const from=document.createElement('span');from.className='delay-node delay-old';
-   from.style.left=x0+'%';from.textContent=change.original;
-   const to=document.createElement('span');to.className='delay-node delay-new';
-   to.style.left=x1+'%';to.textContent=change.latest;
-   const amount=document.createElement('span');amount.className='delay-amount';
-   amount.style.left=((x0+x1)/2)+'%';amount.textContent=change.shift;
-   plot.append(wire,from,to,amount);lane.append(label,plot);
-   lane.addEventListener('click',()=>openDelayModal(change,lane));
-   tl.append(lane);
-  }
+
  }
  document.querySelectorAll('.track').forEach(el=>el.classList.toggle('active',selected.has(el.dataset.track)));
  document.querySelector('[data-track="all"]').classList.toggle('active',selected.size===3);
