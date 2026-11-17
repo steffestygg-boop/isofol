@@ -815,8 +815,8 @@ body.weekly-dialog-open{overflow:hidden}
     <div class="market-quote">
   <div class="market-quote-heading"><span>Kurs · Isofol Medical · potentiellt fördröjd</span><a href="https://www.tradingview.com/symbols/OMXSTO-ISOFOL/" target="_blank" rel="noopener noreferrer">Jämför på TradingView ↗</a></div>
   <div class="shared-quote-tile" aria-label="Tidsstämplad senaste tillgängliga aktiekurs för Isofol Medical">
-   <strong id="shared-stock-price">1,058 <small>kr</small></strong>
-   <div id="shared-stock-quote-status" class="shared-quote-status">Stängningskurs 16 nov 2026. Läser in senaste tillgängliga börskurs …</div>
+   <strong id="shared-stock-price">— <small>kr</small></strong>
+   <div id="shared-stock-quote-status" class="shared-quote-status">Hämtar senast publicerade börskurs …</div>
    <div class="shared-quote-note">Automatiskt uppdaterad börskurs med källtidsstämpel.</div>
   </div>
  </div>
@@ -2656,6 +2656,9 @@ document.addEventListener('keydown',event=>{
   const status=document.getElementById('shared-stock-quote-status');
   if(!value||!status)return;
   let lastKey='';
+  let newestQuoteTime=0;
+  let showingSavedQuote=false;
+  const cacheKey='mina-aktier-'+expectedSymbol+'-last-verified-quote';
   const fmt=price=>Number(price).toLocaleString('sv-SE',{
     minimumFractionDigits:digits,maximumFractionDigits:digits
   });
@@ -2681,6 +2684,20 @@ document.addEventListener('keydown',event=>{
     }
     status.textContent=timeString+' · '+(quote.source||'Extern kurskälla')+' · kan vara fördröjd.';
   }
+  // Preserve the last verified price across reloads, but identify it as saved.
+  try{
+    const saved=JSON.parse(localStorage.getItem(cacheKey)||'null');
+    const savedTime=Date.parse(saved?.quote_time||'');
+    const savedPrice=Number(saved?.price);
+    if(saved?.symbol===expectedSymbol&&saved.currency==='SEK'&&
+       Number.isFinite(savedPrice)&&savedPrice>0&&Number.isFinite(savedTime)&&
+       savedTime<=Date.now()+600000&&savedTime>Date.now()-10*86400000){
+      newestQuoteTime=savedTime;
+      lastKey=saved.quote_time+'|'+savedPrice;
+      showingSavedQuote=true;
+      showPrice({...saved,source:'Sparad kurs · '+(saved.source||'extern källa')});
+    }
+  }catch(_){ /* Local storage can be disabled without disabling the quote. */ }
   async function refresh(){
     try{
       const response=await fetch('./data/stock_quote.json?cache_bust='+Date.now(),{cache:'no-store'});
@@ -2694,10 +2711,18 @@ document.addEventListener('keydown',event=>{
       }
       const sourceDate=Date.parse(q.quote_time);
       if(sourceDate>Date.now()+10*60*1000)throw Error('Kurs från framtiden');
+      // Never let a late response or an older deployed JSON reverse a newer quote.
+      if(sourceDate<newestQuoteTime)return;
       const key=q.quote_time+'|'+numeric;
-      if(key!==lastKey){lastKey=key;showPrice(q);}
+      if(key!==lastKey||showingSavedQuote){
+        newestQuoteTime=sourceDate;
+        lastKey=key;
+        showingSavedQuote=false;
+        showPrice(q);
+        try{localStorage.setItem(cacheKey,JSON.stringify(q));}catch(_){ }
+      }
     }catch(error){
-      status.textContent='Senaste angivna kurs visas – uppdateringen kunde inte kontrolleras ('+error.message+').';
+      status.textContent=(newestQuoteTime?'Senast verifierad kurs visas':'Kurs kan inte visas')+' – uppdateringen kunde inte kontrolleras ('+error.message+').';
     }
   }
   refresh();
