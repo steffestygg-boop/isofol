@@ -49,6 +49,16 @@ class StockQuoteTests(unittest.TestCase):
         self.assertTrue(q["quote_time"])
         self.assertIn("source_url",q)
 
+    def test_no_flicker_or_timestamp_rollback(self):
+        html=(ROOT/"index.html").read_text(encoding="utf-8")
+        for marker in (
+            'id="shared-stock-price">—',
+            "if(sourceDate<newestQuoteTime)return;",
+            "localStorage.setItem(cacheKey,JSON.stringify(q))",
+            "showingSavedQuote",
+        ):
+            self.assertIn(marker,html)
+
     def test_dashboard_shares_quote_and_source_timestamp(self):
         h=(ROOT/"index.html").read_text(encoding="utf-8")
         for marker in (
