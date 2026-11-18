@@ -1,7 +1,7 @@
 name: Uppdatera nyheter
 on:
   schedule:
-    - cron: '20 6 * * *'
+    - cron: '0 7,8 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -9,13 +9,27 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Kontrollera klockan i Stockholm
+        id: stockholm_time
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$(TZ=Europe/Stockholm date +%H)" = "09" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.stockholm_time.outputs.run == 'true'
+        uses: actions/checkout@v4
+      - if: steps.stockholm_time.outputs.run == 'true'
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Hämta rubriker
+      - if: steps.stockholm_time.outputs.run == 'true'
+        name: Hämta rubriker
         run: python scripts/update_news.py
-      - name: Spara uppdatering
+      - if: steps.stockholm_time.outputs.run == 'true'
+        name: Spara uppdatering
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
