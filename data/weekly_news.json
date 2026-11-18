@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-18T11:20:48+01:00",
+  "updated_at": "2026-11-18T15:44:15+01:00",
   "latest_week": "2026-W47",
   "weeks": [
     {
@@ -12,7 +12,7 @@
       "year": 2026,
       "start": "2026-11-16",
       "end": "2026-11-18",
-      "generated_at": "2026-11-18T11:20:48+01:00",
+      "generated_at": "2026-11-18T15:44:15+01:00",
       "intro": "En framträdande nyhetsrubrik: TO2-handel: lösenpris 0,95 kr, nyttjande 16–30 nov. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 3 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
         {
@@ -455,9 +455,9 @@
         "baseline_date": "2026-11-13",
         "baseline": 1.018,
         "latest_date": "2026-11-18",
-        "latest": 1.004,
-        "change_sek": -0.014,
-        "change_percent": -1.38,
+        "latest": 0.96,
+        "change_sek": -0.058,
+        "change_percent": -5.7,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
