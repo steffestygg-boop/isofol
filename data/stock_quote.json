@@ -1,9 +1,9 @@
 {
   "symbol": "ISOFOL.ST",
   "currency": "SEK",
-  "price": 0.953,
-  "quote_time": "2026-11-18T16:45:31+01:00",
-  "fetched_at": "2026-11-18T16:51:05+01:00",
+  "price": 0.952,
+  "quote_time": "2026-11-18T17:29:36+01:00",
+  "fetched_at": "2026-11-18T17:55:23+01:00",
   "source": "Yahoo Finance chart / Nasdaq Stockholm",
   "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/",
   "delayed": true,
