@@ -1,5 +1,7 @@
 # Isofol Medical – investeraröversikt
 
+Arbetsregler för alla uppdateringar: läs [AGENTS.md](AGENTS.md), följ varje följdändring tills inget återstår och kontrollera därefter de andra aktiesidorna.
+
 Privat, inofficiell svensk investerarsida med aktieöversikt, TO2-scenarier, filtrerbar milstolpstidslinje och emissionsbarometer.
 
 
