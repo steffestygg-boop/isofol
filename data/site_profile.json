@@ -1,0 +1,11 @@
+{
+  "slug": "isofol",
+  "name": "Isofol Medical",
+  "ticker": "ISOFOL",
+  "exchange": "Nasdaq Stockholm",
+  "description": "Isofol utvecklar arfolitixorin för patienter med spridd kolorektalcancer.",
+  "official": "https://isofolmedical.com/sv/hem/",
+  "quote_url": "https://www.tradingview.com/symbols/OMXSTO-ISOFOL/",
+  "price_id": "shared-stock-price",
+  "status_id": "shared-stock-quote-status"
+}

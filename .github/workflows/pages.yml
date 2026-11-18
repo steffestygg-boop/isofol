@@ -25,6 +25,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Check out the shared Mina Aktier frontend
+        uses: actions/checkout@v4
+        with:
+          repository: steffestygg-boop/synact
+          ref: main
+          path: .mina-aktier-layout
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /assets/navigation.js
+            /assets/overview.css
+            /assets/week.js
+            /layout/
+            /scripts/render_layout.py
+      - name: Use the common layout, styles and news renderer
+        shell: bash
+        run: |
+          mv .mina-aktier-layout "$RUNNER_TEMP/mina-aktier-layout"
+          common="$RUNNER_TEMP/mina-aktier-layout"
+          cp "$common"/assets/{navigation.js,overview.css,week.js} assets/
+          cp "$common"/layout/*.html layout/
+          cp "$common"/scripts/render_layout.py scripts/
+      - name: Render common layout and section links
+        run: python3 scripts/render_layout.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
