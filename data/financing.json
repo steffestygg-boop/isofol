@@ -4,15 +4,14 @@
   "automated_checked": true,
   "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
   "checked_sources": [
+    "bolaget: Google News RSS",
     "omvärld: Google News RSS",
     "jämförelsebolag: Google News RSS",
     "varningssignaler: Google News RSS",
     "börsmeddelanden: Google News RSS",
     "officiell presslista"
   ],
-  "failed_sources": [
-    "bolaget: HTTP Error 429: Too Many Requests"
-  ],
+  "failed_sources": [],
   "days_since_report": 48,
   "months_to_company_runway_proxy": 10.4,
   "methodology_version": "1.2.0-partner-dd-process",
@@ -47,6 +46,15 @@
   ],
   "latest_items": [
     {
+      "title": "Immunovias nyemission: Ny flagga och två upplysningar - Affärsvärlden",
+      "date": "2026-11-17",
+      "source": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSWRZNGowLWcyRzU3U2dXaEEwcF9WVkJOQ3dlUnVJeWcxTzhNdUFZenl4M2JMR1U4TWV0dU96RktBOWVCVlkyQ0ZDNGg1eWZwMUd3cjQ3V00yT191U0hzcEdVVDdoWUw0azRoU3gtUlUxa3BfdEptb1EwTnQ3eW5sX3VJNkJWNEtOc0Zfd1RWUlZZQXc?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "emission"
+    },
+    {
       "title": "Isofol Medical: Clinical momentum builds ahead of Phase 2 - ABG - Börsvärlden",
       "date": "2026-11-16",
       "source": "Börsvärlden",
@@ -65,6 +73,15 @@
       "signal": "TO2 / befintliga optioner"
     },
     {
+      "title": "Investerarmöte 12 november 2026 - Isofol Medical",
+      "date": "2026-11-13",
+      "source": "Isofol Medical",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBJRTRTZWRaelhlaFpxZldpUFVnV3d0YWpON0U1bl82RmVMX1RmTHZmeUJWVFB3MkxPM3daSk9rb1hfajRNOW5LTW9MRHFvYXVhZE9heUxwazdzZ1MyLXNVV2lFaG9yWUJOT3RIYkdn?oc=5",
+      "category": "bolaget",
+      "official": true,
+      "signal": "övrigt"
+    },
+    {
       "title": "Isofols Q3: fas Ib på upploppet och utökad fas II - Biostock",
       "date": "2026-11-13",
       "source": "Biostock",
@@ -79,6 +96,24 @@
       "source": "HurBra.se",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CcFdTR3pIa0NUMnNMUklqX0NpWUNDV3F3RWloSEFZUWNzYWVwMVVFbFllaDRjaXVSNXZqdWFKczhrVktVeHk5R0dxTGVZZEJhaGxkTndOX0NmVUtSSmF0a3ladU42em5vakl1VWtwc3NjUkVz?oc=5",
       "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
+      "title": "Isofol Medical AB (publ) publicerar delårsrapport för januari – september 2026 - Isofol Medical",
+      "date": "2026-11-12",
+      "source": "Isofol Medical",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRKeEZ3SG10N1VaeUN5TzllSVBCQThIZEVVeEFMMUdXMmQ0OHNaUk5mZDFBNWxnSDg0Y3pUVUJsSmx0U1VSUUcteHRxak42VGo3RlZxMWxGb2xfbW5yallwNjRzR0FfZldFRFNQZW4xWUpKZktDVExJR0s5SHNKbS1WM2hBQ3lzUEtKMTJuSHZqRU91LXNkMlc4Zm95aFBzZXNzWVIyTkJzbzdhTjQtTE0taw?oc=5",
+      "category": "bolaget",
+      "official": true,
+      "signal": "rapport"
+    },
+    {
+      "title": "Isofol Medical minskade rörelseförlusten i tredje kvartalet - Börsvärlden",
+      "date": "2026-11-12",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRkppd0FOU1RQVTVFWDRwdzJmVDJZMkRHVDJNbWxtMGttTXdmM0Joa2tUbkpabExFNVBJVldld1k1ZHNDWFRkSjVDR3BRT19tbXJJSC1xQ29FbUc5YmdlUU83Y3drdUNIWXIyTFZMaktCUkt3SkRwbUtmN1VYLThCaG5YNV9zM3VmaDNkQ3lUVUhiMTJZTlF5MVlFOXA?oc=5",
+      "category": "omvärld",
       "official": false,
       "signal": "övrigt"
     },
@@ -119,6 +154,15 @@
       "signal": "emission"
     },
     {
+      "title": "Isofol Medical | Life Sciences Summit 2026 - Biostock",
+      "date": "2026-11-09",
+      "source": "Biostock",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzeXlBMmZ2TkJhWlFIdXFkazdydXd5aUtrZkNpQ1R5MWtXQXh5RkN3Mm8xNU53dXM2b3dqZEloZy1iemV1eXgwUnlIY0dxS3YtakhMTEgwdUFSeVRtUXNGUm9VdkliVENiSWtkVUw4eGZob28zR0Fmczk1TQ?oc=5",
+      "category": "omvärld",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
       "title": "Bioinvent rasar vidare – teckningskurs 1 krona - Affärsvärlden",
       "date": "2026-11-06",
       "source": "Affärsvärlden",
@@ -126,51 +170,6 @@
       "category": "jämförelsebolag",
       "official": false,
       "signal": "övrigt"
-    },
-    {
-      "title": "Immunovia: Fem flaggor – aktien halverades i väntan på villkor - Affärsvärlden",
-      "date": "2026-10-30",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbHd0bjhybFBOdUotejdzdDEzc2NsSWxjRXZaTTIxSVk0RXAyQWRzdFlDZXVWQUJtdGxuM1ZHTDNPLVg5NFBfVVlUNVpOYk1taTE1Wndid0V1U2FQT1FudXdydFdyUnNtZzVGZzJNRFRXYkhZRVVoQlBhcDhEYmZiU2ZOSjNrMG5CckJlbkpqb2luVmdWWi1UNExyWEs?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "övrigt"
-    },
-    {
-      "title": "Immunovia behöver pengar: Ber om 63 miljoner till 76% utspädning - Affärsvärlden",
-      "date": "2026-10-29",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdTRnLThCMGF3SF9jbUh3Q3llMlpuejllaW9HeGRrNHFsMUZOTlZ0M1hIRlN4QThZRUprVGJOalY1NXpfSk9PSFRTTmlTZzl3R2s4RmlrQjlxdUNDMmhheEY3T0p0QzB0SkdVSTBNMzN0WEtCbVAwRzZjZ2E3M1MweEVaWE1UZmNJQjFVVzlXb2lOenZfc0JSSEZ3REpSMksw?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "övrigt"
-    },
-    {
-      "title": "Immunovia beslutar om villkor i aviserad företrädesemission - Börsvärlden",
-      "date": "2026-10-29",
-      "source": "Börsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUjRENWdwRFJSQllsb2dVWnRtRzM4N1k1OW1nQTJLdng2UUF2Y0ZqWWdOSGxDdEpFM2RNczVoU0xWM3MxWWJiYTREUjFlWldSTkI3eWNiRjlZaXZwUmFya3RjUU9pNVpIWEtBZWhRNG9rUXhtWlA3VFVkLVRoZXM3U0hsY0tUVXU2c0h1NW9iUHdVSUF0Umk1WXVJcnk?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
-    },
-    {
-      "title": "Bioinvent gör emission på 430 Mkr - DI",
-      "date": "2026-10-28",
-      "source": "DI",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IcENJREpRdjA1ZGFZemp2dEoxaG1HR0FjTkk3NERkX3ZzaUVnaG44N180X2ZOMmZhTk00ZV9GUDRCNGhBRGRBSHptcHY1bEJrbnNPSk9ZTDVXM2RUY2NqWFZ0SloxSm41?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "övrigt"
-    },
-    {
-      "title": "Isofols nyemission: Blandad bild i teckningsåtagarlistan - Affärsvärlden",
-      "date": "2025-06-18",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeW9VN0VXNk9JZ1hUUy03SmRjNHV2bUNDN2FXalRJS20zMWdwQzc5T3VCYm83cDZhMzdzbTk0Qzc2WTNUMWVfS1NtWUJyUWdCeHdMRFhfSWxsTGVZMmtVVkY5Q0xuUXFISGtWbE9GakpsZUFSci15U3A1TzJSLUpnTy1UbXJGbVAxZF9LUUQyWHNaT2VjaEow?oc=5",
-      "category": "varningssignaler",
-      "official": false,
-      "signal": "emission"
     }
   ],
   "review_needed": [],
@@ -186,9 +185,9 @@
       "id": "base:runway",
       "level": "bevakning",
       "title": "Finansieringshorisonten närmar sig",
-      "detail": "Omkring 10.4 månader till modellens konservativa riktmärke 2027-09-30. Det är INTE en verifierad dag då kassan tar slut; bolagets egen prognos och tidsfaktorn är redan inräknade i riskmodellen.",
+      "detail": "Omkring 10.3 månader till modellens konservativa riktmärke 2027-09-30. Det är INTE en verifierad dag då kassan tar slut; bolagets egen prognos och tidsfaktorn är redan inräknade i riskmodellen.",
       "source": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "status": "Beräknad från verifierad bolagsprognos",
       "next_step": "Kontrollera ny likviditetsprognos i kommande kvartalsrapport.",
       "category": "runway"
@@ -205,8 +204,8 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-18T12:41:57+01:00",
-  "alerts_source_status": "ofullständig nätkontroll",
+  "alerts_checked_at": "2026-11-19T12:40:10+01:00",
+  "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
     "exercise_price_sek": 0.95,
