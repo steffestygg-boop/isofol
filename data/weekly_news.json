@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-20T09:58:40+01:00",
+  "updated_at": "2026-11-20T15:45:34+01:00",
   "latest_week": "2026-W47",
   "weeks": [
     {
@@ -12,9 +12,24 @@
       "year": 2026,
       "start": "2026-11-16",
       "end": "2026-11-20",
-      "generated_at": "2026-11-20T09:58:40+01:00",
+      "generated_at": "2026-11-20T15:45:34+01:00",
       "intro": "En framträdande nyhetsrubrik: TO2-handel: lösenpris 0,95 kr, nyttjande 16–30 nov. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 3 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
+        {
+          "date": "2026-11-20",
+          "title": "Isofol presenterade studieupplägget för fas II på investerarträff",
+          "category": "Studie och resultat",
+          "summary": "",
+          "source": "Biostock",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUUk0MzZnV0xEQk9WVUdNRUV2ay1QaXZVUGhxWk9fWnlrTnlWd0VwNmVWaXRPMGM2ZUVkOUdDdWhWYnBSM055UlRvNm1LY0VfZ0I2VWY1Sl9taDN3ZHlGcHAxV1ZucVcyZ0toNHBNdlZtNXNwTWN0bERYUEpqM3JyZkRWWXNVN20tOEpGaXpWallSdmU0cWR4VE1R?oc=5",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        },
         {
           "date": "2026-11-20",
           "title": "Isofol presenterar på kommande investerarmöten i december",
@@ -471,9 +486,9 @@
         "baseline_date": "2026-11-13",
         "baseline": 1.018,
         "latest_date": "2026-11-20",
-        "latest": 0.945,
-        "change_sek": -0.073,
-        "change_percent": -7.17,
+        "latest": 0.962,
+        "change_sek": -0.056,
+        "change_percent": -5.5,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
