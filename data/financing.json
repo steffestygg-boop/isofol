@@ -73,6 +73,15 @@
       "signal": "TO2 / befintliga optioner"
     },
     {
+      "title": "Cereno Scientific: More runway, more opportunity - Edison - Börsvärlden",
+      "date": "2026-11-16",
+      "source": "Börsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObGpPR3E3TmYtbzZReFh2c1Q3WUgyaXJlakF0cTJKa0h6bTNBcm1KaDB2WlpBTTlySUxLWmtST003bEZwVmMyUE9CcmdBUVdreUl1WmxLUFVrZHdCU1hlWFVGWlpkUEpQQm8tSGc5cnJ4Y1VtLUdyaEJncmZ3UE5xU21DNFNGaWZ0dGZnek5aaktqY2lt?oc=5",
+      "category": "jämförelsebolag",
+      "official": false,
+      "signal": "övrigt"
+    },
+    {
       "title": "Teckningskursen för teckningsoptioner av serie TO2 i Isofol har fastställts till 0,95 SEK och nyttjandeperioden inleds den 16 november 2026 - Isofol Medical",
       "date": "2026-11-14",
       "source": "Isofol Medical",
@@ -161,15 +170,6 @@
       "category": "jämförelsebolag",
       "official": false,
       "signal": "övrigt"
-    },
-    {
-      "title": "Immunovia handlas i dag på Nasdaq Stockholm exklusive uniträtt i företrädesemission - Affärsvärlden",
-      "date": "2026-11-04",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQTFPX245TXl1ek1TaVotVkxGVUNOb0twbk9Ja2ZJNXVIN0l6b1BqRDlrZzhpbVdFd0wtdFlub3hRc0tHTDBsY1ZmWDAtQWtaQUFqM1FRTXk0SkhMZV9CT3V4bTZYWGtaT08zTThLa3h5WGJOSGt3UGZZT0hhRDd4SjJmUHRJUGZWbW9TUXJhaFFmczc2bTNDTDlFMm1McGFCbElKWWw0Ym0yaFNfajEwTi10RUtDU2pOSEFSMTVVRm52dw?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
     }
   ],
   "review_needed": [],
@@ -187,7 +187,7 @@
       "title": "Finansieringshorisonten närmar sig",
       "detail": "Omkring 10.3 månader till modellens konservativa riktmärke 2027-09-30. Det är INTE en verifierad dag då kassan tar slut; bolagets egen prognos och tidsfaktorn är redan inräknade i riskmodellen.",
       "source": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "status": "Beräknad från verifierad bolagsprognos",
       "next_step": "Kontrollera ny likviditetsprognos i kommande kvartalsrapport.",
       "category": "runway"
@@ -204,7 +204,7 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-21T12:29:11+01:00",
+  "alerts_checked_at": "2026-11-22T12:28:26+01:00",
   "alerts_source_status": "flöden kontrollerade, inte heltäckande",
   "price_confirmation": {
     "date": "2026-11-13",
