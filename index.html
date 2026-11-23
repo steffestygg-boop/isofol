@@ -1,8 +1,10 @@
 <!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Isofol Medical · Mina Aktier</title>
 <link rel="stylesheet" href="./assets/modules.css">
 <link rel="stylesheet" href="./assets/overview.css">
+<script src="./assets/valuation.js"></script>
 <script src="./assets/navigation.js" defer></script>
 <script src="./assets/week.js" defer></script>
+<style>.valuation-chart-panel svg{display:block;width:100%;height:auto}.valuation .valuation-chart-panel{background:#121f2b;border-radius:12px;padding:12px}.valuation-header,.valuation-legend{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.valuation-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.chart-table{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}.chart-tile{background:var(--wash);color:var(--ink);border:1px solid var(--rule);border-radius:8px;padding:12px;text-align:left;cursor:pointer}.chart-tile small,.chart-tile strong{display:block;color:inherit}.chart-tile strong{font-size:1.4rem}.valuation-point{cursor:pointer}</style>
 </head><body class="desk">
 <!-- portfolio:masthead -->
 <a class="desk-skip" href="#stock-heading">Till huvudinnehållet</a>
@@ -210,7 +212,10 @@
  <p class="fin-small">Automatisk veckokontroll på måndagar 07:25 UTC. Modellen bygger på senast verifierade rapportdata; bevakningen är inte en garanti för att all ny information upptäcks. Avsnittet är inte investeringsrådgivning.</p>
 </section>
 
-<section class="valuation" data-surface="paper" data-nav-label="Värdering" aria-labelledby="valuation-heading"><h2 id="valuation-heading">Analytiker-riktkurser / motiverade värden</h2><p class="intro">Verifierade publiceringar · kronor per aktie · Base Case (uppdragsanalyser)</p><div class="valuation-chart-panel"><svg id="valuation-chart" viewBox="0 0 1100 410" role="img" aria-label="Redeyes Base Case 1,70 kronor vid två tillfällen och ABG:s riskjusterade scenario från 1,60 till 2,10 kronor"></svg></div><p class="note">Grafen visar sex verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Nya uppdateringar: <a href="https://www.borsvarlden.com/finwire/CRF00FEECC" target="_blank" rel="noopener noreferrer">Redeye 13 november 2026: 1,70 kr oförändrat</a> och <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/11/isofol-medical---clinical-momentum-builds-ahead-of-phase-2/" target="_blank" rel="noopener noreferrer">ABG 15 november 2026: riskjusterat scenario 2,10 kr (tidigare 1,80 kr), optimistiskt scenario 11,00 kr (tidigare 10,50 kr)</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section>
+<section class="valuation" data-surface="paper" data-nav-label="Värdering" aria-labelledby="valuation-heading"><div class="valuation-header"><div><h2 id="valuation-heading">Riktkurser / motiverade värden</h2><p class="intro">Klicka på en punkt för analys och källa. Linjen fortsätter till dagens datum på senast publicerad nivå.</p></div>
+<div class="valuation-legend"><span><i style="background:#9fe2b0"></i>Redeye</span><span><i style="background:#5cc8fb"></i>ABG</span></div></div>
+<div class="valuation-chart-panel"><svg id="valuation-chart" viewBox="0 0 1100 375" role="img" aria-label="Historiska värderingar från Redeye, ABG i kronor per aktie"></svg></div>
+<div class="chart-table" id="valuation-highlights"></div><p class="note">Grafen visar sex verifierade analystillfällen. Streckade linjer förbinder publiceringarna och fortsätter horisontellt till dagens datum från senaste kända värde. Förlängningen är en visuell markering, inte en ny analys eller bekräftelse på att värderingen fortfarande gäller. Källa: <a href="https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617" target="_blank" rel="noopener noreferrer">Redeye 17 juni 2025</a> och <a href="https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27" target="_blank" rel="noopener noreferrer">Redeye 25 augusti 2026</a>. ABG: <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second" target="_blank" rel="noopener noreferrer">15 januari 2026</a> och <a href="https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224" target="_blank" rel="noopener noreferrer">24 februari 2026</a>. Nya uppdateringar: <a href="https://www.borsvarlden.com/finwire/CRF00FEECC" target="_blank" rel="noopener noreferrer">Redeye 13 november 2026: 1,70 kr oförändrat</a> och <a href="https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/11/isofol-medical---clinical-momentum-builds-ahead-of-phase-2/" target="_blank" rel="noopener noreferrer">ABG 15 november 2026: riskjusterat scenario 2,10 kr (tidigare 1,80 kr), optimistiskt scenario 11,00 kr (tidigare 10,50 kr)</a>. Båda är uppdragsanalyser (betalda av bolaget).</p></section>
 
 <section data-surface="paper" data-nav-label="Nyhetsflöde" aria-labelledby="news-heading"><h2 class="section" id="news-heading">Nyhetsflöde</h2><p class="intro">Pressmeddelanden och nyheter om Isofol.</p><p class="status" id="news-status">Hämtar nyheter…</p><div class="news" id="news"><article class="news-card"><small>13 november 2026 · Isofol Medical via MFN · verifierat</small><h3>TO2-kursen fastställd till 0,95 kr – teckning 16–30 november</h3><a href="https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026" target="_blank" rel="noopener noreferrer">Läs bolagets originalmeddelande ↗</a></article></div></section>
 </main>
@@ -1158,72 +1163,7 @@ function renderTimeline(){
  delayToggle.setAttribute('aria-pressed',String(showDelays));
  document.querySelectorAll('.delay-key,.delay-overview').forEach(el=>{el.hidden=!showDelays});
 }
-function drawValuation(){
- const svg=document.getElementById('valuation-chart');
- svg.replaceChildren();
- const NS='http://www.w3.org/2000/svg';
- const add=(tag,attrs={},value)=>{const e=document.createElementNS(NS,tag);for(const [key,v] of Object.entries(attrs))e.setAttribute(key,v);if(value!==undefined)e.textContent=value;svg.append(e);return e};
- const W=1100,L=75,R=22,T=25,B=344;
- const start=Date.parse('2025-06-01T00:00:00Z');
- const today=new Date();today.setHours(0,0,0,0);
- const end=Math.max(today.getTime(),Date.parse('2026-11-01T00:00:00Z'));
- const x=d=>L+(Date.parse(d+'T00:00:00Z')-start)/(end-start)*(W-L-R);
- const y=v=>B-(v-1.3)/(2.1-1.3)*(B-T);
- const months=[['2025-06-01','jun 2025'],['2025-09-01','sep 2025'],['2025-12-01','dec 2025'],['2026-03-01','mar 2026'],['2026-06-01','jun 2026'],['2026-09-01','sep 2026']];
- for(const [date,label] of months){
-  const xx=x(date);
-  add('line',{x1:xx,y1:T,x2:xx,y2:B,stroke:'#303030','stroke-width':1});
-  add('text',{x:xx,y:B+26,fill:'#858585','font-size':13,'text-anchor':'middle'},label);
- }
- for(let v=1.3;v<=2.1001;v+=0.1){
-  const yy=y(v);
-  add('line',{x1:L,y1:yy,x2:W-R,y2:yy,stroke:'#303030','stroke-width':1});
-  if(Math.round(v*10)%2===1)add('text',{x:L-12,y:yy+5,fill:'#888','font-size':13,'text-anchor':'end'},v.toFixed(1).replace('.',',')+' kr');
- }
- add('text',{x:22,y:(T+B)/2,fill:'#666','font-size':13,transform:'rotate(-90 22 '+((T+B)/2)+')','text-anchor':'middle'},'SEK');
- const sets=[
-  {name:'Redeye',color:'#f0b82f',data:[['2025-06-17',1.7,'Redeye återupptar bevakning'],['2026-08-25',1.7,'Redeye behåller 1,70 kr'],['2026-11-13',1.7,'Redeye behåller efter Q3']]},
-  {name:'ABG',color:'#55a7ff',data:[['2026-01-15',1.6,'ABG inleder'],['2026-02-24',1.8,'ABG höjer'],['2026-11-15',2.1,'ABG höjer efter Q3']]}
- ];
- for(const set of sets){
-  const pts=set.data.map(([date,value,milestoneTitle])=>({date,value,milestoneTitle,xx:x(date),yy:y(value)}));
-  const last=pts[pts.length-1];
-  const extended=[...pts.map(p=>p.xx+','+p.yy),x(new Date(end).toISOString().slice(0,10))+','+last.yy];
-  add('polyline',{points:extended.join(' '),fill:'none',stroke:set.color,'stroke-width':2.5,'stroke-dasharray':'6 4','stroke-linejoin':'round','pointer-events':'none'});
-  // An invisible wider line captures hover without obscuring the point markers.
-  const hoverLine=add('polyline',{points:extended.join(' '),fill:'none',stroke:'transparent','stroke-width':14,'pointer-events':'stroke'});
-  const lineTitle=document.createElementNS(NS,'title');
-  lineTitle.textContent=set.name+': senast publicerat '+last.value.toFixed(2).replace('.',',')+' kr ('+last.date+'). Linjen är visuellt förlängd, inte en ny värdering.';
-  hoverLine.append(lineTitle);
-  for(const p of pts){
-   add('circle',{cx:p.xx,cy:p.yy,r:7,fill:'#141414',stroke:set.color,'stroke-width':3,'pointer-events':'none'});
-   // A larger invisible target makes points clickable on mobile and keyboard-accessible.
-   const hit=add('circle',{cx:p.xx,cy:p.yy,r:17,fill:'transparent',stroke:'transparent',
-    'stroke-width':1.5,'class':'valuation-point',role:'button',tabindex:0,
-    'aria-label':'Visa analys: '+set.name+', '+p.value.toFixed(2).replace('.',',')+' kr, '+p.date});
-   const tip=document.createElementNS(NS,'title');
-   tip.textContent=set.name+': '+p.value.toFixed(2).replace('.',',')+' kr ('+p.date+') · klicka för analys';
-   hit.append(tip);
-   const showDetails=()=>{
-    const milestone=milestones.find(m=>m.track==='company'&&m.title===p.milestoneTitle);
-    if(milestone)openModal(milestone,hit);
-   };
-   hit.addEventListener('click',showDetails);
-   hit.addEventListener('keydown',event=>{
-    if(event.key==='Enter'||event.key===' '){event.preventDefault();showDetails()}
-   });
-  }
- }
- // Separate legend below the plot, matching the dark reference chart.
- const ly=395;
- const legend=[{name:'Redeye',color:'#f0b82f',x:395},{name:'ABG',color:'#55a7ff',x:570}];
- for(const item of legend){
-  add('rect',{x:item.x,y:ly-12,width:37,height:17,fill:'none',stroke:item.color,'stroke-width':2.5,'stroke-dasharray':'5 3'});
-  add('text',{x:item.x+47,y:ly+1,fill:'#aaa','font-size':13},item.name);
- }
-}
-
-drawValuation();
+drawValuations([{"who":"Redeye","date":"2025-06-17","value":1.7,"type":"Base Case","body":"Redeye inledde en ny period av uppdragsbevakning med Base Case 1,70 kronor per aktie. Redeye hade även publicerat analyser av Isofol under tidigare år.","url":"https://www.placera.se/telegram/isofol-medical-redeye-inleder-bevakning-av-isofol-medical-ser-uppsida-pa-mer-an-50-procent-uppdragsanalys-20250617"},{"who":"Redeye","date":"2026-08-25","value":1.7,"type":"Base Case","body":"Redeye uppdaterade sin analys efter andra kvartalets rapport och behöll sitt motiverade Base Case på 1,70 kronor per aktie.","url":"https://www.marketscreener.com/news/isofol-medical-gets-a-new-fair-value-estimate-of-1-70-kronor-from-redeye-ce7858d8da8cfe27"},{"who":"Redeye","date":"2026-11-13","value":1.7,"type":"Base Case","body":"Redeye behåller sitt motiverade basvärde på 1,70 kr efter Q3-rapporten och den andra kliniska interimsuppdateringen. Uppdragsanalys, inte kursgaranti.","url":"https://www.borsvarlden.com/finwire/CRF00FEECC"},{"who":"ABG","date":"2026-01-15","value":1.6,"type":"Riskjusterat scenario","body":"ABG Sundal Collier inledde uppdragsbevakning med tre scenarier: Bear Case 0,10 kr, riskjusterat Base Case 1,60 kr och Bull Case 10,50 kr per aktie. Basscenariot utgick från 20 procents sannolikhet för klinisk framgång och en riskjusterad kassaflödesmodell som inkluderade antagen framtida utspädning. Det är ett motiverat värde i en uppdragsanalys, inte en traditionell tolvmånadersriktkurs.","url":"https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/1/Isofol-medical-learn-from-the-first-deliver-on-the-second"},{"who":"ABG","date":"2026-02-24","value":1.8,"type":"Riskjusterat scenario","body":"ABG höjde sitt riskjusterade basscenario från 1,60 till 1,80 kronor per aktie (+12,5 procent) efter de preliminära kliniska observationerna från sex utvärderingsbara patienter. Sannolikheten för klinisk framgång i modellen höjdes från 20 till 22,5 procent. Bear Case 0,10 kr och Bull Case 10,50 kr lämnades oförändrade. Patientunderlaget var litet och värderingen är en uppdragsanalys, inte en garanterad aktiekurs.","url":"https://www.placera.se/externa-analyser/isofol-medical-isofol-medical-from-first-lessons-to-second-execution-20260224"},{"who":"ABG","date":"2026-11-15","value":2.1,"type":"Riskjusterat scenario","body":"ABG Sundal Collier höjer riskjusterat scenario B från 1,80 till 2,10 kr och optimistiskt scenario C från 10,50 till 11,00 kr. Negativt scenario A kvar på 0,10 kr. Analysen lyfter tidiga effektsignaler, lägre kostnader och lägre antagen utspädning, men noterar omkring sex månaders försening jämfört med sin tidigare modell. ABG räknar med fas II-start tidigt under Q1 2027. Scenarierna är inte traditionella riktkurser.","url":"https://cr.abgsc.com/foretag/isofol-medical/Equity-research/2026/11/isofol-medical---clinical-momentum-builds-ahead-of-phase-2/"}],openModal);
 let activeAnchor=null;
 let latestItems=[];
 
