@@ -1132,6 +1132,10 @@ function renderTimeline(){
    const cell=document.createElement('div');cell.className='cell';
    for(const m of matches.filter(x=>x.track===track&&x.col===col)){
     const btn=document.createElement('button');btn.className='milestone '+m.status+' '+m.track+(m.time_basis==='estimated'?' estimated-time':'');
+    const statusLabel = document.createElement('span');
+    statusLabel.className = 'milestone-status';
+    statusLabel.textContent = m.status === 'future' ? 'Kommande' : 'Levererad';
+    btn.append(statusLabel);
     const title=document.createElement('strong');title.textContent=m.title;
     const subtitle=document.createElement('small');subtitle.textContent=m.subtitle;
     btn.append(title,subtitle);
