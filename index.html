@@ -1740,6 +1740,7 @@ document.addEventListener('keydown',event=>{
       newestQuoteTime=savedTime;
       lastKey=saved.quote_time+'|'+savedPrice;
       showingSavedQuote=true;
+      window.currentMarketQuote=saved; window.dispatchEvent(new Event('marketquote'));
       showPrice({...saved,source:'Sparad kurs · '+(saved.source||'extern källa')});
     }
   }catch(_){ /* Local storage can be disabled without disabling the quote. */ }
@@ -1758,6 +1759,7 @@ document.addEventListener('keydown',event=>{
       if(sourceDate>Date.now()+10*60*1000)throw Error('Kurs från framtiden');
       // Never let a late response or an older deployed JSON reverse a newer quote.
       if(sourceDate<newestQuoteTime)return;
+      window.currentMarketQuote=q; window.dispatchEvent(new Event('marketquote'));
       const key=q.quote_time+'|'+numeric;
       if(key!==lastKey||showingSavedQuote){
         newestQuoteTime=sourceDate;
