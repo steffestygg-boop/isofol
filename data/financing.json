@@ -4,14 +4,14 @@
   "automated_checked": true,
   "coverage_status": "källor_kontrollerade_inga_nya_finansfakta",
   "checked_sources": [
+    "bolaget: Google News RSS",
     "omvärld: Google News RSS",
-    "jämförelsebolag: Google News RSS",
     "varningssignaler: Google News RSS",
     "börsmeddelanden: Google News RSS",
     "officiell presslista"
   ],
   "failed_sources": [
-    "bolaget: HTTP Error 429: Too Many Requests"
+    "jämförelsebolag: HTTP Error 429: Too Many Requests"
   ],
   "days_since_report": 54,
   "months_to_company_runway_proxy": 10.2,
@@ -47,6 +47,15 @@
   ],
   "latest_items": [
     {
+      "title": "Ledning och team - Isofol Medical",
+      "date": "2026-11-20",
+      "source": "Isofol Medical",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTR3JXYWdDTW5FRklaN3Y1Y3F3S3haQ3N3MEg5LTlTekpiVUQ4b2ZQV216SVlySFItODRDTWxaQzVJTWpSd1A1cEt0ekRST1VhVTdGQ3hMMW5ENUxOVmM5ZHpzMWZtSjA?oc=5",
+      "category": "bolaget",
+      "official": true,
+      "signal": "övrigt"
+    },
+    {
       "title": "Isofol presenterade studieupplägget för fas II på investerarträff - Biostock",
       "date": "2026-11-20",
       "source": "Biostock",
@@ -56,19 +65,10 @@
       "signal": "övrigt"
     },
     {
-      "title": "Immunovias nyemission: Ny flagga och två upplysningar - Affärsvärlden",
-      "date": "2026-11-17",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSWRZNGowLWcyRzU3U2dXaEEwcF9WVkJOQ3dlUnVJeWcxTzhNdUFZenl4M2JMR1U4TWV0dU96RktBOWVCVlkyQ0ZDNGg1eWZwMUd3cjQ3V00yT191U0hzcEdVVDdoWUw0azRoU3gtUlUxa3BfdEptb1EwTnQ3eW5sX3VJNkJWNEtOc0Zfd1RWUlZZQXc?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
-    },
-    {
       "title": "Isofol Medical: Clinical momentum builds ahead of Phase 2 - ABG - Börsvärlden",
       "date": "2026-11-16",
       "source": "Börsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYUR5TTIyaGpuMzFybzBYbWRpVkliN3Y0YkpwaFJrTFJLeEtuQVA3U0Jmc2M3RHhfX2cxcm5iMm1TblZNSTRuUnNmRGRVU05BUE95elBTTHRkX1Q3SWdqWFZFdTl6SExTTjZXU0lfVTQwOTUzbGxzZzFqX3puZ21yWFo2WHRGWUNSS18xTmFIa1JDcXZjRV95TXEyZnRkUQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZTlqa1ZOempQcnd1QUV6WGhyNXN5MzE2R0o1aFk3WDJPRGlMdU1IWmJicTV2dk1PYk90aDdaZXlBamp2MTZUd2YzemJtOEtHVmIzZVZWUkZoNVFoSTRrS0lDSE84NVQtNHJaSVFONzM2WWZfNHgzRm41VkRaUmJtX3o2MlVKWnJJQTlyRHlWWEhmQ2haM0MzcA?oc=5",
       "category": "omvärld",
       "official": false,
       "signal": "övrigt"
@@ -83,13 +83,22 @@
       "signal": "TO2 / befintliga optioner"
     },
     {
-      "title": "Oncopeptides, Novo and Zealand clear the European Commission while Cereno plunges on rights issue – the Nordic Pulse | 2026:46 - Biostock",
-      "date": "2026-11-16",
-      "source": "Biostock",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMlZGOGQzLWY5Sjl6ZnFOZFFUV3FBVXNaTjVjcnkwSWQ1VnpQd3hKSllnelFPdHhieE96aEJJN2Q5cWI2RXNESXQwOER6YldiV005M3lMSVF2U1FPcnN5Z2lEUUF4SjhGaWZYX0R6bl8tcDRJRGVEYk1MM1MyMk9DSkY3VDRfQ1RjWENSX1ktQnRzbGZybUZUSGgxY1prczZTR2QxZ2tWVGtGcnRMbW1mdTQ1aXBGc192QmVfN3dIZw?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
+      "title": "Teckningskursen för teckningsoptioner av serie TO2 i Isofol har fastställts till 0,95 SEK och nyttjandeperioden inleds den 16 november 2026 - Isofol Medical",
+      "date": "2026-11-14",
+      "source": "Isofol Medical",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTUE2QzY0M04xYjFSa2QzUW9pM3VWYW5teVFnM1FZVGdKeFRuUGl3SFBsSEdQbUVmQUNaLTVkUkhONDZNTk1kUXFqSUVTZm9BbjQtSFp6YXhiRnRCc0R1clhseENjMnhCSzVwcENzazZ1ZGpHNHY3WDJrbnJSN2lSSXFiazlKOWdWY0ZMTnduNnh0RzRfUFFmR0lJSlQ2TlBuUGhVdVZUZVdyV011VXFPMjROcHlHemxLY0NWM0szTXVMam1tbjlZRERhTFU2TjhBc1ZaZGs2LWVMc21hS0czTEhkdUtLdkR5TE5OaWIzUUtZR2taSF9ZMmhabzhXeVRHM1FoVkxJdWo?oc=5",
+      "category": "bolaget",
+      "official": true,
+      "signal": "TO2 / befintliga optioner"
+    },
+    {
+      "title": "Investerarmöte 12 november 2026 - Isofol Medical",
+      "date": "2026-11-13",
+      "source": "Isofol Medical",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBJRTRTZWRaelhlaFpxZldpUFVnV3d0YWpON0U1bl82RmVMX1RmTHZmeUJWVFB3MkxPM3daSk9rb1hfajRNOW5LTW9MRHFvYXVhZE9heUxwazdzZ1MyLXNVV2lFaG9yWUJOT3RIYkdn?oc=5",
+      "category": "bolaget",
+      "official": true,
+      "signal": "övrigt"
     },
     {
       "title": "Isofols Q3: fas Ib på upploppet och utökad fas II - Biostock",
@@ -101,75 +110,66 @@
       "signal": "övrigt"
     },
     {
-      "title": "Cereno Scientific rasar efter handelsstopp 13 november 2026 - HurBra.se",
-      "date": "2026-11-13",
-      "source": "HurBra.se",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CcFdTR3pIa0NUMnNMUklqX0NpWUNDV3F3RWloSEFZUWNzYWVwMVVFbFllaDRjaXVSNXZqdWFKczhrVktVeHk5R0dxTGVZZEJhaGxkTndOX0NmVUtSSmF0a3ladU42em5vakl1VWtwc3NjUkVz?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
+      "title": "Styrelse - Isofol Medical",
+      "date": "2026-10-13",
+      "source": "Isofol Medical",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE11OHNpaGJ0cHZ2UTNuRWo0M041a3g5S2VObUVNcmZkQ2MyblVuNV8zRU5xelR6b2FUNnZ0MkcxTDFYdmxiSE9oeXRzQU5ybjg?oc=5",
+      "category": "bolaget",
+      "official": true,
       "signal": "övrigt"
     },
     {
-      "title": "Cereno Scientific planerar företrädesemission om 400 miljoner kronor för fortsatt klinisk utveckling - Biostock",
-      "date": "2026-11-12",
-      "source": "Biostock",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVmRaek9sMVZyc0Y4MC1EakZQWmRvOHQ5MHE1VlZocGpWN1R1MTRkVzRLUEFRaGFHTHdOMEw2UE9BcjBGbkVXWDhnb2h5c3ZCZ09yNWh4d1BpaU9OdG9GbUJQanpVa25zZUI4azEyWTlyUk9TNlNGeURJWDhHa3lpaldtdlZzMEJZVTFqbjV1ek1RZTJVZUV6M2ZyM0xPcThhUThrRDhHTVVXOW1mRDFlc1NVbHRHWWtFeG5Kb0RMUDczRDN1a0tZVQ?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
-    },
-    {
-      "title": "Cereno Scientific planerar företrädesemission på 400 miljoner kronor – förlänger lån - Börsvärlden",
-      "date": "2026-11-12",
-      "source": "Börsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGZjdVdjVWNHSURna1VrRWtLQ0xPNHRkV2NRamo4QnlhTEJsbUtpVW9meThLOUpna3dTWVUxMXlWYjZHRjNoaXJuc0JCWUUteERRRWlfd1EwSFBsdFFQT1NKVGpaRHdmSWJSeWJGQVRIVkZxXzFrc19xTFFYRUdSN1ctYWNPRkF1Q05YT0VkN1V3YU9aM1RqcXBLMkM1cS04bzU5Y0tUOG1nSHNranFRcFhPVkpuUQ?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
-    },
-    {
-      "title": "Bioinvents nyemission: Tre flaggor efter kursslakten - Affärsvärlden",
-      "date": "2026-11-11",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSzAyeVp0eDRDWW1Pa3c1ZzNHOEdBUl9Ram5tdklqY3NndndlV0JRS0VKNWpwVlY4R3FnRW9TOWdlUXh1dEpudW5iLWowSncyeXVJMm5kVGFKTGY1Q0N0TFJZbEl0TmFrMktEdHhndGllLWNHNVJtRWRYRHoxWlRiMlRWSlNiR1lFYXI3ZjJuVUswQQ?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
-      "signal": "emission"
-    },
-    {
-      "title": "Isofol Medical | Life Sciences Summit 2026 - Biostock",
-      "date": "2026-11-09",
-      "source": "Biostock",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzeXlBMmZ2TkJhWlFIdXFkazdydXd5aUtrZkNpQ1R5MWtXQXh5RkN3Mm8xNU53dXM2b3dqZEloZy1iemV1eXgwUnlIY0dxS3YtakhMTEgwdUFSeVRtUXNGUm9VdkliVENiSWtkVUw4eGZob28zR0Fmczk1TQ?oc=5",
+      "title": "Isofol bjuder in till Investor & Scientific Update i Stockholm och Göteborg den 12 respektive 13 november (MFN) - Aktiellt",
+      "date": "2026-10-13",
+      "source": "Aktiellt",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GTjNxNFliTFd2Mk9zRERRYjdtRWVYYnpwMEdaN0cxaWxWRXdTYks2Wkx3QUpxVWVSQkw1bWU5d3NIQjRzMXBxVGVBbFNEQ08tQUdZWktUNDVqaXNxc05j?oc=5",
       "category": "omvärld",
       "official": false,
       "signal": "övrigt"
     },
     {
-      "title": "Bioinvent rasar vidare – teckningskurs 1 krona - Affärsvärlden",
-      "date": "2026-11-06",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYlFEaFVrbHA5RU5TSTdYeExLYVVjV3Rnd19GQzlMbk5lbTBiYlJPUHNmV0NoNDBVR19vNGljRXRnSGdXLWhJel9pREdvanc2UVR6NmpjbHppSGx4UzV2bC1IUExQUHgyRUNNbE5HejJJVWFkVHJ6OFNEYV90NGRsRndDQlJTQnR4?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
+      "title": "Hem Investerare Finansiell kalender - Isofol Medical",
+      "date": "2026-09-22",
+      "source": "Isofol Medical",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Eek1Kb3NsbzBoLUVFNnFQMlh3VF9rMzdKd0ZlYlE4amladUw2TzhlMDVfTi1OQzBhZUJwdzZxQnB3Um9ocnlyTHM0NEM3ZUFyQjdyWjhvMk9NQklFUzJzRndWMVFxc3lTOUxOWC1R?oc=5",
+      "category": "bolaget",
+      "official": true,
       "signal": "övrigt"
     },
     {
-      "title": "Immunovia: Fem flaggor – aktien halverades i väntan på villkor - Affärsvärlden",
-      "date": "2026-10-30",
+      "title": "Isofols nyemission: Blandad bild i teckningsåtagarlistan - Affärsvärlden",
+      "date": "2025-06-18",
       "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbHd0bjhybFBOdUotejdzdDEzc2NsSWxjRXZaTTIxSVk0RXAyQWRzdFlDZXVWQUJtdGxuM1ZHTDNPLVg5NFBfVVlUNVpOYk1taTE1Wndid0V1U2FQT1FudXdydFdyUnNtZzVGZzJNRFRXYkhZRVVoQlBhcDhEYmZiU2ZOSjNrMG5CckJlbkpqb2luVmdWWi1UNExyWEs?oc=5",
-      "category": "jämförelsebolag",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeW9VN0VXNk9JZ1hUUy03SmRjNHV2bUNDN2FXalRJS20zMWdwQzc5T3VCYm83cDZhMzdzbTk0Qzc2WTNUMWVfS1NtWUJyUWdCeHdMRFhfSWxsTGVZMmtVVkY5Q0xuUXFISGtWbE9GakpsZUFSci15U3A1TzJSLUpnTy1UbXJGbVAxZF9LUUQyWHNaT2VjaEow?oc=5",
+      "category": "varningssignaler",
       "official": false,
+      "signal": "emission"
+    },
+    {
+      "title": "Tre flaggor i Isofols företrädesemission - Affärsvärlden",
+      "date": "2025-06-09",
+      "source": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYUZnWFFqQkRZblQyOVFsWW9aRmJBT2J5NmxHZHRQb0hlRXB5VnU2bFRicEk3SmdrLTM2WnViVUZHVElMb3lQRXB0NGk4UUNQa3A3anhRQ2JNMkJZS211YTVRY0puNHItN2xtOGR6djFteWZEZm1yOU42S29LY1NnczdIdw?oc=5",
+      "category": "varningssignaler",
+      "official": false,
+      "signal": "emission"
+    },
+    {
+      "title": "Warrants of 2026, series TO2",
+      "date": "",
+      "source": "Isofol Medical",
+      "url": "https://isofolmedical.com/investors/warrants-of-2026-series-to2/",
+      "category": "officiell lista",
+      "official": true,
       "signal": "övrigt"
     },
     {
-      "title": "Immunovia behöver pengar: Ber om 63 miljoner till 76% utspädning - Affärsvärlden",
-      "date": "2026-10-29",
-      "source": "Affärsvärlden",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdTRnLThCMGF3SF9jbUh3Q3llMlpuejllaW9HeGRrNHFsMUZOTlZ0M1hIRlN4QThZRUprVGJOalY1NXpfSk9PSFRTTmlTZzl3R2s4RmlrQjlxdUNDMmhheEY3T0p0QzB0SkdVSTBNMzN0WEtCbVAwRzZjZ2E3M1MweEVaWE1UZmNJQjFVVzlXb2lOenZfc0JSSEZ3REpSMksw?oc=5",
-      "category": "jämförelsebolag",
-      "official": false,
+      "title": "Isofols integritetspolicy (allmän)",
+      "date": "",
+      "source": "Isofol Medical",
+      "url": "https://isofolmedical.com/wp-content/uploads/2026/03/POL-103-G_Integrity-Policy-General_Ver-5.0_01Nov2025_website.pdf",
+      "category": "officiell lista",
+      "official": true,
       "signal": "övrigt"
     }
   ],
@@ -188,7 +188,7 @@
       "title": "Finansieringshorisonten närmar sig",
       "detail": "Omkring 10.2 månader till modellens konservativa riktmärke 2027-09-30. Det är INTE en verifierad dag då kassan tar slut; bolagets egen prognos och tidsfaktorn är redan inräknade i riskmodellen.",
       "source": "https://mfn.se/a/isofol-medical/isofol-medical-ab-publ-publicerar-delarsrapport-for-januari-september-2026",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "status": "Beräknad från verifierad bolagsprognos",
       "next_step": "Kontrollera ny likviditetsprognos i kommande kvartalsrapport.",
       "category": "runway"
@@ -205,7 +205,7 @@
       "category": "warrants"
     }
   ],
-  "alerts_checked_at": "2026-11-23T12:36:06+01:00",
+  "alerts_checked_at": "2026-11-24T12:41:17+01:00",
   "alerts_source_status": "ofullständig nätkontroll",
   "price_confirmation": {
     "date": "2026-11-13",
