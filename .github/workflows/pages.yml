@@ -3,7 +3,7 @@ on:
   # Kursjobbets git push använder GITHUB_TOKEN och utlöser därför inte ett nytt push-flöde.
   # Publicera om GitHub Pages när kursjobbet slutförts framgångsrikt.
   workflow_run:
-    workflows: ["Uppdatera Isofol Medical aktiekurs"]
+    workflows: ["Uppdatera Isofol Medical aktiekurs", "Uppdatera nyheter"]
     types: [completed]
   push:
     branches: [main]
