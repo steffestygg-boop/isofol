@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-26T09:28:53+01:00",
+  "updated_at": "2026-11-26T10:00:28+01:00",
   "latest_week": "2026-W48",
   "weeks": [
     {
@@ -12,9 +12,24 @@
       "year": 2026,
       "start": "2026-11-23",
       "end": "2026-11-26",
-      "generated_at": "2026-11-26T09:28:53+01:00",
+      "generated_at": "2026-11-26T10:00:27+01:00",
       "intro": "En framträdande nyhetsrubrik: Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 1 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
+        {
+          "date": "2026-11-26",
+          "title": "Isofol Medical inleder samarbete med Lonza om ny formulering av arfolitixorin",
+          "category": "Partner och avtal",
+          "summary": "",
+          "source": "Börsvärlden",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNHV1U0E2S2ZWUmh4TnQwM3UzeFB1TFVLQXFhZHZ0YnpoNE9ySGNSS09FU0g5OExqRWFZQVpCY2xwRWN1M0VHcDBlbU5TLVhfcTB4MlRFcVJHUzZuZDl3YzlwRFR2ejBtYVFXX05pcHVISnVNZjI4eFR1UUlNclZlbzllZHZvMHZqQjNEU3JyUlJmYkdQU1BfTE53empWLVhaLXRwQXFCeEJlNUZTeTY4RnZhM00?oc=5",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        },
         {
           "date": "2026-11-26",
           "title": "Isofol enters collaboration with Lonza to develop a new spray dried formulation of arfolitixorin for cerebral folate deficiency",
@@ -26,6 +41,21 @@
           "origin": "bolagsflöde",
           "source_note": "Direkt hämtad publicerad bolagsrubrik; eventuella detaljer kräver granskning av pressmeddelandet.",
           "published_at": "2026-11-26 \n         08:00:00",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        },
+        {
+          "date": "2026-11-26",
+          "title": "Vd-intervju Isofol november 2026",
+          "category": "Övrigt",
+          "summary": "",
+          "source": "DI",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wT0pfR185SDNDQ2NSVEdZQ1lDQVhqSm9GV0RnZHVEamFqRXF4aElHdGItdWF6NDBOUFJFbmQ3U3NBRzMtdUM2VmxFM18zN3R0ZFpEU2Z3Z0ZfVlRTeHpma1djYVdtS0tqVlY3T2tTRG8?oc=5",
+          "verified": false,
+          "origin": "rubrik",
+          "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
           "details": "",
           "importance": "",
           "key_facts": [],
@@ -419,9 +449,9 @@
         "baseline_date": "2026-11-20",
         "baseline": 0.99,
         "latest_date": "2026-11-26",
-        "latest": 0.96,
-        "change_sek": -0.03,
-        "change_percent": -3.03,
+        "latest": 0.951,
+        "change_sek": -0.039,
+        "change_percent": -3.94,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
