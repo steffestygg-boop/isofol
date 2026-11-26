@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-25T15:53:02+01:00",
+  "updated_at": "2026-11-26T09:28:53+01:00",
   "latest_week": "2026-W48",
   "weeks": [
     {
@@ -11,10 +11,26 @@
       "week": 48,
       "year": 2026,
       "start": "2026-11-23",
-      "end": "2026-11-25",
-      "generated_at": "2026-11-25T15:53:02+01:00",
+      "end": "2026-11-26",
+      "generated_at": "2026-11-26T09:28:53+01:00",
       "intro": "En framträdande nyhetsrubrik: Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 1 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
+        {
+          "date": "2026-11-26",
+          "title": "Isofol enters collaboration with Lonza to develop a new spray dried formulation of arfolitixorin for cerebral folate deficiency",
+          "category": "Övrigt",
+          "summary": "",
+          "source": "MFN · bolagets pressmeddelande",
+          "url": "https://mfn.se/a/isofol-medical/isofol-enters-collaboration-with-lonza-to-develop-a-new-spray-dried-formulation-of-arfolitixorin-for-cerebral-folate-deficiency.iframe",
+          "verified": false,
+          "origin": "bolagsflöde",
+          "source_note": "Direkt hämtad publicerad bolagsrubrik; eventuella detaljer kräver granskning av pressmeddelandet.",
+          "published_at": "2026-11-26 \n         08:00:00",
+          "details": "",
+          "importance": "",
+          "key_facts": [],
+          "editorial_verified": false
+        },
         {
           "date": "2026-11-24",
           "title": "Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2",
@@ -402,10 +418,10 @@
         "symbol": "ISOFOL.ST",
         "baseline_date": "2026-11-20",
         "baseline": 0.99,
-        "latest_date": "2026-11-25",
-        "latest": 0.952,
-        "change_sek": -0.038,
-        "change_percent": -3.84,
+        "latest_date": "2026-11-26",
+        "latest": 0.96,
+        "change_sek": -0.03,
+        "change_percent": -3.03,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
