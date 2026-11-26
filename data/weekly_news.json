@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-26T14:27:35+01:00",
+  "updated_at": "2026-11-26T15:49:40+01:00",
   "latest_week": "2026-W48",
   "weeks": [
     {
@@ -12,7 +12,7 @@
       "year": 2026,
       "start": "2026-11-23",
       "end": "2026-11-26",
-      "generated_at": "2026-11-26T14:27:35+01:00",
+      "generated_at": "2026-11-26T15:49:40+01:00",
       "intro": "En framträdande nyhetsrubrik: Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 5 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
         {
@@ -91,10 +91,10 @@
           "url": "https://isofolmedical.com/news-press/"
         },
         {
-          "title": "Milstolpe tillagd: Lonza-avtal om cerebral folatbrist",
-          "detail": "Placerad: 26 november 2026 (genomförd).",
+          "title": "Milstolpe tillagd: Besked om CFD-projektet",
+          "detail": "Placerad: 2027 · kvartal ej angivet (planerad).",
           "kind": "milstolpe",
-          "url": "https://mfn.se/a/isofol-medical/isofol-inleder-samarbete-med-lonza-for-utveckling-av-en-ny-spraytorkad-formulering-av-arfolitixorin-for-cerebral-folatbrist"
+          "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
         },
         {
           "title": "Milstolpe tillagd: Fas Ib: kongresspresentation",
@@ -103,10 +103,10 @@
           "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
         },
         {
-          "title": "Milstolpe tillagd: Besked om CFD-projektet",
-          "detail": "Placerad: 2027 · kvartal ej angivet (planerad).",
+          "title": "Milstolpe tillagd: Lonza-avtal om cerebral folatbrist",
+          "detail": "Placerad: 26 november 2026 (genomförd).",
           "kind": "milstolpe",
-          "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
+          "url": "https://mfn.se/a/isofol-medical/isofol-inleder-samarbete-med-lonza-for-utveckling-av-en-ny-spraytorkad-formulering-av-arfolitixorin-for-cerebral-folatbrist"
         }
       ],
       "omitted_events": 0,
@@ -491,9 +491,9 @@
         "baseline_date": "2026-11-20",
         "baseline": 0.99,
         "latest_date": "2026-11-26",
-        "latest": 0.953,
-        "change_sek": -0.037,
-        "change_percent": -3.74,
+        "latest": 0.958,
+        "change_sek": -0.032,
+        "change_percent": -3.23,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
