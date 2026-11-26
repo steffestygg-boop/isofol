@@ -17,34 +17,19 @@
       "events": [
         {
           "date": "2026-11-26",
-          "title": "Isofol Medical inleder samarbete med Lonza om ny formulering av arfolitixorin",
+          "title": "Isofol och Lonza utvärderar ny formulering vid cerebral folatbrist",
           "category": "Partner och avtal",
-          "summary": "",
+          "summary": "Isofol tillhandahåller arfolitixorin och Lonza utvärderar en spraytorkad formulering för cerebral folatbrist (CFD). Projektet är prekliniskt. Målen är enklare administrering och bättre leverans till hjärnan. Varken administreringsväg eller projektsumma har offentliggjorts.",
           "source": "Börsvärlden",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNHV1U0E2S2ZWUmh4TnQwM3UzeFB1TFVLQXFhZHZ0YnpoNE9ySGNSS09FU0g5OExqRWFZQVpCY2xwRWN1M0VHcDBlbU5TLVhfcTB4MlRFcVJHUzZuZDl3YzlwRFR2ejBtYVFXX05pcHVISnVNZjI4eFR1UUlNclZlbzllZHZvMHZqQjNEU3JyUlJmYkdQU1BfTE53empWLVhaLXRwQXFCeEJlNUZTeTY4RnZhM00?oc=5",
+          "url": "https://mfn.se/a/isofol-medical/isofol-inleder-samarbete-med-lonza-for-utveckling-av-en-ny-spraytorkad-formulering-av-arfolitixorin-for-cerebral-folatbrist",
           "verified": false,
           "origin": "rubrik",
           "source_note": "Automatiskt insamlad rubrik – originalartikeln har inte fullständigt faktagranskats",
-          "details": "",
+          "details": "I BioStocks sponsrade intervju aviserar vd mer information under 2027. Klinisk nytta jämfört med leukovorin återstår att undersöka.",
           "importance": "",
           "key_facts": [],
-          "editorial_verified": false
-        },
-        {
-          "date": "2026-11-26",
-          "title": "Isofol enters collaboration with Lonza to develop a new spray dried formulation of arfolitixorin for cerebral folate deficiency",
-          "category": "Övrigt",
-          "summary": "",
-          "source": "MFN · bolagets pressmeddelande",
-          "url": "https://mfn.se/a/isofol-medical/isofol-enters-collaboration-with-lonza-to-develop-a-new-spray-dried-formulation-of-arfolitixorin-for-cerebral-folate-deficiency.iframe",
-          "verified": false,
-          "origin": "bolagsflöde",
-          "source_note": "Direkt hämtad publicerad bolagsrubrik; eventuella detaljer kräver granskning av pressmeddelandet.",
-          "published_at": "2026-11-26 \n         08:00:00",
-          "details": "",
-          "importance": "",
-          "key_facts": [],
-          "editorial_verified": false
+          "editorial_verified": true,
+          "additional_source_url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
         },
         {
           "date": "2026-11-26",
@@ -65,17 +50,18 @@
           "date": "2026-11-24",
           "title": "Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2",
           "category": "Bolagsledning och styrelse",
-          "summary": "",
+          "summary": "Den 24 november redovisade Isofol teckningsåtaganden på 5,83 Mkr. Solasia meddelade därutöver sin avsikt att nyttja TO2 för 1,98 Mkr. Tillsammans motsvarar det cirka 7,81 Mkr eller 20,6 % av möjlig bruttolikvid. Faktisk inbetalning framgår först av utfallet.",
           "source": "MFN · bolagets pressmeddelande",
-          "url": "https://mfn.se/a/isofol-medical/isofol-har-erhallit-teckningsataganden-fran-storagare-styrelse-och-ledning-avseende-nyttjande-av-teckningsoptioner-av-serie-to2.iframe",
+          "url": "https://storage.mfn.se/be52d97a-2b1e-49c7-8c46-f4839e1dca30/20261124-isofol-pm-teckningatagande-to2.pdf",
           "verified": false,
           "origin": "bolagsflöde",
           "source_note": "Direkt hämtad publicerad bolagsrubrik; eventuella detaljer kräver granskning av pressmeddelandet.",
           "published_at": "2026-11-24 \n         15:10:00",
-          "details": "",
+          "details": "Bolagets nyttjandeperiod löper till och med 30 november.",
           "importance": "",
           "key_facts": [],
-          "editorial_verified": false
+          "editorial_verified": true,
+          "additional_source_url": "https://mfn.se/a/isofol-medical/isofol-har-erhallit-teckningsataganden-fran-storagare-styrelse-och-ledning-avseende-nyttjande-av-teckningsoptioner-av-serie-to2.iframe"
         }
       ],
       "updates": [
@@ -576,7 +562,7 @@
       "finance_snapshot": {
         "risk_3": 10.1,
         "risk_6": 23.4,
-        "risk_12": 53.0,
+        "risk_12": 53,
         "risk_as_of": "2026-11-17T11:19:37+01:00",
         "emission_status": "",
         "explanation": "Lägesbild vid sammanställningen, inte ett påstående om att siffrorna offentliggjordes denna vecka."
@@ -584,7 +570,7 @@
       "snapshot": {
         "risk_3": 10.1,
         "risk_6": 23.4,
-        "risk_12": 53.0,
+        "risk_12": 53,
         "risk_as_of": "2026-11-17T11:19:37+01:00",
         "model_version": "1.2.0-partner-dd-process",
         "model_fingerprint": "a611000327bb48be",

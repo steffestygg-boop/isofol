@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-26",
   "editorial_policy": "Kort med konkreta tal direkt. Fördjupning i klickbar dialog. Redaktionella uppgifter källgranskade mot varje primärkälla. Framtida RSS-rubriker får inte automatiskt felaktiga fakta.",
   "by_title": {
     "ABG höjer efter Q3": {
@@ -121,6 +121,24 @@
         "Maximal bruttolikvid enligt multiplikation: cirka 37,9 Mkr"
       ],
       "source_url": "https://mfn.se/a/isofol-medical/teckningskursen-for-teckningsoptioner-av-serie-to2-i-isofol-har-faststallts-till-0-95-sek-och-nyttjandeperioden-inleds-den-16-november-2026"
+    },
+    "Isofol Medical inleder samarbete med Lonza om ny formulering av arfolitixorin": {
+      "title": "Isofol och Lonza utvärderar ny formulering vid cerebral folatbrist",
+      "summary": "Isofol tillhandahåller arfolitixorin och Lonza utvärderar en spraytorkad formulering för cerebral folatbrist (CFD). Projektet är prekliniskt. Målen är enklare administrering och bättre leverans till hjärnan. Varken administreringsväg eller projektsumma har offentliggjorts.",
+      "details": "I BioStocks sponsrade intervju aviserar vd mer information under 2027. Klinisk nytta jämfört med leukovorin återstår att undersöka.",
+      "source_url": "https://mfn.se/a/isofol-medical/isofol-inleder-samarbete-med-lonza-for-utveckling-av-en-ny-spraytorkad-formulering-av-arfolitixorin-for-cerebral-folatbrist"
+    },
+    "Isofol enters collaboration with Lonza to develop a new spray dried formulation of arfolitixorin for cerebral folate deficiency": {
+      "title": "Isofol och Lonza utvärderar ny formulering vid cerebral folatbrist",
+      "summary": "Isofol tillhandahåller arfolitixorin och Lonza utvärderar en spraytorkad formulering för cerebral folatbrist (CFD). Projektet är prekliniskt. Målen är enklare administrering och bättre leverans till hjärnan. Varken administreringsväg eller projektsumma har offentliggjorts.",
+      "details": "I BioStocks sponsrade intervju aviserar vd mer information under 2027. Klinisk nytta jämfört med leukovorin återstår att undersöka.",
+      "source_url": "https://mfn.se/a/isofol-medical/isofol-inleder-samarbete-med-lonza-for-utveckling-av-en-ny-spraytorkad-formulering-av-arfolitixorin-for-cerebral-folatbrist"
+    },
+    "Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2": {
+      "title": "Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2",
+      "summary": "Den 24 november redovisade Isofol teckningsåtaganden på 5,83 Mkr. Solasia meddelade därutöver sin avsikt att nyttja TO2 för 1,98 Mkr. Tillsammans motsvarar det cirka 7,81 Mkr eller 20,6 % av möjlig bruttolikvid. Faktisk inbetalning framgår först av utfallet.",
+      "details": "Bolagets nyttjandeperiod löper till och med 30 november.",
+      "source_url": "https://storage.mfn.se/be52d97a-2b1e-49c7-8c46-f4839e1dca30/20261124-isofol-pm-teckningatagande-to2.pdf"
     }
   }
 }
