@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-27T09:27:12+01:00",
+  "updated_at": "2026-11-27T10:01:32+01:00",
   "latest_week": "2026-W48",
   "weeks": [
     {
@@ -12,7 +12,7 @@
       "year": 2026,
       "start": "2026-11-23",
       "end": "2026-11-27",
-      "generated_at": "2026-11-27T09:27:12+01:00",
+      "generated_at": "2026-11-27T10:01:32+01:00",
       "intro": "En framträdande nyhetsrubrik: Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 5 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
         {
@@ -107,12 +107,6 @@
           "url": "https://isofolmedical.com/news-press/"
         },
         {
-          "title": "Milstolpe tillagd: Besked om CFD-projektet",
-          "detail": "Placerad: 2027 · kvartal ej angivet (planerad).",
-          "kind": "milstolpe",
-          "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
-        },
-        {
           "title": "Milstolpe tillagd: Lonza-avtal om cerebral folatbrist",
           "detail": "Placerad: 26 november 2026 (genomförd).",
           "kind": "milstolpe",
@@ -120,6 +114,12 @@
         },
         {
           "title": "Milstolpe tillagd: Fas Ib: kongresspresentation",
+          "detail": "Placerad: 2027 · kvartal ej angivet (planerad).",
+          "kind": "milstolpe",
+          "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
+        },
+        {
+          "title": "Milstolpe tillagd: Besked om CFD-projektet",
           "detail": "Placerad: 2027 · kvartal ej angivet (planerad).",
           "kind": "milstolpe",
           "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
@@ -500,16 +500,18 @@
         "daterade milstolpar",
         "finansierings- och riskdata"
       ],
-      "source_errors": [],
+      "source_errors": [
+        "RSS-sökning kunde inte läsas: HTTP Error 429: Too Many Requests"
+      ],
       "note": "Automatiskt sammanställda rubriker och källgranskade dataposter; inte fulltextbevakning av all nyhetsrapportering. Endast uttryckligen källgranskade poster markeras verifierade.",
       "stock_change": {
         "symbol": "ISOFOL.ST",
         "baseline_date": "2026-11-20",
         "baseline": 0.99,
         "latest_date": "2026-11-27",
-        "latest": 0.949,
-        "change_sek": -0.041,
-        "change_percent": -4.14,
+        "latest": 0.933,
+        "change_sek": -0.057,
+        "change_percent": -5.76,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
