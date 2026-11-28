@@ -3,7 +3,7 @@
   "company": "Isofol Medical",
   "timezone": "Europe/Stockholm",
   "schedule": "Varje dag kl. 09:00 Europe/Stockholm med extra kontroll på eftermiddagen; ISO-vecka från måndag",
-  "updated_at": "2026-11-27T15:44:23+01:00",
+  "updated_at": "2026-11-28T09:12:34+01:00",
   "latest_week": "2026-W48",
   "weeks": [
     {
@@ -11,8 +11,8 @@
       "week": 48,
       "year": 2026,
       "start": "2026-11-23",
-      "end": "2026-11-27",
-      "generated_at": "2026-11-27T15:44:23+01:00",
+      "end": "2026-11-28",
+      "generated_at": "2026-11-28T09:12:34+01:00",
       "intro": "En framträdande nyhetsrubrik: Isofol har erhållit teckningsåtaganden från storägare, styrelse och ledning avseende nyttjande av teckningsoptioner av serie TO2. Innehållet i artikeln behöver kontrolleras mot originalkällan. Dessutom finns 5 noterade förändringar i sidans finansieringsanalys eller milstolpar.",
       "events": [
         {
@@ -122,13 +122,13 @@
           "url": "https://isofolmedical.com/news-press/"
         },
         {
-          "title": "Milstolpe tillagd: Fas Ib: kongresspresentation",
+          "title": "Milstolpe tillagd: Besked om CFD-projektet",
           "detail": "Placerad: 2027 · kvartal ej angivet (planerad).",
           "kind": "milstolpe",
           "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
         },
         {
-          "title": "Milstolpe tillagd: Besked om CFD-projektet",
+          "title": "Milstolpe tillagd: Fas Ib: kongresspresentation",
           "detail": "Placerad: 2027 · kvartal ej angivet (planerad).",
           "kind": "milstolpe",
           "url": "https://biostock.se/2026/11/isofols-vd-kommenterar-samarbetet-med-lonza-inom-cerebral-folatbrist/"
@@ -521,10 +521,10 @@
         "symbol": "ISOFOL.ST",
         "baseline_date": "2026-11-20",
         "baseline": 0.99,
-        "latest_date": "2026-11-27",
-        "latest": 0.951,
-        "change_sek": -0.039,
-        "change_percent": -3.94,
+        "latest_date": "2026-11-26",
+        "latest": 0.958,
+        "change_sek": -0.032,
+        "change_percent": -3.23,
         "source_url": "https://finance.yahoo.com/quote/ISOFOL.ST/history/",
         "note": "Jämfört med föregående handelsveckas sista stängningskurs. Fördröjda dagsstängningar, inte realtid."
       }
